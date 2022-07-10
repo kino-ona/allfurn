@@ -147,7 +147,7 @@ function watchs(done) {
 
 // clean
 function clean(done) {
-	del.sync(['dist/*.html', '!dist/path/**', '!dist/path.html', 'dist/product', 'dist/order', 'dist/member', 'dist/search', 'dist/myshop', 'dist/assets/**', '!dist/assets/fonts']);
+	del.sync(['dist/*.html', '!dist/path/**', '!dist/path.html', 'dist/home', 'dist/member', 'dist/category', 'dist/message', 'dist/mypage', 'dist/assets/**', '!dist/assets/fonts']);
 	done();
 }
 exports.clean = clean;

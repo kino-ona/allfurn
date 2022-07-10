@@ -1,0 +1,6 @@
+dist/path
+dist/**.html
+dist/**/**.html
+dist/asset/css
+dist/asset/images
+node_modules
