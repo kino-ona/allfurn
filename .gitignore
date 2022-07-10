@@ -1,6 +1,10 @@
 dist/path
 dist/**.html
 dist/**/**.html
-dist/asset/css
-dist/asset/images
+dist/assets/css
+dist/assets/images
+dist/assets/js
+
+src/assets/css/sprite
+
 node_modules
