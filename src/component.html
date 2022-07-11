@@ -1,0 +1,40 @@
+@@include('./inc/pagehead.inc',{
+"pagetitle":" | Guide",
+"webroot":"."
+})
+</head>
+  
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('./inc/header.inc',{
+      "webroot":"."
+    })
+
+    <div id="container">
+      <div class="modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="name-modal__container">
+              <div class="name-modal__content">
+                <div class="modal__description">
+                  <p class="modal__text">Text</p>
+                </div>
+                <a href="/" class="modal__button"><span>Button</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    @@include('./inc/footer.inc',{
+      "webroot":"."
+    })
+  </div>
+  <script>
+  </script>
+</body>
+</html>
