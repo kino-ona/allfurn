@@ -101,6 +101,10 @@
         padding: 0 16px;
         max-height: 56px;
         overflow: hidden;
+        // 두번째 줄 말줄임 표시 IE 적용 불가
+        // display: -webkit-box;
+        // -webkit-line-clamp: 2;
+        // -webkit-box-orient: vertical;
       }
     }
   }
