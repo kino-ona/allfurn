@@ -8,11 +8,17 @@
   <div class="skipnavigation"><a href="#container">skip to container</a></div>
   <div id="wrap">
     @@include('./inc/header.inc',{
-      "webroot":"."
+      "webroot":".",
+      "headertype":""
     })
 
-    <div id="container">
-
+    <div id="container" class="container">
+      <div class="inner__full">
+        <div style="height: 384px;background-color: #FD4962"></div>
+      </div>
+      <div class="inner">
+        inner
+      </div>
     </div>
 
     @@include('./inc/footer.inc',{
