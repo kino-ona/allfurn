@@ -1,6 +1,33 @@
 @use "mixins";
 @use 'sprite/sprite';
 
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+// 100 Thin
+// 200 ExtraLight
+// 300 Light
+// 400 Regular
+// 500 Medium
+// 600 SemiBold
+// 700 Bold
+// 800 ExtraBold
+// 900 Black
+
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Pretendard Variable'), url('../fonts/PretendardVariable.woff2') format('woff2-variations');
+}
+
 
 /** RESET **/
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, 
@@ -11,6 +38,7 @@ ruby, section, summary,time, mark, audio, video {
 	margin: 0;padding: 0; vertical-align: top; word-break:keep-all;
 	text-decoration:none; -webkit-tap-highlight-color:transparent;
 	color: inherit; font-weight: normal; line-height: 1.6;
+	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
 }
 fieldset, img, textarea {border: 0;outline: 0;} 
 /* HTML5 display-role reset for older browsers */
@@ -19,7 +47,7 @@ img {max-width:100%;}
 html, body {
 	-webkit-text-size-adjust:none;
 	-webkit-text-size-adjust: 100%;
-	font-family: 'Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo','굴림',arial,sans-serif;
+	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
 	-ms-word-wrap:break-word;word-wrap:break-word;
 	font-size:14px;
 }
@@ -45,7 +73,7 @@ textarea {
 	font-size:16px;
 	resize: none;
 	color: #000;
-	font-family: 'Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo','굴림',arial,sans-serif;
+	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
 	&:not([readonly]):not([disabled]):not([aria-invalid="true"]) {
 		&:focus {
 		}
