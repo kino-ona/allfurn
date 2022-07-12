@@ -9,6 +9,10 @@
       <a href="#">개인정보 처리 방침</a>
     </div>
   </div>
+
+  <a href="#" title="추가하기" class="add-button">
+    <img src="./assets/images/temp/ico_plus@2x.png" alt="추가">
+  </a>
 </footer>
 
 <script src="@@webroot/assets/js/plugin/jquery-3.6.0.min.js" type="text/javascript"></script>
