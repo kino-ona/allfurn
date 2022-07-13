@@ -534,9 +534,7 @@ button  {
     color: #FB4760;
     font-weight: 600;
   }
-}
 
-.category {
   &__check {
     display: inline-block;
     position: relative;
@@ -573,7 +571,7 @@ button  {
     vertical-align: middle;
     content:'';
   }
-  &__check input:checked + span::after { 
+  &__check input + span::after { 
     display: inline-block;
     position: absolute;
     top: 18px;
@@ -585,12 +583,12 @@ button  {
     content:'';
   }
 
-  &__check--color span::before {
-    border: 1px solid #FB4760;
+  &__check input:checked + span::before {
     background-color: #FB4760;
+    border: 1px solid #FB4760;
   }
 
-  &__check--color input:checked + span::after {
+  &__check input:checked + span::after{
     display: inline-block;
     position: absolute;
     top: 18px;
@@ -604,10 +602,11 @@ button  {
 
   &__check--right-box span::before {
     position: absolute;
-    top: 15px;
+    top: 16px;
     right: 0;
   }
 
+  &__check--right-box input + span::after,
   &__check--right-box input:checked + span::after {
     top: 18px;
     left: 90%;
@@ -721,4 +720,82 @@ button  {
     border-radius: 5px;
     font-weight: 600;
   }
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all .3s ease;
+
+  &--solid-color {
+    background-color: #FB4760;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  &--solid-color:hover:not([disabled]) {
+    background-color: #d04d5a;
+    color: #ffffff;
+  }
+
+  &--solid-color:disabled {
+    background-color: #FDA3B0;
+  }
+
+  &--solid-border-color {
+    border: 1px solid #FB4760;
+    color: #FB4760;
+  }
+
+  &--solid-border-color:hover:not([disabled]) {
+    background-color: #f9e4e7;
+  }
+
+  &--solid-border-color:disabled {
+    border: 1px solid #FDA3B0;
+    color: #FDA3B0;
+  }
+
+  &--solid-gray {
+    background-color: #4F4F4F;
+    color: #ffffff;
+  }
+
+  &--solid-gray:hover:not([disabled]) {
+    background-color: #333333;
+  }
+
+  &--solid-gray:disabled {
+    background-color: #BDBDBD;
+  }
+
+  &--solid-border-gray {
+    border: 1px solid #4F4F4F;
+    color: #4F4F4F;
+  }
+
+  &--solid-border-gray:hover:not([disabled]) {
+    background-color: #d9d9d9;
+  }
+
+  &--solid-border-gray:disabled {
+    border: 1px solid #BDBDBD;
+    color: #BDBDBD;
+  }
+
+  &--round {
+    border-radius: 17px;
+  }
+
+  &--etc {
+    border: 1px solid #E0E0E0;
+    color: #333333;
+    border-radius: 5px;
+  }
+
+  &--etc:hover {
+    background-color: #E0E0E0;
+  }
+  
 }
