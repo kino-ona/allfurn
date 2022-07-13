@@ -5,7 +5,7 @@
         <h1 class="head__logo"><span class="a11y">All FURN</span></h1>
 
         <div class="textfield">
-          <span class="textfield__icon"></span>
+          <i class="textfield__icon ico__search"><span class="a11y">검색</span></i>
           <input
             type="text"
             class="textfield__search search--delete"
