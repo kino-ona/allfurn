@@ -379,13 +379,16 @@ input::-ms-clear {
 
 .headertype__logo-only {
 	height: 80px;
-	.head__fixed .inner > *:not(.head__logo) {
+
+	.head__fixed .inner>*:not(.head__logo) {
 		display: none;
 	}
+
 	.head__gnb {
 		display: none;
 	}
 }
+
 .headertype__none {
 	display: none;
 }
@@ -410,6 +413,7 @@ input::-ms-clear {
 	position: relative;
 	width: 100%;
 }
+
 .inner__large {
 	position: relative;
 	width: 946px;
@@ -418,6 +422,7 @@ input::-ms-clear {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 .inner__center {
 	position: relative;
 	width: 450px;
@@ -426,7 +431,8 @@ input::-ms-clear {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	> div {
+
+	>div {
 		width: inherit;
 	}
 }
@@ -444,10 +450,84 @@ input::-ms-clear {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 40px;
-	}
 
-	.foo__logo {
-		@include sprite.retina-sprite(sprite.$foo-logo-group);
+		.foo__logo {
+			@include sprite.retina-sprite(sprite.$foo-logo-group);
+			margin-bottom: 20px;
+		}
+
+		.foo__info {
+			font-size: 13px;
+			letter-spacing: -0.02em;
+			color: #828282;
+
+			p {
+				margin-bottom: 4px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.bar {
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					background-color: #BDBDBD;
+					margin: 3px 8px 0;
+				}
+			}
+		}
+
+		.foo__customer {
+			p {
+				font-weight: 600;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+				color: #4F4F4F;
+				margin-bottom: 12px;
+			}
+
+			a {
+				display: block;
+				font-size: 13px;
+				letter-spacing: -0.02em;
+				color: #828282;
+				margin-bottom: 6px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.foo__language {
+			:hover {
+				cursor: pointer;
+			}
+
+			&__wrap {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 150px;
+				height: 48px;
+				padding: 8px 15px;
+				box-sizing: border-box;
+				border: 1px solid #DBDBDB;
+				border-radius: 5px;
+
+				p {
+					font-size: 16px;
+					letter-spacing: -0.02em;
+					color: #1B1B1B;
+				}
+
+				img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
 	}
 
 	.foo__util {
@@ -455,10 +535,20 @@ input::-ms-clear {
 		height: 62px;
 		border-top: 1px solid #E0E0E0;
 		align-items: center;
-	}
 
-	.foo__flex {
-		display: flex;
+		a {
+			font-size: 13px;
+			letter-spacing: -0.02em;
+			color: #828282;
+		}
+
+		.bar {
+			display: inline-block;
+			width: 1px;
+			height: 12px;
+			background-color: #E0E0E0;
+			margin: 0 12px 3px;
+		}
 	}
 
 	.add-button {

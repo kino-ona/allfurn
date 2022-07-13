@@ -2,40 +2,42 @@
   <div class="inner">
     <div class="foo__cont">
       <div class="foo__wrap">
-        <div class="foo__info">
+        <div>
           <p class="foo__logo"><span class="a11y">All FURN</span></p>
-          <dl class="foo__flex">
-            <dt>사업자등록번호 :&nbsp;</dt>
-            <dd>128-19-60759</dd>
-            <dt>대표 :&nbsp;</dt>
-            <dd>박복숙</dd>
-          </dl>
-          <dl class="foo__flex">
-            <dt>Tel :&nbsp;</dt>
-            <dd>031-925-2888</dd>
-            <dt>E-mail :&nbsp;</dt>
-            <dd>
+          <div class="foo__info">
+            <p>
+              사업자등록번호 : 128-19-60759<span class="bar"></span>대표 :
+              박복숙
+            </p>
+            <p>
+              Tel : 031-925-2888<span class="bar"></span>E-mail :
               <a href="mailto:gaguoutlet11@naver.com">gaguoutlet11@naver.com</a>
-            </dd>
-          </dl>
-          <dl class="foo__flex">
-            <dt>주소 :&nbsp;</dt>
-            <dd>경기도 고양시 일산서구 송산로 23 (구산동 1477-3)</dd>
-          </dl>
+            </p>
+            <p>주소 : 경기도 고양시 일산서구 송산로 23 (구산동 1477-3)</p>
+          </div>
         </div>
+
         <div class="foo__customer">
+          <p>고객센터</p>
           <a href="#">자주 묻는 질문</a>
           <a href="#">1:1 문의</a>
           <a href="#">이용 가이드</a>
         </div>
+
         <div class="foo__language">
-          <p>한국어</p>
+          <div class="foo__language__wrap">
+            <p>한국어</p>
+            <img
+              src="../assets/images/temp/ico_chevron_down20@2x.png"
+              alt="아래 화살표"
+            />
+          </div>
         </div>
       </div>
     </div>
     <div class="foo__util">
-      <a href="#">서비스 소개</a>
-      <a href="#">이용 약관</a>
+      <a href="#">서비스 소개</a><span class="bar"></span>
+      <a href="#">이용 약관</a><span class="bar"></span>
       <a href="#">개인정보 처리 방침</a>
     </div>
   </div>
