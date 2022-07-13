@@ -11,7 +11,7 @@
   </div>
 
   <a href="#" title="추가하기" class="add-button">
-    <img src="./assets/images/temp/ico_plus@2x.png" alt="추가">
+    <img src="@@webroot/assets/images/temp/ico_plus@2x.png" alt="추가">
   </a>
 </footer>
 
