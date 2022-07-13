@@ -30,78 +30,225 @@ http://scripts.sil.org/OFL
 
 
 /** RESET **/
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, 
-big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, 
-dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, 
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, 
-ruby, section, summary,time, mark, audio, video {
-	margin: 0;padding: 0; vertical-align: top; word-break:keep-all;
-	text-decoration:none; -webkit-tap-highlight-color:transparent;
-	color: inherit; font-weight: normal; line-height: 1.6;
-	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	word-break: keep-all;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+	font-weight: normal;
+	line-height: 1.6;
+	font-family: 'Pretendard Variable', 'Malgun Gothic', Dotum, '돋움', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', Roboto, 'Helvetica', arial, sans-serif;
 }
-fieldset, img, textarea {border: 0;outline: 0;} 
+
+fieldset,
+img,
+textarea {
+	border: 0;
+	outline: 0;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
-img {max-width:100%;}
-html, body {
-	-webkit-text-size-adjust:none;
-	-webkit-text-size-adjust: 100%;
-	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
-	-ms-word-wrap:break-word;word-wrap:break-word;
-	font-size:14px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+	display: block;
 }
-ol, ul {list-style: none;}
-address,em {font-style: normal}
+
+img {
+	max-width: 100%;
+}
+
+html,
+body {
+	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Pretendard Variable', 'Malgun Gothic', Dotum, '돋움', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', Roboto, 'Helvetica', arial, sans-serif;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 14px;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+address,
+em {
+	font-style: normal
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	width:100%;
+	width: 100%;
 }
-iframe {overflow: hidden; border: 0;}
-input:focus { outline: none; }
-input, button { background: none; border: none; cursor: pointer;}
-input:focus, input:active, button:focus, button:active { outline: none; box-shadow: none; }
-input[readonly] { cursor: default; }
-label {cursor: pointer;}
+
+iframe {
+	overflow: hidden;
+	border: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+input,
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+	outline: none;
+	box-shadow: none;
+}
+
+input[readonly] {
+	cursor: default;
+}
+
+label {
+	cursor: pointer;
+}
+
 textarea {
-	display:block;
-	width:100%;
-	padding:10px;
-	min-height:120px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	min-height: 120px;
 	-webkit-appearance: none;
-	font-size:16px;
+	font-size: 16px;
 	resize: none;
 	color: #000;
-	font-family: 'Pretendard Variable','Malgun Gothic',Dotum,'돋움',AppleGothicNeoSD,'Apple SD 산돌고딕 Neo',Roboto,'Helvetica',arial,sans-serif;
+	font-family: 'Pretendard Variable', 'Malgun Gothic', Dotum, '돋움', AppleGothicNeoSD, 'Apple SD 산돌고딕 Neo', Roboto, 'Helvetica', arial, sans-serif;
+
 	&:not([readonly]):not([disabled]):not([aria-invalid="true"]) {
-		&:focus {
-		}
+		&:focus {}
 	}
-	::-webkit-input-placeholder {
-	}
-	::-moz-placeholder {
-	}
-	::-moz-placeholder {
-	}
+
+	::-webkit-input-placeholder {}
+
+	::-moz-placeholder {}
+
+	::-moz-placeholder {}
 }
+
 input::-ms-clear {
 	display: none;
 }
-::-webkit-input-placeholder {
-}
-::-moz-placeholder {
-}
-::-moz-placeholder {
-}
+
+::-webkit-input-placeholder {}
+
+::-moz-placeholder {}
+
+::-moz-placeholder {}
+
 .noscroll {
-	overflow: hidden!important;
+	overflow: hidden !important;
 	height: 100%;
 
 	.wrap {
 		overflow: hidden;
 	}
 }
+
 .a11y {
 	position: absolute;
 	width: 1px;
@@ -112,8 +259,10 @@ input::-ms-clear {
 	clip: rect(0, 0, 0, 0);
 	border: 0;
 }
+
 .skipnavigation {
 	position: relative;
+
 	a {
 		position: absolute;
 		top: 0;
@@ -125,7 +274,8 @@ input::-ms-clear {
 		font-size: 0;
 		background-color: #FFF;
 		text-align: center;
-		&:focus {	
+
+		&:focus {
 			height: 30px;
 			padding: 4px 0;
 			visibility: visible;
@@ -138,12 +288,14 @@ input::-ms-clear {
 #wrap {
 	min-width: 1206px;
 }
+
 // layout - head
 .header {
 	position: relative;
 	width: 100%;
 	height: 122px;
 }
+
 .head__fixed {
 	position: fixed;
 	top: 0;
@@ -152,20 +304,25 @@ input::-ms-clear {
 	height: 79px;
 	background-color: #FFFFFF;
 	z-index: 9999;
+
 	.inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
+
 	.head__util {
 		align-items: flex-end;
 	}
+
 	.util__link {
 		display: flex;
 		align-items: center;
+
 		:nth-child(4) {
 			margin-left: 20px;
 		}
+
 		:nth-child(5) {
 			margin-left: 12px;
 		}
@@ -176,6 +333,7 @@ input::-ms-clear {
 			margin-left: 24px;
 			color: #1B1B1B;
 			letter-spacing: -0.02em;
+
 			img {
 				width: 24px;
 				height: 24px;
@@ -183,10 +341,12 @@ input::-ms-clear {
 		}
 	}
 }
+
 .head__flex {
 	display: flex;
 	align-items: center;
 }
+
 .head__logo {
 	display: inline-block;
 	@include sprite.retina-sprite(sprite.$head-logo-group);
@@ -199,6 +359,7 @@ input::-ms-clear {
 	border-top: 1px solid #F2F2F2;
 	border-bottom: 1px solid #F2F2F2;
 	background-color: #FFFFFF;
+
 	.gnb__menu {
 		display: flex;
 		height: 100%;
@@ -206,6 +367,7 @@ input::-ms-clear {
 
 		li {
 			margin-right: 54px;
+
 			a {
 				font-size: 16px;
 				letter-spacing: -0.02em;
@@ -220,6 +382,7 @@ input::-ms-clear {
 	width: 100%;
 	min-height: calc(100vh - 122px);
 }
+
 .inner {
 	position: relative;
 	width: 1176px;
@@ -228,6 +391,7 @@ input::-ms-clear {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 .inner__full {
 	position: relative;
 	width: 100%;
@@ -237,17 +401,30 @@ input::-ms-clear {
 .footer {
 	height: 247px;
 	background-color: #F7F7F7;
+
 	.foo__cont {
 		height: calc(100% - 62px);
 	}
+
+	.foo__wrap {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 40px;
+	}
+
 	.foo__logo {
 		@include sprite.retina-sprite(sprite.$foo-logo-group);
 	}
+
 	.foo__util {
 		display: flex;
 		height: 62px;
 		border-top: 1px solid #E0E0E0;
 		align-items: center;
+	}
+
+	.foo__flex {
+		display: flex;
 	}
 
 	.add-button {
@@ -263,7 +440,7 @@ input::-ms-clear {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	
+
 		img {
 			width: 26px;
 			height: 26px;
