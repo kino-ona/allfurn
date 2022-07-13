@@ -38,8 +38,19 @@ $(window).on('load', function () {
     $(this).removeClass('like--active');
     $(this).find("path").attr("fill", "#BDBDBD");
    }
-    
   })
+
+
+  $(".textfield__search").on("propertychange change keyup paste input", function() {
+    var currentVal = $(this).val();
+    console.log(currentVal);
+    
+    if(!(currentVal === '')) { 
+      $(".textfield").addClass('textfield--active');
+    }else {
+      $(".textfield").removeClass('textfield--active');
+    }
+});
 
 
 });

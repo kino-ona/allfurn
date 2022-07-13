@@ -1,4 +1,9 @@
 @use 'sass:math';
+input, 
+button  {
+  margin: 0;
+  padding: 0;
+}
 
 .text-hidden {
   position: absolute;
@@ -475,6 +480,7 @@
       display: inline-block;
       width: 15px;
       height: 15px;
+      margin-top: 2px;
       margin-left: 8px;
       background: url('../images/component/icon_new.png') right 0 no-repeat;
       background-size: 15px;
@@ -598,7 +604,7 @@
 
   &__check--right-box span::before {
     position: absolute;
-    top: 18px;
+    top: 15px;
     right: 0;
   }
 
@@ -606,30 +612,113 @@
     top: 18px;
     left: 90%;
   }
-
-
 }
 
 .textfield {
+  position: relative;
+
   &__search {
-    position: relative;
     height: 48px;
-    padding-left: 30px;
+    padding-left: 48px;
     background-color: #ffffff;
     color: #1B1B1B;
     line-height: 48px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
 
-  &__search::before {
+  &__icon {
     display: inline-block;
     position: absolute;
-    left: 0;
+    top: 12px;
+    left: 16px;
     width: 24px;
     height: 24px;
     background: url('../images/component/icon_search.png') 0 0 no-repeat;
     background-size: contain;
     content: '';
+  }
 
+  &__icon--delete {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/component/icon_delete.png') 0 0 no-repeat;
+    background-size: contain;
+    content: '';
+  }
+
+  &__input {
+    padding-left: 16px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #DBDBDB; 
+    box-sizing: border-box;
+  }
+
+  &__input::placeholder {
+    color: #1B1B1B; 
+  }
+
+  &__input--gray {
+    border: 1px solid #DBDBDB; 
+  }
+
+  &__input--gray::placeholder {
+    color: #DBDBDB; 
+  }
+
+  &__input--border-gray {
+    border: 1px solid #828282; 
+  }
+
+  &__input--border-gray::placeholder {
+    color: #828282; 
+  }
+
+  &__input--big-space {
+    padding: 16px 32px;
+    box-sizing: border-box;
+    border: 1px solid #F7F7F7;
+  }
+
+  &__input--big-space::placeholder {
+    color: #4F4F4F; 
+  }
+
+
+
+}
+
+.textfield.textfield--active {
+  .textfield__icon--delete {
+    display: inline-block
   }
 }
 
+.input-guid {
+  &__input {
+    height: 48px;
+    padding: 16px 11px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    color: #BDBDBD;
+    text-align: center;
+    height: 48px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+}

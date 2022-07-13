@@ -395,7 +395,7 @@
                   <p class="community-reply__inner-type--color">홍보</p>
                   <p class="community-reply__title">글 제목</p>
                 </div>
-                <div class="community-reply__more" style="background-image:url('./assets/images/component/icon_more.png')"></div>
+                <a href="/" class="community-reply__more" style="background-image:url('./assets/images/component/icon_more.png')"></a>
                 <div class="community-reply__text">
                   <p class="community-reply__description">댓글 내용</p>
                   <p class="community-reply__time">5시간 전</p>
@@ -547,10 +547,24 @@
 
       <div class="inner" style="background-color: #e5e5e5;  padding-bottom: 20px;">
         <p class="inner__title">Textfield</p>
-        <div class="textfield" style="width: 858px;">
+        <div class="textfield">
+          <span class="textfield__icon"></span>
           <input type="text" class="textfield__search" placeholder="Placeholder" style="width: 858px;">
+          <button type="button" class="textfield__icon--delete"><span class="text-hidden">삭제하기</span></button>
+       
+          <input type="text" class="textfield__input textfield__input--gray" placeholder="Placeholder" style="width: 858px; height: 48px; margin-top: 25px;">
+          <input type="text" class="textfield__input" placeholder="Placeholder" style="width: 858px; height: 48px; margin-top: 25px;">
+          <input type="text" class="textfield__input textfield__input--border-gray" placeholder="Placeholder" style="width: 858px; height: 48px; margin-top: 25px;">
+          <input type="text" class="textfield__input textfield__input--big-space" placeholder="Placeholder" style="width: 858px; height: 48px; margin-top: 25px;">
         </div>
-      
+      </div>
+
+      <div class="inner" style="background-color: #e5e5e5;  padding-bottom: 20px;">
+        <p class="inner__title">input-guid</p>
+        <div class="input-guid">
+          <input type="text" placeholder="이메일을 입력해주세요." class="input-guid__input" style="width: 370px; margin-top: 25px;">
+          <button type="button" class="input-guid__button" style="width: 120px">인증번호 전송</button>
+        </div>
       </div>
     </div>
 
