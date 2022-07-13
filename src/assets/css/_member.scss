@@ -1,0 +1,181 @@
+@use 'sass:math';
+
+.sub-member {
+  
+  .inner__large, .inner__center {
+    // background-color: #FF8798;
+  }
+
+  .button__wrap {
+    margin-bottom: 20px;
+  
+    .button {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+  
+      + .button {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.login {
+
+  .inner__center {
+    height: 100vh;
+  }
+
+  .head__logo {
+    width: 146px;
+    height: 29.95px;
+    margin: 0 auto 40px;
+    display: block;
+    background-size: 159%;
+    background-position-x: -90px;
+  }
+
+  .textfield__input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1B1B1B;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .textfield__inputlabel {
+    display: block;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .textfield__inputlabel + .textfield__input {
+    margin-top: 6px;
+  }
+
+  .login__notice {
+    max-width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+
+    ul li {
+      position: relative;
+      padding-left: 8px;
+      color: #828282;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.register {
+  padding-top: 40px;
+
+  .register__heading {
+    display: block;
+    margin-bottom: 10px;
+    color: #1B1B1B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+  
+  .contents {
+    padding-top: 32px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border-top: 2px solid #4F4F4F;
+  }
+
+  .contents__item {
+    margin-bottom: 72px;
+  }
+
+  .contents__title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .tab {
+    color: #1B1B1B;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.register-complete {
+
+  .register-complete__heading {
+    display: block;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #1B1B1B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+
+  .register-complete__notice {
+    max-width: 100%;
+    padding: 24px 16px;
+    margin-bottom: 26px;
+    text-align: center;
+    color: #1B1B1B;
+    strong {
+      color: #FB4760;
+    }
+    font-size: 18px;
+    font-weight: 500;
+    background: #F7F7F7;
+    border-radius: 12px;
+  }
+
+  .ico__email {
+    margin: 0 auto 6px;
+  }
+
+  .register-info {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .register-info__title {
+    margin-bottom: 4px;
+    color: #1B1B1B;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .register-info__desc {
+    color: #4F4F4F;
+    font-size: 15px;
+    font-weight: 500;
+    span {
+      color: #BDBDBD;
+    }
+  }
+}
