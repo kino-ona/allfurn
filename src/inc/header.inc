@@ -24,18 +24,10 @@
           <a href="#">마이올펀</a>
           <a href="#">고객센터</a>
           <a href="#">
-            <img
-              class="category-btn__img"
-              src="/assets/images/temp/ico_alarm@2x.png"
-              alt="알람"
-            />
+            <i class="ico__alram"><span class="a11y">알람</span></i>
           </a>
           <a href="#">
-            <img
-              class="category-btn__img"
-              src="/assets/images/temp/ico_cart@2x.png"
-              alt="장바구니"
-            />
+            <i class="ico__basket"><span class="a11y">장바구니</span></i>
           </a>
         </div>
       </div>

@@ -337,9 +337,11 @@
   }
 
   &__refresh {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
+    a {
+      display: flex;
+      align-items: center;
+    }
 
     &__text {
       font-weight: 400;

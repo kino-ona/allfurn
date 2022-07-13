@@ -44,6 +44,9 @@ i {
 .ico__reply {
   @include sprite.retina-sprite(sprite.$ico-reply-group);
 }
+.ico__refresh {
+  @include sprite.retina-sprite(sprite.$ico-refresh-group);
+}
 
 .btn__floating {
   @include sprite.retina-sprite(sprite.$btn-floating-group);
