@@ -1,0 +1,36 @@
+@use "mixins";
+@use 'sprite/sprite';
+
+
+.head__logo {
+	display: inline-block;
+	@include sprite.retina-sprite(sprite.$head-logo-group);
+}
+.foo__logo {
+  @include sprite.retina-sprite(sprite.$foo-logo-group);
+}
+
+.ico__alram {
+  @include sprite.retina-sprite(sprite.$ico-alram-group);
+}
+.ico__basket {
+  @include sprite.retina-sprite(sprite.$ico-basket-group);
+}
+.ico__close28 {
+  @include sprite.retina-sprite(sprite.$ico-close28-group);
+}
+.ico__search {
+  @include sprite.retina-sprite(sprite.$ico-search-group);
+}
+.ico__info {
+  @include sprite.retina-sprite(sprite.$ico-info-group);
+}
+.ico__email {
+  @include sprite.retina-sprite(sprite.$ico-email-group);
+}
+.ico__delete16 {
+  @include sprite.retina-sprite(sprite.$ico-delete16-group);
+}
+.btn__floating {
+  @include sprite.retina-sprite(sprite.$btn-floating-group);
+}

@@ -2,17 +2,64 @@
 "pagetitle":" | Guide",
 "webroot":"."
 })
+<link rel="stylesheet" href="../assets/css/icons.css">
+<style>
+  h2 {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 2px solid #000;
+  }
+  .sample {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .icons > * {margin-right: 20px;}
+</style>
 </head>
   
 <body>
   <div class="skipnavigation"><a href="#container">skip to container</a></div>
   <div id="wrap">
     @@include('./inc/header.inc',{
-      "webroot":"."
+      "webroot":".",
+      "headertype":""
     })
 
-    <div id="container">
+    <div id="container" class="container">
+      <div class="inner__full">
+        <div style="height: 384px;background-color: #FD4962"></div>
+      </div>
+      <div class="inner">
+        <h2>Icons</h2>
+        <div class="sample icons">
+          <p class="head__logo"></p>
+          <p class="foo__logo"></p>
+          <span class="ico__alram"></span>
+          <span class="ico__basket"></span>
+          <span class="ico__close28"></span>
+          <span class="ico__search"></span>
+          <span class="ico__info"></span>
+          <span class="ico__email"></span>
+          <span class="ico__delete16"></span>
+          <a class="btn__floating"></a>
+        </div>
 
+        <h2>Default layout</h2>
+        <div class="sample">
+          <p>width 100% : class inner__full</p>
+          <p>width 1176px : class inner</p>
+        </div>
+
+
+        <h2><a href="component.html" target="_blank">Component link</a></h2>
+
+        <h2>Swiper Js</h2>
+      </div>
     </div>
 
     @@include('./inc/footer.inc',{
