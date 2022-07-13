@@ -2,8 +2,7 @@
 "pagetitle":" | New Product",
 "webroot":".."
 })
-<link rel="stylesheet" href="@@webroot/assets/css/icons.scss">
-<!-- <link rel="stylesheet" href="../assets/css/icons.scss"> -->
+<link rel="stylesheet" href="/assets/css/icons.css">
 </head>
 
 <body>
@@ -25,20 +24,28 @@
         </div>
 
         <div class="contents">
-          <div class="category">
-            <p class="category__text">카테고리</p>
-            <img class="category__img" src="/assets/images/temp/ico_chevron_down@2x.png" alt="아래 화살표">
+          <div class="category-btn category-btn--active">
+            <p class="category-btn__text">카테고리</p>
+            <!-- <img class="category-btn__img" src="/assets/images/temp/ico_chevron_down@2x.png" alt="아래 화살표"> -->
+            <img class="category-btn__img" src="/assets/images/temp/ico_chevron_down_red@2x.png" alt="아래 화살표">
           </div>
           <div class="category-list">
-            <ul class="category-list__selected">
+            <ul class="category-list__wrap">
               <li class="category-list__item">
                 <p class="category-list__name">소파/거실</p>
-                <span class="ico__delete16"></span>
-                <div class="ico__delete16"></div>
+                <div class="ico__delete16">&nbsp;</div>
+              </li>
+              <li class="category-list__item">
+                <p class="category-list__name">핑크안락의자/기능성의자</p>
+                <div class="ico__delete16">&nbsp;</div>
+              </li>
+              <li class="category-list__item">
+                <p class="category-list__name">테이블/의자</p>
+                <div class="ico__delete16">&nbsp;</div>
               </li>
             </ul>
-            <div>
-              <p>초기화</p>
+            <div class="category-list__refresh">
+              <p class="category-list__refresh__text">초기화</p>
               <img src="/assets/images/temp/refresh@2x.png" alt="초기화">
             </div>
           </div>
