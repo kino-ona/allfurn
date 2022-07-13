@@ -1,5 +1,6 @@
 @use 'sass:math';
 
+// 홈
 .event {
   width: 100%;
   height: 384px;
@@ -23,12 +24,12 @@
       line-height: 28px;
       font-weight: 600;
       font-size: 14px;
-      letter-spacing: -2%;
+      letter-spacing: -0.02em;
       color: rgba(255, 255, 255, 1);
 
       &:nth-child(2) {
         font-size: 12px;
-        letter-spacing: -3%;
+        letter-spacing: -0.03em;
         color: rgba(224, 224, 224, 1);
       }
 
@@ -45,7 +46,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -3%;
+    letter-spacing: -0.03em;
     padding: 0;
     margin-top: 40px;
     margin-bottom: 32px;
@@ -86,7 +87,7 @@
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: -2%;
+          letter-spacing: -0.02em;
           color: #FFFFFF;
         }
       }
@@ -95,7 +96,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 27.9px;
-        letter-spacing: -3%;
+        letter-spacing: -0.03em;
         margin-top: 21px;
         margin-bottom: 40px;
         padding: 0 16px;
@@ -123,7 +124,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
-        letter-spacing: -2%;
+        letter-spacing: -0.02em;
         color: #828282;
       }
 
@@ -149,7 +150,7 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 27.9px;
-        letter-spacing: -3%;
+        letter-spacing: -0.03em;
         color: #333333;
         padding-bottom: 16px;
         border-bottom: 2px solid #4F4F4F;
@@ -169,7 +170,7 @@
           font-weight: 600;
           font-size: 13px;
           line-height: 22px;
-          letter-spacing: -2%;
+          letter-spacing: -0.02em;
           color: #FB4760;
         }
 
@@ -177,7 +178,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 25.6px;
-          letter-spacing: -2%;
+          letter-spacing: -0.02em;
           margin: 0 6px;
           max-height: 26px;
           overflow: hidden;
@@ -191,7 +192,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 25.6px;
-          letter-spacing: -2%;
+          letter-spacing: -0.02em;
           color: #FF8798;
         }
       }
@@ -216,7 +217,7 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 26.82px;
-        letter-spacing: -3%;
+        letter-spacing: -0.03em;
         color: #FFFFFF;
         margin-left: 42.9px;
       }
@@ -239,5 +240,195 @@
         height: 100%;
       }
     }
+  }
+}
+
+
+// 신상품
+.banner {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  position: relative;
+
+  .swiper {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+
+    img {
+      width: 63px;
+      height: 9px;
+    }
+  }
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91px;
+  height: 32px;
+  border: 1px solid rgba(244, 244, 244, 1);
+  border-radius: 34px;
+  margin-bottom: 24px;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #4F4F4F;
+    margin-right: 4px;
+  }
+
+  &__img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.category-list {}
+
+// test
+.ico__delete16 {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.product__text--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  .product__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27.9px;
+    letter-spacing: -0.03em;
+    color: #1B1B1B;
+
+    .text__color--red {
+      color: rgba(251, 71, 96, 1);
+    }
+  }
+
+  .product__count {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: -0.02em;
+    color: #4F4F4F;
+  }
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  :nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__card {
+    width: 276px;
+    margin-right: 24px;
+    margin-bottom: 40px;
+
+    .card__img--wrap {
+      width: 100%;
+      height: 276px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+
+      .card__img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .card__badge {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        padding: 0 5px;
+        height: 18px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.35));
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+      }
+
+      .card__bookmark {
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+        width: 24px;
+        height: 24px;
+
+        :hover {
+          cursor: pointer;
+        }
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .card__text--wrap {
+      .card__brand {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        color: #828282;
+        margin-top: 10px;
+      }
+
+      .card__name {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #1B1B1B;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+      }
+
+      .card__price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25.6px;
+        letter-spacing: -0.02em;
+        color: #1B1B1B;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  img {
+    width: 207px;
+    height: 26px;
   }
 }
