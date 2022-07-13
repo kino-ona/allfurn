@@ -2,6 +2,10 @@
 @use 'sprite/sprite';
 
 
+i {
+	display: inline-block;
+  vertical-align: middle;
+}
 .head__logo {
 	display: inline-block;
 	@include sprite.retina-sprite(sprite.$head-logo-group);
@@ -31,6 +35,26 @@
 .ico__delete16 {
   @include sprite.retina-sprite(sprite.$ico-delete16-group);
 }
+.ico__viewcnt {
+  @include sprite.retina-sprite(sprite.$ico-viewcnt-group);
+}
+.ico__like {
+  @include sprite.retina-sprite(sprite.$ico-like-group);
+}
+.ico__reply {
+  @include sprite.retina-sprite(sprite.$ico-reply-group);
+}
+
 .btn__floating {
   @include sprite.retina-sprite(sprite.$btn-floating-group);
+}
+
+
+.badge__new {
+  @include sprite.retina-sprite(sprite.$badge-new-group);
+}
+
+// category icons
+.ico_furniture {
+  @include sprite.retina-sprite(sprite.$ico-furniture-group);
 }

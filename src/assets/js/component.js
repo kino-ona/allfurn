@@ -50,6 +50,11 @@ $(window).on('load', function () {
     }else {
       $(".textfield").removeClass('textfield--active');
     }
+
+    $(".textfield__icon--delete").on('click' , function() {
+      $(this).prev().val('');
+      $(".textfield").removeClass('textfield--active');
+    })
 });
 
 
