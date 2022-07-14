@@ -50,7 +50,7 @@
 
 // mobile 2x design
 @mixin sprite($sprite) {
-	@include mo_icons.sprite($sprite);
+	@include sprite.sprite($sprite);
 	$sprite-offset-x: nth($sprite, 3);
 	$sprite-offset-y: nth($sprite, 4);
 	$sprite-width: nth($sprite, 5);
@@ -58,7 +58,7 @@
 	width: calc($sprite-width / 2);
 	height: calc($sprite-height / 2);
 	background-position: calc($sprite-offset-x / 2) calc($sprite-offset-y / 2);
-	background-size: calc(mo_icons.$mo-icons-width / 2) calc(mo_icons.$mo-icons-height / 2);
+	background-size: calc(sprite.$sprite-width / 2) calc(sprite.$sprite-height / 2);
 }
 
 // icons

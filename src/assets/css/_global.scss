@@ -257,7 +257,7 @@ input::-ms-clear {
 
 .head__logo {
 	display: inline-block;
-	@include sprite.retina-sprite(sprite.$head-logo-group);
+	@include mixins.sprite(sprite.$head-logo);
 
 	margin-right: 60px;
 }
@@ -359,7 +359,7 @@ input::-ms-clear {
 		padding-top: 40px;
 
 		.foo__logo {
-			@include sprite.retina-sprite(sprite.$foo-logo-group);
+			@include mixins.sprite(sprite.$foo-logo);
 			margin-bottom: 20px;
 		}
 

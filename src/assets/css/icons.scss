@@ -8,56 +8,64 @@ i {
 }
 .head__logo {
 	display: inline-block;
-	@include sprite.retina-sprite(sprite.$head-logo-group);
+	@include mixins.sprite(sprite.$head-logo);
 }
 .foo__logo {
-  @include sprite.retina-sprite(sprite.$foo-logo-group);
+  @include mixins.sprite(sprite.$foo-logo);
 }
 
 .ico__alram {
-  @include sprite.retina-sprite(sprite.$ico-alram-group);
+  @include mixins.sprite(sprite.$ico-alram);
 }
 .ico__basket {
-  @include sprite.retina-sprite(sprite.$ico-basket-group);
+  @include mixins.sprite(sprite.$ico-basket);
 }
 .ico__close28 {
-  @include sprite.retina-sprite(sprite.$ico-close28-group);
+  @include mixins.sprite(sprite.$ico-close28);
 }
 .ico__search {
-  @include sprite.retina-sprite(sprite.$ico-search-group);
+  @include mixins.sprite(sprite.$ico-search);
 }
 .ico__info {
-  @include sprite.retina-sprite(sprite.$ico-info-group);
+  @include mixins.sprite(sprite.$ico-info);
 }
 .ico__email {
-  @include sprite.retina-sprite(sprite.$ico-email-group);
+  @include mixins.sprite(sprite.$ico-email);
 }
 .ico__delete16 {
-  @include sprite.retina-sprite(sprite.$ico-delete16-group);
+  @include mixins.sprite(sprite.$ico-delete16);
 }
 .ico__viewcnt {
-  @include sprite.retina-sprite(sprite.$ico-viewcnt-group);
+  @include mixins.sprite(sprite.$ico-viewcnt);
 }
 .ico__like {
-  @include sprite.retina-sprite(sprite.$ico-like-group);
+  @include mixins.sprite(sprite.$ico-like);
 }
 .ico__reply {
-  @include sprite.retina-sprite(sprite.$ico-reply-group);
+  @include mixins.sprite(sprite.$ico-reply);
 }
 .ico__refresh {
-  @include sprite.retina-sprite(sprite.$ico-refresh-group);
+  @include mixins.sprite(sprite.$ico-refresh);
 }
 
 .btn__floating {
-  @include sprite.retina-sprite(sprite.$btn-floating-group);
+  @include mixins.sprite(sprite.$btn-floating);
 }
 
-
 .badge__new {
-  @include sprite.retina-sprite(sprite.$badge-new-group);
+  @include mixins.sprite(sprite.$badge-new);
 }
 
 // category icons
-.ico_furniture {
-  @include sprite.retina-sprite(sprite.$ico-furniture-group);
+.ico__furniture {
+  @include mixins.sprite(sprite.$ico-furniture);
+}
+
+//component
+.ico__sdelete {
+  @include mixins.sprite(sprite.$ico-sdelete);
+}
+
+.ico__check-gray {
+  @include mixins.sprite(sprite.$ico-check-gray);
 }

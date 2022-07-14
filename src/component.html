@@ -30,7 +30,7 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons">
-                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--single')" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -47,8 +47,8 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons modal__buttons--half">
-                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
-                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--pair')" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--pair')" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -263,26 +263,6 @@
               </svg>
           </button>
         </div>
-
-        <div class="pagenation" style="margin-top: 50px; background-color: #666666">
-          <button type="button" class="prev">
-            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </button>
-          <div class="numbering">
-            <a href="#" class="numbering--active-black">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-          </div>
-          <button type="button" class="next">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12L10 7L5 2" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </button>
-        </div>
       </div>
 
       <div class="inner" style="background-color: #e5e5e5;  padding-bottom: 20px;">
@@ -291,7 +271,7 @@
           <i class="textfield__icon ico__search"><span class="a11y">검색</span></i>
 
           <input type="text" class="textfield__search" placeholder="Placeholder" style="width: 858px;">
-          <button type="button" class="textfield__icon--delete"><span class="a11y">삭제하기</span></button>
+          <button type="button" class="textfield__icon--delete ico__sdelete"><span class="a11y">삭제하기</span></button>
        </div>
        <div class="textfield">
           <input type="text" class="textfield__input textfield__input--gray" placeholder="Placeholder" style="width: 858px; height: 48px; margin-top: 25px;">
@@ -318,10 +298,10 @@
         <button type="button" class="button button--blank-gray" style="width: 72px; height: 48px;">Button</button>
 
         <p class="inner__title">input-guid disabled 추가시</p>
-        <button type="button" class="button button--solid" style="width: 72px; height: 48px;" disabled>Button</button>
-        <button type="button" class="button button--blank" style="width: 72px; height: 48px;" disabled>Button</button>
-        <button type="button" class="button button--solid-gray" style="width: 72px; height: 48px;" disabled>Button</button>
-        <button type="button" class="button button--blank-gray" style="width: 72px; height: 48px;" disabled>Button</button>
+        <button type="button" class="button button--solid" style="width: 72px; height: 48px;"  disabled='disabled' >Button</button>
+        <button type="button" class="button button--blank" style="width: 72px; height: 48px;"  disabled='disabled' >Button</button>
+        <button type="button" class="button button--solid-gray" style="width: 72px; height: 48px;"  disabled='disabled' >Button</button>
+        <button type="button" class="button button--blank-gray" style="width: 72px; height: 48px;"  disabled='disabled' >Button</button>
         
         <p class="inner__title">input-guid-round</p>
         <button type="button" class="button button--round button--solid" style="width: 72px; height: 34px;">Button</button>
@@ -329,9 +309,9 @@
         <button type="button" class="button button--round button--blank-gray" style="width: 72px; height: 34px;">Button</button>
         <p class="inner__title">input-guid-round disabled 추가시</p>
 
-        <button type="button" class="button button--round button--solid" style="width: 72px; height: 34px;" disabled>Button</button>
-        <button type="button" class="button button--round button--blank" style="width: 72px; height: 34px;" disabled>Button</button>
-        <button type="button" class="button button--round button--blank-gray" style="width: 72px; height: 34px;" disabled>Button</button>
+        <button type="button" class="button button--round button--solid" style="width: 72px; height: 34px;"  disabled='disabled' >Button</button>
+        <button type="button" class="button button--round button--blank" style="width: 72px; height: 34px;"  disabled='disabled' >Button</button>
+        <button type="button" class="button button--round button--blank-gray" style="width: 72px; height: 34px;"  disabled='disabled' >Button</button>
 
         <p class="inner__title">etc</p>
         <button type="button" class="button button--etc" style="width: 71px; height: 44px;">Button</button>
@@ -355,7 +335,7 @@
                   <p>가구톡세상</p>
                 </div>
               </div>
-              <div class="community-content__image" style="background-image:url('./assets/images/component/@community.png')"></div>
+              <div class="community-content__image" style="background-image:url('./assets/images/temp/@community.png')"></div>
             </div> 
             <div class="community-content__info">
               <div class="community-content__utils">
@@ -496,7 +476,7 @@
             <a href="#" class="category__item category__item--bold" style="margin-top:20px;">
               <div class="category__wrap">
                 <span>
-                  <i class="ico_furniture"><span class="a11y">furniture</span></i>
+                  <i class="ico__furniture"><span class="a11y">furniture</span></i>
                 </span>
                 <span class="category__title">category</span>
               </div>
@@ -504,7 +484,7 @@
             <a href="#" class="category__item category__item--color" style="margin-top:20px;">
               <div class="category__wrap">
                 <span>
-                  <i class="ico_furniture"><span class="a11y">furniture</span></i>
+                  <i class="ico__furniture"><span class="a11y">furniture</span></i>
                 </span>
                 <span class="category__title">category</span>
               </div>
@@ -530,6 +510,11 @@
               <span>Category3</span>
             </label>
         </div>
+      </div>
+
+      <div class="inner" style="background-color: #e5e5e5;padding-bottom: 20px;">
+        <p class="inner__title">Dropdown</p>
+        
       </div>
 
       

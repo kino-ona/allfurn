@@ -1,13 +1,12 @@
 
-$(window).on('load', function () {
-
-  function openModal(name) {
+ function openModal(name) {
     $(`${name}`).css('display', 'block');
-    $('body').css('overflow','hidden')
+    $('body').css('overflow','hidden');
   };
   
   function closeModal (name) {
     $(`${name}`).css('display', 'none');
+    $('body').css('overflow','');
   }
 
   $('.modal-type--single').on('click', function() {
@@ -43,19 +42,15 @@ $(window).on('load', function () {
 
   $(".textfield__search").on("propertychange change keyup paste input", function() {
     var currentVal = $(this).val();
-    console.log(currentVal);
-    
-    if(!(currentVal === '')) { 
-      $(".textfield").addClass('textfield--active');
-    }else {
-      $(".textfield").removeClass('textfield--active');
-    }
 
+    if(!(currentVal === '')) { 
+      $(this).parent().addClass('textfield--active');
+    }else {
+      $(this).parent().removeClass('textfield--active');
+    }
+    
     $(".textfield__icon--delete").on('click' , function() {
       $(this).prev().val('');
       $(".textfield").removeClass('textfield--active');
     })
   });
-
-
-});

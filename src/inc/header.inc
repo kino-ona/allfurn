@@ -12,8 +12,8 @@
             placeholder="상품 및 도매 업체를 검색해주세요"
             style="width: 400px"
           />
-          <button type="button" class="textfield__icon--delete">
-            <span class="text-hidden">삭제하기</span>
+          <button type="button" class="textfield__icon--delete ico__sdelete">
+            <span class="a11y">삭제하기</span>
           </button>
         </div>
       </div>
