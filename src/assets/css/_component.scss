@@ -1,18 +1,8 @@
 @use 'sass:math';
-input, 
-button  {
+
+input, button  {
   margin: 0;
   padding: 0;
-}
-
-.text-hidden {
-  position: absolute;
-  top: -100%;
-  right: -100%;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  z-index: -1;
 }
 
 .inner {
@@ -69,7 +59,7 @@ button  {
   }
 
 
-  &__description {
+  &__desc {
     padding: 37px 20px;
     background: #ffffff;
     border-top-left-radius: 10px;
@@ -207,14 +197,22 @@ button  {
 
 }
 
+[class^=community-] {
+  .tag__color {
+    background-color: #FFF5F6 !important;
+    color: #FB4760 !important;
+  }
+}
+
 .community-content {
+
   &__item {
     background-color: #ffffff;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
   }
 
-  &__contentainer {
+  &__container {
     position: relative;
     padding-bottom: 30px;
   }
@@ -225,7 +223,7 @@ button  {
     box-sizing: border-box;
   }
 
-  &__infomation {
+  &__info {
     position: relative;
     height: 50px;
     padding: 12px 24px 0;
@@ -247,11 +245,6 @@ button  {
     margin-left: 4px;
   }
 
-  &__inner-type--color {
-    background-color: #FFF5F6 !important;
-    color: #FB4760 !important;
-  }
-
   &__image {
     position: absolute;
     top: 52px;
@@ -264,7 +257,7 @@ button  {
     border-radius: 5px;
   }
 
-  &__description p {
+  &__desc p {
     margin-top: 14px;
     color: #1B1B1B;
     font-size: 16px;
@@ -329,23 +322,23 @@ button  {
 .community-reply {
   position: relative;
 
+  .tag__color {
+    padding: 1px 6px 1px 6px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__head {
+    display: flex;
+  }
+
   &__item {
     padding: 16px 24px 20px;
     background-color: #ffffff;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
     box-sizing: border-box;
-  }
-
-  &__inner-type--color {
-    display: inline-block;
-    position: absolute;
-    left: 24px;
-    padding: 1px 6px 1px 6px;
-    background-color: #FFF5F6;
-    color: #FB4760;
-    font-size: 13px;
-    font-weight: 600;
   }
 
   &__more {
@@ -361,7 +354,6 @@ button  {
   }
 
   &__title {
-    padding-left: 40px;
     padding-right: 40px;
     color: #4F4F4F;
     font-size: 15px;
@@ -371,7 +363,7 @@ button  {
     margin-top: 7px;
   }
 
-  &__description {
+  &__desc {
     display: inline-block;
     width: 90%;
     color: #1B1B1B;
@@ -427,7 +419,7 @@ button  {
     line-height: 22px;
   }
 
-  &__description {
+  &__desc {
     margin-top: 4px;
     margin-bottom: 8px;
     color: #333333;
@@ -536,11 +528,11 @@ button  {
     font-weight: 600;
   }
 
-  &__item--color-bg {
+  &__item--solid {
     background-color: #FFF5F6;
   }
 
-  &__item--color-bg span {
+  &__item--solid span {
     color: #FB4760;
     font-weight: 600;
   }
@@ -610,14 +602,14 @@ button  {
     content:'';
   }
 
-  &__check--right-box span::before {
+  &__check--right span::before {
     position: absolute;
     top: 16px;
     right: 0;
   }
 
-  &__check--right-box input + span::after,
-  &__check--right-box input:checked + span::after {
+  &__check--right input + span::after,
+  &__check--right input:checked + span::after {
     top: 18px;
     left: 90%;
   }
@@ -745,31 +737,31 @@ button  {
     text-align: center;
   }
 
-  &--solid-color {
+  &--solid {
     background-color: #FB4760;
     color: #ffffff;
     font-size: 16px;
   }
 
-  &--solid-color:hover:not([disabled]) {
+  &--solid:hover:not([disabled]) {
     background-color: #d04d5a;
     color: #ffffff;
   }
 
-  &--solid-color:disabled {
+  &--solid:disabled {
     background-color: #FDA3B0;
   }
 
-  &--solid-border-color {
+  &--blank {
     border: 1px solid #FB4760;
     color: #FB4760;
   }
 
-  &--solid-border-color:hover:not([disabled]) {
+  &--blank:hover:not([disabled]) {
     background-color: #f9e4e7;
   }
 
-  &--solid-border-color:disabled {
+  &--blank:disabled {
     border: 1px solid #FDA3B0;
     color: #FDA3B0;
   }
@@ -787,16 +779,16 @@ button  {
     background-color: #BDBDBD;
   }
 
-  &--solid-border-gray {
+  &--blank-gray {
     border: 1px solid #4F4F4F;
     color: #4F4F4F;
   }
 
-  &--solid-border-gray:hover:not([disabled]) {
+  &--blank-gray:hover:not([disabled]) {
     background-color: #d9d9d9;
   }
 
-  &--solid-border-gray:disabled {
+  &--blank-gray:disabled {
     border: 1px solid #BDBDBD;
     color: #BDBDBD;
   }
