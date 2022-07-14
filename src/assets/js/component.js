@@ -11,33 +11,33 @@ $(window).on('load', function () {
   }
 
   $('.modal-type--single').on('click', function() {
-    openModal('#modal-type--single');
-   });
+   openModal('#modal-type--single');
+  });
 
-   $('.modal-type--pair').on('click', function() {
+  $('.modal-type--pair').on('click', function() {
     openModal('#modal-type--pair');
-   });
+  });
 
-   $('.modal-type--basic').on('click', function() {
+  $('.modal-type--basic').on('click', function() {
     openModal('#modal-type--basic');
-   });
+  });
 
-   $('.modal-close').on('click', function (event) {
+  $('.modal-close').on('click', function (event) {
     event.preventDefault();
     closeModal('#modal-type--basic');
-   })
+  })
 
   $('.comment__like').on('click', function (event) {
     event.preventDefault();
     console.log();
 
-   if(!$(this)[0].classList.contains('like--active')) {
-    $(this).addClass('like--active');
-    $(this).find("path").attr("fill", "#FB4760");
-   }else {
-    $(this).removeClass('like--active');
-    $(this).find("path").attr("fill", "#BDBDBD");
-   }
+    if(!$(this)[0].classList.contains('like--active')) {
+      $(this).addClass('like--active');
+      $(this).find("path").attr("fill", "#FB4760");
+    }else {
+      $(this).removeClass('like--active');
+      $(this).find("path").attr("fill", "#BDBDBD");
+    }
   })
 
 
@@ -55,7 +55,7 @@ $(window).on('load', function () {
       $(this).prev().val('');
       $(".textfield").removeClass('textfield--active');
     })
-});
+  });
 
 
 });

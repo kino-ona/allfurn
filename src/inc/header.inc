@@ -8,7 +8,7 @@
           <i class="textfield__icon ico__search"><span class="a11y">검색</span></i>
           <input
             type="text"
-            class="textfield__search search--delete"
+            class="textfield__search"
             placeholder="상품 및 도매 업체를 검색해주세요"
             style="width: 400px"
           />

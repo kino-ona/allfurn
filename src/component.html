@@ -30,7 +30,7 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons">
-                    <a href="/" class="modal__button"><span>Button</span></a>
+                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -47,8 +47,8 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons modal__buttons--half">
-                    <a href="/" class="modal__button"><span>Button</span></a>
-                    <a href="/" class="modal__button"><span>Button</span></a>
+                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
+                    <a onclick="closeModal()" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -532,11 +532,10 @@
       </div>  
     </div>
 
-    @@include('./inc/footer.inc',{
+    <!-- @@include('./inc/footer.inc',{
       "webroot":"."
-    })
+    }) -->
   </div>
-  <script>
-  </script>
+  <script src="@@webroot/assets/js/component.js" type="text/javascript"></script>
 </body>
 </html>
