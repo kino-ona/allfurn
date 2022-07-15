@@ -1,14 +1,13 @@
-$(document).ready(function () {
 
-  function openModal(name) {
-    $(`${name}`).css('display', 'block');
-    $('body').css('overflow','hidden')
-  };
-  
-  function closeModal (name) {
-    $(`${name}`).css('display', 'none');
-  }
-})
+function openModal(name) {
+	$(`${name}`).css('display', 'block');
+	$('body').css('overflow','hidden')
+};
+
+function closeModal (name) {
+	$(`${name}`).css('display', 'none');
+}
+
 
 // $('.comment__like').on('click', function (event) {
 // 	event.preventDefault();
@@ -22,6 +21,7 @@ $(document).ready(function () {
 // 	}
 // })
 
+//검색창
 $(".textfield__search").on("propertychange change keyup paste input", function() {
 	var currentVal = $(this).val();
 
@@ -36,3 +36,19 @@ $(".textfield__search").on("propertychange change keyup paste input", function()
 		$(".textfield").removeClass('textfield--active');
 	})
 });
+
+//bookmark
+$('.card__bookmark').on('click', function () {
+	let bookMarkImg = $(this).children('img');
+	
+	$(this).toggleClass('card__bookmark--active');
+
+	if($(this).hasClass('card__bookmark--active')) {
+		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_on@2x.png");
+		bookMarkImg.attr("alt", "스크랩 on");
+	}else {
+		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_off@2x.png");
+		bookMarkImg.attr("alt", "스크랩 off");
+	}	
+})
+

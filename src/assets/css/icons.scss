@@ -60,6 +60,10 @@ i {
   @include mixins.sprite(sprite.$badge-new);
 }
 
+.ico__filter {
+  @include mixins.sprite(sprite.$ico-filter);
+}
+
 // category icons
 .ico__furniture {
   @include mixins.sprite(sprite.$ico-furniture);
@@ -85,4 +89,3 @@ i {
 .ico__recomment {
   @include mixins.sprite(sprite.$ico-recomment);
 }
-
