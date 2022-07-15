@@ -337,10 +337,13 @@
   }
 
   &__refresh {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
     a {
       display: flex;
       align-items: center;
+      margin-bottom: 10px;
     }
 
     &__text {
@@ -480,13 +483,8 @@
   }
 }
 
-.pagination {
+.pagenation.pagination--center {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-
-  img {
-    width: 207px;
-    height: 26px;
-  }
 }
