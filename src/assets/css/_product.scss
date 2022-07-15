@@ -156,6 +156,26 @@
     width: 276px;
     margin-right: 24px;
     margin-bottom: 40px;
+    position: relative;
+
+    .card__bookmark {
+      position: absolute;
+      right: 14px;
+      top: 242px;
+      width: 24px;
+      height: 24px;
+      z-index: 5;
+
+      :hover {
+        cursor: pointer;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     .card__img--wrap {
       width: 100%;
@@ -183,24 +203,6 @@
         line-height: 18px;
         letter-spacing: -0.03em;
         color: #FFFFFF;
-      }
-
-      .card__bookmark {
-        position: absolute;
-        right: 14px;
-        bottom: 14px;
-        width: 24px;
-        height: 24px;
-
-        :hover {
-          cursor: pointer;
-        }
-
-        img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
       }
     }
 
