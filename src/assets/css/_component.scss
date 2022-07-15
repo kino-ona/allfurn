@@ -1,9 +1,6 @@
 @use 'sass:math';
-
-input, button  {
-  margin: 0;
-  padding: 0;
-}
+@use "mixins";
+@use 'sprite/sprite';
 
 .inner {
   &__title {
@@ -430,13 +427,19 @@ input, button  {
   }
 
   &__text {
-    padding-left: 22px;
     color: #828282;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: -.02em;
-    background: url('../images/component/icon_reply.png') 0 center  no-repeat;
-    background-size: 15px;
+    
+  }
+
+  &__text::before {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    content: '';
+    @include mixins.sprite(sprite.$ico-recomment);
   }
 }
 
@@ -466,10 +469,9 @@ input, button  {
         height: 15px;
         margin-top: 2px;
         margin-left: 8px;
-        background: url('../images/component/icon_new.png') right 0 no-repeat;
-        background-size: 15px;
         vertical-align: text-top;
         content: '';
+        @include mixins.sprite(sprite.$badge-new);
       }
     }
   }
@@ -559,7 +561,8 @@ input, button  {
 
   &__check span {
     display: block;
-    padding-left: 16px;
+    position: relative;
+    margin-left: 16px;
     line-height: 44px;
   }
 
@@ -567,7 +570,6 @@ input, button  {
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin-top: -4px;
     margin-right: 10px;
     border-radius: 3px;
     border: 1px solid #E0E0E0;
@@ -578,13 +580,13 @@ input, button  {
   &__check input + span::after { 
     display: inline-block;
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 14px;
+    left: 1px;
     width: 18px;
     height: 18px;
-    background: url('../images/component/icon_check_gray.png') 0 0 no-repeat;
     background-size: 11px;
     content:'';
+    @include mixins.sprite(sprite.$ico-check-gray);
   }
 
   &__check input:checked + span::before {
@@ -595,25 +597,25 @@ input, button  {
   &__check input:checked + span::after{
     display: inline-block;
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 14px;
+    left: 1px;
     width: 18px;
     height: 18px;
-    background: url('../images/component/icon_check_white.png') 0 0 no-repeat;
-    background-size: 11px;
     content:'';
+    @include mixins.sprite(sprite.$ico-check-white);
   }
 
   &__check--right span::before {
     position: absolute;
-    top: 16px;
+    top: 11px;
     right: 0;
   }
 
   &__check--right input + span::after,
   &__check--right input:checked + span::after {
-    top: 18px;
-    left: 90%;
+    top: 17px;
+    left: 88%;
+    margin-top: -5px;
   }
 }
 
@@ -900,4 +902,91 @@ input, button  {
       margin-right: 6px;
     }
   }
+}
+
+.dropdown {
+  &__title {
+    position: relative;
+    padding: 11px;
+    color: #1B1B1B;
+    background: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__title::before {
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    margin-top: -4px;
+    border-top: 1px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD;
+    transform: rotate(-225deg);
+    content: '';
+  }
+
+  &__wrap {
+    overflow: hidden;
+    height: 0;
+    margin-top: 6px;
+    border: none;
+    border-radius: 5px;
+    z-index: 9;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px; 
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+
+  &__item p+p {
+    font-weight: 600;
+  }
+}
+
+.dropdown.dropdown--active {
+  .dropdown__title {
+    border: 1px solid #FB4760;
+  }
+
+  .dropdown__title::before {
+    border-top: 1px solid #FB4760;
+    border-right: 1px solid #FB4760;
+    transform: rotate(-45deg);
+    content: '';
+  }
+
+  .dropdown__wrap {
+    overflow-y: scroll;
+    position: absolute;
+    width: inherit;
+    height: 170px;
+    border: 1px solid #FB4760;
+  }
+
+}
+
+.dropdown.dropdown--disabled {
+  .dropdown__title {
+    color: #BDBDBD;
+    background-color: #E0E0E0;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+ 
+
+  .dropdown__title::before {
+    border-top: 1px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD;
+  }
+
+ 
+
 }

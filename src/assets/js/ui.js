@@ -10,19 +10,17 @@ $(document).ready(function () {
   }
 })
 
-$('.comment__like').on('click', function (event) {
-	event.preventDefault();
-	console.log();
+// $('.comment__like').on('click', function (event) {
+// 	event.preventDefault();
 
-	if(!$(this)[0].classList.contains('like--active')) {
-		$(this).addClass('like--active');
-		$(this).find("path").attr("fill", "#FB4760");
-	}else {
-		$(this).removeClass('like--active');
-		$(this).find("path").attr("fill", "#BDBDBD");
-	}
-})
-
+// 	if(!$(this)[0].classList.contains('like--active')) {
+// 		$(this).addClass('like--active');
+// 		$(this).find("path").attr("fill", "#FB4760");
+// 	}else {
+// 		$(this).removeClass('like--active');
+// 		$(this).find("path").attr("fill", "#BDBDBD");
+// 	}
+// })
 
 $(".textfield__search").on("propertychange change keyup paste input", function() {
 	var currentVal = $(this).val();
@@ -32,11 +30,9 @@ $(".textfield__search").on("propertychange change keyup paste input", function()
 	}else {
 		$(this).parent().removeClass('textfield--active');
 	}
-
-	console.log();
+	
 	$(".textfield__icon--delete").on('click' , function() {
 		$(this).prev().val('');
 		$(".textfield").removeClass('textfield--active');
 	})
 });
-

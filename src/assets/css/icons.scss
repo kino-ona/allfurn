@@ -44,6 +44,10 @@ i {
 .ico__reply {
   @include mixins.sprite(sprite.$ico-reply);
 }
+
+.ico__reply {
+  @include mixins.sprite(sprite.$ico-reply);
+}
 .ico__refresh {
   @include mixins.sprite(sprite.$ico-refresh);
 }
@@ -69,3 +73,16 @@ i {
 .ico__check-gray {
   @include mixins.sprite(sprite.$ico-check-gray);
 }
+
+.ico__check-white {
+  @include mixins.sprite(sprite.$ico-check-white);
+}
+
+.ico__more {
+  @include mixins.sprite(sprite.$ico-more);
+}
+
+.ico__recomment {
+  @include mixins.sprite(sprite.$ico-recomment);
+}
+
