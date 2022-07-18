@@ -143,3 +143,7 @@ i {
 .ico__count--plus {
   @include mixins.sprite(sprite.$ico-count-plus);
 }
+
+.ico__notice24 {
+  @include mixins.sprite(sprite.$ico-notice24);
+}
