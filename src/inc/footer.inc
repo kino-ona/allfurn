@@ -27,7 +27,7 @@
         <div class="foo__language">
           <div class="foo__language__wrap">
             <p>한국어</p>
-            <div class="ico__arrow--down20"><span class="a11y">아래 화살표</span></div>
+            <i class="ico__arrow--down20"><span class="a11y">아래 화살표</span></i>
           </div>
         </div>
       </div>
