@@ -37,6 +37,7 @@
 
   &__content .header {
     height: 84px;
+    margin-bottom: -1px;
     padding: 27px 24px;
     background-color: #ffffff;
     text-align: left;
@@ -53,11 +54,13 @@
   &__content .content {
     overflow-y: scroll;
     max-height: 54vh;
-    padding: 0 12px 0 24px;
+    // padding: 0 12px 0 24px;
+    padding: 1px 24px 0;
     background-color: #ffffff;
   }
 
   &__content .footer {
+    margin-top: -1px;
     background-color: #ffffff;
   }
 
@@ -991,6 +994,7 @@
     border-right: 1px solid #FB4760;
     transform: rotate(-45deg);
     content: '';
+    top: 25px;
   }
 
   .dropdown__wrap {

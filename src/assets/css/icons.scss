@@ -125,3 +125,21 @@ i {
   @include mixins.sprite(sprite.$ico-bookmark24-off);
 }
 
+.ico__share28 {
+  @include mixins.sprite(sprite.$ico-share28);
+}
+
+.ico__shop24 {
+  @include mixins.sprite(sprite.$ico-shop24);
+}
+
+.ico__delete18 {
+  @include mixins.sprite(sprite.$ico-delete18);
+}
+
+.ico__count--minus {
+  @include mixins.sprite(sprite.$ico-count-minus);
+}
+.ico__count--plus {
+  @include mixins.sprite(sprite.$ico-count-plus);
+}
