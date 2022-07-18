@@ -98,3 +98,7 @@ i {
   @include mixins.sprite(sprite.$ico-arrow-right14);
 }
 
+.ico__arrow--down20 {
+  @include mixins.sprite(sprite.$ico-arrow-down20);
+}
+
