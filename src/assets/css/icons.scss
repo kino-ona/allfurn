@@ -89,3 +89,57 @@ i {
 .ico__recomment {
   @include mixins.sprite(sprite.$ico-recomment);
 }
+
+.ico__gallery-image {
+  @include mixins.sprite(sprite.$ico-gallery-image);
+}
+
+.ico__form-check {
+  @include mixins.sprite(sprite.$ico-form-check_blue);
+}
+.ico__arrow--right18 {
+  @include mixins.sprite(sprite.$ico-arrow-right18);
+}
+
+.ico__arrow--right14 {
+  @include mixins.sprite(sprite.$ico-arrow-right14);
+}
+
+.ico__arrow--down20 {
+  @include mixins.sprite(sprite.$ico-arrow-down20);
+}
+
+.ico__arrow--down14-red {
+  @include mixins.sprite(sprite.$ico-arrow-down14-red);
+}
+
+.ico__arrow--down14 {
+  @include mixins.sprite(sprite.$ico-arrow-down14);
+}
+
+.ico__bookmark24--on {
+  @include mixins.sprite(sprite.$ico-bookmark24-on);
+}
+
+.ico__bookmark24--off {
+  @include mixins.sprite(sprite.$ico-bookmark24-off);
+}
+
+.ico__share28 {
+  @include mixins.sprite(sprite.$ico-share28);
+}
+
+.ico__shop24 {
+  @include mixins.sprite(sprite.$ico-shop24);
+}
+
+.ico__delete18 {
+  @include mixins.sprite(sprite.$ico-delete18);
+}
+
+.ico__count--minus {
+  @include mixins.sprite(sprite.$ico-count-minus);
+}
+.ico__count--plus {
+  @include mixins.sprite(sprite.$ico-count-plus);
+}

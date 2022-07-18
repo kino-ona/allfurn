@@ -102,6 +102,16 @@ input, button {
 	cursor: pointer;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 input:focus, input:active, button:focus, button:active {
 	outline: none;
 	box-shadow: none;
@@ -328,18 +338,19 @@ input::-ms-clear {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	box-sizing: border-box;
 }
 
 .inner__center {
 	position: relative;
-	width: 450px;
+	width: 500px;
 	min-height: calc(100vh - 81px);
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	>div {
+	> div {
 		width: inherit;
 	}
 }
@@ -427,11 +438,6 @@ input::-ms-clear {
 					font-size: 16px;
 					letter-spacing: -0.02em;
 					color: #1B1B1B;
-				}
-
-				img {
-					width: 20px;
-					height: 20px;
 				}
 			}
 		}

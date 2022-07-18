@@ -1,17 +1,325 @@
 @use 'sass:math';
 
 .sub-member {
-  
-  .inner__large, .inner__center {
-    // background-color: #FF8798;
+  margin-bottom: 40px;
+
+  .tab {
+    color: #1B1B1B;
+    font-size: 16px;
+    font-weight: 400;
   }
 
-  .button__wrap {
+  .tab__item {
+    cursor: pointer;
+  }
+
+  .form {
+    background-color: #ffffff;
+
+    [type="button"]:disabled {
+      color: #BDBDBD;
+      border: 1px solid #BDBDBD;
+      pointer-events: none;
+    }
+
+    .input[disabled] {
+      color: #BDBDBD;
+      background-color: #F7F7F7;
+    }
+  }
+
+  .form__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .form__title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  
+  .form__notice-box {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+  
+    li {
+      display: flex;
+      align-items: flex-start;
+      color: #828282;
+      font-size: 14px;
+      line-height: 1.6;
+      font-weight: 500;
+  
+      &::before {
+        content: '·';
+        display: inline-flex;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .form__label {
+    width: 180px;
+    margin-top: 8px;
+    margin-right: 20px;
+  }
+
+  .label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -.002px;
+    color: #1B1B1B;
+    
+    &--necessary::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      right: -10px;
+      width: 6px;
+      height: 6px;
+      background-color: #FB4760;
+      border-radius: 50%;
+    }
+  }
+
+  .input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .input-guid {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-guid__input {
+    width: calc(100% - 140px);
+  }
+
+  .input-guid__button {
+    width: 130px
+  }
+
+  .textfield {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .textfield__input {
+    width: 100%;
+    max-width: 100%;
+    height: 48px;
+  }
+
+  .filefield {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .file-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+
+    &__input {
+      width: 100%;
+      max-width: 100%;
+
+      .ico__sdelete {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    &__input-area {
+      margin-right: auto;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__input--empty {
+      cursor: pointer;
+      
+      .file-input__input-area {
+        margin-right: auto;
+        border: 1px dashed #BDBDBD;
+      }
+    }
+
+    &__input--attached {
+      
+      .file-input__input-area {
+        position: relative;
+        border: 0;
+        background-color: #F7F7F7;
+      }
+    }
+
+    &__placeholder {
+      margin-top: 6.5px;
+      color: #BDBDBD;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  input[id*="register__namecard"] + .file-input__input .file-input__input-area {
+    width: 300px;
+    height: 170px;
+  }
+
+  input[id*="register__certificate"] + .file-input__input .file-input__input-area {
+    width: 200px;
+    height: 280px;
+  }
+
+  .addressfield {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .addressfield [class*="__content"] > .input-guid__input {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .addressfield .input-guid .input-guid__input {
+    width: calc(100% - 110px);
+  }
+
+  .addressfield .input-guid__button {
+    width: 100px;
+    border-color: #4F4F4F;
+    color: #4F4F4F;
+  }
+
+  input[readonly] {
+    background-color: #F7F7F7;
+  }
+
+  .radio-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form__radio {
+    flex-basis: 100%;
+    margin-bottom: 18px;
+    
+    .radio__item:not(:first-of-type) {
+      margin-left: 42px; 
+      
+      span {
+        color: #1B1B1B;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .form__notification {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #3D87F4;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -.02px;
+
+    .ico__form-check {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+    }
+  }
+
+  input[id*="register__accreditation"] {
+    width: calc(100% - 130px);
+  }
+
+  input[id*="register__accreditation"] + .input-guid__button {
+    width: 120px;
+  }
+
+  .check-box {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+  }
+
+  .check-box__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+
+    &--checkall {
+      border-bottom: 1px solid #E0E0E0;
+    }
+  }
+  
+  .check-box__label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+
+    span {
+      margin-left: 0;
+    }
+
+    * {
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  .check-box__button {
+    padding: 0;
+    color: #828282;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  .button-wrap {
     margin-bottom: 20px;
   
     .button {
       width: 100%;
-      padding: 12px 16px;
+      padding: 11px 16px;
       font-size: 16px;
       font-weight: 600;
       line-height: 26px;
@@ -100,29 +408,46 @@
     letter-spacing: -0.03em;
   }
   
-  .contents {
+  .content {
     padding-top: 32px;
-    padding-left: 110px;
-    padding-right: 110px;
     border-top: 2px solid #4F4F4F;
   }
 
-  .contents__item {
+  .content__item {
+    padding: 0 110px;
     margin-bottom: 72px;
   }
 
-  .contents__title {
+  .content__title {
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
   }
 
-  .tab {
-    color: #1B1B1B;
-    font-size: 16px;
-    font-weight: 400;
+  .content__item .notice-box {
+    margin-bottom: 40px;
+  }
+
+  .form__check-box {
+    margin-top: 72px;
+  }
+
+  .button-wrap {
+    width: 916px;
+    margin-top: 32px; 
+    margin-left: -95px;
+    margin-right: -95px;
+    padding-top: 32px;
+    border-top: 1px solid #E0E0E0;
+    text-align: center;
+  }
+
+  .form__submit-button {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -177,5 +502,95 @@
     span {
       color: #BDBDBD;
     }
+  }
+
+  .button-wrap {
+    max-width: 400px;
+    margin: 0 auto;  
+  }
+}
+
+.resetting {
+	padding-top: 40px;
+
+  .resetting__heading {
+    display: block;
+    margin-bottom: 10px;
+    color: #1B1B1B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+  
+  .content {
+    padding-top: 32px;
+    border-top: 2px solid #4F4F4F;
+  }
+
+  .content__item {
+    padding: 0 110px;
+    margin-bottom: 52px;
+  }
+
+  .content__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  
+  .input-guid__input {
+    width: calc(100% - 130px);
+  }
+
+  .input-guid__button {
+    width: 120px;
+  }
+
+  .button-wrap {
+    width: 916px;
+    margin-top: 32px; 
+    margin-left: -95px;
+    margin-right: -95px;
+    padding-top: 32px;
+    border-top: 1px solid #E0E0E0;
+    text-align: center;
+  }
+
+  .form__submit-button {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.agreement {
+
+  .agreement__heading {
+    display: block;
+    margin-bottom: 10px;
+    color: #1B1B1B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+
+  .button-wrap {
+    width: 916px;
+    margin-top: 32px; 
+    margin-left: -95px;
+    margin-right: -95px;
+    padding-top: 32px;
+    border-top: 1px solid #E0E0E0;
+    text-align: center;
+  }
+
+  .form__submit-button {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
   }
 }

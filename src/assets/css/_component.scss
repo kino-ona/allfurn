@@ -2,17 +2,15 @@
 @use "mixins";
 @use 'sprite/sprite';
 
-.inner {
-  &__title {
-    display: block;
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-  }
+.inner__title {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
 
-  &__button {
-    border: 1px solid #000000;
-  }
+.inner__button {
+  border: 1px solid #000000;
 }
 
 .modal {
@@ -696,9 +694,6 @@
   &__input--big-space::placeholder {
     color: #4F4F4F; 
   }
-
-
-
 }
 
 .textfield.textfield--active {
@@ -710,21 +705,25 @@
 .input-guid {
   &__input {
     height: 48px;
-    padding: 16px 11px;
+    padding: 16px 16px;
     font-size: 16px;
     background-color: #ffffff;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     box-sizing: border-box;
+
+    &::placeholder {
+      color: #BDBDBD;
+    }
   }
 
   &__button {
-    color: #BDBDBD;
+    color: #4F4F4F;
     text-align: center;
     height: 48px;
     font-size: 16px;
     background-color: #ffffff;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #4F4F4F;
     border-radius: 5px;
     font-weight: 600;
   }
@@ -827,7 +826,7 @@
   line-height: 24px;
   font-weight: 400;
   
-  &__wrap {
+  &-wrap {
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -856,7 +855,7 @@
   }
 }
 
-.tab__field {
+.tab {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -864,7 +863,7 @@
   align-items: center;
 }
 
-.tab {
+.tab__item {
   flex: 1;
   flex-basis: 100%;
   padding: 10px 16px;
@@ -879,7 +878,7 @@
     border-right: 1px solid #E0E0E0;
   }
 
-  &.tab__selected {
+  &--selected {
     color: #ffffff !important;
     background-color: #FB4760 !important;
     border-color: #FB4760 !important;
@@ -910,9 +909,12 @@
 }
 
 .dropdown {
+  max-width: 100%;
+  position: relative;
+
   &__title {
     position: relative;
-    padding: 11px;
+    padding: 11px 16px;
     color: #1B1B1B;
     background: #ffffff;
     border: 1px solid #E0E0E0;
@@ -966,6 +968,7 @@
     border-right: 1px solid #FB4760;
     transform: rotate(-45deg);
     content: '';
+    top: 25px;
   }
 
   .dropdown__wrap {
