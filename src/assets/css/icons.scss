@@ -89,3 +89,11 @@ i {
 .ico__recomment {
   @include mixins.sprite(sprite.$ico-recomment);
 }
+
+.ico__gallery-image {
+  @include mixins.sprite(sprite.$ico-gallery-image);
+}
+
+.ico__form-check {
+  @include mixins.sprite(sprite.$ico-form-check_blue);
+}
