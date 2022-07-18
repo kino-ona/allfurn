@@ -89,3 +89,12 @@ i {
 .ico__recomment {
   @include mixins.sprite(sprite.$ico-recomment);
 }
+
+.ico__arrow--right18 {
+  @include mixins.sprite(sprite.$ico-arrow-right18);
+}
+
+.ico__arrow--right14 {
+  @include mixins.sprite(sprite.$ico-arrow-right14);
+}
+
