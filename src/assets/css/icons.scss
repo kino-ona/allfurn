@@ -102,3 +102,19 @@ i {
   @include mixins.sprite(sprite.$ico-arrow-down20);
 }
 
+.ico__arrow--down14-red {
+  @include mixins.sprite(sprite.$ico-arrow-down14-red);
+}
+
+.ico__arrow--down14 {
+  @include mixins.sprite(sprite.$ico-arrow-down14);
+}
+
+.ico__bookmark24--on {
+  @include mixins.sprite(sprite.$ico-bookmark24-on);
+}
+
+.ico__bookmark24--off {
+  @include mixins.sprite(sprite.$ico-bookmark24-off);
+}
+
