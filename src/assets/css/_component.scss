@@ -1064,12 +1064,8 @@
       font-weight: 400;
     }
 
-    &[disabled] {
+    &[disabled], &[readonly] {
       color: #BDBDBD;
-      background-color: #F7F7F7;
-    }
-
-    &[readonly] {
       background-color: #F7F7F7;
     }
   }
@@ -1143,6 +1139,7 @@
 
 .form__label {
   width: 180px;
+  flex-shrink: 0;
   margin-top: 8px;
   margin-right: 20px;
 }
@@ -1171,52 +1168,28 @@
   max-width: 100%;
 
   .file-input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    text-align: center;
+    border: 1px dashed #BDBDBD;
+    border-radius: 5px;
+    background-color: #ffffff;
+
     &__input {
-      width: 100%;
-      max-width: 100%;
-  
-      .ico__sdelete {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
-    }
-  
-    &__input-area {
-      margin-right: auto;
-      border-radius: 5px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-  
-    &__input--empty {
-      
-      .file-input__input-area {
-        cursor: pointer;
-        border: 1px dashed #BDBDBD;
-      }
-    }
-  
-    &__input--attached {
-      
-      .file-input__input-area {
-        position: relative;
-        border: 0;
-        background-color: #F7F7F7;
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      background: transparent;
     }
   
     &__placeholder {
@@ -1225,16 +1198,55 @@
       font-size: 14px;
       font-weight: 500;
     }
+  
+    .ico__sdelete {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+    &--default {
+
+      .ico__gallery-image, .file-input__placeholder {
+        display: block;
+      }
+      
+      .ico__sdelete {
+        display: none;
+      }
+    }
+  
+    &--attached {
+      
+      &.file-input {
+        position: relative;
+        border-color: transparent;
+        background: {
+          size: cover;
+          position: center;
+          repeat: no-repeat;
+        }
+      }
+
+      .ico__gallery-image, .file-input__placeholder {
+        display: none;
+      }
+
+      .ico__sdelete {
+        display: block;
+      }
+    }
   }
 
-  input[id*="register__namecard"] + .file-input__input .file-input__input-area {
-    width: 300px;
-    height: 170px;
-  }
-
-  input[id*="register__certificate"] + .file-input__input .file-input__input-area {
+  &--type-1 .file-input {
     width: 200px;
     height: 280px;
+  }
+
+  &--type-2 .file-input {
+    width: 300px;
+    height: 170px;
   }
 }
 

@@ -13,26 +13,45 @@
     cursor: pointer;
   }
 
-  .form__radio {
+  .dropdown {
+    margin-bottom: 0;
+  }
+
+  .radio.form__radio {
+    display: flex;
     flex-basis: 100%;
+    align-items: center;
     margin-bottom: 18px;
     
-    .radio__item:not(:first-of-type) {
-      margin-left: 42px; 
+    .radio__item {
+      margin-right: 42px; 
       
       span {
         color: #1B1B1B;
         font-size: 14px;
+        line-height: 18px;
         font-weight: 500;
       }
     }
+
+    input + span::before {
+      margin-right: 6px;
+    }
+
+    input:checked + span::after {
+      left: 4px;
+    }
+
+    label + label::before {
+      content: none;
+    }
   }
 
-  input[id*="register__accreditation"] {
+  input[id*="accreditation"] {
     width: calc(100% - 130px);
   }
 
-  input[id*="register__accreditation"] + .input-guid__button {
+  input[id*="accreditation"] + .input-guid__button {
     width: 120px;
   }
 
