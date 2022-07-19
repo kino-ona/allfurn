@@ -143,3 +143,19 @@ i {
 .ico__count--plus {
   @include mixins.sprite(sprite.$ico-count-plus);
 }
+
+.ico__notice24 {
+  @include mixins.sprite(sprite.$ico-notice24);
+}
+
+.ico__arrow--down24 {
+  @include mixins.sprite(sprite.$ico-arrow-down24);
+}
+
+.ico__arrow--up24 {
+  @include mixins.sprite(sprite.$ico-arrow-up24);
+}
+.ico__refresh {
+  @include mixins.sprite(sprite.$ico-refresh);
+}
+
