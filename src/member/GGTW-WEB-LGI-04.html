@@ -13,7 +13,7 @@
     }) 
 
     <div id="container" class="container">
-      <div class="sub-member">
+      <div class="member">
         <div class="inner__center">
           <div class="register-complete">
             <div class="register-complete__heading">올펀 회원 가입 신청이 완료되었습니다.</div>
@@ -23,20 +23,39 @@
                 <br>가입 시 입력한 이메일로 로그인해주세요.
               </p>
             </div>
-
             <div class="register-info">
               <p class="register-info__title">올펀 서비스 이용 절차</p>
               <div class="register-info__desc">회원가입 <span>→</span> 가입 승인 <span>→</span> 로그인 <span>→</span> 올펀 서비스 이용</div>
             </div>
-
             <div class="button-wrap">
-              <button type="button" class="button button--solid">All FURN 홈으로 가기</button>
+              <button type="button" class="button button--solid" onclick="openModal('#modal-type--single')">All FURN 홈으로 가기</button>
             </div>
+          </div>
+        </div>
 
+        <div id="modal-type--single" class="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      비밀번호가 재설정 되었습니다.
+                      <br>로그인 해주세요.
+                    </p>
+                  </div>
+                  <div class="modal__buttons">
+                    <a href="#" onclick="closeModal('#modal-type--single')" class="modal__button"><span>확인</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
+  <script src="../assets/js/ui.js" type="text/javascript"></script>
 </body>
 </html>
