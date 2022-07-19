@@ -449,6 +449,7 @@
           border: 1px solid #DBDBDB;
           background-color: #F7F7F7;
           border-radius: 5px;
+          margin-bottom: 16px;
         }
 
         &__text {
@@ -543,8 +544,6 @@
     }
 
     &__order {
-      margin-top: 16px;
-
       .order__text {
         display: flex;
         justify-content: space-between;
@@ -639,6 +638,15 @@
           margin-right: 8px;
         }
       }
+    }
+  }
+
+  &__img-area {
+    margin-top: 48px;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
     }
   }
 }
