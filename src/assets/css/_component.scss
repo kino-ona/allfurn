@@ -1009,3 +1009,31 @@
     border-right: 1px solid #BDBDBD;
   }
 }
+
+
+.tab__wrap {
+  position:relative;
+}
+.tab__list {
+  display:flex;
+  li {
+    border:0;
+    .tab {
+      padding:0 20px;
+      &[aria-selected="true"] {
+        color:#000;
+      }
+    }
+  }
+}
+.tab__contents {
+	clear: both;
+	outline: none;
+	border: 0;
+	.tab__panel {
+		&[aria-hidden="true"] {
+			display: none;
+		}
+		outline: none;
+	}
+}
