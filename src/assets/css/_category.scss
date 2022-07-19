@@ -505,13 +505,15 @@
     right: 20px;
     width: 7px;
     height: 7px;
+    margin-top: -5px;
     border-right: 2px solid #FB4760;
     border-bottom: 2px solid #FB4760;
-    transform: rotate(-135deg);
+    transform: rotate(45deg);
     content:'';
   }
 
   &__wrap {
+    display: none;
     overflow: scroll;
     position: relative;
     max-height: 288px;
@@ -629,18 +631,17 @@
 
   &__footer {
     display: none;
+    position: relative;
     width: 1176px;
-    padding: 16px;
+    padding: 0;
     margin-top: -67px;
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: #FB4760;
+    border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-sizing: border-box;
   }
 
-  &__footer a {
+  &__footer button {
     display: inline-block;
     position: relative;
     margin-top: 5px;
@@ -651,11 +652,11 @@
     border-radius: 17px;
   }
 
-  &__footer a + a {
+  &__footer button + button {
     margin-left: 10px;
   }
 
-  &__footer a::before {
+  &__footer button::before {
     display: inline-block;
     position: absolute;
     top: 15px;
@@ -667,7 +668,7 @@
     content: '';
   }
 
-  &__footer a::after {
+  &__footer button::after {
     display: inline-block;
     position: absolute;
     top: 15px;
@@ -678,6 +679,13 @@
     transform: rotate(225deg);
     content: '';
   }
+
+  &__refresh {
+    position: absolute;
+    top: 26px;
+    right: 14px;
+  }
+
 }
 
 .select-button {
@@ -689,12 +697,22 @@
 }
 
 .category-filter.category-filter--active {
-  .category-filter__footer {
-    display: block;
-  }
-
   .category-filter__wrap {
+    display: block;
     margin-bottom: 67px;
     border-width: 1px;
   }
+
+  .category-filter__title::after {
+    margin-top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+.category-filter__footer.active {
+  display: block;
+  padding: 16px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #FB4760;
 }

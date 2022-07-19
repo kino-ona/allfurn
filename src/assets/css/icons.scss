@@ -147,3 +147,8 @@ i {
 .ico__notice24 {
   @include mixins.sprite(sprite.$ico-notice24);
 }
+
+.ico__refresh {
+  @include mixins.sprite(sprite.$ico-refresh);
+}
+
