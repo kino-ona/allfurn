@@ -1,113 +1,113 @@
 @@include('../inc/pagehead.inc',{
-  "pagetitle":" | 비밀번호 재설정",
-  "webroot":".."
-  })
-  </head>
-  
-  <body>
-    <div class="skipnavigation"><a href="#container">skip to container</a></div>
-    <div id="wrap">
-      @@include('../inc/header.inc',{
-      "webroot":"..",
-      "headertype":"headertype__logo-only"
-      }) 
-  
-      <div id="container" class="container">
-        <div class="sub-member sub-member__LGI-05">
-          <div class="inner__large">
-            <div class="resetting">
-              <h2 class="resetting__heading">비밀번호 재설정</h2>
-              <div class="notice-box">
-                <ul>
-                  <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>대표 계정의 비밀번호만 재설정 가능합니다. 직원 계정의 비밀번호 재설정은 대표 계정 로그인 후, 마이페이지에서 재설정하실 수 있습니다.</li>
-                </ul>
-              </div>  
-              <div class="content">
-                <div class="content__item">
-                  <div class="content__title">회원 인증을 해주세요.</div>
-                  <form class="form" id="" method="" action="#">
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__email">이메일</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__email" 
-                        type="text" 
-                        required 
-                        placeholder="이메일을 입력해주세요."
-                        >
-                        <button class="button input-guid__button" type="button">인증번호 전송</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증번호가 전송되었습니다. 이메일을 확인해주세요.</div>
-                      </div>
+"pagetitle":" | 비밀번호 재설정",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":"headertype__logo-only"
+    }) 
+
+    <div id="container" class="container">
+      <div class="sub-member">
+        <div class="inner__large">
+          <div class="resetting">
+            <h2 class="resetting__heading">비밀번호 재설정</h2>
+            <div class="notice-box">
+              <ul>
+                <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>대표 계정의 비밀번호만 재설정 가능합니다. 직원 계정의 비밀번호 재설정은 대표 계정 로그인 후, 마이페이지에서 재설정하실 수 있습니다.</li>
+              </ul>
+            </div>  
+
+            <div class="content">
+              <div class="content__item">
+                <div class="content__title">회원 인증을 해주세요.</div>
+                <form class="form" id="" method="" action="#">
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register__email">이메일</label>
                     </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label" for="LGI-02-1-register__accreditation">인증번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input-guid__input" 
-                        id="LGI-02-1-register__accreditation" 
-                        type="number" 
-                        disabled=""
-                        placeholder=""
-                        value="12345"
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
-                      </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register__email" 
+                      type="text" 
+                      required 
+                      placeholder="이메일을 입력해주세요."
+                      >
+                      <button class="button input-guid__button" type="button">인증번호 전송</button>
+                      <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증번호가 전송되었습니다. 이메일을 확인해주세요.</div>
                     </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__newpw">새 비밀번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__newpw"
-                        type="password" 
-                        required 
-                        minlength="8" 
-                        placeholder="비밀번호를 입력해주세요."
-                        >
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label" for="LGI-02-1-register__accreditation">인증번호</label>
                     </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__newpwcheck">새 비밀번호 확인</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__newpwcheck" 
-                        type="password" 
-                        required 
-                        minlength="8" 
-                        placeholder="비밀번호를 다시 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="button-wrap">
-                      <input class="button form__submit-button button--solid"
-                      id="LGI-02-1-register__form-submit"
-                      type="submit"
-                      form=""
-                      value="완료" 
+                    <div class="input-guid">
+                      <input class="input input-guid__input" 
+                      id="LGI-02-1-register__accreditation" 
+                      type="number" 
                       disabled=""
-                      />
+                      placeholder=""
+                      value="12345"
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증하기</button>
+                      <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
                     </div>
-                  </form>
-                </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register__newpw">새 비밀번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register__newpw"
+                      type="password" 
+                      required 
+                      minlength="8" 
+                      placeholder="비밀번호를 입력해주세요."
+                      >
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register__newpwcheck">새 비밀번호 확인</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register__newpwcheck" 
+                      type="password" 
+                      required 
+                      minlength="8" 
+                      placeholder="비밀번호를 다시 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="button-wrap">
+                    <input class="button form__submit-button button--solid"
+                    id="LGI-02-1-register__form-submit"
+                    type="submit"
+                    form=""
+                    value="완료" 
+                    disabled=""
+                    />
+                  </div>
+                </form>
               </div>
             </div>
+
           </div>
-  
-        </div>
+        </div>  
       </div>
     </div>
-  </body>
-  
-  </html>
+  </div>
+</body>
+</html>
