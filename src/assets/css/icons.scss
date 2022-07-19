@@ -155,3 +155,7 @@ i {
 .ico__arrow--up24 {
   @include mixins.sprite(sprite.$ico-arrow-up24);
 }
+.ico__refresh {
+  @include mixins.sprite(sprite.$ico-refresh);
+}
+
