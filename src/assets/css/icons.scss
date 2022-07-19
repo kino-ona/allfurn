@@ -158,4 +158,7 @@ i {
 .ico__refresh {
   @include mixins.sprite(sprite.$ico-refresh);
 }
+.ico__search--white {
+  @include mixins.sprite(sprite.$ico-search-white);
+}
 

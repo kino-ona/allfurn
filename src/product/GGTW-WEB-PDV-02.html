@@ -1,0 +1,318 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | Product Basket",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="inner">
+        <div class="content">
+          <h2 class="basket__title">장바구니</h2>
+          <!-- class active 삭제시 장바구니 상품없음 노출 -->
+          <div class="basket">
+            <div class="basket__container">
+              <div class="basket__selected--all">
+                <label for="selected--all" class="category__check category__check--bold basket__check">
+                  <input type="checkbox" id="selected--all">
+                  <span>전체선택</span>
+                </label>
+                <p>선택 삭제</p>
+              </div>
+
+              <ul class="basket__card-wrap">
+                <li class="basket__card">
+                  <div class="card__head">
+                    <label for="selected01" class="category__check category__check--bold basket__check">
+                      <input type="checkbox" id="selected01">
+                      <span>라자가구</span>
+                    </label>
+                    <a href="#" title="업체 보러가기">
+                      업체 보러가기
+                      <i class="ico__arrow--right14">
+                        <span class="a11y">오른쪽화살표</span>
+                      </i>
+                    </a>
+                  </div>
+
+                  <div class="card__content">
+                    <div class="content__head">
+                      <label for="selected01-1" class="category__check category__check--bold basket__check">
+                        <input type="checkbox" id="selected01-1">
+                        <span>포그니 라운드 소파</span>
+                      </label>
+                      <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    </div>
+
+                    <div class="content__desc">
+                      <div class="desc__img">
+                        <img src="../assets/images/temp/basket_product@2x.png" alt="상품이미지">
+                      </div>
+
+                      <ul>
+                        <li class="selection__result">
+                          <div class="selection__text">
+                            <ul>
+                              <li>포그니 라운드 소파</li>
+                              <li>라이트 베이지</li>
+                              <li>패브릭</li>
+                            </ul>
+                            <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                          </div>
+                          <div class="selection__box">
+                            <ul class="selection__count">
+                              <li class="count__minus">
+                                <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                              </li>
+                              <li class="count__text">1</li>
+                              <li class="count__plus">
+                                <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                              </li>
+                            </ul>
+                            <p class="selection__price">7,000,000<span>원</span></p>
+                          </div>
+                        </li>
+                        <li class="selection__result">
+                          <div class="selection__text">
+                            <ul>
+                              <li>(추가구성) 소파스툴</li>
+                            </ul>
+                            <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                          </div>
+                          <div class="selection__box">
+                            <ul class="selection__count">
+                              <li class="count__minus">
+                                <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                              </li>
+                              <li class="count__text">1</li>
+                              <li class="count__plus">
+                                <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                              </li>
+                            </ul>
+                            <p class="selection__price">500,000<span>원</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="content__footer">
+                      <dl>
+                        <dt>배송 방법</dt>
+                        <dd>소비자 직배 가능 (무료)</dd>
+                      </dl>
+                      <dl>
+                        <dt>결제 방식</dt>
+                        <dd>계좌이체</dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                  <div class="card__footer">
+                    <dl>
+                      <dt>주문 금액</dt>
+                      <dd>7,500,000원</dd>
+                    </dl>
+                    <div class="footer__button-group">
+                      <button type="button" class="button button--blank-gray">옵션 변경</button>
+                      <button type="button" class="button button--blank">바로 주문</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="basket__card">
+                  <div class="card__head">
+                    <label for="selected03" class="category__check category__check--bold basket__check">
+                      <input type="checkbox" id="selected03">
+                      <span>코윈스</span>
+                    </label>
+                    <a href="#" title="업체 보러가기">
+                      업체 보러가기
+                      <i class="ico__arrow--right14">
+                        <span class="a11y">오른쪽화살표</span>
+                      </i>
+                    </a>
+                  </div>
+
+                  <div class="card__content">
+                    <div class="content__head">
+                      <label for="selected03-1" class="category__check category__check--bold basket__check">
+                        <input type="checkbox" id="selected03-1">
+                        <span>다이아 세라믹 6인 식탁 SET</span>
+                      </label>
+                      <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    </div>
+
+                    <div class="content__desc">
+                      <div class="desc__img">
+                        <img src="../assets/images/temp/basket_product@2x.png" alt="상품이미지">
+                      </div>
+
+                      <ul>
+                        <li class="selection__result">
+                          <div class="selection__text">
+                            <ul>
+                              <li>다이아 세라믹 6인 식탁 SET</li>
+                            </ul>
+                            <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                          </div>
+                          <div class="selection__box">
+                            <ul class="selection__count">
+                              <li class="count__minus">
+                                <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                              </li>
+                              <li class="count__text">1</li>
+                              <li class="count__plus">
+                                <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                              </li>
+                            </ul>
+                            <p class="selection__price">780,000<span>원</span></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="content__footer">
+                      <dl>
+                        <dt>배송 방법</dt>
+                        <dd>소비자 직배 가능 (무료)</dd>
+                      </dl>
+                      <dl>
+                        <dt>결제 방식</dt>
+                        <dd>계좌이체</dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                  <div class="card__footer">
+                    <dl>
+                      <dt>주문 금액</dt>
+                      <dd>780,000원</dd>
+                    </dl>
+                    <div class="footer__button-group">
+                      <button type="button" class="button button--blank-gray">옵션 변경</button>
+                      <button type="button" class="button button--blank">바로 주문</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="basket__card">
+                  <div class="card__head">
+                    <label for="selected02" class="category__check category__check--bold basket__check">
+                      <input type="checkbox" id="selected02">
+                      <span>가구톡세상</span>
+                    </label>
+                    <a href="#" title="업체 보러가기">
+                      업체 보러가기
+                      <i class="ico__arrow--right14">
+                        <span class="a11y">오른쪽화살표</span>
+                      </i>
+                    </a>
+                  </div>
+
+                  <div class="card__content">
+                    <div class="content__head">
+                      <label for="selected02-1" class="category__check category__check--bold basket__check">
+                        <input type="checkbox" id="selected02-1">
+                        <span>다이아 세라믹 6인 식탁</span>
+                      </label>
+                      <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    </div>
+
+                    <div class="content__desc">
+                      <div class="desc__img">
+                        <img src="../assets/images/temp/basket_product@2x.png" alt="상품이미지">
+                      </div>
+
+                      <ul>
+                        <li class="selection__result">
+                          <div class="selection__text">
+                            <ul>
+                              <li>다이아 세라믹 6인 식탁</li>
+                            </ul>
+                            <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                          </div>
+                          <div class="selection__box">
+                            <ul class="selection__count">
+                              <li class="count__minus">
+                                <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                              </li>
+                              <li class="count__text">1</li>
+                              <li class="count__plus">
+                                <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                              </li>
+                            </ul>
+                            <p class="selection__price">업체문의</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="content__footer">
+                      <dl>
+                        <dt>배송 방법</dt>
+                        <dd>업체 직접 배송(착불), 소비자 직배 가능(무료)</dd>
+                      </dl>
+                      <dl>
+                        <dt>결제 방식</dt>
+                        <dd>계좌이체</dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                  <div class="card__footer">
+                    <dl>
+                      <dt>주문 금액</dt>
+                      <dd>업체 문의</dd>
+                    </dl>
+                    <div class="footer__button-group">
+                      <button type="button" class="button button--blank-gray">옵션 변경</button>
+                      <button type="button" class="button button--blank">바로 주문</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="basket__order">
+              <div class="order">
+                <div class="order__price">
+                  <p class="text">총 주문 금액</p>
+                  <div class="price__num-wrap">
+                    <p class="num"><span>-</span> 원</p>
+                    <!-- <p class="attc">(협의 포함)</p> -->
+                  </div>
+                </div>
+                <div class="order__button">
+                  <button type="button" class="button button--solid" disabled>주문하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket__no-product">
+            <div class="no-product__wrap">
+              <div class="ico__search--circle">
+                <i class="ico__search--white"><span class="a11y">검색</span></i>
+              </div>
+              <p>장바구니에 담긴 상품이 없습니다.</p>
+              <a href="#"><span>올펀 상품 보러가기</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+</body>
+
+</html>
