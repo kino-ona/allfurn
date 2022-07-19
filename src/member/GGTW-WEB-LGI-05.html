@@ -13,7 +13,7 @@
     }) 
 
     <div id="container" class="container">
-      <div class="sub-member">
+      <div class="member">
         <div class="inner__large">
           <div class="resetting">
             <h2 class="resetting__heading">비밀번호 재설정</h2>
@@ -29,11 +29,11 @@
                 <form class="form" id="" method="" action="#">
                   <div class="form__list">
                     <div class="form__label">
-                      <label class="label label--necessary" for="LGI-02-1-register__email">이메일</label>
+                      <label class="label label--necessary" for="resetting_email">이메일</label>
                     </div>
                     <div class="input-guid">
                       <input class="input input--necessary input-guid__input" 
-                      id="LGI-02-1-register__email" 
+                      id="resetting_email" 
                       type="text" 
                       required 
                       placeholder="이메일을 입력해주세요."
@@ -44,11 +44,11 @@
                   </div>
                   <div class="form__list">
                     <div class="form__label">
-                      <label class="label" for="LGI-02-1-register__accreditation">인증번호</label>
+                      <label class="label" for="accreditation">인증번호</label>
                     </div>
                     <div class="input-guid">
                       <input class="input input-guid__input" 
-                      id="LGI-02-1-register__accreditation" 
+                      id="accreditation" 
                       type="number" 
                       disabled=""
                       placeholder=""
@@ -60,11 +60,11 @@
                   </div>
                   <div class="form__list">
                     <div class="form__label">
-                      <label class="label label--necessary" for="LGI-02-1-register__newpw">새 비밀번호</label>
+                      <label class="label label--necessary" for="resetting_newpw">새 비밀번호</label>
                     </div>
                     <div class="textfield">
                       <input class="input input--necessary textfield__input textfield__input--gray" 
-                      id="LGI-02-1-register__newpw"
+                      id="resetting_newpw"
                       type="password" 
                       required 
                       minlength="8" 
@@ -79,11 +79,11 @@
                   </div>
                   <div class="form__list">
                     <div class="form__label">
-                      <label class="label label--necessary" for="LGI-02-1-register__newpwcheck">새 비밀번호 확인</label>
+                      <label class="label label--necessary" for="resetting_newpwcheck">새 비밀번호 확인</label>
                     </div>
                     <div class="textfield">
                       <input class="input input--necessary textfield__input textfield__input--gray" 
-                      id="LGI-02-1-register__newpwcheck" 
+                      id="resetting_newpwcheck" 
                       type="password" 
                       required 
                       minlength="8" 
@@ -93,21 +93,43 @@
                   </div>
                   <div class="button-wrap">
                     <input class="button form__submit-button button--solid"
-                    id="LGI-02-1-register__form-submit"
+                    id="resetting_form-submit"
                     type="submit"
                     form=""
                     value="완료" 
                     disabled=""
+                    onclick="openModal('#modal-type--single')"
                     />
                   </div>
                 </form>
               </div>
             </div>
-
           </div>
-        </div>  
+        </div> 
+
+        <div id="modal-type--single" class="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      가입이 완료되었습니다.<br>
+                      홈으로 이동합니다.
+                    </p>
+                  </div>
+                  <div class="modal__buttons">
+                    <a href="#" onclick="closeModal('#modal-type--single')" class="modal__button"><span>확인</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
+  <script src="../assets/js/ui.js" type="text/javascript"></script>
 </body>
 </html>

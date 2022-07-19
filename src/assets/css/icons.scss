@@ -10,6 +10,10 @@ i {
 	display: inline-block;
 	@include mixins.sprite(sprite.$head-logo);
 }
+.head__logo--large {
+	display: inline-block;
+	@include mixins.sprite(sprite.$head-logo-large);
+}
 .foo__logo {
   @include mixins.sprite(sprite.$foo-logo);
 }
