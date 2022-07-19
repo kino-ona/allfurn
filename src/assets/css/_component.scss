@@ -2,17 +2,6 @@
 @use "mixins";
 @use 'sprite/sprite';
 
-.inner__title {
-  display: block;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.inner__button {
-  border: 1px solid #000000;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -978,7 +967,6 @@
     height: 170px;
     border: 1px solid #FB4760;
   }
-
 }
 
 .dropdown.dropdown--disabled {
@@ -988,13 +976,37 @@
     box-sizing: border-box;
     pointer-events: none;
   }
- 
 
   .dropdown__title::before {
     border-top: 1px solid #BDBDBD;
     border-right: 1px solid #BDBDBD;
   }
+}
 
- 
-
+// tab
+.tab__wrap {
+  position:relative;
+}
+.tab__list {
+  display:flex;
+  li {
+    border:0;
+    .tab {
+      padding:0 20px;
+      &[aria-selected="true"] {
+        color:#000;
+      }
+    }
+  }
+}
+.tab__contents {
+	clear: both;
+	outline: none;
+	border: 0;
+	.tab__panel {
+		&[aria-hidden="true"] {
+			display: none;
+		}
+		outline: none;
+	}
 }
