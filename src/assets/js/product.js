@@ -5,3 +5,7 @@ $(".product-bookmark").on("click", function () {
 $(".dropdown").on("click", function () {
   $(this).toggleClass("dropdown--active");
 });
+
+$(".order-info__title").on("click", function () {
+  $(this).toggleClass("active");
+});
