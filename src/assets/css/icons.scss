@@ -147,3 +147,11 @@ i {
 .ico__notice24 {
   @include mixins.sprite(sprite.$ico-notice24);
 }
+
+.ico__arrow--down24 {
+  @include mixins.sprite(sprite.$ico-arrow-down24);
+}
+
+.ico__arrow--up24 {
+  @include mixins.sprite(sprite.$ico-arrow-up24);
+}
