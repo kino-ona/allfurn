@@ -1,854 +1,914 @@
 @@include('../inc/pagehead.inc',{
-  "pagetitle":" | 회원가입",
-  "webroot":".."
-  })
-  </head>
-  
-  <body>
-    <div class="skipnavigation"><a href="#container">skip to container</a></div>
-    <div id="wrap">
-      @@include('../inc/header.inc',{
-      "webroot":"..",
-      "headertype":"headertype__logo-only"
-      }) 
-  
-      <div id="container" class="container">
-        <div class="sub-member sub-member__LGI-02-1">
-          <div class="inner__large">
-            <div class="register">
-              <h2 class="register__heading">회원가입</h2>
-              <div class="notice-box">
-                <ul>
-                  <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>회원 가입 후 관리자 승인 여부에 따라 서비스 이용이 가능합니다.</li>
-                </ul>
-              </div>  
-              <div class="content">
-                <div class="content__item">
-                  <div class="content__title">회원 구분을 선택해주세요.</div>
-                  <div class="tab">
-                    <div class="tab__item" type="button" data-tabindex="0">도매</div>
-                    <div class="tab__item tab__item--selected" type="button" data-tabindex="1">소매</div>
-                    <div class="tab__item" type="button" data-tabindex="2">일반</div>
-                  </div>
-                </div>
-  
-                <div class="content__item tab__content" data-itemindex="0" style="display: none;">
-                  <div class="content__title">회원 정보를 입력해주세요.</div>
-                  <div class="notice-box">
-                    <ul>
-                      <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>
-                        정회원 가입은 대표자만 가능합니다. <br>
-                        가입 승인 이후 대표 계정에 소속된 직원 계정을 생성하실 수 있습니다.
-                      </li>
-                    </ul>
-                  </div>
-                  <form class="form" id="" method="" action="#">
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businesscode">사업자 등록 번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__businesscode"
-                        type="number" 
-                        required
-                        maxlength="10"
-                        placeholder="사업자 등록 번호를 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__certificate">사업자 등록증 첨부</label>
-                      </div>
-                      <div class="filefield">
-                        <input class="input file-input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__certificate"
-                        type="file" 
-                        required
-                        placeholder="이미지 추가"
-                        readonly
-                        >
-                        <div class="file-input__input file-input__input--empty">
-                          <div class="file-input__input-area">
-                            <div class="ico__gallery-image"></div>
-                            <div class="file-input__placeholder">이미지 추가</div>
-                          </div>
-                        </div>
-                        <!-- <div class="file-input__input file-input__input--attached">
-                          <div class="file-input__input-area">
-                            <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
-                            <div class="file-input__placeholder">이미지 영역</div>
-                          </div>
-                        </div> 
-                        -->
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>권장 형식: jpg, jpeg, png</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businessname">업체명</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__businessname"
-                        type="text" 
-                        required
-                        placeholder="업체명을 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__username">대표자명</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__username"
-                        type="text" 
-                        required
-                        placeholder="대표자명을 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__contact">휴대폰 번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__contact" 
-                        type="number" 
-                        required
-                        maxlength="11" 
-                        placeholder="-없이 숫자만 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businessaddress">사업자 주소</label>
-                      </div>
-                      <div class="addressfield">
-                        <div class="radio form__radio">
-                          <label class="radio__item">
-                            <input type="radio" name="filter" checked>
-                            <span>국내</span>
-                          </label>
-                          <label class="radio__item">
-                            <input type="radio" name="filter">
-                            <span>해외</span>
-                          </label>
-                        </div>
-                        <div class="radio__content">
-                          <div class="input-guid">
-                            <input class="input input--necessary input-guid__input" 
-                            id="LGI-02-1-register__businessaddress-a" 
-                            type="text" 
-                            readonly
-                            placeholder="주소를 검색해주세요."
-                            >
-                            <button class="button input-guid__button" type="button">주소 검색</button>
-                          </div>
-                          <input class="input input--necessary input-guid__input" 
-                          id="LGI-02-1-register__businessaddress-b" 
-                          type="text" 
-                          readonly
-                          placeholder="상세 주소를 입력해주세요."
-                          >
-                        </div>
-                        <div class="radio__content" style="display: none;">
-                          <div class="dropdown">
-                          <p class="dropdown__title">지역</p>
-                          <div class="dropdown__wrap">
-                            <a href="#" class="dropdown__item">
-                              <p>아시아</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>아프리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>북아메리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>남아메리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>유럽</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>오세아니아</p>
-                            </a>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__email">이메일 (아이디)</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__email" 
-                        type="text" 
-                        required
-                        placeholder="이메일을 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>이메일이 아이디로 사용됩니다.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pw">비밀번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pw"
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 입력해주세요."
-                        >
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pwcheck">비밀번호 확인</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pwcheck" 
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 다시 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__check-box">
-                      <div class="form__title">올펀 약관에 동의해주세요.</div>
-                      <div class="check-box">
-                        <div class="check-box__list check-box__list--checkall">
-                          <div class="check-box__label check-box__label--checkall">
-                            <label for="LGI-02-1-agreement__00" class="category__check">
-                              <input class="checkbox__input checkbox__input--checkall" 
-                              id="LGI-02-1-agreement__00"
-                              type="checkbox" 
-                              >
-                              <span>필수 약관 전체 동의</span>
-                            </label>
-                          </div>
-                        </div>
+"pagetitle":" | 회원가입",
+"webroot":".."
+})
+</head>
 
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__01" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__01"
-                              type="checkbox" 
-                              >
-                              <span>서비스 이용 약관 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":"headertype__logo-only"
+    }) 
 
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__02" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__02"
-                              type="checkbox" 
-                              >
-                              <span>개인정보 활용 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__03" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__03"
-                              type="checkbox" 
-                              >
-                              <span>마케팅 정보 활용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__04" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__04"
-                              type="checkbox" 
-                              >
-                              <span>광고성 이용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="button-wrap">
-                      <input class="button form__submit-button button--solid"
-                      id="LGI-02-1-register__form-submit"
-                      type="submit"
-                      form=""
-                      value="가입 완료" 
-                      disabled=""
-                      />
-                    </div>
-                  </form>
-                </div>
-  
-                <div class="content__item tab__content" data-itemindex="1">
-                  <div class="content__title">회원 정보를 입력해주세요.</div>
-                  <div class="notice-box">
-                    <ul>
-                      <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>
-                        정회원 가입은 대표자만 가능합니다. <br>
-                        가입 승인 이후 대표 계정에 소속된 직원 계정을 생성하실 수 있습니다.
-                      </li>
-                    </ul>
-                  </div>
-                  <form class="form" id="" method="" action="#">
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businesscode">사업자 등록 번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__businesscode"
-                        type="number" 
-                        required
-                        maxlength="10"
-                        placeholder="사업자 등록 번호를 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__certificate">사업자 등록증 첨부</label>
-                      </div>
-                      <div class="filefield">
-                        <input class="input file-input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__certificate"
-                        type="file" 
-                        required
-                        placeholder="이미지 추가"
-                        readonly
-                        >
-                        <!-- <div class="file-input__input file-input__input--empty">
-                          <div class="file-input__input-area">
-                            <div class="ico__gallery-image"></div>
-                            <div class="file-input__placeholder">이미지 추가</div>
-                          </div>
-                        </div> 
-                        -->
-                        <div class="file-input__input file-input__input--attached">
-                          <div class="file-input__input-area">
-                            <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
-                            <div class="file-input__placeholder">이미지 영역</div>
-                          </div>
-                        </div>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>권장 형식: jpg, jpeg, png</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businessname">업체명</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__businessname"
-                        type="text" 
-                        required
-                        placeholder="업체명을 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__username">대표자명</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__username"
-                        type="text" 
-                        required
-                        placeholder="대표자명을 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__contact">휴대폰 번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__contact" 
-                        type="number" 
-                        required
-                        maxlength="11" 
-                        placeholder="-없이 숫자만 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label" for="LGI-02-1-register__accreditation-a">인증번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input-guid__input" 
-                        id="LGI-02-1-register__accreditation-a" 
-                        type="number" 
-                        disabled=""
-                        placeholder=""
-                        value="12345"
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__businessaddress">사업자 주소</label>
-                      </div>
-                      <div class="addressfield">
-                        <div class="radio form__radio">
-                          <label class="radio__item">
-                            <input type="radio" name="filter" checked>
-                            <span>국내</span>
-                          </label>
-                          <label class="radio__item">
-                            <input type="radio" name="filter">
-                            <span>해외</span>
-                          </label>
-                        </div>
-                        <div class="radio__content">
-                          <div class="input-guid">
-                            <input class="input input--necessary input-guid__input" 
-                            id="LGI-02-1-register__businessaddress-a" 
-                            type="text" 
-                            readonly
-                            placeholder="주소를 검색해주세요."
-                            >
-                            <button class="button input-guid__button" type="button">주소 검색</button>
-                          </div>
-                          <input class="input input--necessary input-guid__input" 
-                          id="LGI-02-1-register__businessaddress-b" 
-                          type="text" 
-                          readonly
-                          placeholder="상세 주소를 입력해주세요."
-                          >
-                        </div>
-                        <div class="radio__content" style="display: none;">
-                          <div class="dropdown">
-                          <p class="dropdown__title">지역</p>
-                          <div class="dropdown__wrap">
-                            <a href="#" class="dropdown__item">
-                              <p>아시아</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>아프리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>북아메리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>남아메리카</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>유럽</p>
-                            </a>
-                            <a href="#" class="dropdown__item">
-                              <p>오세아니아</p>
-                            </a>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__email">이메일 (아이디)</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__email" 
-                        type="text" 
-                        required
-                        placeholder="이메일을 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>이메일이 아이디로 사용됩니다.</li>
-                          </ul>
-                        </div>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증번호가 전송되었습니다. 이메일을 확인해주세요.</div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label" for="LGI-02-1-register__accreditation-b">인증번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input-guid__input" 
-                        id="LGI-02-1-register__accreditation-b" 
-                        type="number" 
-                        disabled=""
-                        placeholder=""
-                        value="12345"
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pw">비밀번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pw"
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 입력해주세요."
-                        >
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pwcheck">비밀번호 확인</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pwcheck" 
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 다시 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__check-box">
-                      <div class="form__title">올펀 약관에 동의해주세요.</div>
-                      <div class="check-box">
-                        <div class="check-box__list check-box__list--checkall">
-                          <div class="check-box__label check-box__label--checkall">
-                            <label for="LGI-02-1-agreement__00" class="category__check">
-                              <input class="checkbox__input checkbox__input--checkall" 
-                              id="LGI-02-1-agreement__00"
-                              type="checkbox" 
-                              >
-                              <span>필수 약관 전체 동의</span>
-                            </label>
-                          </div>
-                        </div>
+    <div id="container" class="container">
+      <div class="sub-member">
+        <div class="inner__large">
+          <div class="register">
+            <h2 class="register__heading">회원가입</h2>
+            <div class="notice-box">
+              <ul>
+                <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>회원 가입 후 관리자 승인 여부에 따라 서비스 이용이 가능합니다.</li>
+              </ul>
+            </div>
 
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__01" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__01"
-                              type="checkbox" 
-                              >
-                              <span>서비스 이용 약관 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__02" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__02"
-                              type="checkbox" 
-                              >
-                              <span>개인정보 활용 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__03" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__03"
-                              type="checkbox" 
-                              >
-                              <span>마케팅 정보 활용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__04" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__04"
-                              type="checkbox" 
-                              >
-                              <span>광고성 이용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="button-wrap">
-                      <input class="button form__submit-button button--solid"
-                      id="LGI-02-1-register__form-submit"
-                      type="submit"
-                      form=""
-                      value="가입 완료" 
-                      disabled=""
-                      />
-                    </div>
-                  </form>
-                </div>
-  
-                <div class="content__item tab__content" data-itemindex="2" style="display: none;">
-                  <div class="content__title">회원 정보를 입력해주세요.</div>
-                  <form class="form" id="" method="" action="#">
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__username">가입자명</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__username"
-                        type="text" 
-                        required
-                        placeholder="가입자명을 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__namecard">명함 첨부</label>
-                      </div>
-                      <div class="filefield">
-                        <input class="input file-input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__namecard"
-                        type="file" 
-                        required
-                        placeholder="이미지 추가"
-                        readonly
-                        >
-                        <div class="file-input__input file-input__input--empty">
-                          <div class="file-input__input-area">
-                            <div class="ico__gallery-image"></div>
-                            <div class="file-input__placeholder">이미지 추가</div>
-                          </div>
-                        </div>
-                        <!-- <div class="file-input__input file-input__input--attached">
-                          <div class="file-input__input-area">
-                            <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
-                            <div class="file-input__placeholder">이미지 영역</div>
-                          </div>
-                        </div> 
-                        -->
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__contact">휴대폰 번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__contact" 
-                        type="number" 
-                        required
-                        maxlength="11" 
-                        placeholder="-없이 숫자만 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__email">이메일 (아이디)</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="LGI-02-1-register__email" 
-                        type="text" 
-                        required
-                        placeholder="이메일을 입력해주세요."
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>이메일이 아이디로 사용됩니다.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pw">비밀번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pw"
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 입력해주세요."
-                        >
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="LGI-02-1-register__pwcheck">비밀번호 확인</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="LGI-02-1-register__pwcheck" 
-                        type="password" 
-                        required
-                        minlength="8" 
-                        placeholder="비밀번호를 다시 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="form__check-box">
-                      <div class="form__title">올펀 약관에 동의해주세요.</div>
-                      <div class="check-box">
-                        <div class="check-box__list check-box__list--checkall">
-                          <div class="check-box__label check-box__label--checkall">
-                            <label for="LGI-02-1-agreement__00" class="category__check">
-                              <input class="checkbox__input checkbox__input--checkall" 
-                              id="LGI-02-1-agreement__00"
-                              type="checkbox" 
-                              >
-                              <span>필수 약관 전체 동의</span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__01" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__01"
-                              type="checkbox" 
-                              >
-                              <span>서비스 이용 약관 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__02" class="category__check">
-                              <input class="checkbox__input checkbox__input--necessary"
-                              id="LGI-02-1-agreement__02"
-                              type="checkbox" 
-                              >
-                              <span>개인정보 활용 동의 (필수)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__03" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__03"
-                              type="checkbox" 
-                              >
-                              <span>마케팅 정보 활용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                        <div class="check-box__list">
-                          <div class="check-box__label">
-                            <label for="LGI-02-1-agreement__04" class="category__check">
-                              <input class="checkbox__input" 
-                              id="LGI-02-1-agreement__04"
-                              type="checkbox" 
-                              >
-                              <span>광고성 이용 동의 (선택)</span>
-                            </label>
-                          </div>
-                          <button class="button check-box__button" type="button">상세 보기</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="button-wrap">
-                      <input class="button form__submit-button button--solid"
-                      id="LGI-02-1-register__form-submit"
-                      type="submit"
-                      form=""
-                      value="가입 완료" 
-                      disabled=""
-                      />
-                    </div>
-                  </form>
+            <div class="content">
+              <div class="content__item">
+                <div class="content__title">회원 구분을 선택해주세요.</div>
+                <div class="tab">
+                  <div class="tab__item tab__item--selected" type="button" data-tabindex="0">도매</div>
+                  <div class="tab__item" type="button" data-tabindex="1">소매</div>
+                  <div class="tab__item" type="button" data-tabindex="2">일반</div>
                 </div>
               </div>
-  
+
+              <div class="content__item tab__content" data-itemindex="0">
+                <div class="content__title">회원 정보를 입력해주세요.</div>
+                <div class="notice-box">
+                  <ul>
+                    <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>
+                      정회원 가입은 대표자만 가능합니다. <br>
+                      가입 승인 이후 대표 계정에 소속된 직원 계정을 생성하실 수 있습니다.
+                    </li>
+                  </ul>
+                </div>
+                <form class="form" id="formtype-0" method="" action="#">
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__businesscode">사업자 등록 번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__businesscode"
+                      type="number" 
+                      required
+                      maxlength="10"
+                      placeholder="사업자 등록 번호를 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__certificate">사업자 등록증 첨부</label>
+                    </div>
+                    <div class="filefield">
+                      <input class="input file-input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__certificate"
+                      type="file" 
+                      required
+                      placeholder="이미지 추가"
+                      readonly
+                      >
+                      <div class="file-input__input file-input__input--empty">
+                        <div class="file-input__input-area">
+                          <div class="ico__gallery-image"></div>
+                          <div class="file-input__placeholder">이미지 추가</div>
+                        </div>
+                      </div>
+                      <!-- <div class="file-input__input file-input__input--attached">
+                        <div class="file-input__input-area">
+                          <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
+                          <div class="file-input__placeholder">이미지 영역</div>
+                        </div>
+                      </div> 
+                      -->
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>권장 형식: jpg, jpeg, png</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__businessname">업체명</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__businessname"
+                      type="text" 
+                      required
+                      placeholder="업체명을 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__username">대표자명</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__username"
+                      type="text" 
+                      required
+                      placeholder="대표자명을 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__contact">휴대폰 번호</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-0__contact" 
+                      type="number" 
+                      required
+                      maxlength="11" 
+                      placeholder="-없이 숫자만 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary">사업자 주소</label>
+                    </div>
+                    <div class="addressfield">
+                      <div class="radio form__radio">
+                        <label class="radio__item" for="businessaddress-tab-0-1">
+                          <input type="radio" id="businessaddress-tab-0-1" name="filter" checked>
+                          <span>국내</span>
+                        </label>
+                        <label class="radio__item" for="businessaddress-tab-0-2">
+                          <input type="radio" id="businessaddress-tab-0-2" name="filter">
+                          <span>해외</span>
+                        </label>
+                      </div>
+                      <div class="radio__content">
+                        <div class="input-guid">
+                          <input class="input input--necessary input-guid__input"
+                          type="text" 
+                          readonly
+                          placeholder="주소를 검색해주세요."
+                          >
+                          <button class="button input-guid__button" type="button">주소 검색</button>
+                        </div>
+                        <input class="input input--necessary input-guid__input" 
+                        type="text" 
+                        readonly
+                        placeholder="상세 주소를 입력해주세요."
+                        >
+                      </div>
+                      <div class="radio__content" style="display: none;">
+                        <div class="dropdown">
+                          <p class="dropdown__title">지역</p>
+                          <div class="dropdown__wrap">
+                            <a href="#" class="dropdown__item">
+                              <p>아시아</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>아프리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>북아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>남아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>유럽</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>오세아니아</p>
+                            </a>
+                          </div>
+                        </div>
+                        <input class="input input--necessary input-guid__input" 
+                        type="text" 
+                        readonly
+                        placeholder="상세 주소를 입력해주세요."
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__email">이메일 (아이디)</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-0__email" 
+                      type="text" 
+                      required
+                      placeholder="이메일을 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>이메일이 아이디로 사용됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__pw">비밀번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__pw"
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 입력해주세요."
+                      >
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-0__pwcheck">비밀번호 확인</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-0__pwcheck" 
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 다시 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__check-box">
+                    <div class="form__title">올펀 약관에 동의해주세요.</div>
+                    <div class="check-box">
+                      <div class="check-box__list check-box__list--checkall">
+                        <div class="check-box__label check-box__label--checkall">
+                          <label for="LGI-02-1-agreement__00" class="category__check">
+                            <input class="checkbox__input checkbox__input--checkall" 
+                            id="LGI-02-1-agreement__00"
+                            type="checkbox" 
+                            >
+                            <span>필수 약관 전체 동의</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__01" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__01"
+                            type="checkbox" 
+                            >
+                            <span>서비스 이용 약관 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__service')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__02" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__02"
+                            type="checkbox" 
+                            >
+                            <span>개인정보 활용 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__privacy-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__03" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__03"
+                            type="checkbox" 
+                            >
+                            <span>마케팅 정보 활용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__marketing-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__04" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__04"
+                            type="checkbox" 
+                            >
+                            <span>광고성 이용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__promo')">상세 보기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-wrap">
+                    <input class="button form__submit-button button--solid"
+                    id="LGI-02-1-register_tab-0__form-submit"
+                    type="submit"
+                    form="formtype-0"
+                    value="가입 완료" 
+                    disabled=""
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="content__item tab__content" data-itemindex="1" style="display: none;">
+                <div class="content__title">회원 정보를 입력해주세요.</div>
+                <div class="notice-box">
+                  <ul>
+                    <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>
+                      정회원 가입은 대표자만 가능합니다. <br>
+                      가입 승인 이후 대표 계정에 소속된 직원 계정을 생성하실 수 있습니다.
+                    </li>
+                  </ul>
+                </div>
+                <form class="form" id="formtype-1" method="" action="#">
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__businesscode">사업자 등록 번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__businesscode"
+                      type="number" 
+                      required
+                      maxlength="10"
+                      placeholder="사업자 등록 번호를 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__certificate">사업자 등록증 첨부</label>
+                    </div>
+                    <div class="filefield">
+                      <input class="input file-input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__certificate"
+                      type="file" 
+                      required
+                      placeholder="이미지 추가"
+                      readonly
+                      >
+                      <div class="file-input__input file-input__input--empty">
+                        <div class="file-input__input-area">
+                          <div class="ico__gallery-image"></div>
+                          <div class="file-input__placeholder">이미지 추가</div>
+                        </div>
+                      </div>
+                      <!-- <div class="file-input__input file-input__input--attached">
+                        <div class="file-input__input-area">
+                          <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
+                          <div class="file-input__placeholder">이미지 영역</div>
+                        </div>
+                      </div> 
+                      -->
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>권장 형식: jpg, jpeg, png</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__businessname">업체명</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__businessname"
+                      type="text" 
+                      required
+                      placeholder="업체명을 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__username">대표자명</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__username"
+                      type="text" 
+                      required
+                      placeholder="대표자명을 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__contact">휴대폰 번호</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-1__contact" 
+                      type="number" 
+                      required
+                      maxlength="11" 
+                      placeholder="-없이 숫자만 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary">사업자 주소</label>
+                    </div>
+                    <div class="addressfield">
+                      <div class="radio form__radio">
+                        <label class="radio__item" for="businessaddress-tab-1-1">
+                          <input type="radio" id="businessaddress-tab-1-1" name="filter" checked>
+                          <span>국내</span>
+                        </label>
+                        <label class="radio__item" for="businessaddress-tab-1-2">
+                          <input type="radio" id="businessaddress-tab-1-2" name="filter">
+                          <span>해외</span>
+                        </label>
+                      </div>
+                      <div class="radio__content">
+                        <div class="input-guid">
+                          <input class="input input--necessary input-guid__input"
+                          type="text" 
+                          readonly
+                          placeholder="주소를 검색해주세요."
+                          >
+                          <button class="button input-guid__button" type="button">주소 검색</button>
+                        </div>
+                        <input class="input input--necessary input-guid__input" 
+                        type="text" 
+                        readonly
+                        placeholder="상세 주소를 입력해주세요."
+                        >
+                      </div>
+                      <div class="radio__content" style="display: none;">
+                        <div class="dropdown">
+                          <p class="dropdown__title">지역</p>
+                          <div class="dropdown__wrap">
+                            <a href="#" class="dropdown__item">
+                              <p>아시아</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>아프리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>북아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>남아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>유럽</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>오세아니아</p>
+                            </a>
+                          </div>
+                        </div>
+                        <input class="input input--necessary input-guid__input" 
+                        type="text" 
+                        readonly
+                        placeholder="상세 주소를 입력해주세요."
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__email">이메일 (아이디)</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-1__email" 
+                      type="text" 
+                      required
+                      placeholder="이메일을 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>이메일이 아이디로 사용됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__pw">비밀번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__pw"
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 입력해주세요."
+                      >
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-1__pwcheck">비밀번호 확인</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-1__pwcheck" 
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 다시 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__check-box">
+                    <div class="form__title">올펀 약관에 동의해주세요.</div>
+                    <div class="check-box">
+                      <div class="check-box__list check-box__list--checkall">
+                        <div class="check-box__label check-box__label--checkall">
+                          <label for="LGI-02-1-agreement__00" class="category__check">
+                            <input class="checkbox__input checkbox__input--checkall" 
+                            id="LGI-02-1-agreement__00"
+                            type="checkbox" 
+                            >
+                            <span>필수 약관 전체 동의</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__01" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__01"
+                            type="checkbox" 
+                            >
+                            <span>서비스 이용 약관 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__service')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__02" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__02"
+                            type="checkbox" 
+                            >
+                            <span>개인정보 활용 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__privacy-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__03" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__03"
+                            type="checkbox" 
+                            >
+                            <span>마케팅 정보 활용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__marketing-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__04" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__04"
+                            type="checkbox" 
+                            >
+                            <span>광고성 이용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__promo')">상세 보기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-wrap">
+                    <input class="button form__submit-button button--solid"
+                    id="LGI-02-1-register_tab-1__form-submit"
+                    type="submit"
+                    form="formtype-1"
+                    value="가입 완료" 
+                    disabled=""
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="content__item tab__content" data-itemindex="2" style="display: none;">
+                <div class="content__title">회원 정보를 입력해주세요.</div>
+                <form class="form" id="formtype-2" method="" action="#">
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__username">가입자명</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-2__username"
+                      type="text" 
+                      required
+                      placeholder="가입자명을 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__namecard">명함 첨부</label>
+                    </div>
+                    <div class="filefield">
+                      <input class="input file-input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-2__namecard"
+                      type="file" 
+                      required
+                      placeholder="이미지 추가"
+                      readonly
+                      >
+                      <div class="file-input__input file-input__input--empty">
+                        <div class="file-input__input-area">
+                          <div class="ico__gallery-image"></div>
+                          <div class="file-input__placeholder">이미지 추가</div>
+                        </div>
+                      </div>
+                      <!-- <div class="file-input__input file-input__input--attached">
+                        <div class="file-input__input-area">
+                          <div class="ico__sdelete" type="button"><span class="a11y">삭제</span></div>
+                          <div class="file-input__placeholder">이미지 영역</div>
+                        </div>
+                      </div> 
+                      -->
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__contact">휴대폰 번호</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-2__contact" 
+                      type="number" 
+                      required
+                      maxlength="11" 
+                      placeholder="-없이 숫자만 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>해당 번호로 가입 승인 결과 문자가 전송됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__email">이메일 (아이디)</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input" 
+                      id="LGI-02-1-register_tab-2__email" 
+                      type="text" 
+                      required
+                      placeholder="이메일을 입력해주세요."
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>이메일이 아이디로 사용됩니다.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__pw">비밀번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-2__pw"
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 입력해주세요."
+                      >
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="LGI-02-1-register_tab-2__pwcheck">비밀번호 확인</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray" 
+                      id="LGI-02-1-register_tab-2__pwcheck" 
+                      type="password" 
+                      required
+                      minlength="8" 
+                      placeholder="비밀번호를 다시 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="form__check-box">
+                    <div class="form__title">올펀 약관에 동의해주세요.</div>
+                    <div class="check-box">
+                      <div class="check-box__list check-box__list--checkall">
+                        <div class="check-box__label check-box__label--checkall">
+                          <label for="LGI-02-1-agreement__00" class="category__check">
+                            <input class="checkbox__input checkbox__input--checkall" 
+                            id="LGI-02-1-agreement__00"
+                            type="checkbox" 
+                            >
+                            <span>필수 약관 전체 동의</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__01" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__01"
+                            type="checkbox" 
+                            >
+                            <span>서비스 이용 약관 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__service')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__02" class="category__check">
+                            <input class="checkbox__input checkbox__input--necessary"
+                            id="LGI-02-1-agreement__02"
+                            type="checkbox" 
+                            >
+                            <span>개인정보 활용 동의 (필수)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__privacy-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__03" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__03"
+                            type="checkbox" 
+                            >
+                            <span>마케팅 정보 활용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__marketing-info')">상세 보기</button>
+                      </div>
+                      <div class="check-box__list">
+                        <div class="check-box__label">
+                          <label for="LGI-02-1-agreement__04" class="category__check">
+                            <input class="checkbox__input" 
+                            id="LGI-02-1-agreement__04"
+                            type="checkbox" 
+                            >
+                            <span>광고성 이용 동의 (선택)</span>
+                          </label>
+                        </div>
+                        <button class="button check-box__button" type="button" onclick="openModal('#reg-agrmnt__promo')">상세 보기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-wrap">
+                    <input class="button form__submit-button button--solid"
+                    id="LGI-02-1-register_tab-2__form-submit"
+                    type="submit"
+                    form="formtype-2"
+                    value="가입 완료" 
+                    disabled=""
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="reg-agrmnt__service" class="modal modal-type--basic">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>서비스 이용 약관</p>
+                </div>
+                <div class="content">
+                  <div style="height: 660px; background-color: #D9D9D9;">
+                    서비스 이용 약관 <br>약관 내용
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px"></div>
+                <div class="modal-close" onclick="closeModal('#reg-agrmnt__service')">
+                  <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+                </div>
+              </div>
             </div>
           </div>
-  
+        </div>
+      </div>
+
+      <div id="reg-agrmnt__privacy-info" class="modal modal-type--basic">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>개인정보 활용 동의</p>
+                </div>
+                <div class="content">
+                  <div style="height: 660px; background-color: #D9D9D9;">
+                    개인정보 활용 동의 <br>약관 내용
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px"></div>
+                <div class="modal-close" onclick="closeModal('#reg-agrmnt__privacy-info')">
+                  <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reg-agrmnt__marketing-info" class="modal modal-type--basic">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>마케팅 정보 활용 동의</p>
+                </div>
+                <div class="content">
+                  <div style="height: 660px; background-color: #D9D9D9;">
+                    마케팅 정보 활용 동의 <br>약관 내용
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px"></div>
+                <div class="modal-close" onclick="closeModal('#reg-agrmnt__marketing-info')">
+                  <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reg-agrmnt__promo" class="modal modal-type--basic">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>광고성 이용 동의</p>
+                </div>
+                <div class="content">
+                  <div style="height: 660px; background-color: #D9D9D9;">
+                    광고성 이용 동의 <br>약관 내용
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px"></div>
+                <div class="modal-close" onclick="closeModal('#reg-agrmnt__promo')">
+                  <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
-  
-  </html>
+  </div>
+
+  <script src="../assets/js/component.js" type="text/javascript"></script>
+</body>
+</html>

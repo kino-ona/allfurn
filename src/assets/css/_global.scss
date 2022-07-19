@@ -266,9 +266,6 @@ input::-ms-clear {
 }
 
 .head__logo {
-	display: inline-block;
-	@include mixins.sprite(sprite.$head-logo);
-
 	margin-right: 60px;
 }
 
@@ -297,12 +294,14 @@ input::-ms-clear {
 .headertype__logo-only {
 	height: 80px;
 
-	.head__fixed .inner>*:not(.head__logo) {
-		display: none;
+	.head__fixed {
+		border-bottom: 1px solid #F2F2F2;
 	}
 
-	.head__gnb {
+	.textfield, .head__util, .head__gnb {
 		display: none;
+		visibility: hidden;
+		height: 0;
 	}
 }
 
