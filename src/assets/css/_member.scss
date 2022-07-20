@@ -1,39 +1,45 @@
 @use 'sass:math';
 
-.sub-member {
+.member {
   margin-bottom: 40px;
 
-  .tab {
+  .tab__item {
     color: #1B1B1B;
     font-size: 16px;
     font-weight: 400;
   }
 
-  .tab__item {
-    cursor: pointer;
+  .dropdown {
+    margin-bottom: 0;
   }
-
-  .form__radio {
-    flex-basis: 100%;
-    margin-bottom: 18px;
     
-    .radio__item:not(:first-of-type) {
-      margin-left: 42px; 
-      
-      span {
-        color: #1B1B1B;
-        font-size: 14px;
-        font-weight: 500;
-      }
+  .radio__item {
+    margin-right: 42px; 
+    
+    span {
+      color: #1B1B1B;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
     }
   }
 
-  input[id*="register__accreditation"] {
+  input[id*="accreditation"] {
     width: calc(100% - 130px);
   }
 
-  input[id*="register__accreditation"] + .input-guid__button {
+  input[id*="accreditation"] + .input-guid__button {
     width: 120px;
+  }
+
+  .input-guid + .input-guid__input {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .dropdown + .input-guid__input {
+    margin-top: 10px;
+    width: 100%;
   }
 
   .form__check-box {
@@ -86,6 +92,7 @@
     .button {
       width: 100%;
       padding: 11px 16px;
+      display: block;
       font-size: 16px;
       font-weight: 600;
       line-height: 26px;
@@ -101,6 +108,47 @@
     display: block;
     margin: 0 auto;
   }
+
+  .modal {
+
+    &__container {
+      width: 350px;
+    }
+
+    &-box__container {
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #E0E0E0;
+    }
+
+    &__desc {
+      padding: 37px 24px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 0;
+      font-size: 16px;
+      font-size: 500;
+      color: #1B1B1B;
+    }
+
+    &__button {
+      height: 40px;
+      max-width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      background-color: #FB4760;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 0;
+
+      span {
+        line-height: inherit;
+      }
+    }
+  }
 }
 
 .login {
@@ -110,12 +158,8 @@
   }
 
   .head__logo {
-    width: 146px;
-    height: 29.95px;
-    margin: 0 auto 40px;
     display: block;
-    background-size: 159%;
-    background-position-x: -90px;
+    margin: 0 auto 40px;
   }
 
   .textfield__input {
@@ -143,7 +187,7 @@
     margin-top: 6px;
   }
 
-  .login__notice {
+  .login__notice-box {
     max-width: 100%;
     padding: 12px 16px;
     margin-bottom: 24px;
@@ -185,9 +229,16 @@
     border-top: 2px solid #4F4F4F;
   }
 
-  .content__item {
+  .content > .content__item {
     padding: 0 107px;
+  }
+  
+  .content__item {
     margin-bottom: 72px;
+  }
+
+  .tab-content {
+    margin-top: 72px;
   }
 
   .content__title {
@@ -357,6 +408,10 @@
 
   .content__item .notice-box {
     margin-bottom: 40px;
+  }
+
+  .form__check-box {
+    margin-top: 0;
   }
 
   .button-wrap {
