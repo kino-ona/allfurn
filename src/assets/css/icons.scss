@@ -287,6 +287,21 @@ i {
   @include mixins.sprite(sprite.$ico-search-circle);
 }
 
+.ico__refresh--gray {
+  @include mixins.sprite(sprite.$ico-refresh-gray);
+}
+
+.ico__heart {
+  @include mixins.sprite(sprite.$ico-heart);
+}
+
+.ico__unheart {
+  @include mixins.sprite(sprite.$ico-unheart);
+}
+
+
+
+
 
 
 
