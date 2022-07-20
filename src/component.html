@@ -341,40 +341,39 @@
       <div class="inner" style="padding-bottom: 20px;">
         <p class="inner__title">Default Tab</p>
 
-        <div class="tab__wrap" id="tabcase01">
+        <div class="tab" id="register-type">
           <ul class="tab__list" role="tablist">
-            <li><button class="tab" aria-selected="true">tabName00</button></li>
-            <li><button class="tab">tabName01</button></li>
-            <li><button class="tab">tabName02</button></li>
+            <li><button class="tab__item" aria-selected="true" role="tab" tabindex="0" id="tabs-1">도매</button></li>
+            <li><button class="tab__item" role="tab" tabindex="-1" aria-selected="false" id="tabs-2">소매</button></li>
+            <li><button class="tab__item" role="tab" tabindex="-1" aria-selected="false" id="tabs-3">일반</button></li>
           </ul>
-          <div class="tab__contents">
-            <div class="tab__panel" aria-hidden="false">
-              tab00
+          <div class="tab-content">
+            <div class="tab-content__panel" aria-hidden="false" role="tabpanel" tabindex="0" aria-labelledby="tabs-1">
+              tab01도매
             </div>
-            <div class="tab__panel" aria-hidden="true">
-              tab01
+            <div class="tab-content__panel" aria-hidden="true" role="tabpanel" tabindex="-1" aria-labelledby="tabs-2">
+              tab02소매
             </div>
-            <div class="tab__panel" aria-hidden="true">
-              tab02
+            <div class="tab-content__panel" aria-hidden="true" role="tabpanel" tabindex="-1" aria-labelledby="tabs-3">
+              tab03일반
             </div>
           </div>
-        </div>
         <br>
         <div style="width: 100%;height:1px;background-color:#000000;margin-bottom: 25px;"></div>
 
-        <div class="tab__wrap tab__wrap-func" id="tabcase02">
+        <div class="tab tab-func" id="tabcase02">
           <ul class="tab__list" role="tablist">
-            <li><button class="tab" aria-selected="true">fn tab01</button></li>
-            <li><button class="tab">fn tab02</button></li>
+            <li><button class="tab__item" aria-selected="true">fn tab01</button></li>
+            <li><button class="tab__item">fn tab02</button></li>
           </ul>
-          <div class="tab__contents">
-            <div class="tab__panel" aria-hidden="false">
+          <div class="tab-content">
+            <div class="tab-content__panel" aria-hidden="false">
               tab01
               <br><br>
 
               actvTabList('tabcase02', 0);
             </div>
-            <div class="tab__panel" aria-hidden="true">
+            <div class="tab-content__panel" aria-hidden="true">
               tab02
             </div>
           </div>
