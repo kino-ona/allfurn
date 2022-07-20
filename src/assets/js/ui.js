@@ -23,6 +23,7 @@ function openModal(name) {
 
 function closeModal (name) {
 	$(`${name}`).css('display', 'none');
+	$('body').css('overflow','scroll')
 }
 
 // $('.comment__like').on('click', function (event) {
@@ -120,5 +121,15 @@ $('.tab__wrap').each(function(){
 		var basicTabs = new Tabs('#' + tabIdx);
 	}	
 });
+
+//category-menu
+$('.category-menu__title').on('click', function() {
+	$('.category-menu').toggleClass('category-menu--active');
+})
+
+$('.category-menu__sub-item').on('click', function() {
+	$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
+	$('.category-menu').removeClass('category-menu--active');
+})
 
 
