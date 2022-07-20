@@ -1,0 +1,197 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | Order Info",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="inner">
+        <div class="content">
+          <h2 class="basket__title">주문하기</h2>
+
+          <div class="basket order-info">
+            <div class="basket__container">
+              <ul class="order-info__list">
+                <li class="order-info__desc">
+                  <div class="order-info__title">
+                    <h3>주문자 정보</h3>
+                  </div>
+                  <dl>
+                    <dt>업체명</dt>
+                    <dd>구매 업체명</dd>
+                  </dl>
+                  <dl>
+                    <dt>휴대폰 번호</dt>
+                    <dd>03-123-4567</dd>
+                  </dl>
+                  <dl>
+                    <dt>이메일</dt>
+                    <dd>abcd@naver.com</dd>
+                  </dl>
+                </li>
+                <li class="order-info__desc">
+                  <div class="order-info__title">
+                    <h3>배송지 정보</h3>
+                    <button class="button button--blank-gray">배송지 선택</button>
+                  </div>
+                  <dl>
+                    <dt>수령인</dt>
+                    <dd class="textfield">
+                      <input type="text" class="textfield__input textfield__input--gray">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>연락처</dt>
+                    <dd class="textfield">
+                      <input type="number" class="textfield__input textfield__input--gray">
+                    </dd>
+                  </dl>
+                  <dl style="align-items: flex-start">
+                    <dt style="margin-top: 10px">배송지</dt>
+                    <dd class="input_guid">
+                      <input type="text" placeholder="주소를 검색해주세요." class="input-guid__input" disabled>
+                      <button type="button" class="input-guid__button" style="width: 100px">주소 검색</button>
+
+                      <div class="textfield">
+                        <input type="text" placeholder="상세 주소를 입력해주세요." class="textfield__input textfield__input--gray"
+                          disabled>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="order-info__desc">
+                  <div class="order-info__title">
+                    <h3>주문 정보</h3>
+                  </div>
+                  <div class="order-info__container">
+                    <div class="order-info__header">
+                      <h4>코윈스</h4>
+                      <p>230 코모도 3인 소파 라이트 그레이 외 1건</p>
+                    </div>
+
+                    <ul>
+                      <li>
+                        <div class="order-info__content">
+                          <div class="order-info__detail">
+                            <div class="order-info__img">
+                              <img src="../assets/images/temp/order_product@2x.png" alt="포그니 라운드 소파">
+                            </div>
+                            <div class="order-info__text">
+                              <h4>포그니 라운드 소파</h4>
+                              <ul>
+                                <li>
+                                  <div class="price-wrap">
+                                    <p class="price">480,000원</p>
+                                    <p class="count">10개</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="order-info__detail--request">
+                            <dl>
+                              <dt>배송 방법</dt>
+                              <dd>직접 배송 (무료)</dd>
+                            </dl>
+                            <dl>
+                              <dt>결제 방식</dt>
+                              <dd>업체 협의</dd>
+                            </dl>
+                            <div class="textfield">
+                              <input type="text" placeholder="추가 요청 사항을 입력해주세요."
+                                class="textfield__input textfield__input--gray">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="order-info__content">
+                          <div class="order-info__detail">
+                            <div class="order-info__img">
+                              <img src="../assets/images/temp/order_product@2x.png" alt="앙상블 2000 슬라이드장">
+                            </div>
+                            <div class="order-info__text">
+                              <h4>앙상블 2000 슬라이드장</h4>
+                              <ul>
+                                <li>
+                                  <div class="sub-wrap">
+                                    <p>도어: 슬라이딩 / 컬러: 화이트</p>
+                                  </div>
+                                  <div class="price-wrap">
+                                    <p class="price">업체 문의</p>
+                                    <p class="count">10개</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="sub-wrap">
+                                    <p>추가구성(선택): 손잡이</p>
+                                  </div>
+                                  <div class="price-wrap">
+                                    <p class="price">업체 문의</p>
+                                    <p class="count">10개</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="order-info__detail--request">
+                            <dl>
+                              <dt>배송 방법</dt>
+                              <dd>업체 직접 배송, 업체 직접 배송, 업체 직접 배송, 업체 직접 배송, 업체 직접 배송, 업체 직접 배송 글자수 많아서 두 줄 처리되는 경우</dd>
+                            </dl>
+                            <dl>
+                              <dt>결제 방식</dt>
+                              <dd>계좌 이체</dd>
+                            </dl>
+                            <div class="textfield">
+                              <input type="text" placeholder="추가 요청 사항을 입력해주세요."
+                                class="textfield__input textfield__input--gray">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <dl class="order-info__footer">
+                      <dt>주문 금액</dt>
+                      <dd>480,000원 <span>(협의 포함)</span> </dd>
+                    </dl>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="basket__order">
+              <div class="order">
+                <div class="order__price">
+                  <p class="text">총 주문 금액</p>
+                  <div class="price__num-wrap">
+                    <p class="num"><span>7,500,000</span> 원</p>
+                    <p class="attc">(협의 포함)</p>
+                  </div>
+                </div>
+                <div class="order__button">
+                  <button type="button" class="button button--solid">주문완료</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+</body>
+
+</html>
