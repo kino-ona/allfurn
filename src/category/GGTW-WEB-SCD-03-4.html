@@ -1,0 +1,128 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | New category",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container category">
+      <div class="inner">
+        <p class="inner__type">
+          ‘<span>소파</span>' 검색 결과
+        </p>
+        <div class="inner__category">
+          <div class="sub-category sub-category--type-2">
+            <p class="sub-category__item"><a href="#">상품</a></p>
+            <p class="sub-category__item sub-category__item--active"><a href="#">업체</a></p>
+          </div>
+        </div>
+     
+       
+        <div class="contents">
+          <div class="product">
+            <div class="product__text--wrap">
+              <p class="product__count">‘소파' 검색 결과 총 1,000개의 상품</p>
+              <a href="#" class="product__filter" onclick="openModal('#modal-type--basic')">
+                <i class="ico__filter"><span class="a11y">필터 아이콘</span></i>
+                <span>신상품순</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="product-list">
+            <div class="product-list__head">
+              <div class="product-list__info">
+                <div class="logo">
+                  <img src="../assets/images/temp/category_thumbnail.png" alt="로고">
+                  <div class="description"></div>
+                </div>
+                <
+              </div>
+            </div>
+            <div class="product-list__content">
+              <div class="product-list__img"></div>
+            </div>
+          </div>
+
+          <div class="pagenation">
+            <button type="button" class="prev">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="numbering">
+              <a href="#" class="numbering--active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+            </div>
+            <button type="button" class="next">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+          </div>
+        </div>
+        <!--data 없을때-->
+        <!-- <div class="no-data">
+          <p>
+            <i class="ico__search-circle"></i>
+            ‘소파’ 에 대한 상품 검색 결과가 없습니다.
+          </p>
+          <a href="#">올펀 상품 보러가기</a>
+        </div> -->
+      </div>
+      <div id="modal-type--basic" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>정렬 선택</p>
+                </div>
+                <div class="content">
+                  <div class="radio">
+                    <label class="radio__item">
+                      <input type="radio" name="filter" checked>
+                      <span>신상품순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>검색 많은 순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>주문 많은 순</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px">
+                  <button type="button" onclick="closeModal('#modal-type--basic')">선택 완료</p>
+                </div>
+                <div class="modal-close">
+                  <button type="button" class="modal__close-button" onclick="closeModal('#modal-type--basic')"><span class="a11y">close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+  <script>
+  </script>
+</body>
+
+</html>

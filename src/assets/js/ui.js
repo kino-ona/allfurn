@@ -118,13 +118,39 @@ $('.tab').each(function(){
 });
 
 //category-menu
+
+
 $('.category-menu__title').on('click', function() {
 	$('.category-menu').toggleClass('category-menu--active');
 })
 
-$('.category-menu__sub-item').on('click', function() {
-	$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
-	$('.category-menu').removeClass('category-menu--active');
+
+$('.category-menu__item').hover(function() {
+	$('.category-menu__sub').removeClass('active');
+	$(this).find('.category-menu__sub').addClass('active')
 })
 
+$('.category-menu__sub-item').on('click', function() {
+	$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
+	$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
+	$('.category-filter').css('display', 'block').addClass('category-filter--active');
+	$('.category-refresh').css('display', 'block');
+
+	$('.category-menu__item').removeClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
+
+	$.each($('.category-menu__item i'),function (index, item) {
+		item.classList = item.classList[0].split('--on')[0];
+	})
+	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
+})
+
+$('.category-refresh .category-filter__refresh').on('click', function () {
+	$('.category-menu__title a').html('카테고리');
+	$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
+	
+	$('.category-refresh').css('display', 'none');
+	$('.category-filter').css('display', 'none');
+	$('.category-menu__item').removeClass('category-menu__item--active');
+});
 
