@@ -4,6 +4,8 @@ $(".product-bookmark").on("click", function () {
 
 $(".dropdown.dropdown--01").on("click", function () {
   $(this).toggleClass("dropdown--active");
+  $(".dropdown.dropdown--02").removeClass("dropdown--active");
+  $(".dropdown.dropdown--03").removeClass("dropdown--active");
 });
 $(".dropdown__item.dropdown__item--01").on("click", function (evnet) {
   evnet.preventDefault();
@@ -14,6 +16,8 @@ $(".dropdown__item.dropdown__item--01").on("click", function (evnet) {
 
 $(".dropdown.dropdown--02").on("click", function () {
   $(this).toggleClass("dropdown--active");
+  $(".dropdown.dropdown--01").removeClass("dropdown--active");
+  $(".dropdown.dropdown--03").removeClass("dropdown--active");
 });
 $(".dropdown__item.dropdown__item--02").on("click", function (evnet) {
   evnet.preventDefault();
@@ -24,6 +28,8 @@ $(".dropdown__item.dropdown__item--02").on("click", function (evnet) {
 
 $(".dropdown.dropdown--03").on("click", function () {
   $(this).toggleClass("dropdown--active");
+  $(".dropdown.dropdown--01").removeClass("dropdown--active");
+  $(".dropdown.dropdown--02").removeClass("dropdown--active");
 });
 $(".dropdown__item.dropdown__item--03").on("click", function (evnet) {
   evnet.preventDefault();
