@@ -40,3 +40,4 @@ $(".dropdown__item.dropdown__item--03").on("click", function (evnet) {
 $(".order-info__title").on("click", function () {
   $(this).toggleClass("active");
 });
+
