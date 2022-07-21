@@ -3,17 +3,20 @@
 
 
 i {
-	display: inline-block;
+  display: inline-block;
   vertical-align: middle;
 }
+
 .head__logo {
-	display: inline-block;
-	@include mixins.sprite(sprite.$head-logo);
+  display: inline-block;
+  @include mixins.sprite(sprite.$head-logo);
 }
+
 .head__logo--large {
-	display: inline-block;
-	@include mixins.sprite(sprite.$head-logo-large);
+  display: inline-block;
+  @include mixins.sprite(sprite.$head-logo-large);
 }
+
 .foo__logo {
   @include mixins.sprite(sprite.$foo-logo);
 }
@@ -21,30 +24,39 @@ i {
 .ico__alram {
   @include mixins.sprite(sprite.$ico-alram);
 }
+
 .ico__basket {
   @include mixins.sprite(sprite.$ico-basket);
 }
+
 .ico__close28 {
   @include mixins.sprite(sprite.$ico-close28);
 }
+
 .ico__search {
   @include mixins.sprite(sprite.$ico-search);
 }
+
 .ico__info {
   @include mixins.sprite(sprite.$ico-info);
 }
+
 .ico__email {
   @include mixins.sprite(sprite.$ico-email);
 }
+
 .ico__delete16 {
   @include mixins.sprite(sprite.$ico-delete16);
 }
+
 .ico__viewcnt {
   @include mixins.sprite(sprite.$ico-viewcnt);
 }
+
 .ico__like {
   @include mixins.sprite(sprite.$ico-like);
 }
+
 .ico__reply {
   @include mixins.sprite(sprite.$ico-reply);
 }
@@ -52,6 +64,7 @@ i {
 .ico__reply {
   @include mixins.sprite(sprite.$ico-reply);
 }
+
 .ico__refresh {
   @include mixins.sprite(sprite.$ico-refresh);
 }
@@ -101,6 +114,7 @@ i {
 .ico__form-check {
   @include mixins.sprite(sprite.$ico-form-check_blue);
 }
+
 .ico__arrow--right18 {
   @include mixins.sprite(sprite.$ico-arrow-right18);
 }
@@ -147,6 +161,7 @@ i {
 .ico__count--minus {
   @include mixins.sprite(sprite.$ico-count-minus);
 }
+
 .ico__count--plus {
   @include mixins.sprite(sprite.$ico-count-plus);
 }
@@ -166,9 +181,11 @@ i {
 .ico__arrow--up24 {
   @include mixins.sprite(sprite.$ico-arrow-up24);
 }
+
 .ico__refresh {
   @include mixins.sprite(sprite.$ico-refresh);
 }
+
 .ico__search--white {
   @include mixins.sprite(sprite.$ico-search-white);
 }
@@ -309,9 +326,14 @@ i {
   @include mixins.sprite(sprite.$ico-unheart);
 }
 
+.ico__check-gray--border {
+  @include mixins.sprite(sprite.$ico-check-gray-border);
+}
 
+.ico__bookmark28--on {
+  @include mixins.sprite(sprite.$ico-bookmark28-on);
+}
 
-
-
-
-
+.ico__bookmark28--off {
+  @include mixins.sprite(sprite.$ico-bookmark28-off);
+}

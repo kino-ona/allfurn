@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use "mixins";
+@use 'sprite/sprite';
 
 .banner {
   margin-top: 16px;
@@ -24,7 +26,7 @@
   justify-content: center;
   width: 91px;
   height: 32px;
-  border: 1px solid rgba(244, 244, 244, 1);
+  border: 1px solid #E0E0E0;
   border-radius: 34px;
   margin-bottom: 24px;
 
@@ -38,7 +40,15 @@
     line-height: 24px;
     letter-spacing: -0.02em;
     color: #4F4F4F;
-    margin-right: 4px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      @include mixins.sprite(sprite.$ico-arrow-down14);
+      display: inline-block;
+      margin-left: 4px;
+    }
   }
 
   &--active {
@@ -48,12 +58,20 @@
     .category-btn__text {
       font-weight: 600;
       color: #1B1B1B;
+
+      &::after {
+        @include mixins.sprite(sprite.$ico-arrow-down14-red);
+      }
     }
+  }
+
+  &--active+.category-list {
+    display: flex;
   }
 }
 
 .category-list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 15px 16px 5px;
   margin-bottom: 22px;
@@ -361,8 +379,13 @@
         font-weight: 400;
         font-size: 16px;
         letter-spacing: -0.02em;
-        color: #333333;
         margin-right: 8px;
+        color: rgba(130, 130, 130, 1);
+
+        strong {
+          font-weight: 600;
+          color: #333333;
+        }
       }
     }
 
@@ -417,16 +440,13 @@
 
           &.product-bookmark {
             .bookmark {
-              background-image: url(../images/sub/ico_bookmark28_off@2x.png);
-              background-size: contain;
-              width: 28px;
-              height: 28px;
               margin: 0 auto;
+              @include mixins.sprite(sprite.$ico-bookmark28-off);
             }
 
             &.active {
               .bookmark {
-                background-image: url(../images/sub/ico_bookmark28_on@2x.png);
+                @include mixins.sprite(sprite.$ico-bookmark28-on);
               }
 
               p {
@@ -680,7 +700,7 @@
 
           // 컴포넌트 수정되면 삭제
           &--solid:hover:not([disabled]) {
-            pointer-events: unset;
+            pointer-events: initial;
           }
         }
       }
@@ -780,15 +800,12 @@
         }
 
         .ico__arrow {
-          background-image: url("../images/sub/ico_arrow_down24.png");
-          background-size: contain;
-          width: 24px;
-          height: 24px;
+          @include mixins.sprite(sprite.$ico-arrow-down24);
         }
 
         &.active {
           .ico__arrow {
-            background-image: url("../images/sub/ico_arrow_up24.png");
+            @include mixins.sprite(sprite.$ico-arrow-up24);
           }
         }
 
@@ -1076,7 +1093,7 @@
 
           // 컴포넌트 수정되면 삭제
           &--solid:hover:not([disabled]) {
-            pointer-events: unset;
+            pointer-events: initial;
           }
         }
       }
@@ -1706,5 +1723,117 @@
       line-height: 52px;
       margin: 0 6px;
     }
+  }
+}
+
+.category-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 999;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 28px;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    height: 424px;
+    overflow-y: scroll;
+    padding: 0 28px 10px;
+    box-sizing: border-box;
+
+    .content__list {
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #F2F2F2;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button--blank-gray,
+    .button--solid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 156px;
+      height: 48px;
+      margin: 0 4px;
+    }
+
+    .button--blank-gray {
+      p {
+        margin-left: 8px;
+      }
+    }
+
+    .button--solid {
+      width: 268px;
+
+      // 컴포넌트 수정되면 삭제
+      &:hover:not([disabled]) {
+        pointer-events: initial;
+      }
+    }
+  }
+}
+
+// 체크박스
+.checkbox__checked[type="checkbox"] {
+  display: none;
+
+  &+span {
+    position: relative;
+    padding-left: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: -0.02em;
+    color: #828282;
+  }
+
+  &:checked+span {
+    font-weight: 600;
+    color: #1B1B1B;
+  }
+
+  &+span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    @include mixins.sprite(sprite.$ico-check-gray-border);
+  }
+
+  &:checked+span::after {
+    @include mixins.sprite(sprite.$ico-check-white);
   }
 }

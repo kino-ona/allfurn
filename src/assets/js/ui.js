@@ -54,19 +54,34 @@ $(".textfield__search").on("propertychange change keyup paste input", function()
 });
 
 //bookmark
-$('.card__bookmark').on('click', function () {
-	let bookMarkImg = $(this).children('img');
+// $('.card__bookmark').on('click', function () {
+// 	let bookMarkImg = $(this).children('img');
 	
-	$(this).toggleClass('card__bookmark--active');
+// 	$(this).toggleClass('card__bookmark--active');
 
-	if($(this).hasClass('card__bookmark--active')) {
-		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_on@2x.png");
-		bookMarkImg.attr("alt", "스크랩 on");
-	}else {
-		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_off@2x.png");
-		bookMarkImg.attr("alt", "스크랩 off");
-	}	
-})
+// 	if($(this).hasClass('card__bookmark--active')) {
+// 		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_on@2x.png");
+// 		bookMarkImg.attr("alt", "스크랩 on");
+// 	}else {
+// 		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_off@2x.png");
+// 		bookMarkImg.attr("alt", "스크랩 off");
+// 	}	
+// })
+
+$(".card__bookmark").on("click", function () {
+  let bookMarkImg = $(this).children("i");
+  let bookMarkspan = bookMarkImg.children("span");
+
+  $(this).toggleClass("card__bookmark--active");
+
+  if ($(this).hasClass("card__bookmark--active")) {
+    bookMarkImg.attr("class", "ico__bookmark24--on");
+    bookMarkspan.text("스크랩 on");
+  } else {
+    bookMarkImg.attr("class", "ico__bookmark24--off");
+    bookMarkspan.text("스크랩 off");
+  }
+});
 
 //filter
 $('.category-filter__arrow').on('click', function  () {
@@ -122,34 +137,47 @@ $('.category-menu__title').on('click', function() {
 	$('.category-menu').toggleClass('category-menu--active');
 })
 
-
 $('.category-menu__item').hover(function() {
 	$('.category-menu__sub').removeClass('active');
-	$(this).find('.category-menu__sub').addClass('active')
+	$(this).find('.category-menu__sub').addClass('active');
+	if(!$(this).find('.category-menu__sub').hasClass('active')) {
+		$('.category-menu__wrap').css('width', '250px');
+	}else {
+		$('.category-menu__wrap').css('width', '500px');
+	}
 })
 
 $('.category-menu__sub-item').on('click', function() {
-	$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
-	$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
-	$('.category-filter').css('display', 'block').addClass('category-filter--active');
-	$('.category-refresh').css('display', 'block');
+	if($(this).text().trim(' ') === '전체') {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text());
+	}else {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
+	}
 
-	$('.category-menu__item').removeClass('category-menu__item--active');
-	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
+	if($(this).text().trim(' ') === '일반소파') {
+		$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
+		$('.category-filter').css('display', 'block').addClass('category-filter--active');
+		$('.category-refresh').css('display', 'block');
+
+		$('.category-refresh .category-filter__refresh').on('click', function () {
+			$('.category-menu__title a').html('카테고리');
+			$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
+			
+			$('.category-refresh').css('display', 'none');
+			$('.category-filter').css('display', 'none');
+			$('.category-menu__item').removeClass('category-menu__item--active');
+		});
+	}
+
+	$('.category-menu').removeClass('category-menu--active');
 
 	$.each($('.category-menu__item i'),function (index, item) {
 		item.classList = item.classList[0].split('--on')[0];
 	})
-	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
-})
-
-$('.category-refresh .category-filter__refresh').on('click', function () {
-	$('.category-menu__title a').html('카테고리');
-	$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
-	
-	$('.category-refresh').css('display', 'none');
-	$('.category-filter').css('display', 'none');
 	$('.category-menu__item').removeClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
+	
 });
 
 // dropdown control
@@ -160,4 +188,19 @@ $('.dropdown').on('click', function (evnet) {
 $('.dropdown__item').on('click', function (evnet) {
   evnet.preventDefault();
   $('.dropdown__title').text($(this).text().trim(' ').split('\n')[0]);
+
+//heart action
+$('.category-product__heart').on('click', function (event) {
+	event.preventDefault();
+	if($('.category-product__heart').hasClass('active')) {
+		$(this).find('i').attr('class', 'ico__unheart');
+		$(this).removeClass('active');
+		$(this).find('span').css('color', '#828282');
+		
+	}else {
+		$(this).find('i').attr('class', 'ico__heart');
+		$(this).addClass('active');
+		$(this).find('span').css('color', '#FB4760');
+	
+	}
 })
