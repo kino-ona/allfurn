@@ -98,7 +98,7 @@
                     form=""
                     value="완료" 
                     disabled=""
-                    onclick="openModal('#modal-type--single')"
+                    onclick="openModal('#LGI-05-modal1')"
                     />
                   </div>
                 </form>
@@ -107,7 +107,7 @@
           </div>
         </div> 
 
-        <div id="modal-type--single" class="modal">
+        <div id="LGI-05-modal1" class="modal">
           <div class="modal__container">
             <div class="modal__content">
               <div class="modal-box__container">
@@ -119,7 +119,27 @@
                     </p>
                   </div>
                   <div class="modal__buttons">
-                    <a href="#" onclick="closeModal('#modal-type--single')" class="modal__button"><span>확인</span></a>
+                    <a href="#" onclick="closeModal('#LGI-05-modal1')" class="modal__button"><span>확인</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="LGI-05-modal2" class="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      인증 번호 전송 횟수 5회가 초과했습니다. <br>
+                      내일 다시 시도해주세요.
+                    </p>
+                  </div>
+                  <div class="modal__buttons">
+                    <a href="#" onclick="closeModal('#LGI-05-modal2')" class="modal__button"><span>확인</span></a>
                   </div>
                 </div>
               </div>

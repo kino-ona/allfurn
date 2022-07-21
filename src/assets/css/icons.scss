@@ -137,6 +137,9 @@ i {
   @include mixins.sprite(sprite.$ico-shop24);
 }
 
+.ico__delete12 {
+  @include mixins.sprite(sprite.$ico-delete12);
+}
 .ico__delete18 {
   @include mixins.sprite(sprite.$ico-delete18);
 }
@@ -152,6 +155,10 @@ i {
   @include mixins.sprite(sprite.$ico-notice24);
 }
 
+.ico__arrow--big_left24 {
+  @include mixins.sprite(sprite.$ico-arrow-big-left24);
+}
+
 .ico__arrow--down24 {
   @include mixins.sprite(sprite.$ico-arrow-down24);
 }
@@ -164,6 +171,9 @@ i {
 }
 .ico__search--white {
   @include mixins.sprite(sprite.$ico-search-white);
+}
+.ico__search--gray {
+  @include mixins.sprite(sprite.$ico-search-gray);
 }
 
 
