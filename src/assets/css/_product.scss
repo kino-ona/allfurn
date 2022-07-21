@@ -435,16 +435,13 @@
 
           &.product-bookmark {
             .bookmark {
-              background-image: url("../images/sub/ico_bookmark28_off@2x.png");
-              background-size: contain;
-              width: 28px;
-              height: 28px;
               margin: 0 auto;
+              @include mixins.sprite(sprite.$ico-bookmark28-off);
             }
 
             &.active {
               .bookmark {
-                background-image: url("../images/sub/ico_bookmark28_on@2x.png");
+                @include mixins.sprite(sprite.$ico-bookmark28-on);
               }
 
               p {
@@ -798,15 +795,12 @@
         }
 
         .ico__arrow {
-          background-image: url("../images/sub/ico_arrow_down24.png");
-          background-size: contain;
-          width: 24px;
-          height: 24px;
+          @include mixins.sprite(sprite.$ico-arrow-down24);
         }
 
         &.active {
           .ico__arrow {
-            background-image: url("../images/sub/ico_arrow_up24.png");
+            @include mixins.sprite(sprite.$ico-arrow-up24);
           }
         }
 
