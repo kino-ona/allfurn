@@ -120,8 +120,9 @@
                       <dd>7,500,000원</dd>
                     </dl>
                     <div class="footer__button-group">
-                      <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal')">옵션
-                        변경</button>
+                      <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal')">
+                        옵션 변경
+                      </button>
                       <button type="button" class="button button--blank">바로 주문</button>
                     </div>
                   </div>
@@ -317,8 +318,106 @@
                 </button>
               </div>
               <div class="default-modal__content">
-                <div class="content__head"></div>
-                <div class="content__desc"></div>
+                <div class="content__head">
+                  <div class="head__img-wrap">
+                    <img src="../assets/images/temp/basket_product@2x.png" alt="포그니 라운드 소파">
+                  </div>
+                  <div class="head__text-wrap">
+                    <h3>포그니 라운드 소파</h3>
+                    <dl>
+                      <dt>배송 방법</dt>
+                      <dd>소비자 직배 가능(무료)</dd>
+                    </dl>
+                    <dl>
+                      <dt>결제 방식</dt>
+                      <dd>계좌이체</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="content__desc">
+                  <div class="desc__box--gray">
+                    <div class="box__icon">
+                      <i class="ico__info"><span class="a11y">정보</span></i>
+                    </div>
+                    <p class="box__text">
+                      원하는 옵션이 없거나 커스텀 주문을 희망하시면 필수 옵션 선택 후<br>
+                      [바로 주문] 버튼을 클릭하여 주문 요청사항에 작성해주세요.
+                    </p>
+                  </div>
+                  <div class="dropdown dropdown--01">
+                    <p class="dropdown__title dropdown__title--01">색상 선택(필수)</p>
+                    <ul class="dropdown__wrap">
+                      <li class="dropdown__item dropdown__item--01">라이트 베이지</li>
+                      <li class="dropdown__item dropdown__item--01">내추럴 브라운</li>
+                    </ul>
+                  </div>
+                  <div class="dropdown dropdown--02">
+                    <p class="dropdown__title dropdown__title--02">소재 선택(필수)</p>
+                    <ul class="dropdown__wrap">
+                      <li class="dropdown__item dropdown__item--02">인조 가죽</li>
+                      <li class="dropdown__item dropdown__item--02">패브릭</li>
+                    </ul>
+                  </div>
+                  <div class="dropdown dropdown--03">
+                    <p class="dropdown__title dropdown__title--03">추가 구성(선택)</p>
+                    <ul class="dropdown__wrap">
+                      <li class="dropdown__item dropdown__item--03">
+                        <p>소파쿠션</p>
+                        <p>30,000원</p>
+                      </li>
+                      <li class="dropdown__item dropdown__item--03">
+                        <p>소파쿠션</p>
+                        <p>100,000원</p>
+                      </li>
+                      <li class="dropdown__item dropdown__item--03">
+                        <p>소파쿠션</p>
+                        <p>43,000원</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="selection__result">
+                    <div class="selection__text">
+                      <ul>
+                        <li>포그니 라운드 소파</li>
+                        <li>라이트 베이지</li>
+                        <li>패브릭</li>
+                      </ul>
+                      <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    </div>
+                    <div class="selection__box">
+                      <ul class="selection__count">
+                        <li class="count__minus">
+                          <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                        </li>
+                        <li class="count__text">1</li>
+                        <li class="count__plus">
+                          <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                        </li>
+                      </ul>
+                      <p class="selection__price">300,000<span>원</span></p>
+                    </div>
+                  </div>
+                  <!-- <div class="selection__result">
+                    <div class="selection__text">
+                      <ul>
+                        <li>(추가구성) 소파스툴</li>
+                      </ul>
+                      <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    </div>
+                    <div class="selection__box">
+                      <ul class="selection__count">
+                        <li class="count__minus">
+                          <i class="ico__count--minus"><span class="a11y">빼기</span></i>
+                        </li>
+                        <li class="count__text">1</li>
+                        <li class="count__plus">
+                          <i class="ico__count--plus"><span class="a11y">더하기</span></i>
+                        </li>
+                      </ul>
+                      <p class="selection__price">300,000<span>원</span></p>
+                    </div>
+                  </div> -->
+                </div>
               </div>
               <div class="default-modal__footer">
                 <div>
@@ -337,6 +436,7 @@
     "webroot":".."
     })
   </div>
+  <script src="/assets/js/product.js" type="text/javascript"></script>
 </body>
 
 </html>
