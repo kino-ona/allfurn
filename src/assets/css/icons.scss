@@ -299,6 +299,10 @@ i {
   @include mixins.sprite(sprite.$ico-unheart);
 }
 
+.ico__check-gray--border {
+  @include mixins.sprite(sprite.$ico-check-gray-border);
+}
+
 
 
 

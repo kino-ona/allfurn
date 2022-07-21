@@ -23,10 +23,9 @@
         </div>
 
         <div class="content">
+          <!-- category-btn--active 삭제시 선택창 사라짐 -->
           <div class="category-btn category-btn--active">
-            <p class="category-btn__text">카테고리</p>
-            <!-- <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i> -->
-            <i class="ico__arrow--down14-red"><span class="a11y">아래 화살표</span></i>
+            <p class="category-btn__text" onclick="openModal('#category-modal')">카테고리</p>
           </div>
           <div class="category-list">
             <ul class="category-list__wrap">
@@ -207,6 +206,82 @@
                   stroke-linejoin="round" />
               </svg>
             </button>
+          </div>
+        </div>
+
+        <div id="category-modal" class="category-modal">
+          <div class="category-modal__container">
+            <div class="category-modal__header">
+              <h2>카테고리 선택</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#category-modal')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="category-modal__content">
+              <ul class="content__list">
+                <li>
+                  <label for="category-check01">
+                    <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                    <span>침실</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check02">
+                    <input type="checkbox" id="category-check02" class="checkbox__checked">
+                    <span>소파/거실</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check03">
+                    <input type="checkbox" id="category-check03" class="checkbox__checked">
+                    <span>식탁/의자</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check04">
+                    <input type="checkbox" id="category-check04" class="checkbox__checked">
+                    <span>옷장/수납/서랍장</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check05">
+                    <input type="checkbox" id="category-check05" class="checkbox__checked">
+                    <span>서재/공부방</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check06">
+                    <input type="checkbox" id="category-check06" class="checkbox__checked">
+                    <span>화장대/거울/콘솔</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check07">
+                    <input type="checkbox" id="category-check07" class="checkbox__checked">
+                    <span>키즈/주니어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check08">
+                    <input type="checkbox" id="category-check08" class="checkbox__checked">
+                    <span>진열장/장식장</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check09">
+                    <input type="checkbox" id="category-check09" class="checkbox__checked">
+                    <span>안락의자/기능성의자</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="category-modal__footer">
+              <button type="button" class="button button--blank-gray">
+                <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                <p>초기화</p>
+              </button>
+              <button type="button" class="button button--solid">상품 찾아보기</button>
+            </div>
           </div>
         </div>
       </div>
