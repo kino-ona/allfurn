@@ -188,6 +188,7 @@ $('.dropdown').on('click', function (evnet) {
 $('.dropdown__item').on('click', function (evnet) {
   evnet.preventDefault();
   $('.dropdown__title').text($(this).text().trim(' ').split('\n')[0]);
+})
 
 //heart action
 $('.category-product__heart').on('click', function (event) {
