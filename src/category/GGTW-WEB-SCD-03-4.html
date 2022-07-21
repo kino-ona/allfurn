@@ -19,13 +19,25 @@
         </p>
         <div class="inner__category">
           <div class="sub-category sub-category--type-2">
-            <p class="sub-category__item"><a href="#">상품</a></p>
-            <p class="sub-category__item sub-category__item--active"><a href="#">업체</a></p>
+            <p class="sub-category__item"><a href="./GGTW-WEB-SCD-03-1.html">상품</a></p>
+            <p class="sub-category__item sub-category__item--active"><a href="./GGTW-WEB-SCD-03-4.html">업체</a></p>
           </div>
         </div>
-     
-       
+
         <div class="contents">
+          <div class="category-type">
+            <div class="category-type__item">
+              <a href="#" class="category-type__item-1" onclick="openModal('#modal-category')">
+                카테고리
+                <i class="ico__arrow--down14"></i>
+              </a>
+              <a href="#" class="category-type__item-2">
+                소재지
+                <i class="ico__arrow--down14"></i>
+              </a>
+            </div>
+          </div>
+
           <div class="product">
             <div class="product__text--wrap">
               <p class="product__count">‘소파' 검색 결과 총 1,000개의 상품</p>
@@ -35,19 +47,68 @@
               </a>
             </div>
           </div>
-
-          <div class="product-list">
-            <div class="product-list__head">
-              <div class="product-list__info">
-                <div class="logo">
-                  <img src="../assets/images/temp/category_thumbnail.png" alt="로고">
-                  <div class="description"></div>
+          <div class="category-product">
+            <div class="category-product__item">
+              <div class="category-product__head">
+                <div class="category-product__info">
+                  <div class="category-product__infomation">
+                    <a href="#" class="category-product__wrap">
+                      <p style="background-image:url('../assets/images/temp/category_thumbnail.png')" class="category-product__logo">
+                        <span class="a11y">로고</span>
+                      </p>
+                      <div class="category-product__description">
+                        <p class="category-product__title">
+                          <span class="category-product__title-inner">COWINS</span>
+                          <span class="category-product__date">NEW</span>
+                        </p>
+                        <p class="category-product__position">서울, 경기, 인천</p>
+                        <span class="category-product__type">소파/거실</span>
+                      </div>
+                    </a>
+                    <a href="#" class="category-product__heart">
+                      <i class="ico__unheart"></i>
+                      <span>좋아요</span>
+                    </a>
+                  </div>
                 </div>
-                <
+              </div>
+              <div class="category-product__content">
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_1.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_2.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_3.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_4.png')"></span>
               </div>
             </div>
-            <div class="product-list__content">
-              <div class="product-list__img"></div>
+            <div class="category-product__item">
+              <div class="category-product__head">
+                <div class="category-product__info">
+                  <div class="category-product__infomation">
+                    <a href="#" class="category-product__wrap">
+                      <p style="background-image:url('../assets/images/temp/category_thumbnail_2.png')" class="category-product__logo">
+                        <span class="a11y">로고</span>
+                      </p>
+                      <div class="category-product__description">
+                        <p class="category-product__title">
+                          <span class="category-product__title-inner">본 네이처</span>
+                          <span class="category-product__date">NEW</span>
+                        </p>
+                        <p class="category-product__position">서울, 경기, 인천</p>
+                        <span class="category-product__type">소파/거실</span>
+                      </div>
+                    </a>
+                    <a href="#" class="category-product__heart">
+                      <i class="ico__unheart"></i>
+                      <span>좋아요</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="category-product__content">
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_1.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_2.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_3.png')"></span>
+                <span class="category-product__img" style="background-image:url('../assets/images/temp/category_img_4.png')"></span>
+              </div>
             </div>
           </div>
 
@@ -109,6 +170,89 @@
                 </div>
                 <div class="modal-close">
                   <button type="button" class="modal__close-button" onclick="closeModal('#modal-type--basic')"><span class="a11y">close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-category" class="modal modal-category">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px;">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>카테고리 선택</p>
+                </div>
+                <div class="content">
+                  <label for="category__check-1" class="category__check">
+                    <input type="checkbox" id="category__check-1">
+                    <span>침실</span>
+                  </label>
+                  <label for="category__check-2" class="category__check">
+                    <input type="checkbox" id="category__check-2">
+                    <span>소파/거실</span>
+                  </label>
+                  <label for="category__check-3" class="category__check">
+                    <input type="checkbox" id="category__check-3">
+                    <span>식탁/의자</span>
+                  </label>
+                  <label for="category__check-4" class="category__check">
+                    <input type="checkbox" id="category__check-4">
+                    <span>옷장/수납장/서랍장</span>
+                  </label>
+                  <label for="category__check-5" class="category__check">
+                    <input type="checkbox" id="category__check-5">
+                    <span>화장대/거울/콘솔</span>
+                  </label>
+                  <label for="category__check-6" class="category__check">
+                    <input type="checkbox" id="category__check-6">
+                    <span>서재/공부방</span>
+                  </label>
+                  <label for="category__check-7" class="category__check">
+                    <input type="checkbox" id="category__check-7">
+                    <span>키즈/주니어</span>
+                  </label>
+                  <label for="category__check-8" class="category__check">
+                    <input type="checkbox" id="category__check-8">
+                    <span>진열장/장식장</span>
+                  </label>
+                  <label for="category__check-9" class="category__check">
+                    <input type="checkbox" id="category__check-9">
+                    <span>안락의자/기능성의자</span>
+                  </label>
+                  <label for="category__check-10" class="category__check">
+                    <input type="checkbox" id="category__check-10">
+                    <span>테이블/의자</span>
+                  </label>
+                  <label for="category__check-11" class="category__check">
+                    <input type="checkbox" id="category__check-11">
+                    <span>선반</span>
+                  </label>
+                  <label for="category__check-12" class="category__check">
+                    <input type="checkbox" id="category__check-12">
+                    <span>아웃도어가구</span>
+                  </label>
+                  <label for="category__check-13" class="category__check">
+                    <input type="checkbox" id="category__check-13">
+                    <span>소품가구/기타</span>
+                  </label>
+                  <label for="category__check-14" class="category__check">
+                    <input type="checkbox" id="category__check-14">
+                    <span>사무용가구</span>
+                  </label>
+                </div>
+                <div class="footer" style="height: 42px">
+                  <div class="modal__buttons modal__buttons--half">
+                    <a href="#" onclick="" class="modal__button modal__buttons--refresh">
+                      <i class="ico__refresh"></i>
+                      초기화
+                    </a>
+                    <a href="#" onclick="closeModal('.modal-category')" class="modal__button modal__buttons--search">업체 찾아보기</a>
+                  </div>
+                </div>
+                <div class="modal-close">
+                  <button type="button" class="modal__close-button" onclick="closeModal('.modal-category')"><span class="a11y">close</span></button>
                 </div>
               </div>
             </div>
