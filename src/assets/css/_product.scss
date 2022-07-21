@@ -943,6 +943,7 @@
       .content__desc {
         display: flex;
         align-items: flex-start;
+        justify-content: right;
         margin-top: 16px;
         border-bottom: 1px solid #DBDBDB;
 
@@ -959,6 +960,7 @@
 
         .selection__result {
           width: 536px;
+          box-sizing: border-box;
         }
       }
 
