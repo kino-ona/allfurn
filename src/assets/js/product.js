@@ -41,15 +41,15 @@ $(".order-info__title").on("click", function () {
 });
 
 function openModal(name) {
-  $(`${name}`).css('display', 'block');
-  $('body').css('overflow', 'hidden');
-};
-
-function closeModal (name) {
-  $(`${name}`).css('display', 'none');
-  $('body').css('overflow', 'initial');
+  $(`${name}`).css("display", "block");
+  $("body").css("overflow", "hidden");
 }
 
-$('.category-modal').on('click', function() {
-  openModal('#category-modal');
+function closeModal(name) {
+  $(`${name}`).css("display", "none");
+  $("body").css("overflow", "initial");
+}
+
+$(".category-modal").on("click", function () {
+  openModal("#category-modal");
 });

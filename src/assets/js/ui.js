@@ -54,19 +54,34 @@ $(".textfield__search").on("propertychange change keyup paste input", function()
 });
 
 //bookmark
-$('.card__bookmark').on('click', function () {
-	let bookMarkImg = $(this).children('img');
+// $('.card__bookmark').on('click', function () {
+// 	let bookMarkImg = $(this).children('img');
 	
-	$(this).toggleClass('card__bookmark--active');
+// 	$(this).toggleClass('card__bookmark--active');
 
-	if($(this).hasClass('card__bookmark--active')) {
-		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_on@2x.png");
-		bookMarkImg.attr("alt", "스크랩 on");
-	}else {
-		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_off@2x.png");
-		bookMarkImg.attr("alt", "스크랩 off");
-	}	
-})
+// 	if($(this).hasClass('card__bookmark--active')) {
+// 		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_on@2x.png");
+// 		bookMarkImg.attr("alt", "스크랩 on");
+// 	}else {
+// 		bookMarkImg.attr("src", "../assets/images/temp/ico_bookmark_off@2x.png");
+// 		bookMarkImg.attr("alt", "스크랩 off");
+// 	}	
+// })
+
+$(".card__bookmark").on("click", function () {
+  let bookMarkImg = $(this).children("i");
+  let bookMarkspan = bookMarkImg.children("span");
+
+  $(this).toggleClass("card__bookmark--active");
+
+  if ($(this).hasClass("card__bookmark--active")) {
+    bookMarkImg.attr("class", "ico__bookmark24--on");
+    bookMarkspan.text("스크랩 on");
+  } else {
+    bookMarkImg.attr("class", "ico__bookmark24--off");
+    bookMarkspan.text("스크랩 off");
+  }
+});
 
 //filter
 $('.category-filter__arrow').on('click', function  () {
