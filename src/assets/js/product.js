@@ -50,6 +50,6 @@ function closeModal(name) {
   $("body").css("overflow", "initial");
 }
 
-$(".category-modal").on("click", function () {
-  openModal("#category-modal");
+$(".default-modal").on("click", function () {
+  openModal("#default-modal");
 });

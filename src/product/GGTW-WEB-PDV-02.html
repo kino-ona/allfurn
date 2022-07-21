@@ -120,7 +120,8 @@
                       <dd>7,500,000원</dd>
                     </dl>
                     <div class="footer__button-group">
-                      <button type="button" class="button button--blank-gray">옵션 변경</button>
+                      <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal')">옵션
+                        변경</button>
                       <button type="button" class="button button--blank">바로 주문</button>
                     </div>
                   </div>
@@ -303,6 +304,29 @@
               </div>
               <p>장바구니에 담긴 상품이 없습니다.</p>
               <a href="#"><span>올펀 상품 보러가기</span></a>
+            </div>
+          </div>
+
+          <!-- 팝업 -->
+          <div id="default-modal" class="default-modal default-modal--option">
+            <div class="default-modal__container">
+              <div class="default-modal__header">
+                <h2>옵션 변경</h2>
+                <button type="button" class="ico__close28" onclick="closeModal('#default-modal')">
+                  <span class="a11y">닫기</span>
+                </button>
+              </div>
+              <div class="default-modal__content">
+                <div class="content__head"></div>
+                <div class="content__desc"></div>
+              </div>
+              <div class="default-modal__footer">
+                <div>
+                  <p class="order">주문 금액</p>
+                  <p class="price">7,500,000원</p>
+                </div>
+                <button type="button" class="button button--solid">옵션 변경</button>
+              </div>
             </div>
           </div>
         </div>
