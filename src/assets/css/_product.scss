@@ -1053,7 +1053,10 @@
                 margin-top: 10px;
 
                 .textfield__input--gray {
-                  background-color: #F7F7F7;
+                  &:disabled {
+                    color: #BDBDBD;
+                    background-color: #F7F7F7;
+                  }
                 }
               }
             }
@@ -1087,7 +1090,14 @@
               width: 506px;
               margin-right: 7px;
               border: 1px solid #DBDBDB;
-              background-color: #F7F7F7;
+
+              &:disabled {
+                color: #BDBDBD;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                background-color: #F7F7F7;
+              }
             }
 
             .textfield__input--gray,
@@ -1902,6 +1912,250 @@
           color: #1B1B1B;
         }
       }
+    }
+  }
+
+  // 배송지 선택
+  &.default-modal--address-select {
+    .default-modal__content {
+      background-color: #F7F7F7;
+      padding: 16px 24px;
+      height: 524px;
+
+      ul {
+        li {
+          padding: 24px;
+          background-color: #FFFFFF;
+          border: 1px solid #E0E0E0;
+          border-radius: 5px;
+          margin-bottom: 16px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27.9px;
+        letter-spacing: -0.03em;
+        color: #1B1B1B;
+        margin-bottom: 8px;
+      }
+
+      .num,
+      .add {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #828282;
+      }
+
+      .add {
+        color: #333333;
+        margin-top: 2px;
+      }
+
+      .content__button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        div {
+          .button:first-child {
+            margin-right: 4px;
+          }
+        }
+
+        .button {
+          width: 66px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .default-modal__footer {
+      padding: 0;
+      height: 42px;
+    }
+  }
+
+  // 배송지 수정
+  &.default-modal--address-edit {
+    .default-modal__content {
+      height: 474px;
+
+      dl {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+
+          dd {
+            .textfield {
+              margin-top: 10px;
+            }
+
+            .textfield__input--gray {
+              padding: 10px 16px;
+            }
+          }
+        }
+
+        dt,
+        dd {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25.6px;
+          letter-spacing: -0.02em;
+          color: #828282;
+        }
+
+        dt {
+          width: 73px;
+          margin-right: 10px;
+        }
+
+        dd {
+          color: #333333;
+          flex-grow: 1;
+
+          .textfield__input--gray {
+            width: 100%;
+            height: 48px;
+            font-size: 16px;
+          }
+
+          .input-guid__input {
+            width: 239px;
+            margin-right: 6px;
+            border: 1px solid #DBDBDB;
+
+            &:disabled {
+              color: #BDBDBD;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              background-color: #F7F7F7;
+            }
+          }
+
+          .textfield__input--gray,
+          .input-guid__input {
+            &::placeholder {
+              font-weight: 400;
+              color: #BDBDBD;
+            }
+          }
+
+          .input-guid__button {
+            width: 100px;
+            transition: all .3s ease;
+
+            &:hover {
+              background-color: #d9d9d9;
+            }
+          }
+        }
+      }
+    }
+
+    .default-modal__footer {
+      justify-content: space-between;
+      height: 92px;
+      padding: 22px 24px;
+
+      .button--blank-gray,
+      .button--solid {
+        width: 212px;
+        height: 48px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+.alert-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 999;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  &__top {
+    min-height: 93px;
+    padding: 34px 24px;
+    text-align: center;
+    box-sizing: border-box;
+    
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+    }
+  }
+
+  &__bottom {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .button {
+      min-width: 100px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 0;
+      padding: 0 27px;
+      box-sizing: border-box;
+
+      &.button--solid-gray {
+        background-color: #DBDBDB;
+
+        &:hover {
+          background-color: #4F4F4F;
+        }
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button {
+        margin: 0 4px;
+      }
+    }
+  }
+
+  .button {
+
+    // 컴포넌트 수정되면 삭제
+    &:hover:not([disabled]) {
+      pointer-events: initial;
     }
   }
 }

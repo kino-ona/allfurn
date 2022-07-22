@@ -129,7 +129,8 @@
                       <li>라이트 베이지</li>
                       <li>패브릭</li>
                     </ul>
-                    <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                    <button class="ico__delete18" onclick="openModal('#alert-modal02')"><span
+                        class="a11y">삭제</span></button>
                   </div>
                   <div class="selection__box">
                     <ul class="selection__count">
@@ -173,7 +174,9 @@
                 </dl>
                 <div class="order__button-group">
                   <button type="button" class="button button--blank">장바구니 담기</button>
-                  <button type="button" class="button button--solid">바로 주문</button>
+                  <button type="button" class="button button--solid" onclick="openModal('#alert-modal01')">
+                    바로 주문
+                  </button>
                 </div>
               </div>
             </div>
@@ -334,12 +337,162 @@
             </li>
           </ul>
         </div>
+
+        <!-- 필수 옵션 미선택 팝업 -->
+        <div id="alert-modal01" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>필수 옵션 선택 후 해당 옵션을 선택해주세요</p>
+            </div>
+            <div class="alert-modal__bottom">
+              <button type="button" class="button button--solid" onclick="closeModal('#alert-modal01')">
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 옵션 삭제 팝업 -->
+        <div id="alert-modal02" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>옵션을 삭제하시겠습니까?</p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal02')">
+                  취소
+                </button>
+                <button type="button" class="button button--solid">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 주문 취소 팝업 -->
+        <div id="alert-modal03" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>주문을 취소하시겠습니까?</p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal03')">
+                  취소
+                </button>
+                <button type="button" class="button button--solid">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 상품 선택 알림 팝업 -->
+        <div id="alert-modal04" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>상품을 선택해주세요</p>
+            </div>
+            <div class="alert-modal__bottom">
+              <button type="button" class="button button--solid" onclick="closeModal('#alert-modal04')">
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 장바구니 담기 팝업 -->
+        <div id="alert-modal05" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>장바구니에 상품을 담았습니다</p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal05')">
+                  쇼핑 계속하기
+                </button>
+                <button type="button" class="button button--solid">
+                  장바구니로 이동
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 장바구니 상품 선택 삭제 팝업 -->
+        <div id="alert-modal06" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>
+                00개의 상품을<br>
+                장바구니에서 삭제하시겠습니까?
+              </p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal06')">
+                  취소
+                </button>
+                <button type="button" class="button button--solid">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 장바구니 상품 삭제 팝업 -->
+        <div id="alert-modal07" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>
+                해당 상품을<br>
+                장바구니에서 삭제하시겠습니까?
+              </p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal07')">
+                  취소
+                </button>
+                <button type="button" class="button button--solid">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 배송지 삭제 팝업 -->
+        <div id="alert-modal08" class="alert-modal">
+          <div class="alert-modal__container">
+            <div class="alert-modal__top">
+              <p>
+                배송지를 삭제하시겠습니까?
+              </p>
+            </div>
+            <div class="alert-modal__bottom">
+              <div class="button-group">
+                <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal08')">
+                  취소
+                </button>
+                <button type="button" class="button button--solid">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    @@include('../inc/footer.inc',{
+    <!-- @@include('../inc/footer.inc',{
     "webroot":".."
-    })
+    }) -->
   </div>
   <script src="/assets/js/product.js" type="text/javascript"></script>
 </body>

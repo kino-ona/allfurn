@@ -40,12 +40,12 @@ $(".order-info__title").on("click", function () {
   $(this).toggleClass("active");
 });
 
-// function openModal(name) {
-//   $(`${name}`).css("display", "block");
-//   $("body").css("overflow", "hidden");
-// }
+function openModal(name) {
+  $(`${name}`).css("display", "block");
+  $("body").css("overflow", "hidden");
+}
 
-// function closeModal(name) {
-//   $(`${name}`).css("display", "none");
-//   $("body").css("overflow", "initial");
-// }
+function closeModal(name) {
+  $(`${name}`).css("display", "none");
+  $("body").css("overflow", "initial");
+}

@@ -40,7 +40,9 @@
                 <li class="order-info__desc">
                   <div class="order-info__title">
                     <h3>배송지 정보</h3>
-                    <button class="button button--blank-gray">배송지 선택</button>
+                    <button class="button button--blank-gray" onclick="openModal('#default-modal')">
+                      배송지 선택
+                    </button>
                   </div>
                   <dl>
                     <dt>수령인</dt>
@@ -57,7 +59,7 @@
                   <dl style="align-items: flex-start">
                     <dt style="margin-top: 10px">배송지</dt>
                     <dd class="input_guid">
-                      <input type="text" placeholder="주소를 검색해주세요." class="input-guid__input" disabled>
+                      <input type="text" placeholder="주소를 검색해주세요." value="" class="input-guid__input" disabled>
                       <button type="button" class="input-guid__button" style="width: 100px">주소 검색</button>
 
                       <div class="textfield">
@@ -185,13 +187,116 @@
             </div>
           </div>
         </div>
+
+        <!-- 배송지 선택 팝업 -->
+        <div id="default-modal" class="default-modal default-modal--address-select">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>배송지 선택</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#default-modal')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <ul>
+                <li>
+                  <h3 class="name">홍길동</h3>
+                  <p class="num">010-1234-5678</p>
+                  <p class="add">서울시 성동구 아차산로 126 613호 앱노트</p>
+                  <div class="content__button-group">
+                    <div>
+                      <button type="button" class="button button--blank-gray">삭제</button>
+                      <button type="button" class="button button--blank-gray"
+                        onclick="openModal('#default-modal--address-edit')">수정</button>
+                    </div>
+                    <button type="button" class="button button--solid">선택</button>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="name">문현준</h3>
+                  <p class="num">010-1234-5678</p>
+                  <p class="add">
+                    제주특별자치도 서귀포시 남원읍 중산간동로7227번길 111-10
+                    두줄짜리 주소가 된다면 이렇게 길게
+                  </p>
+                  <div class="content__button-group">
+                    <div>
+                      <button type="button" class="button button--blank-gray">삭제</button>
+                      <button type="button" class="button button--blank-gray">수정</button>
+                    </div>
+                    <button type="button" class="button button--solid">선택</button>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="name">올펀공장</h3>
+                  <p class="num">010-1234-5678</p>
+                  <p class="add">서울시 성동구 아차산로 126 613호 앱노트</p>
+                  <div class="content__button-group">
+                    <div>
+                      <button type="button" class="button button--blank-gray">삭제</button>
+                      <button type="button" class="button button--blank-gray">수정</button>
+                    </div>
+                    <button type="button" class="button button--solid">선택</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="default-modal__footer"></div>
+          </div>
+        </div>
+
+        <!-- 배송지 수정 팝업 -->
+        <div id="default-modal--address-edit" class="default-modal default-modal--address-edit">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>배송지 수정</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#default-modal--address-edit')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <dl>
+                <dt>수령인</dt>
+                <dd class="textfield">
+                  <input type="text" value="홍길동" class="textfield__input textfield__input--gray">
+                </dd>
+              </dl>
+              <dl>
+                <dt>연락처</dt>
+                <dd class="textfield">
+                  <input type="number" value="01012345678" class="textfield__input textfield__input--gray">
+                </dd>
+              </dl>
+              <dl style="align-items: flex-start">
+                <dt style="margin-top: 10px">배송지</dt>
+                <dd class="input_guid">
+                  <input type="text" value="서울시 성동구 아차산로 126 613호 앱노트" class="input-guid__input" disabled>
+                  <button type="button" class="input-guid__button" style="width: 100px">주소 검색</button>
+
+                  <div class="textfield">
+                    <!-- <input type="text" class="textfield__input textfield__input--gray"> -->
+                    <textarea rows="10" class="textfield__input textfield__input--gray">111-10</textarea>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="default-modal__footer">
+              <button type="button" class="button button--blank-gray"
+                onclick="closeModal('#default-modal--address-edit')">
+                취소
+              </button>
+              <button type="button" class="button button--solid">저장</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    @@include('../inc/footer.inc',{
+    <!-- @@include('../inc/footer.inc',{
     "webroot":".."
-    })
+    }) -->
   </div>
+  <script src="/assets/js/product.js" type="text/javascript"></script>
 </body>
 
 </html>
