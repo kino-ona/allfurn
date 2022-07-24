@@ -83,39 +83,6 @@ $(".card__bookmark").on("click", function () {
   }
 });
 
-//filter
-$('.category-filter__arrow').on('click', function  () {
-	if($(this).closest('.category-filter__item').hasClass('category-filter__item--active')) {
-		$('.category-filter__item').removeClass('category-filter__item--active');
-	}else {
-		$('.category-filter__item').removeClass('category-filter__item--active');
-		$(this).closest('.category-filter__item').toggleClass('category-filter__item--active');
-	}
-})
-
-$('.category-filter__item button').on('click', function () {
-	$(this).closest('p').toggleClass('select-button');
-	$('.category-filter__footer').addClass('active');
-	
-	if($(this).closest('p').hasClass('select-button')) {
-		$('.category-filter__data').append(`<button type='button'><span>` + $(this).text() + `</span></button>`);
-	}else {
-		$('.category-filter__data').innerHTML = $(this);
-	}
-});
-
-$('.category-filter__title').on('click', function (event) {
-	event.preventDefault();
-	$('.category-filter__footer').removeClass('active');
-	$('.category-filter').toggleClass('category-filter--active');
-})
-
-$('.category-filter__refresh').on('click' , function () {
-	$('.category-filter__data button').remove();
-	$('.category-filter__footer').removeClass('active');
-	$('.category-filter__box p').removeClass('select-button');
-})
-
 // tab control
 var actvTabList = function(tabid, actNum){
 	var basicTabs = new Tabs('#' + tabid);
@@ -130,54 +97,6 @@ $('.tab').each(function(){
 	if(!$(this).hasClass('tab-func')){
 		var basicTabs = new Tabs('#' + tabIdx);
 	}	
-});
-
-//category-menu
-$('.category-menu__title').on('click', function() {
-	$('.category-menu').toggleClass('category-menu--active');
-})
-
-$('.category-menu__item').hover(function() {
-	$('.category-menu__sub').removeClass('active');
-	$(this).find('.category-menu__sub').addClass('active');
-	if(!$(this).find('.category-menu__sub').hasClass('active')) {
-		$('.category-menu__wrap').css('width', '250px');
-	}else {
-		$('.category-menu__wrap').css('width', '500px');
-	}
-})
-
-$('.category-menu__sub-item').on('click', function() {
-	if($(this).text().trim(' ') === '전체') {
-		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text());
-	}else {
-		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
-	}
-
-	if($(this).text().trim(' ') === '일반소파') {
-		$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
-		$('.category-filter').css('display', 'block').addClass('category-filter--active');
-		$('.category-refresh').css('display', 'block');
-
-		$('.category-refresh .category-filter__refresh').on('click', function () {
-			$('.category-menu__title a').html('카테고리');
-			$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
-			
-			$('.category-refresh').css('display', 'none');
-			$('.category-filter').css('display', 'none');
-			$('.category-menu__item').removeClass('category-menu__item--active');
-		});
-	}
-
-	$('.category-menu').removeClass('category-menu--active');
-
-	$.each($('.category-menu__item i'),function (index, item) {
-		item.classList = item.classList[0].split('--on')[0];
-	})
-	$('.category-menu__item').removeClass('category-menu__item--active');
-	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
-	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
-	
 });
 
 // dropdown control

@@ -31,10 +31,14 @@
                 카테고리
                 <i class="ico__arrow--down14"></i>
               </a>
-              <a href="#" class="category-type__item-2">
+              <a href="#" class="category-type__item-2"  onclick="openModal('#modal-category-2')">
                 소재지
                 <i class="ico__arrow--down14"></i>
               </a>
+            </div>
+          </div>
+          <div class="category-data">
+            <div class="category-data__wrap">
             </div>
           </div>
 
@@ -259,14 +263,72 @@
           </div>
         </div>
       </div>
+      <div id="modal-category-2" class="modal modal-category-2">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px;">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>소재지 선택</p>
+                </div>
+                <div class="content" style="overflow: auto;">
+                  <label for="category__check-2-1" class="category__check">
+                    <input type="checkbox" id="category__check-2-1">
+                    <span>서울</span>
+                  </label>
+                  <label for="category__check-2-2" class="category__check">
+                    <input type="checkbox" id="category__check-2-2">
+                    <span>경기</span>
+                  </label>
+                  <label for="category__check-2-3" class="category__check">
+                    <input type="checkbox" id="category__check-2-3">
+                    <span>인천</span>
+                  </label>
+                  <label for="category__check-2-4" class="category__check">
+                    <input type="checkbox" id="category__check-2-4">
+                    <span>강원</span>
+                  </label>
+                  <label for="category__check-2-5" class="category__check">
+                    <input type="checkbox" id="category__check-2-5">
+                    <span>충청</span>
+                  </label>
+                  <label for="category__check-2-6" class="category__check">
+                    <input type="checkbox" id="category__check-2-6">
+                    <span>경상</span>
+                  </label>
+                  <label for="category__check-2-7" class="category__check">
+                    <input type="checkbox" id="category__check-2-7">
+                    <span>전라</span>
+                  </label>
+                  <label for="category__check-2-8" class="category__check">
+                    <input type="checkbox" id="category__check-2-8">
+                    <span>제주</span>
+                  </label>
+                </div>
+                <div class="footer" style="height: 42px">
+                  <div class="modal__buttons modal__buttons--half">
+                    <a href="#" onclick="" class="modal__button modal__buttons--refresh">
+                      <i class="ico__refresh"></i>
+                      초기화
+                    </a>
+                    <a href="#" onclick="closeModal('.modal-category-2')" class="modal__button modal__buttons--search">업체 찾아보기</a>
+                  </div>
+                </div>
+                <div class="modal-close">
+                  <button type="button" class="modal__close-button" onclick="closeModal('.modal-category-2')"><span class="a11y">close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     @@include('../inc/footer.inc',{
     "webroot":".."
     })
   </div>
-  <script>
-  </script>
+  <script src="/assets/js/category.js" type="text/javascript"></script>
 </body>
 
 </html>
