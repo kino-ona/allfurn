@@ -45,6 +45,10 @@ i {
   @include mixins.sprite(sprite.$ico-email);
 }
 
+.ico__delete10 {
+  @include mixins.sprite(sprite.$ico-delete10);
+}
+
 .ico__delete16 {
   @include mixins.sprite(sprite.$ico-delete16);
 }
@@ -154,6 +158,9 @@ i {
 .ico__delete12 {
   @include mixins.sprite(sprite.$ico-delete12);
 }
+.ico__delete14 {
+  @include mixins.sprite(sprite.$ico-delete14);
+}
 .ico__delete18 {
   @include mixins.sprite(sprite.$ico-delete18);
 }
@@ -191,6 +198,12 @@ i {
 }
 .ico__search--gray {
   @include mixins.sprite(sprite.$ico-search-gray);
+}
+.ico__arrow--black18 {
+  @include mixins.sprite(sprite.$ico-arrow-black18);
+}
+.ico__arrow--gray18 {
+  @include mixins.sprite(sprite.$ico-arrow-gray18);
 }
 
 
@@ -324,6 +337,10 @@ i {
 
 .ico__unheart {
   @include mixins.sprite(sprite.$ico-unheart);
+}
+
+.ico__dialogue {
+  @include mixins.sprite(sprite.$ico-dialogue);
 }
 
 .ico__check-gray--border {
