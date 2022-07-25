@@ -337,3 +337,10 @@ i {
 .ico__bookmark28--off {
   @include mixins.sprite(sprite.$ico-bookmark28-off);
 }
+
+.ico__radio--on {
+  @include mixins.sprite(sprite.$ico-radio-on);
+}
+.ico__radio--off {
+  @include mixins.sprite(sprite.$ico-radio-off);
+}

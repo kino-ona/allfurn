@@ -1,0 +1,413 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | Wholesaler",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="inner">
+        <div class="content">
+          <div id="eventkvSwipe" class="eventkeyvisual swiper-container eventkeyvisual--inner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-util">
+              <div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-btn-group">
+            <div class="category-btn category-btn--active" category-btn--active onclick="openModal('#default-modal01')">
+              <p class="category-btn__text">카테고리</p>
+            </div>
+            <div class="category-btn" onclick="openModal('#default-modal02')">
+              <p class="category-btn__text">소재지</p>
+            </div>
+            <div class="category-btn category-btn--order" onclick="openModal('#default-modal03')">
+              <p class="category-btn__text">추천순</p>
+            </div>
+          </div>
+          <div class="category-list category-list--wholesaler">
+            <div>
+              <ul class="category-list__wrap">
+                <li class="category-list__item">
+                  <p class="category-list__name">소파/거실</p>
+                  <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                </li>
+                <li class="category-list__item">
+                  <p class="category-list__name">핑크안락의자/기능성의자</p>
+                  <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                </li>
+                <li class="category-list__item">
+                  <p class="category-list__name">테이블/의자</p>
+                  <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                </li>
+              </ul>
+              <ul class="category-list__wrap">
+                <li class="category-list__item">
+                  <p class="category-list__name">서울</p>
+                  <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                </li>
+                <li class="category-list__item">
+                  <p class="category-list__name">경기</p>
+                  <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category-list__refresh">
+              <a href="#">
+                <p class="category-list__refresh__text">초기화</p>
+                <i class="ico__refresh"><span class="a11y">초기화</span></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p class="company__count">전체 200개</p>
+            <ul class="company__list">
+              <li class="list__item">
+                <div class="company__info">
+                  <div class="company__desc">
+                    <div class="company__img">
+                      <img src="../assets/images/sub/thumbnail@2x.png" alt="썸네일">
+                    </div>
+                    <div>
+                      <div class="company__name">
+                        <p class="name">코윈스</p>
+                        <p class="badge">NEW</p>
+                      </div>
+                      <p class="company__location">서울, 경기</p>
+                      <p class="company__product">소파/거실</p>
+                    </div>
+                  </div>
+                  <div class="company__like active">
+                    <div class="like"><span class="a11y">좋아요</span></div>
+                    <p>좋아요</p>
+                  </div>
+                </div>
+                <ul class="company__product-list">
+                  <li>
+                    <img src="../assets/images/temp/img_list01.png" alt="상품01">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list02.png" alt="상품02">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list03.png" alt="상품03">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list04.png" alt="상품04">
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="company__info">
+                  <div class="company__desc">
+                    <div class="company__img">
+                      <img src="../assets/images/temp/thumbnail@2x.png" alt="썸네일">
+                    </div>
+                    <!-- 테두리 -->
+                    <!-- <div class="company__img--circle">
+                      <img src="../assets/images/temp/thumbnail@2x.png" alt="썸네일">
+                    </div> -->
+                    <div>
+                      <div class="company__name">
+                        <p class="name">본 네이처</p>
+                        <p class="badge">NEW</p>
+                      </div>
+                      <p class="company__location">서울, 경기</p>
+                      <p class="company__product">소파/거실</p>
+                    </div>
+                  </div>
+                  <div class="company__like">
+                    <div class="like"><span class="a11y">좋아요</span></div>
+                    <p>좋아요</p>
+                  </div>
+                </div>
+                <ul class="company__product-list">
+                  <li>
+                    <img src="../assets/images/temp/img_list05.png" alt="상품05">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list06.png" alt="상품06">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list07.png" alt="상품07">
+                  </li>
+                  <li>
+                    <img src="../assets/images/temp/img_list08.png" alt="상품08">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pagenation pagination--center">
+            <button type="button" class="prev">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="numbering">
+              <a href="#" class="numbering--active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+            </div>
+            <button type="button" class="next">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12L10 7L5 2" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 카테고리 팝업 -->
+        <div id="default-modal01" class="default-modal default-modal--category">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>카테고리 선택</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <ul class="content__list">
+                <li>
+                  <label for="category-check01">
+                    <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                    <span>침실</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check02">
+                    <input type="checkbox" id="category-check02" class="checkbox__checked">
+                    <span>소파/거실</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check03">
+                    <input type="checkbox" id="category-check03" class="checkbox__checked">
+                    <span>식탁/의자</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check04">
+                    <input type="checkbox" id="category-check04" class="checkbox__checked">
+                    <span>옷장/수납/서랍장</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check05">
+                    <input type="checkbox" id="category-check05" class="checkbox__checked">
+                    <span>서재/공부방</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check06">
+                    <input type="checkbox" id="category-check06" class="checkbox__checked">
+                    <span>화장대/거울/콘솔</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check07">
+                    <input type="checkbox" id="category-check07" class="checkbox__checked">
+                    <span>키즈/주니어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check08">
+                    <input type="checkbox" id="category-check08" class="checkbox__checked">
+                    <span>진열장/장식장</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="category-check09">
+                    <input type="checkbox" id="category-check09" class="checkbox__checked">
+                    <span>안락의자/기능성의자</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="default-modal__footer">
+              <button type="button" class="button button--blank-gray">
+                <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                <p>초기화</p>
+              </button>
+              <button type="button" class="button button--solid">상품 찾아보기</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 소재지 팝업 -->
+        <div id="default-modal02" class="default-modal default-modal--category">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>소재지 선택</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#default-modal02')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <ul class="content__list">
+                <li>
+                  <label for="location-check01">
+                    <input type="checkbox" id="location-check01" class="checkbox__checked" checked>
+                    <span>서울</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check02">
+                    <input type="checkbox" id="location-check02" class="checkbox__checked">
+                    <span>경기</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check03">
+                    <input type="checkbox" id="location-check03" class="checkbox__checked">
+                    <span>인천</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check04">
+                    <input type="checkbox" id="location-check04" class="checkbox__checked">
+                    <span>강원</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check05">
+                    <input type="checkbox" id="location-check05" class="checkbox__checked">
+                    <span>충청</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check06">
+                    <input type="checkbox" id="location-check06" class="checkbox__checked">
+                    <span>경상</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check07">
+                    <input type="checkbox" id="location-check07" class="checkbox__checked">
+                    <span>전라</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="location-check08">
+                    <input type="checkbox" id="location-check08" class="checkbox__checked">
+                    <span>제주</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="default-modal__footer">
+              <button type="button" class="button button--blank-gray">
+                <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                <p>초기화</p>
+              </button>
+              <button type="button" class="button button--solid">업체 찾아보기</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 추천순 팝업 -->
+        <div id="default-modal03" class="default-modal default-modal--radio">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>정렬 선택</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#default-modal03')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <ul class="content__list">
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked" checked>
+                    <span>추천순</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked">
+                    <span>최근 상품 등록순</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked">
+                    <span>검색 많은 순</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked">
+                    <span>거래 많은 순</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked">
+                    <span>상품 많은 순</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="order" class="checkbox__checked">
+                    <span>가나다 순</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="default-modal__footer">
+              <button type="button" class="button button--solid">선택 완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+  <script src="/assets/js/plugin/swiper-bundle.min.js" type="text/javascript"></script>
+  <script>
+    var swiper = new Swiper('#eventkvSwipe', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      paginationClickable: true,
+      keyboard: true,
+      speed: 400,
+      pagination: {
+        el: '#eventkvSwipe .swiper-pagination',
+        type: 'fraction',
+      },
+    });
+  </script>
+  <script src="/assets/js/wholesaler.js" type="text/javascript"></script>
+</body>
+
+</html>
