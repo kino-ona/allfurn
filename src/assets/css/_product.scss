@@ -436,7 +436,6 @@
 
           &.product-bookmark {
             .bookmark {
-              margin: 0 auto;
               @include mixins.sprite(sprite.$ico-bookmark28-off);
             }
 
