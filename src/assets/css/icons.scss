@@ -344,3 +344,7 @@ i {
 .ico__radio--off {
   @include mixins.sprite(sprite.$ico-radio-off);
 }
+
+.ico__gallery--gray {
+  @include mixins.sprite(sprite.$ico-gallery-gray);
+}
