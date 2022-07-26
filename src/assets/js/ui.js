@@ -25,17 +25,18 @@ function closeModal (name) {
 	$('body').css('overflow', '')
 }
 
-// $('.comment__like').on('click', function (event) {
-// 	event.preventDefault();
+$('.community-content__like').on('click', function (event) {
+	let bookMarkImg = $(this).find("i");
+	event.preventDefault();
 
-// 	if(!$(this)[0].classList.contains('like--active')) {
-// 		$(this).addClass('like--active');
-// 		$(this).find("path").attr("fill", "#FB4760");
-// 	}else {
-// 		$(this).removeClass('like--active');
-// 		$(this).find("path").attr("fill", "#BDBDBD");
-// 	}
-// })
+	$(this).toggleClass("active");
+
+  if ($(this).hasClass("active")) {
+    bookMarkImg.attr("class", "ico__like--active");
+  } else {
+    bookMarkImg.attr("class", "ico__like");
+  }
+})
 
 //검색창
 $(".textfield__search").on("propertychange change keyup paste input", function() {
