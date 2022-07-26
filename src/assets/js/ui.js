@@ -110,3 +110,14 @@ $('.category-product__heart').on('click', function (event) {
 		$(this).find('span').css('color', '#FB4760');	
 	}
 })
+
+$('.ico__more').on('click', function (event) {
+	event.preventDefault();
+	$(this).toggleClass('active');
+	
+	if($(this).hasClass('active')) {
+		$(this).next().css('display', 'block');
+	}else {
+		$(this).next().css('display', 'none');
+	}
+})

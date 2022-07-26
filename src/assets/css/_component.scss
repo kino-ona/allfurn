@@ -375,8 +375,8 @@
 
   &__time {
     position: absolute;
-    top: 47px;
     right: 24px;
+    bottom: 22px;
     color: #828282;
     font-size: 14px;
     font-weight: 500;
@@ -385,11 +385,11 @@
   }
 
   &__box {
+    display: none;
     position: absolute;
     top: 40px;
     right: 24px;
     width: 168px;
-    height: 100px;
     padding: 9px 0 6px; 
     background-color: #ffffff;
     border: 1px solid #E0E0E0;

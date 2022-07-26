@@ -1,6 +1,7 @@
 @use 'sass:math';
 @use "mixins";
 @use 'swiper';
+@use 'sprite/sprite';
 
 .community {
   .swiper-container {
@@ -140,6 +141,18 @@
       font-size: 16px;
       line-height: 25px;
       letter-spacing: -.02em;
+    }
+
+    .ico__more {
+      display: inline-block;
+      position: absolute;
+      top: 16px;
+      right: 24px;
+    }
+
+    &--nodata {
+      color: #BDBDBD;
+      font-size: 16px;
     }
   }
 
@@ -297,6 +310,35 @@
 
   .blank {
     height: 50px
+  }
+
+  .dropdown__item {
+    padding: 9px 24px;
+  }
+
+  .community-reply__item {
+    position: relative;
+  }
+
+  .community-reply {
+    &__recomment {
+      margin-top: 11px;
+    }
+    
+    &__recomment-text {
+      width: 90%;
+      margin-left: 20px;
+      color: #333333;
+    }
+
+    &__recomment-text::before {
+      display: inline-block;
+      position: absolute;
+      margin-left: -22px;
+      vertical-align: text-top;
+      content: '';
+      @include mixins.sprite(sprite.$ico-recomment);
+    }
   }
 
 }
