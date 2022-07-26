@@ -26,7 +26,7 @@
             <div class="content">
               <div class="content__item">
                 <div class="content__title">회원 인증을 해주세요.</div>
-                <form class="form" id="" method="" action="#">
+                <form class="form" id="" method="">
                   <div class="form__list">
                     <div class="form__label">
                       <label class="label label--necessary" for="resetting_email">이메일</label>
@@ -92,20 +92,38 @@
                     </div>
                   </div>
                   <div class="button-wrap">
-                    <input class="button form__submit-button button--solid"
-                    id="resetting_form-submit"
-                    type="submit"
-                    form=""
-                    value="완료" 
-                    disabled=""
-                    onclick="openModal('#LGI-05-modal1')"
-                    />
+                    <a href="#" 
+                      class="button form__submit-button"
+                      disabled=""
+                      onclick="openModal('#LGI-05-modal1')">
+                      완료
+                    </a>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div> 
+
+        <div id="modal-type--single" class="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      비밀번호가 재설정 되었습니다.
+                      <br>로그인 해주세요.
+                    </p>
+                  </div>
+                  <div class="modal__buttons">
+                    <a href="#" class="modal__button"><span>확인</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div id="LGI-05-modal1" class="modal">
           <div class="modal__container">

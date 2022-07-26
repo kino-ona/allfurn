@@ -96,6 +96,7 @@
       font-size: 16px;
       font-weight: 600;
       line-height: 26px;
+      text-align: center;
   
       + .button {
         margin-top: 10px;
@@ -318,10 +319,17 @@
   }
 
   .button-wrap {
+    box-sizing: border-box;
+  }
+
+  .button {
     max-width: 400px;
-    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+    display: block;
+    background-color: #FB4760;
+    color: #ffffff;
   }
 }
 
@@ -372,6 +380,16 @@
     padding-top: 32px;
     border-top: 1px solid #E0E0E0;
     text-align: center;
+
+    .button {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      display: block;
+      background-color: #FB4760;
+      color: #ffffff;
+    }
   }
 }
 
@@ -422,5 +440,15 @@
     padding-top: 32px;
     border-top: 1px solid #E0E0E0;
     text-align: center;
+
+    .button {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      display: block;
+      background-color: #FB4760;
+      color: #ffffff;
+    }
   }
 }

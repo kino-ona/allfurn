@@ -64,14 +64,10 @@
       }
     }
   }
-
-  &--active+.category-list {
-    display: flex;
-  }
 }
 
 .category-list {
-  display: none;
+  display: flex;
   justify-content: space-between;
   padding: 15px 16px 5px;
   margin-bottom: 22px;
@@ -440,7 +436,6 @@
 
           &.product-bookmark {
             .bookmark {
-              margin: 0 auto;
               @include mixins.sprite(sprite.$ico-bookmark28-off);
             }
 
@@ -2107,7 +2102,7 @@
     padding: 34px 24px;
     text-align: center;
     box-sizing: border-box;
-    
+
     p {
       font-weight: 500;
       font-size: 16px;
@@ -2161,7 +2156,7 @@
 }
 
 // 체크박스
-.checkbox__checked[type="checkbox"] {
+.checkbox__checked {
   display: none;
 
   &+span {
@@ -2189,5 +2184,16 @@
 
   &:checked+span::after {
     @include mixins.sprite(sprite.$ico-check-white);
+  }
+
+  // 라이오
+  &[type="radio"] {
+    &+span::after {
+      @include mixins.sprite(sprite.$ico-radio-off);
+    }
+
+    &:checked+span::after {
+      @include mixins.sprite(sprite.$ico-radio-on);
+    }
   }
 }
