@@ -68,7 +68,6 @@ var actvTabList = function(tabid, actNum){
 }
 $('.tab').each(function(){
 	var tabIdx = $(this).attr('id');
-	console.log(tabIdx)
 
 	if(!$(this).hasClass('tab-func')){
 		var basicTabs = new Tabs('#' + tabIdx);
@@ -96,7 +95,6 @@ $('.category-product__heart').on('click', function (event) {
 	}else {
 		$(this).find('i').attr('class', 'ico__heart');
 		$(this).addClass('active');
-		$(this).find('span').css('color', '#FB4760');
-	
+		$(this).find('span').css('color', '#FB4760');	
 	}
 })

@@ -25,7 +25,7 @@
 
             <div class="content">
               <div class="content__item">
-                <form class="form" id="" method="" action="#">
+                <form class="form" id="" method="">
                   <div class="form__check-box">
                     <div class="form__title">올펀 약관에 동의해주세요.</div>
                     <div class="check-box">
@@ -91,20 +91,46 @@
                     </div>
                   </div>
                   <div class="button-wrap">
-                    <input class="button form__submit-button button--solid"
-                    id="LGI-02-1-register__form-submit"
-                    type="submit"
-                    form=""
-                    value="가입 완료" 
-                    disabled=""
-                    />
+                    <a href="#" 
+                      class="button form__submit-button"
+                      id="LGI-02-1-register__form-submit"
+                      disabled=""
+                      onclick="openModal('#LGI-04-modal1')"
+                      >
+                      가입 완료
+                    </a>
                   </div>
                 </form>
               </div>
             </div>
-
           </div>
         </div>
+
+        <div id="LGI-04-modal1" class="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      가입이 완료되었습니다.<br>
+                      홈으로 이동합니다.
+                    </p>
+                  </div>
+                  <div class="modal__buttons">
+                    <a 
+                    onclick="closeModal('#LGI-04-modal1')" 
+                    class="modal__button"
+                    >
+                      <span>확인</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div id="reg-agrmnt_service" class="modal modal-type--basic">

@@ -27,13 +27,19 @@
               <p class="register-info__title">올펀 서비스 이용 절차</p>
               <div class="register-info__desc">회원가입 <span>→</span> 가입 승인 <span>→</span> 로그인 <span>→</span> 올펀 서비스 이용</div>
             </div>
+
             <div class="button-wrap">
-              <button type="button" class="button button--solid" onclick="openModal('#LGI-05-modal1')">All FURN 홈으로 가기</button>
+              <input
+                type="button"
+                class="button form__submit-button"
+                value="All FURN 홈으로 가기"
+                onclick="openModal('#LGI-04-modal1')"
+                >
             </div>
           </div>
         </div>
 
-        <div id="LGI-05-modal1" class="modal">
+        <div id="LGI-04-modal1" class="modal">
           <div class="modal__container">
             <div class="modal__content">
               <div class="modal-box__container">
@@ -45,7 +51,12 @@
                     </p>
                   </div>
                   <div class="modal__buttons">
-                    <a href="#" onclick="closeModal('#LGI-05-modal1')" class="modal__button"><span>확인</span></a>
+                    <a 
+                    onclick="closeModal('#LGI-04-modal1')" 
+                    class="modal__button"
+                    >
+                      <span>확인</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -53,9 +64,7 @@
           </div>
         </div>
 
-
       </div>
-
     </div>
   </div>
   <script src="../assets/js/ui.js" type="text/javascript"></script>
