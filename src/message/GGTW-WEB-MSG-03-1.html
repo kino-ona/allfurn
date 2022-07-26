@@ -208,7 +208,7 @@
                     </div>
                   </div>
                   <div class="section">
-                    <div id="dialogue" class="dialogue dialogue--photo">
+                    <div id="dialogue" class="dialogue">
                       <div class="date"><span>0000년 0월 00일 월요일</span></div>
                       <div class="chat-box chat-box--product chat-box--right">
                         <div class="chat chat--product chat--right">
@@ -298,36 +298,30 @@
                         <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
                       </div>
                     </div>
-                    <div class="section__bottom section__bottom--photo section__bottom--photo-text">
-                      <div class="section__bottom-button">
-                        <div type="button" class="bottom-button"><div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div></div>
-                      </div>
-                      <div class="textfield textfield--photo">
-                        <input
-                        id="chatbox"
-                        class="message-input message-input--photo message-input--photo-text textfield__input"
-                        type="text"
-                        name="chat"
-                        placeholder="메세지를 입력해주세요."
-                        value="메세지 텍스트 예시(임시value값)"
-                        onfocus="ResetInput()"
-                        />
-                        <div class="photo-container">
-                          <div class="photo" style="background-image: url(../assets/images/temp/product01@2x.png);">
-                            <span class="a11y">나의 첨부 이미지</span>
-                            <button type="button" class="button ico__sdelete"><span class="a11y">삭제하기</span></button>
-                          </div>
-                          <div class="photo" style="background-image: url(../assets/images/temp/product01@2x.png);">
-                            <span class="a11y">나의 첨부 이미지</span>
-                            <button type="button" class="button ico__sdelete"><span class="a11y">삭제하기</span></button>
-                          </div>
-                          <div class="photo" style="background-image: url(../assets/images/temp/product01@2x.png);">
-                            <span class="a11y">나의 첨부 이미지</span>
-                            <button type="button" class="button ico__sdelete"><span class="a11y">삭제하기</span></button>
+                    <div class="section__bottom">
+                      <div class="product-quotation">
+                        <div class="row">포그니 라운드 소파</div>
+                        <div class="row cate">상품 문의</div>
+                        <div class="section__bottom-button">
+                          <div type="button" class="bottom-button" onclick="DeleteBottomTarget()">
+                            <div class="ico__delete12"><span class="a11y">삭제하기</span></div>
                           </div>
                         </div>
                       </div>
-                      <button type="submit" disabled="false" class="message-submit">전송</button>
+                      <div class="section__bottom-button">
+                        <div type="button" class="bottom-button"><div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div></div>
+                      </div>
+                      <div class="textfield">
+                        <input 
+                        id="chatbox" 
+                        class="message-input textfield__input" 
+                        type="text" 
+                        name="chat" 
+                        placeholder="메세지를 입력해주세요." 
+                        onfocus="ResetInput()" 
+                        />
+                      </div>
+                      <button type="submit" disabled="true" class="message-submit">전송</button>
                     </div>
                   </div>
                 </div>
@@ -367,15 +361,19 @@
           </div>
         </div>
 
-        <div id="msg_imgviewer" class="modal" >
+        <div id="msg_imgviewer" class="modal" style="display: block;">
           <div class="modal__container">
             <div class="modal__content">
               <div class="modal-box__container">
                 <div class="modal-box__content">
                   <div class="header"></div>
                   <div class="content">
+                    <!-- 가로로 긴 이미지 -->
                     <!-- <div class="content__inner" style="background-image: url(../assets/images/temp/msg_imgviewer_1.png);"></div> -->
+                    <!--// 가로로 긴 이미지 -->
+                    <!-- 세로로 긴 이미지 -->
                     <div class="content__inner" style="background-image: url(../assets/images/temp/msg_imgviewer_2.png);"></div>
+                    <!--// 세로로 긴 이미지 -->
                   </div>
                   <div class="footer"></div>
                   <div class="modal-close" onclick="closeModal('#msg_imgviewer')">
