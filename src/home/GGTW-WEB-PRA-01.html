@@ -43,11 +43,11 @@
                         <p>이미지 추가</p>
                       </div>
                     </div>
-                    <ul class="desc__notice">
-                      <li>· 권장 크기: 550 x 550 / 권장 형식: jpg, jpeg, png</li>
-                      <li class="red">· 첫번째 이미지가 대표 이미지로 노출됩니다.</li>
-                      <li>· 이미지는 8개까지 등록 가능합니다.</li>
-                    </ul>
+                    <div class="desc__notice">
+                      <p>· 권장 크기: 550 x 550 / 권장 형식: jpg, jpeg, png</p>
+                      <p><span class="red">· 첫번째 이미지가 대표 이미지로 노출됩니다.</span></p>
+                      <p>· 이미지는 8개까지 등록 가능합니다.</p>
+                    </div>
                   </div>
                 </li>
                 <li class="form__list-wrap">
@@ -103,6 +103,433 @@
                       </ul>
                     </div>
                     <p class="list-item--selected active">선택한 카테고리 : 소파/거실 > 1인용의자</p>
+                  </div>
+                </li>
+                <li class="form__list-wrap">
+                  <span for="form-list01" class="list__title">상품 속성</span>
+                  <div class="list__desc">
+                    <ul class="desc__select-group">
+                      <li class="desc__select-group--item">
+                        <span class="item__text">색상</span>
+                        <button type="button" class="button" onclick="openModal('#default-modal01')">색상 선택</button>
+                        <ul>
+                          <li>
+                            <span>아이보리</span>
+                            <i class="ico__delete16"><span class="a11y">삭제</span></i>
+                          </li>
+                          <li>
+                            <span>핑크</span>
+                            <i class="ico__delete16"><span class="a11y">삭제</span></i>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="desc__select-group--item">
+                        <span class="item__text">소재</span>
+                        <button type="button" class="button" onclick="openModal('#default-modal02')">소재 선택</button>
+                      </li>
+                      <li class="desc__select-group--item">
+                        <span class="item__text">형태</span>
+                        <button type="button" class="button" onclick="openModal('#default-modal03')">형태 선택</button>
+                      </li>
+                      <li class="desc__select-group--item">
+                        <span class="item__text">인원</span>
+                        <button type="button" class="button" onclick="openModal('#default-modal04')">인원 선택</button>
+                      </li>
+                      <li class="desc__select-group--item">
+                        <span class="item__text">원산지</span>
+                        <button type="button" class="button" onclick="openModal('#default-modal05')">원산지 선택</button>
+                      </li>
+                    </ul>
+
+                    <div class="desc__notice">
+                      <p>· 상품에 맞는 속성이 없는 경우, 추가 공지 영역에 기입해주세요. 혹은 <span class="red">속성 추가가 필요한 경우, 1:1 문의를 통해 올펀에
+                          요청해주세요.</span></p>
+                    </div>
+
+                    <!-- 색상 선택 팝업 -->
+                    <div id="default-modal01" class="default-modal default-modal--category">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>색상 선택</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <ul class="content__list">
+                            <li>
+                              <label for="category-check01">
+                                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                <span>블랙</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check02">
+                                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                <span>화이트</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check03">
+                                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                <span>아이보리</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check04">
+                                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                <span>그레이</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check05">
+                                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                <span>브라운</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check06">
+                                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                <span>시베드 브라운</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check07">
+                                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                <span>딥 시 클레이 그레이</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check08">
+                                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                <span>콩거 일 그레이</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check09">
+                                <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                <span>누디브랜치 바이올렛(2022년 트렌드 컬러)</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--blank-gray">
+                            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                            <p>초기화</p>
+                          </button>
+                          <button type="button" class="button button--solid">선택 완료</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 소재 선택 팝업 -->
+                    <div id="default-modal02" class="default-modal default-modal--category">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>소재 선택</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal02')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <ul class="content__list">
+                            <li>
+                              <label for="category-check01">
+                                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check02">
+                                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check03">
+                                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check04">
+                                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check05">
+                                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check06">
+                                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check07">
+                                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check08">
+                                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check09">
+                                <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                <span>소재</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--blank-gray">
+                            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                            <p>초기화</p>
+                          </button>
+                          <button type="button" class="button button--solid">선택 완료</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 형태 선택 팝업 -->
+                    <div id="default-modal03" class="default-modal default-modal--category">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>형태 선택</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal03')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <ul class="content__list">
+                            <li>
+                              <label for="category-check01">
+                                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check02">
+                                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check03">
+                                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check04">
+                                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check05">
+                                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check06">
+                                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check07">
+                                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check08">
+                                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check09">
+                                <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                <span>형태</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--blank-gray">
+                            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                            <p>초기화</p>
+                          </button>
+                          <button type="button" class="button button--solid">선택 완료</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 인원 선택 팝업 -->
+                    <div id="default-modal04" class="default-modal default-modal--category">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>인원 선택</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal04')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <ul class="content__list">
+                            <li>
+                              <label for="category-check01">
+                                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check02">
+                                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check03">
+                                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check04">
+                                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check05">
+                                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check06">
+                                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check07">
+                                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check08">
+                                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check09">
+                                <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                <span>인원</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--blank-gray">
+                            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                            <p>초기화</p>
+                          </button>
+                          <button type="button" class="button button--solid">선택 완료</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 원산지 선택 팝업 -->
+                    <div id="default-modal05" class="default-modal default-modal--category">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>원산지 선택</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal05')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <ul class="content__list">
+                            <li>
+                              <label for="category-check01">
+                                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check02">
+                                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check03">
+                                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check04">
+                                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check05">
+                                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check06">
+                                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check07">
+                                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check08">
+                                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="category-check09">
+                                <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                <span>원산지</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--blank-gray">
+                            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                            <p>초기화</p>
+                          </button>
+                          <button type="button" class="button button--solid">선택 완료</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
               </ul>

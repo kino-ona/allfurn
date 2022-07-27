@@ -407,14 +407,14 @@
           display: inline-block;
           margin-top: 16px;
 
-          li {
+          p {
             font-weight: 500;
             font-size: 14px;
             line-height: 22.4px;
             letter-spacing: -0.02em;
             color: #828282;
 
-            &.red {
+            .red {
               color: #FB4760;
             }
           }
@@ -509,6 +509,101 @@
 
           &.active {
             display: block;
+          }
+        }
+
+        .desc__select-group {
+          .desc__select-group--item {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #E0E0E0;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+              padding-top: 0;
+            }
+
+            &:last-child {
+              border-bottom: 0;
+              padding-bottom: 0;
+            }
+
+            .item__text {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 25.6px;
+              letter-spacing: -0.02em;
+              color: #828282;
+              width: 42px;
+              margin-right: 15px;
+            }
+
+            .button {
+              width: 86px;
+              height: 40px;
+              box-sizing: border-box;
+              border: 1px solid #E0E0E0;
+              border-radius: 5px;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 36px;
+              letter-spacing: -0.02em;
+              color: #333333;
+
+              &:hover {
+                font-weight: 600;
+                color: #4F4F4F;
+                border-color: #4F4F4F;
+              }
+            }
+
+            ul {
+              display: flex;
+              align-items: center;
+              margin-left: 16px;
+              width: 826px;
+              overflow-x: scroll;
+
+              // 스크롤바 숨기기
+              // IE, Edge
+              -ms-overflow-style: none;
+              // Firefox
+              scrollbar-width: none;
+
+              // Chrome, Safari, Opera
+              &::-webkit-scrollbar {
+                display: none;
+              }
+
+              li {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                padding: 5px 12px;
+                background-color: #F2F2F2;
+                height: 34px;
+                border-radius: 34px;
+                box-sizing: border-box;
+
+                &:last-child {
+                  margin-right: 0;
+                }
+
+                span {
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 24px;
+                  letter-spacing: -0.02em;
+                  color: #333333;
+                  margin-right: 4px;
+                }
+
+                i:hover {
+                  cursor: pointer;
+                }
+              }
+            }
           }
         }
       }
