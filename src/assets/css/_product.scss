@@ -20,6 +20,24 @@
   }
 }
 
+.product__container {
+  .category-btn {
+    margin-bottom: 16px;
+
+    &+.category-list {
+      display: none;
+    }
+
+    &.category-btn--active {
+      margin-bottom: 24px;
+
+      &+.category-list {
+        display: flex;
+      }
+    }
+  }
+}
+
 .category-btn {
   display: flex;
   align-items: center;
