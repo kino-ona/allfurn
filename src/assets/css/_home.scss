@@ -654,9 +654,17 @@
             width: 280px;
             height: 48px;
 
+            &:disabled {
+              background-color: #F7F7F7;
+
+              span {
+                color: #BDBDBD;
+              }
+            }
+
             i {
               margin-top: 2px;
-              margin-right: 6px;
+              margin-right: 4px;
             }
 
             span {
@@ -843,7 +851,7 @@
   }
 }
 
-
+// 배송 팝업
 .default-modal--shipping {
   .default-modal__content {
     h3 {
