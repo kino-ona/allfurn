@@ -923,6 +923,66 @@
     // }
   }
 
+
+  .modal {
+
+    &__container {
+      width: 350px;
+    }
+
+    &-box__container {
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #E0E0E0;
+    }
+
+    &__desc {
+      padding: 37px 24px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 0;
+      font-size: 16px;
+      font-size: 500;
+      color: #1B1B1B;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__button {
+      height: 40px;
+      width: 100%;
+      max-width: 100px;
+      display: block;
+      margin-bottom: 20px;
+      background-color: #FB4760;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      border-radius: 0;
+      span {
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      & + .modal__button {
+        margin-left: 10px;
+      }
+
+      &--gray {
+        background-color: #BDBDBD;
+      }
+    }
+  }
+  
+
   /* section__bottom 사진 첨부 */
 
   .section__bottom--photo {
@@ -1128,7 +1188,12 @@
   }
 }
 
-.modal {
+.message + .modal {
+  z-index: 998;
+
+  .modal__button {
+    cursor: pointer;
+  }
   
   .modal__container {
     overflow: hidden;
@@ -1183,6 +1248,11 @@
   .content__inner {
     height: 475px;
     position: relative;
+  }
+
+  .button {
+    background-color: #FB4760;
+    color: #ffffff;
   }
 
   .modal__close-button {

@@ -25,18 +25,6 @@ $('.modal-close').on('click', function (event) {
   closeModal('#modal-type--basic');
 })
 
-// $('.ico__like').on('click', function (event) {
-//   event.preventDefault();
-
-//   if(!$(this)[0].classList.contains('like--active')) {
-//     $(this).addClass('like--active');
-//     $(this).find("path").attr("fill", "#FB4760");
-//   }else {
-//     $(this).removeClass('like--active');
-//     $(this).find("path").attr("fill", "#BDBDBD");
-//   }
-// })
-
 $(".textfield__search").on("propertychange change keyup paste input", function() {
   var currentVal = $(this).val();
 

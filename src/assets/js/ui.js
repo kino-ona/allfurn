@@ -26,6 +26,18 @@ function closeModal(name) {
 	$('body').css('overflow', '')
 }
 
+$('.community-content__like').on('click', function (event) {
+	let bookMarkImg = $(this).find("i");
+	event.preventDefault();
+
+	$(this).toggleClass("active");
+
+  if ($(this).hasClass("active")) {
+    bookMarkImg.attr("class", "ico__like--active");
+  } else {
+    bookMarkImg.attr("class", "ico__like");
+  }
+})
 
 //검색창
 $(".textfield__search").on("propertychange change keyup paste input", function() {
@@ -68,7 +80,6 @@ var actvTabList = function(tabid, actNum){
 }
 $('.tab').each(function(){
 	var tabIdx = $(this).attr('id');
-	console.log(tabIdx)
 
 	if(!$(this).hasClass('tab-func')){
 		var basicTabs = new Tabs('#' + tabIdx);
@@ -101,7 +112,17 @@ $('.category-product__heart').on('click', function (event) {
 	}else {
 		$(this).find('i').attr('class', 'ico__heart');
 		$(this).addClass('active');
-		$(this).find('span').css('color', '#FB4760');
+		$(this).find('span').css('color', '#FB4760');	
+	}
+})
+
+$('.ico__more').on('click', function (event) {
+	event.preventDefault();
+	$(this).toggleClass('active');
 	
+	if($(this).hasClass('active')) {
+		$(this).next().css('display', 'block');
+	}else {
+		$(this).next().css('display', 'none');
 	}
 })

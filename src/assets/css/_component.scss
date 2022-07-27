@@ -296,6 +296,11 @@
     color: #828282;
   }
 
+  &__util i {
+    margin-top: -3px;
+    margin-right: 3px;
+  }
+
   &__time {
     position: absolute;
     right: 24px;
@@ -370,14 +375,36 @@
 
   &__time {
     position: absolute;
-    top: 47px;
     right: 24px;
+    bottom: 22px;
     color: #828282;
     font-size: 14px;
     font-weight: 500;
     line-height: 22.4px;
     letter-spacing: -.2px;
-   
+  }
+
+  &__box {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    width: 168px;
+    padding: 9px 0 6px; 
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    z-index: 9;
+  }
+
+  &__box a {
+    display: block;
+    height: 44px;
+    padding: 9px 24px;
+    color: #1B1B1B;
+    font-size: 16px;
+    line-height: 25px;
+    box-sizing: border-box;
   }
 }
 

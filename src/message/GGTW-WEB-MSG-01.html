@@ -197,8 +197,8 @@
                       <a href="#" class="row navi-link">업체 자세히 보기<span class="ico__arrow--right14"></span></a>
                     </div>
                     <div class="content__usermenu" aria-hidden="false">
-                      <div type="button" class="usermenu__item">알림끄기</div>
-                      <div type="button" class="usermenu__item" onclick="openModal('#msg_report')">신고하기</div>
+                      <div type="button" class="usermenu__item" onclick="openModal('#msg_alarm'); return false;">알림끄기</div>
+                      <div type="button" class="usermenu__item" onclick="openModal('#msg_report'); return false;">신고하기</div>
                     </div>
                     <div class="dialogue-insearch" aria-hidden="true">
                       <div type="button" class="head-button dialogue-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
@@ -298,7 +298,46 @@
               </div>
             </div>
           </div>
-  
+        
+          <div id="msg_alarm" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                <div class="modal-box__container">
+                  <div class="modal-box__content">
+                    <div class="modal__desc">
+                      <p class="modal__text">
+                        해당 업체의 메세지 알림을 해제하시겠습니까?
+                      </p>
+                    </div>
+                    <div class="modal__buttons">
+                      <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                      <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button"><span>확인</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div id="msg_report-submit" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                <div class="modal-box__container">
+                  <div class="modal-box__content">
+                    <div class="modal__desc">
+                      <p class="modal__text">
+                        해당 업체 신고가 완료되었습니다.
+                      </p>
+                    </div>
+                    <div class="modal__buttons">
+                      <input type="button" onclick="closeModal('#msg_report-submit')" class="modal__button" value="확인" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div id="msg_report" class="modal modal-type--basic">
@@ -317,12 +356,12 @@
                         <div class="textarea__count"><span>1</span>/100</div>
                       </div>
                       <div class="modal-box__bottom">
-                        <button type="button" class="button button--solid">완료</button>
+                        <input type="button" class="button" onclick="openModal('#msg_report-submit')" value="완료" />
                       </div>
                     </div>
                   </div>
                   <div class="footer"></div>
-                  <div class="modal-close" onclick="closeModal('#msg_report')">
+                  <div class="modal-close" onclick="closeModal('#msg_report'); return false;">
                     <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
                   </div>
                 </div>

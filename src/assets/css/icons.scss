@@ -61,6 +61,10 @@ i {
   @include mixins.sprite(sprite.$ico-like);
 }
 
+.ico__like--active {
+  @include mixins.sprite(sprite.$ico-like-active);
+}
+
 .ico__reply {
   @include mixins.sprite(sprite.$ico-reply);
 }
@@ -353,6 +357,11 @@ i {
 
 .ico__bookmark28--off {
   @include mixins.sprite(sprite.$ico-bookmark28-off);
+}
+
+//community
+.ico__profile {
+  @include mixins.sprite(sprite.$ico-profile);
 }
 
 .ico__radio--on {
