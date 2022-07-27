@@ -365,3 +365,7 @@ i {
 .ico__gallery--gray {
   @include mixins.sprite(sprite.$ico-gallery-gray);
 }
+
+.ico__add--circle {
+  @include mixins.sprite(sprite.$ico-add-circle);
+}

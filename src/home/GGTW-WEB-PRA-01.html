@@ -224,7 +224,7 @@
                     </div>
 
                     <!-- 소재 선택 팝업 -->
-                    <div id="default-modal02" class="default-modal default-modal--category">
+                    <div id="default-modal02" class="default-modal">
                       <div class="default-modal__container">
                         <div class="default-modal__header">
                           <h2>소재 선택</h2>
@@ -612,6 +612,79 @@
                 <li class="form__list-wrap">
                   <label for="form-list01" class="list__title required">배송 방법</label>
                   <div class="list__desc">
+                    <div class="desc__shipping-wrap">
+                      <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal06')">
+                        <i class="ico__add--circle"><span class="a11y">추가</span></i>
+                        <span>배송 방법 추가</span>
+                      </button>
+                      <!-- active 로 동작 -->
+                      <div class="shipping-wrap__add active">
+                        <p class="add__title">추가된 배송 방법</p>
+                        <ul>
+                          <li>
+                            <span class="add__name">소비자 직배 가능 (무료)</sp>
+                              <i class="ico__delete16"><span class="a11y">삭제</span></i>
+                          </li>
+                          <li>
+                            <span class="add__name">매장 배송 (착불)</span>
+                            <i class="ico__delete16"><span class="a11y">삭제</span></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- 배송 방법 추가 팝업 -->
+                    <div id="default-modal06" class="default-modal default-modal--shipping">
+                      <div class="default-modal__container">
+                        <div class="default-modal__header">
+                          <h2>배송 방법 추가</h2>
+                          <button type="button" class="ico__close28" onclick="closeModal('#default-modal06')">
+                            <span class="a11y">닫기</span>
+                          </button>
+                        </div>
+                        <div class="default-modal__content">
+                          <h3 class="required">배송 방법</h3>
+                          <div class="shipping__wrap">
+                            <div class="dropdown">
+                              <p class="dropdown__title">배송 방법 선택</p>
+                              <ul class="dropdown__wrap">
+                                <li class="dropdown__item">직접 입력</li>
+                                <li class="dropdown__item">소비자 직배 가능</li>
+                                <li class="dropdown__item">매장 배송</li>
+                              </ul>
+                            </div>
+
+                            <!-- item01만 active 일때 item01,02둘다 보이고 -->
+                            <!-- item02만 active 일때 item02만 보임-->
+                            <div class="wrap-item wrap-item--01 active">
+                              <input class="input textfield__input textfield__input--gray" id="form-list01" type="text"
+                                required placeholder="배송 방법을 입력해주세요.">
+                            </div>
+
+                            <div class="wrap-item wrap-item--02">
+                              <h3>위 배송 방법의 가격을 선택해주세요</h3>
+                              <div class="dropdown">
+                                <p class="dropdown__title">배송 가격을 선택해주세요</p>
+                                <ul class="dropdown__wrap">
+                                  <li class="dropdown__item">무료</li>
+                                  <li class="dropdown__item">착불</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="default-modal__footer">
+                          <button type="button" class="button button--solid">추가하기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="form__list-wrap">
+                  <label for="form-list01" class="list__title">상품 추가 공지</label>
+                  <div class="list__desc">
+                    <textarea rows="10" class="textfield__input textfield__input--gray"
+                      placeholder="상품 추가 공지를 입력해주세요."></textarea>
                   </div>
                 </li>
               </ul>
