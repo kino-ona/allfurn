@@ -4,6 +4,7 @@ dist/**/**.html
 dist/assets/css
 dist/assets/images
 dist/assets/js
+**.pdf
 
 src/assets/css/sprite
 
