@@ -131,6 +131,14 @@ i {
   @include mixins.sprite(sprite.$ico-arrow-right14);
 }
 
+.ico__list-link {
+  @include mixins.sprite(sprite.$ico-list-link);
+}
+
+.ico__list-link--active {
+  @include mixins.sprite(sprite.$ico-list-link-active);
+}
+
 .ico__arrow--down20 {
   @include mixins.sprite(sprite.$ico-arrow-down20);
 }
@@ -343,6 +351,10 @@ i {
   @include mixins.sprite(sprite.$ico-unheart);
 }
 
+.ico__logout {
+  @include mixins.sprite(sprite.$ico-logout);
+}
+
 .ico__dialogue {
   @include mixins.sprite(sprite.$ico-dialogue);
 }
@@ -357,6 +369,10 @@ i {
 
 .ico__bookmark28--off {
   @include mixins.sprite(sprite.$ico-bookmark28-off);
+}
+
+.ico__mybadge-wholesaler {
+  @include mixins.sprite(sprite.$ico-mybadge-wholesaler);
 }
 
 //community
