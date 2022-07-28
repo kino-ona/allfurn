@@ -38,7 +38,8 @@
         <button type="button" class="inner__button modal-type--single">modal-type--single</button>
         <button type="button" class="inner__button modal-type--pair">modal-type--pair</button>
         <button type="button" class="inner__button modal-type--basic">modal-type--basic</button>
-
+        <button type="button" class="inner__button" onclick="openModal('#text-modal--pair')">modal-type (취소,확인)</button>
+        <button type="button" class="inner__button" onclick="openModal('#text-modal--single')">modal-type (확인)</button>
 
         <div id="modal-type--single" class="modal">
           <div class="modal__container"  style="width: 310px">
@@ -49,7 +50,7 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons">
-                    <a href="#" onclick="closeModal('#modal-type--single')" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--single'); return false;" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -66,8 +67,8 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons modal__buttons--half">
-                    <a href="#" onclick="closeModal('#modal-type--pair')" class="modal__button"><span>Button</span></a>
-                    <a href="#" onclick="closeModal('#modal-type--pair')" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--pair');return false;" class="modal__button"><span>Button</span></a>
+                    <a href="#" onclick="closeModal('#modal-type--pair'); return false;" class="modal__button"><span>Button</span></a>
                   </div>
                 </div>
               </div>
@@ -260,6 +261,48 @@
             </div>
           </div>
         </div>
+
+        <div id="text-modal--pair" class="modal">
+          <div class="modal__container" style="width: 350px;">
+            <div class="modal__content">
+              <div class="modal-box__container">
+                <div class="modal-box__content">
+                  <div class="modal__desc">
+                    <p class="modal__text">
+                      해당 게시판의 금지어를 사용하여<br>
+                      등록할 수 없습니다.
+                    </p>
+                  </div>
+                  <div class="modal__util">
+                    <a href="#" onclick="closeModal('#text-modal--pair'); return false;" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                    <a href="#" onclick="closeModal('#text-modal--pair'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="text-modal--single" class="modal">
+        <div class="modal__container" style="width: 350px;">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    해당 게시판의 금지어를 사용하여<br>
+                    등록할 수 없습니다.
+                  </p>
+                </div>
+                <div class="modal__util">
+                  <a href="#" onclick="closeModal('#text-modal--single'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="inner">
         <p class="inner__title">Pagination</p>
