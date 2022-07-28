@@ -26,6 +26,7 @@
             </div>
             <form class="registration__form">
               <ul>
+                <!-- 상품명 -->
                 <li class="form__list-wrap">
                   <label for="form-list01" class="list__title required">상품명</label>
                   <div class="list__desc">
@@ -33,16 +34,44 @@
                       placeholder="상품명을 입력해주세요.">
                   </div>
                 </li>
+                <!-- 상품 이미지 -->
                 <li class="form__list-wrap">
                   <label for="form-list02" class="list__title required">상품 이미지</label>
                   <div class="list__desc">
-                    <div class="desc__input-wrap">
-                      <input class="input file-input" id="form-list02" type="file" required placeholder="이미지 추가">
-                      <div class="desc__input-placeholder">
-                        <i class="ico__gallery--gray"><span class="a11y">갤러리</span></i>
-                        <p>이미지 추가</p>
-                      </div>
-                    </div>
+                    <ul class="desc__product-img-wrap">
+                      <li class="product-img__gallery">
+                        <input class="input file-input" id="form-list02" type="file" required placeholder="이미지 추가">
+                        <div class="desc__input-placeholder">
+                          <i class="ico__gallery--gray"><span class="a11y">갤러리</span></i>
+                          <p>이미지 추가</p>
+                        </div>
+                      </li>
+                      <li class="product-img__add">
+                        <div class="add__img-wrap">
+                          <p class="add__badge">대표이미지</p>
+                          <img src="../assets/images/temp/product_img01.png" alt="상품이미지01">
+                          <i class="ico__delete--circle"><span class="a11y">삭제</span></i>
+                        </div>
+                      </li>
+                      <li class="product-img__add">
+                        <div class="add__img-wrap">
+                          <img src="../assets/images/temp/product_img02.png" alt="상품이미지02">
+                          <i class="ico__delete--circle"><span class="a11y">삭제</span></i>
+                        </div>
+                      </li>
+                      <li class="product-img__add">
+                        <div class="add__img-wrap">
+                          <img src="../assets/images/temp/product_img03.png" alt="상품이미지03">
+                          <i class="ico__delete--circle"><span class="a11y">삭제</span></i>
+                        </div>
+                      </li>
+                      <li class="product-img__add">
+                        <div class="add__img-wrap">
+                          <img src="../assets/images/temp/product_img04.png" alt="상품이미지04">
+                          <i class="ico__delete--circle"><span class="a11y">삭제</span></i>
+                        </div>
+                      </li>
+                    </ul>
                     <div class="desc__notice">
                       <p>· 권장 크기: 550 x 550 / 권장 형식: jpg, jpeg, png</p>
                       <p><span class="red">· 첫번째 이미지가 대표 이미지로 노출됩니다.</span></p>
@@ -50,6 +79,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- 카테고리 -->
                 <li class="form__list-wrap">
                   <span class="list__title required">카테고리</span>
                   <div class="list__desc">
@@ -105,6 +135,7 @@
                     <p class="list-item--selected active">선택한 카테고리 : 소파/거실 > 1인용의자</p>
                   </div>
                 </li>
+                <!-- 상품 속성 -->
                 <li class="form__list-wrap">
                   <span for="form-list01" class="list__title">상품 속성</span>
                   <div class="list__desc">
@@ -532,6 +563,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- 상품 가격 -->
                 <li class="form__list-wrap">
                   <span for="form-list01" class="list__title required">상품 가격</span>
                   <div class="list__desc">
@@ -574,6 +606,7 @@
                     </ul>
                   </div>
                 </li>
+                <!-- 결제 방식 -->
                 <li class="form__list-wrap">
                   <span for="form-list01" class="list__title required">결제 방식</span>
                   <div class="list__desc">
@@ -602,6 +635,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- 상품 코드 -->
                 <li class="form__list-wrap">
                   <label for="form-list01" class="list__title">상품 코드</label>
                   <div class="list__desc">
@@ -609,6 +643,7 @@
                       placeholder="상품 코드를 입력해주세요.">
                   </div>
                 </li>
+                <!-- 배송 방법 -->
                 <li class="form__list-wrap">
                   <label for="form-list01" class="list__title required">배송 방법</label>
                   <div class="list__desc">
@@ -680,6 +715,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- 상품 추가 공지 -->
                 <li class="form__list-wrap">
                   <label for="form-list01" class="list__title">상품 추가 공지</label>
                   <div class="list__desc">
@@ -687,6 +723,7 @@
                       placeholder="상품 추가 공지를 입력해주세요."></textarea>
                   </div>
                 </li>
+                <!-- 인증 정보 -->
                 <li class="form__list-wrap">
                   <span for="form-list01" class="list__title">인증 정보</span>
                   <div class="list__desc">
@@ -785,6 +822,7 @@
                     </div>
                   </div>
                 </li>
+                <!-- 상품 상세 내용 -->
                 <li class="form__list-wrap">
                   <span for="form-list01" class="list__title required">상품 상세 내용</span>
                   <div class="list__desc">
@@ -792,7 +830,7 @@
                       <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal08')">
                         상세 내용 작성 가이드
                       </button>
-                      
+
                       <!-- 임시 스마트 에디터 -->
                       <div class="guide__smart-editor">
                         <img src="../assets/images/temp/smart_editor.png" alt="스마트에디터">
