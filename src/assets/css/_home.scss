@@ -737,6 +737,55 @@
           }
         }
 
+        .desc__auth-wrap {
+          .button {
+            width: 280px;
+            height: 48px;
+          }
+
+          .auth-wrap__selected {
+            margin-top: 16px;
+            display: none;
+
+            &.active {
+              display: block;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 25.6px;
+              letter-spacing: -0.02me;
+              color: #4F4F4F;
+
+              &.red {
+                font-weight: 500;
+                color: #FB4760;
+                margin-bottom: 2px;
+              }
+            }
+          }
+
+          &+.default-modal--category {
+            .default-modal__content {
+              li {
+                &:last-child {
+                  .input {
+                    margin-top: 10px;
+                    display: none;
+                  }
+                }
+              }
+            }
+
+            .default-modal__footer {
+              .button {
+                width: 100%;
+              }
+            }
+          }
+        }
+
         textarea {
           padding: 11px 16px;
           height: 200px !important;
