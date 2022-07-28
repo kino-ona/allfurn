@@ -422,3 +422,7 @@ i {
 .ico__add--circle {
   @include mixins.sprite(sprite.$ico-add-circle);
 }
+
+.ico__delete--circle {
+  @include mixins.sprite(sprite.$ico-delete-circle);
+}
