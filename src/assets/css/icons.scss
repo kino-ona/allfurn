@@ -115,6 +115,10 @@ i {
   @include mixins.sprite(sprite.$ico-more);
 }
 
+.ico__more--black {
+  @include mixins.sprite(sprite.$ico-more-black);
+}
+
 .ico__recomment {
   @include mixins.sprite(sprite.$ico-recomment);
 }
@@ -390,6 +394,18 @@ i {
 
 .ico__share {
   @include mixins.sprite(sprite.$ico-profile);
+}
+
+.ico__community-arrow {
+  @include mixins.sprite(sprite.$ico-community-arrow);
+}
+
+.ico__community-arrow--active {
+  @include mixins.sprite(sprite.$ico-community-arrow-active);
+}
+
+.ico__plus {
+  @include mixins.sprite(sprite.$ico-plus);
 }
 
 .ico__radio--on {
