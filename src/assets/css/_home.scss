@@ -713,6 +713,10 @@
                 margin-right: 37px;
                 flex-shrink: 0;
                 // flex: 0 0 auto;
+                
+                .required::after {
+                  top: 0;
+                }
               }
             }
 
