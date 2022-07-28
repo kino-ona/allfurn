@@ -1012,7 +1012,10 @@
               background-color: #828282;
               bottom: 4px;
               left: 0;
+            }
 
+            &:hover {
+              cursor: pointer;
             }
           }
         }
