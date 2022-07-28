@@ -89,11 +89,16 @@ $('.tab').each(function(){
 // dropdown control
 $('.dropdown').on('click', function (evnet) {
   if(!$(this).hasClass('dropdown--disabled')) $(this).toggleClass('dropdown--active');
-})
 
-$('.dropdown__item').on('click', function (evnet) {
-  evnet.preventDefault();
-  $('.dropdown__title').text($(this).text().trim(' ').split('\n')[0]);
+	var dropDownItem = $(this)
+	  .children(".dropdown__wrap")
+	  .children(".dropdown__item");
+	var dropDownTitle = $(this).children(".dropdown__title");
+
+	dropDownItem.on("click", function (evnet) {
+	  evnet.preventDefault();
+	  dropDownTitle.text($(this).text().trim(" ").split("\n")[0]);
+	});
 })
 
 //heart action
