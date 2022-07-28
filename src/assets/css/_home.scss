@@ -340,6 +340,118 @@
       height: 40px;
       line-height: 40px;
     }
+
+    .title__button-group {
+      .button {
+        margin-left: 8px;
+        line-height: 38px;
+      }
+    }
+
+    &.registration__title-sub--notice {
+      display: block;
+      padding-bottom: 24px;
+      margin-top: 64px;
+
+      .title__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .title__notice-wrap {
+        padding: 12px;
+        background-color: #F7F7F7;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          p {
+            margin-left: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22.4px;
+            letter-spacing: -0.02em;
+            color: #828282;
+          }
+
+          .red {
+            color: #FB4760;
+          }
+        }
+      }
+
+      .default-modal--category {
+        .default-modal__content {
+          .content__notice {
+            padding: 12px;
+            height: 68px;
+            box-sizing: border-box;
+            background-color: #F7F7F7;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: flex;
+            align-items: flex-start;
+
+            i {
+              flex-shrink: 0;
+              margin-top: 4px;
+              margin-right: 9px;
+            }
+
+            p {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 22.4px;
+              letter-spacing: -0.02em;
+              color: #828282;
+            }
+          }
+
+          .content__list {
+            li {
+              display: flex;
+              align-items: center;
+
+              &:first-child {
+                padding-top: 10px;
+              }
+
+              &:last-child {
+                border-bottom: 0;
+              }
+
+              i {
+                margin-bottom: 2px;
+              }
+
+              p {
+                margin-left: 12px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25.6px;
+                letter-spacing: -0.02em;
+                color: #1B1B1B;
+              }
+            }
+          }
+        }
+
+        .default-modal__footer {
+          .button {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
   &__form {
@@ -349,6 +461,10 @@
       align-items: flex-start;
       padding: 16px 0;
       border-bottom: 1px solid #E0E0E0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
 
       .list__title {
         font-weight: 400;
@@ -595,6 +711,8 @@
               &.item__text--type02 {
                 width: 58px;
                 margin-right: 37px;
+                flex-shrink: 0;
+                // flex: 0 0 auto;
               }
             }
 
@@ -664,32 +782,6 @@
                 }
               }
             }
-
-            // 상품 가격
-            .textfield__input--gray {
-              width: 340px;
-              height: 48px;
-              border-top-right-radius: 0;
-              border-bottom-right-radius: 0;
-
-              &+p {
-                background-color: #F7F7F7;
-                width: 48px;
-                height: 48px;
-                padding: 11px 17px;
-                box-sizing: border-box;
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-                border: 1px solid #E0E0E0;
-                border-left: 0;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 25.6px;
-                letter-spacing: -0.02em;
-                color: #828282;
-              }
-            }
-
           }
         }
 
@@ -893,6 +985,81 @@
         }
       }
     }
+
+    &.registration__form--type02 {
+      .form__list-wrap {
+        .list__title {
+          position: relative;
+
+          span {
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: -0.02em;
+            color: #828282;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background-color: #828282;
+              bottom: 4px;
+              left: 0;
+
+            }
+          }
+        }
+
+        .desc__select-group--item.product__info--option {
+          display: block;
+
+          .item__input-wrap {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .textfield__input--gray {
+              width: 340px;
+              // margin-right: 10px;
+            }
+
+            .textfield__input--won {
+              margin-left: 10px;
+
+              .textfield__input--gray {
+                width: 175px;
+              }
+            }
+
+            .input__add-btn {
+              width: 48px;
+              height: 48px;
+              border-radius: 5px;
+              background-color: #F7F7F7;
+              border: 1px solid #E0E0E0;
+              margin-left: 10px;
+              box-sizing: border-box;
+              padding: 8px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &.input__del-btn {
+                padding: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1045,6 +1212,36 @@
       &.wrap-item--02.active {
         display: block;
       }
+    }
+  }
+}
+
+// 인풋 원
+.textfield__input--won {
+  display: flex;
+  align-items: center;
+
+  .textfield__input--gray {
+    width: 340px;
+    height: 48px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &+p {
+      background-color: #F7F7F7;
+      width: 48px;
+      height: 48px;
+      padding: 11px 17px;
+      box-sizing: border-box;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #E0E0E0;
+      border-left: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #828282;
     }
   }
 }

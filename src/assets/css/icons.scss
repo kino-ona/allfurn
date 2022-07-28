@@ -410,3 +410,15 @@ i {
 .ico__delete--circle {
   @include mixins.sprite(sprite.$ico-delete-circle);
 }
+
+.ico__add28--circle {
+  @include mixins.sprite(sprite.$ico-add28-circle);
+}
+
+.ico__delete24 {
+  @include mixins.sprite(sprite.$ico-delete24);
+}
+
+.ico__burger24 {
+  @include mixins.sprite(sprite.$ico-burger24);
+}

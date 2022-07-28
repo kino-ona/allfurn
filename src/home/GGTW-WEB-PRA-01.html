@@ -20,6 +20,7 @@
               <h2>상품등록</h2>
               <p class="required--sample">는 필수 입력 항목입니다.</p>
             </div>
+            <!-- 상품 기본 정보 -->
             <div class="registration__title-sub">
               <h3>상품 기본 정보</h3>
               <button type="button" class="button button--blank-gray">기본 정보 불러오기</button>
@@ -137,7 +138,7 @@
                 </li>
                 <!-- 상품 속성 -->
                 <li class="form__list-wrap">
-                  <span for="form-list01" class="list__title">상품 속성</span>
+                  <span class="list__title">상품 속성</span>
                   <div class="list__desc">
                     <ul class="desc__select-group">
                       <li class="desc__select-group--item">
@@ -565,14 +566,16 @@
                 </li>
                 <!-- 상품 가격 -->
                 <li class="form__list-wrap">
-                  <span for="form-list01" class="list__title required">상품 가격</span>
+                  <span class="list__title required">상품 가격</span>
                   <div class="list__desc">
                     <ul class="desc__select-group">
                       <li class="desc__select-group--item">
-                        <label class="item__text item__text--type02 required" for="product-price">상품 가격</label>
-                        <input type="number" id="product-price" class="input textfield__input textfield__input--gray"
-                          placeholder="숫자만 입력해주세요." required>
-                        <p>원</p>
+                        <div class="textfield__input--won">
+                          <label class="item__text item__text--type02 required" for="product-price">상품 가격</label>
+                          <input type="number" id="product-price" class="input textfield__input textfield__input--gray"
+                            placeholder="숫자만 입력해주세요." required>
+                          <p>원</p>
+                        </div>
                       </li>
                       <li class="desc__select-group--item" style="display: block;">
                         <div style="display: flex; align-items: center;">
@@ -608,7 +611,7 @@
                 </li>
                 <!-- 결제 방식 -->
                 <li class="form__list-wrap">
-                  <span for="form-list01" class="list__title required">결제 방식</span>
+                  <span class="list__title required">결제 방식</span>
                   <div class="list__desc">
                     <div class="radio__box--type01">
                       <div>
@@ -725,7 +728,7 @@
                 </li>
                 <!-- 인증 정보 -->
                 <li class="form__list-wrap">
-                  <span for="form-list01" class="list__title">인증 정보</span>
+                  <span class="list__title">인증 정보</span>
                   <div class="list__desc">
                     <div class="desc__auth-wrap">
                       <button type="button" class="button button--solid-gray" onclick="openModal('#default-modal07')">
@@ -824,7 +827,7 @@
                 </li>
                 <!-- 상품 상세 내용 -->
                 <li class="form__list-wrap">
-                  <span for="form-list01" class="list__title required">상품 상세 내용</span>
+                  <span class="list__title required">상품 상세 내용</span>
                   <div class="list__desc">
                     <div class="desc__guide-wrap">
                       <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal08')">
@@ -851,6 +854,240 @@
                         <div class="default-modal__footer"></div>
                       </div>
                     </div>
+                  </div>
+                </li>
+              </ul>
+            </form>
+
+            <!-- 상품 주문 옵션 -->
+            <div class="registration__title-sub registration__title-sub--notice">
+              <div class="title__wrap">
+                <h3>상품 주문 옵션</h3>
+                <div class="title__button-group">
+                  <button type="button" class="button button--blank-gray">주문 옵션 추가</button>
+                  <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal09')">
+                    옵션 순서 변경
+                  </button>
+                </div>
+
+                <!-- 옵션 순서 변경 팝업 -->
+                <div id="default-modal09" class="default-modal default-modal--category">
+                  <div class="default-modal__container">
+                    <div class="default-modal__header">
+                      <h2>옵션 순서 변경</h2>
+                      <button type="button" class="ico__close28" onclick="closeModal('#default-modal09')">
+                        <span class="a11y">닫기</span>
+                      </button>
+                    </div>
+                    <div class="default-modal__content">
+                      <div class="content__notice">
+                        <i class="ico__info"><span class="a11y">공지</span></i>
+                        <p>
+                          필수 옵션의 경우, 주문 시 상위 옵션을 선택해야 하위 옵션 선택이 가능합니다. 상위 개념의 옵션을 옵션 1로 설정해주세요.
+                        </p>
+                      </div>
+                      <ul class="content__list">
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 1 (필수) : 사이즈</p>
+                        </li>
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 2 (선택) : 추가 구성</p>
+                        </li>
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 3 (선택) : 추가 구성</p>
+                        </li>
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 4 (선택) : 추가 구성</p>
+                        </li>
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 5 (선택) : 추가 구성</p>
+                        </li>
+                        <li>
+                          <i class="ico__burger24"><span class="a11y">이동</span></i>
+                          <p>옵션 6 (선택) : 추가 구성</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="default-modal__footer">
+                      <button type="button" class="button button--solid">변경 완료</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="title__notice-wrap">
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p>
+                    <span class="red"> 주문 시 필수로 받아야 하는 옵션은 ‘필수 옵션’을 설정해주세요.</span>
+                    필수 옵션의 경우, 주문 시 상위 옵션을 선택해야 하위 옵션 선택이 가능합니다. 상위 개념의 옵션을 옵션 1로 설정해주세요.
+                  </p>
+                </li>
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p class="red">등록한 상품 외 추가로 금액 산정이 필요한 구성품인 경우, 옵션값 하단에 반드시 가격을 입력해주세요.</p>
+                </li>
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p>주문 옵션은 최대 6개까지 추가 가능합니다.</p>
+                </li>
+              </ul>
+            </div>
+            <form class="registration__form registration__form--type02">
+              <ul>
+                <li class="form__list-wrap">
+                  <div class="list__title">
+                    옵션 1
+                    <span>삭제</span>
+                  </div>
+                  <div class="list__desc">
+                    <ul class="desc__select-group">
+                      <li class="desc__select-group--item" style="display: block;">
+                        <div style="display: flex; align-items: center;">
+                          <span class="item__text item__text--type02 required">필수 옵션</span>
+                          <div class="radio__box--type01">
+                            <div>
+                              <input type="radio" id="required-option01-1" name="option01" checked>
+                              <label for="required-option01-1"><span>설정</span></label>
+                            </div>
+                            <div>
+                              <input type="radio" id="required-option01-2" name="option01">
+                              <label for="required-option01-2"><span>설정 안함</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="desc__select-group--item product__info--option">
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-name01">옵션명</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-name01" type="text"
+                            required value="색상">
+                        </div>
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-value01">옵션값</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-value01" type="text"
+                            required value="블랙">
+                          <div class="textfield__input--won">
+                            <input type="text" id="option-value02" class="input textfield__input textfield__input--gray"
+                              value="0" required>
+                            <p>원</p>
+                          </div>
+                          <div class="input__add-btn">
+                            <i class="ico__add28--circle"><span class="a11y">추가</span></i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="form__list-wrap">
+                  <div class="list__title">
+                    옵션 2
+                    <span>삭제</span>
+                  </div>
+                  <div class="list__desc">
+                    <ul class="desc__select-group">
+                      <li class="desc__select-group--item" style="display: block;">
+                        <div style="display: flex; align-items: center;">
+                          <span class="item__text item__text--type02 required">필수 옵션</span>
+                          <div class="radio__box--type01">
+                            <div>
+                              <input type="radio" id="required-option02-1" name="option02">
+                              <label for="required-option02-1"><span>설정</span></label>
+                            </div>
+                            <div>
+                              <input type="radio" id="required-option02-2" name="option02" checked>
+                              <label for="required-option02-2"><span>설정 안함</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="desc__select-group--item product__info--option">
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-name02">옵션명</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-name02" type="text"
+                            required value="추가 구성">
+                        </div>
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-value02-1">옵션값</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-value02-1" type="text"
+                            required value="소파 스툴">
+                          <div class="textfield__input--won">
+                            <input type="text" id="option-value02" class="input textfield__input textfield__input--gray"
+                              required value="50,000">
+                            <p>원</p>
+                          </div>
+                          <div class="input__add-btn input__del-btn">
+                            <i class="ico__delete24"><span class="a11y">삭제</span></i>
+                          </div>
+                        </div>
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-value02-2">옵션값</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-value02-2" type="text"
+                            required value="소파 쿠션">
+                          <div class="textfield__input--won">
+                            <input type="text" id="option-value02" class="input textfield__input textfield__input--gray"
+                              placeholder="예시) 100,000원" required>
+                            <p>원</p>
+                          </div>
+                          <div class="input__add-btn input__del-btn">
+                            <i class="ico__delete24"><span class="a11y">삭제</span></i>
+                          </div>
+                          <div class="input__add-btn">
+                            <i class="ico__add28--circle"><span class="a11y">추가</span></i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="form__list-wrap">
+                  <div class="list__title">
+                    옵션 3
+                    <span>삭제</span>
+                  </div>
+                  <div class="list__desc">
+                    <ul class="desc__select-group">
+                      <li class="desc__select-group--item" style="display: block;">
+                        <div style="display: flex; align-items: center;">
+                          <span class="item__text item__text--type02 required">필수 옵션</span>
+                          <div class="radio__box--type01">
+                            <div>
+                              <input type="radio" id="required-option03-1" name="option03">
+                              <label for="required-option03-1"><span>설정</span></label>
+                            </div>
+                            <div>
+                              <input type="radio" id="required-option03-2" name="option03">
+                              <label for="required-option03-2"><span>설정 안함</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="desc__select-group--item product__info--option">
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-name03">옵션명</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-name03" type="text"
+                            required placeholder="예시) 색상">
+                        </div>
+                        <div class="item__input-wrap">
+                          <label class="item__text item__text--type02 required" for="option-value03">옵션값</label>
+                          <input class="input textfield__input textfield__input--gray" id="option-value03" type="text"
+                            required placeholder="예시) 화이트">
+                          <div class="textfield__input--won">
+                            <input type="text" id="option-value02" class="input textfield__input textfield__input--gray"
+                              placeholder="예시) 100,000원" required>
+                            <p>원</p>
+                          </div>
+                          <div class="input__add-btn">
+                            <i class="ico__add28--circle"><span class="a11y">추가</span></i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </li>
               </ul>
