@@ -56,8 +56,8 @@
   &__desc {
     padding: 37px 20px;
     background: #ffffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border: 1px solid #E0E0E0;
   }
 
@@ -67,8 +67,8 @@
     background-color: #FB4760;
     line-height: 48px;
     text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   &__button span {
@@ -136,6 +136,45 @@
     background: #1B1B1B;
     transform: rotate(-45deg);
     content: '';
+  }
+
+  &__util {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__util .modal__button {
+    display: block;
+    height: 40px;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 20px;
+    background-color: #FB4760;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  &__util .modal__button span {
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  &__util .modal__button--gray {
+    background-color: #BDBDBD;
+  }
+
+  &__util .modal__button + .modal__button {
+    margin-left: 10px;
   }
 }
 
