@@ -61,12 +61,12 @@ i {
   @include mixins.sprite(sprite.$ico-like);
 }
 
-.ico__like--active {
-  @include mixins.sprite(sprite.$ico-like-active);
+.ico__like-line {
+  @include mixins.sprite(sprite.$ico-like-line);
 }
 
-.ico__reply {
-  @include mixins.sprite(sprite.$ico-reply);
+.ico__like--active {
+  @include mixins.sprite(sprite.$ico-like-active);
 }
 
 .ico__reply {
@@ -83,6 +83,10 @@ i {
 
 .badge__new {
   @include mixins.sprite(sprite.$badge-new);
+}
+
+.badge__new--big {
+  @include mixins.sprite(sprite.$badge-new-big);
 }
 
 .ico__filter {
@@ -131,6 +135,14 @@ i {
   @include mixins.sprite(sprite.$ico-arrow-right14);
 }
 
+.ico__list-link {
+  @include mixins.sprite(sprite.$ico-list-link);
+}
+
+.ico__list-link--active {
+  @include mixins.sprite(sprite.$ico-list-link-active);
+}
+
 .ico__arrow--down20 {
   @include mixins.sprite(sprite.$ico-arrow-down20);
 }
@@ -149,6 +161,10 @@ i {
 
 .ico__bookmark24--off {
   @include mixins.sprite(sprite.$ico-bookmark24-off);
+}
+
+.ico__share24 {
+  @include mixins.sprite(sprite.$ico-share24);
 }
 
 .ico__share28 {
@@ -343,6 +359,10 @@ i {
   @include mixins.sprite(sprite.$ico-unheart);
 }
 
+.ico__logout {
+  @include mixins.sprite(sprite.$ico-logout);
+}
+
 .ico__dialogue {
   @include mixins.sprite(sprite.$ico-dialogue);
 }
@@ -359,8 +379,16 @@ i {
   @include mixins.sprite(sprite.$ico-bookmark28-off);
 }
 
+.ico__mybadge-wholesaler {
+  @include mixins.sprite(sprite.$ico-mybadge-wholesaler);
+}
+
 //community
 .ico__profile {
+  @include mixins.sprite(sprite.$ico-profile);
+}
+
+.ico__share {
   @include mixins.sprite(sprite.$ico-profile);
 }
 

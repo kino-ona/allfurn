@@ -110,37 +110,7 @@
         })
       </div>
       <script src="/assets/js/plugin/swiper-bundle.min.js" type="text/javascript"></script>
-      <script>
-      var swiper = new Swiper('.community .swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        paginationClickable: false,
-        keyboard: false,
-        speed: 400,
-        pagination: {
-          el: '.community .swiper-pagination',
-        },
-      });
-
-      $(document).click(function(e){
-        if($(e.target).hasClass('textfield__search')) {
-          if($('.search-list').hasClass('active')) {
-            $('.search-list').removeClass('active');
-          }else {
-            $('.search-list').addClass('active');
-          }
-        }
-      });
-
-      $('.search-list__action').on('click', function (event) {
-        event.preventDefault();
-        $('.search-list__item').remove();
-      })
-
-
-
-
-      </script>
+      <script src="/assets/js/community.js" type="text/javascript"></script>
     </body>
     
     </html>
