@@ -1,6 +1,5 @@
 if($('.container').hasClass('community')) {
   if($('.swiper-container').length > 0) {
-    console.log($('.swiper-container'));
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -34,10 +33,10 @@ if($('.container').hasClass('community')) {
     event.preventDefault();
     $('.community-content__subscribe').toggleClass('active');
     if($('.community-content__subscribe').hasClass('active')) {
-      $('.community-content__subscribe i').attr('class', 'ico__arrow--down14-red');
+      $('.community-content__subscribe i').attr('class', 'ico__community-arrow--active');
       $('.community-content__subscribe span').html('구독하기');
     } else {
-      $('.community-content__subscribe i').attr('class', 'ico__arrow--down14');
+      $('.community-content__subscribe i').attr('class', 'ico__community-arrow');
       $('.community-content__subscribe span').html('구독중');
     }
   })
@@ -52,19 +51,18 @@ if($('.container').hasClass('community')) {
     $(this).closest('.community-comment__recomment').css('display', 'none');
   })
 
-  $('.modal-declaration textarea').on("propertychange change keyup paste input", function() {
-    if( $('.modal-declaration textarea').val() != '') {
-      $('.modal-declaration .footer button').addClass('active');
+  $('#modal-declaration textarea').on("propertychange change keyup paste input", function() {
+    if( $('#modal-declaration textarea').val() != '') {
+      $('#modal-declaration .footer button').addClass('active');
     }else {
-      $('.modal-declaration .footer button').removeClass('active');
+      $('#modal-declaration .footer button').removeClass('active');
     }
   });
 
-  $('.modal-declaration .footer button').on('click', function () {
-    console.log('b');
+  $('#modal-declaration .footer button').on('click', function () {
     if($(this).hasClass('active')) {
-      closeModal('.modal-declaration');
-      openModal('.modal-declaration-done');
+      closeModal('#modal-declaration');
+      openModal('#modal-declaration--done');
     }
   })
 }

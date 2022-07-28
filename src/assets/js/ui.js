@@ -118,11 +118,13 @@ $('.category-product__heart').on('click', function (event) {
 
 $('.ico__more').on('click', function (event) {
 	event.preventDefault();
-	$(this).toggleClass('active');
-	
-	if($(this).hasClass('active')) {
-		$(this).next().css('display', 'block');
-	}else {
+	if($(this).hasClass('ico__more--black')){
+		$(this).removeClass('ico__more--black');
 		$(this).next().css('display', 'none');
+	}else {
+		$(this).addClass('ico__more--black');
+		$(this).next().css('display', 'block');
 	}
 })
+
+
