@@ -2139,7 +2139,7 @@
     .button {
       min-width: 100px;
       height: 40px;
-      line-height: 40px;
+      line-height: 42px;
       border-radius: 0;
       padding: 0 27px;
       box-sizing: border-box;
@@ -2160,6 +2160,13 @@
 
       .button {
         margin: 0 4px;
+      }
+
+      &.max-width {
+        .button {
+          width: 140px;
+          padding: 0;
+        }
       }
     }
   }
