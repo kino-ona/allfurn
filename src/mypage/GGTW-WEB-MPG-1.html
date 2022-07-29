@@ -1,0 +1,270 @@
+@@include('../inc/pagehead.inc',{
+  "pagetitle":" | 마이 올펀",
+  "webroot":".."
+  })
+  </head>
+  
+  <body>
+    <div class="skipnavigation"><a href="#container">skip to container</a></div>
+    <div id="wrap">
+      @@include('../inc/header.inc',{
+      "webroot":"..",
+      "headertype":""
+      }) 
+  
+      <div id="container" class="container">
+        <div class="my my-page">
+          <div class="inner">
+            <div class="my__container">
+              <div class="my__top">
+                <div class="my__profile">
+                  <div class="user-type ico__mybadge-wholesaler"><span class="a11y">도매</span></div>
+                  <h3 class="user-name">올펀</h3>
+                </div>
+                <ul class="my__count-wrap">
+                  <li>
+                    <p class="text">좋아요 수</p>
+                    <p class="num">200</p>
+                  </li>
+                  <li>
+                    <p class="text">문의 수</p>
+                    <p class="num">1.1천</p>
+                  </li>
+                  <li>
+                    <p class="text">방문 수</p>
+                    <p class="num">120만</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="my__aside">
+                <div class="content">
+                  <div class="aside">
+                    <h2 class="aside__title">마이 올펀</h2>
+                    <div class="post-list">
+                      <div class="post-list__item post-list__item--active">
+                        <a href="#">거래 현황
+                          <i class="badge__new"></i>
+                        </a>
+                        <div class="ico__list-link ico__list-link--active"></div>
+                      </div>
+                      <div class="post-list__item">
+                        <a href="#">주문 현황</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__line"></div>
+                      <div class="post-list__item">
+                        <a href="#">관심 상품</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__item">
+                        <a href="#">
+                          좋아요
+                          <i class="badge__new"></i>
+                        </a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__item">
+                        <a href="#">최근 본 상품</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__line"></div>
+                      <div class="post-list__item">
+                        <a href="#">업체 관리</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__item">
+                        <a href="#">상품 관리</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__item">
+                        <a href="#">계정 관리</a>
+                        <div class="ico__list-link"></div>
+                      </div>
+                    </div>
+                    <div class="aside__bottom">
+                      <button type="button" class="button">
+                        <div class="ico__logout"></div>
+                        <span>로그아웃</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my__section">
+                <div class="content">
+                  <div class="section">
+                    <div class="section__head">
+                      <h3 class="section__title">거래 현황</h3>
+                      <div class="section__info">
+                        <div class="section__data">
+                          <ul>
+                            <li>
+                              <p>
+                                신규 주문
+                                <span>10</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                상품 준비 중
+                                <span>10</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                발송 중
+                                <span>99+</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                구매 확정 대기
+                                <span>99+</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                거래 완료
+                                <span>99+</span>
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                거래 취소
+                                <span>99+</span>
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="section__field">
+                        <div class="dropdown" style="width: 150px">
+                          <p class="dropdown__title">전체</p>
+                          <div class="dropdown__wrap">
+                            <a href="#" class="dropdown__item">
+                              <span>전체</span>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <span>주문번호</span>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <span>상품명</span>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <span>구매 업체</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="textfield">
+                          <i class="textfield__icon ico__search"><span class="a11y">검색</span></i>
+
+                          <input type="text" class="textfield__search" placeholder="검색어를 입력해주세요" style="width: 480px;">
+                          <button type="button" class="textfield__icon--delete ico__sdelete"><span class="a11y">삭제하기</span></button>
+                        </div>
+                        <div class="calendar">
+                          <input type="text" placeholder="전체 기간" readonly>
+                          <button type="button" class="calendar__button">
+                            <i class="ico__calendar"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list__meta-wrap">
+                        <p class="list__total">총 100개</p>
+                      </div>
+                      <section class="list__item">
+                        <div class="my__info">
+                          <div class="my__desc">
+                            <div class="my__img my__img--circle">
+                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                            </div>
+                            <div class="my__text-wrap">
+                              <div class="my__name">
+                                <p class="name">코윈스</p>
+                                <p class="badge">NEW</p>
+                              </div>
+                              <p class="my__location">서울, 경기</p>
+                              <ul>
+                                <li class="my__product">소파/거실</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="my__right-wrap">
+                            <div class="my__like active">
+                              <i class="like"><span class="a11y">좋아요</span></i>
+                              <p>좋아요</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="my__thumnail-container">
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                        </div>
+                      </section>
+                      <section class="list__item">
+                        <div class="my__info">
+                          <div class="my__desc">
+                            <div class="my__img my__img--circle">
+                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                            </div>
+                            <div class="my__text-wrap">
+                              <div class="my__name">
+                                <p class="name">코윈스</p>
+                                <p class="badge">NEW</p>
+                              </div>
+                              <p class="my__location">서울, 경기</p>
+                              <ul>
+                                <li class="my__product">소파/거실</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="my__right-wrap">
+                            <div class="my__like active">
+                              <i class="like"><span class="a11y">좋아요</span></i>
+                              <p>좋아요</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="my__thumnail-container">
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                        </div>
+                      </section>                      
+                      <div class="pagenation">
+                        <button type="button" class="prev">
+                          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="numbering">
+                          <a href="#" class="numbering--active">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                        </div>
+                        <button type="button" class="next">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/plugin/datepicker.js" type="text/javascript"></script>
+    <script src="../assets/js/ui.js" type="text/javascript"></script>
+  </body>
+</html>
