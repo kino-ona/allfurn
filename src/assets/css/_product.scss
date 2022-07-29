@@ -1689,11 +1689,11 @@
   }
 
   &__footer {
-    height: 84px;
+    height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 22px 24px;
     box-sizing: border-box;
 
     .button--solid {
@@ -2204,7 +2204,7 @@
     @include mixins.sprite(sprite.$ico-check-white);
   }
 
-  // 라이오
+  // 라디오
   &[type="radio"] {
     &+span::after {
       @include mixins.sprite(sprite.$ico-radio-off);
@@ -2212,6 +2212,12 @@
 
     &:checked+span::after {
       @include mixins.sprite(sprite.$ico-radio-on);
+    }
+  }
+
+  &.checked--single {
+    &+span {
+      padding-left: 16px;
     }
   }
 }

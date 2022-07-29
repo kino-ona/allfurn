@@ -1124,7 +1124,111 @@
             <!-- 상품 기본 정보 -->
             <div class="registration__title-sub registration__title-sub--order">
               <h3>상품 주문 정보</h3>
-              <button type="button" class="button button--blank-gray">주문 정보 불러오기</button>
+              <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal10')">
+                주문 정보 불러오기
+              </button>
+
+              <!-- 주문 정보 팝업 -->
+              <div id="default-modal10" class="default-modal">
+                <div class="default-modal__container">
+                  <div class="default-modal__header">
+                    <h2>정보 불러오기</h2>
+                    <button type="button" class="ico__close28" onclick="closeModal('#default-modal10')">
+                      <span class="a11y">닫기</span>
+                    </button>
+                  </div>
+                  <div class="default-modal__content">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>&nbsp;</th>
+                          <th>No</th>
+                          <th>카테고리</th>
+                          <th>상품명</th>
+                          <th>상품 상태</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니 라운드 소파 포그니 라운드 소파그니 라운드 소파</td>
+                          <td>승인 대기</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니 라운드 소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="default-modal__footer">
+                    <button type="button" class="button button--solid">선택 완료</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <form class="registration__form">
               <ul>
