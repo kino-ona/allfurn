@@ -24,5 +24,6 @@
 	<title>All FURN @@pagetitle</title>
 
   <script src="@@webroot/assets/js/plugin/jquery-3.6.0.min.js" type="text/javascript"></script>
+   <script src="@@webroot/assets/js/plugin/jquery-ui-1.13.1.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="@@webroot/assets/css/ui.css">
 </head>

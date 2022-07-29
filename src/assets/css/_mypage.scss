@@ -430,6 +430,7 @@
 
       &--active a {
         color: #FB4760;
+        font-weight: 600;
       }
     }
 
@@ -485,7 +486,7 @@
       margin-bottom: 16px;
       color: #1B1B1B;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 30px;
       letter-spacing: -0.03em;
     }
@@ -679,4 +680,112 @@
     }
   }
   
+}
+
+.my-page {
+  .badge__new {
+    margin-left: 8px;
+  }
+
+  .section {
+    &__info {
+      width: 100%;
+    }
+
+    &__data {
+      padding: 14px 16px;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    &__data::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    &__data li {
+      position: relative;
+      float: left;
+      width: 112px;
+    }
+
+    &__data li+ li {
+      padding-left: 40px;
+    }
+
+    &__data li + li::before{
+      display: block;
+      position: absolute;
+      left: 20px;
+      width: 1px;
+      height: 12px;
+      margin-top: 4px;
+      background-color: #BDBDBD;
+      content: '';
+    }
+
+    &__data p {
+      display: flex;
+      justify-content: space-between;
+      color: #333333;
+    }
+
+    &__data span {
+      display: inline-block;
+      font-weight: 600;
+      color: #1B1B1B;
+    }
+
+    &__field {
+      margin-top: 12px;
+    }
+
+    .dropdown {
+      float: left;
+      margin-left: 0;
+    }
+    
+    .textfield {
+      float: left;
+      margin-left: 10px;
+      margin-right: 11px;
+    }
+
+    .calendar {
+      float: left;
+      position: relative;
+      width: 265px;
+      height: 48px;
+      padding: 8px 46px 8px 16px;
+      border: 1px solid #DBDBDB;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .calendar input {
+      width: 100%;
+      height: 32px;
+      color: #1B1B1B;
+      line-height: 32px;
+      box-sizing: border-box;
+    }
+
+    .calendar__button {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      padding: 0;
+    }
+
+     
+    .calendar input::placeholder {
+      color: #1B1B1B;
+    }
+
+    .calendar i {
+     
+    }
+  }
 }

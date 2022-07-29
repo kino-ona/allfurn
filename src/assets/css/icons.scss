@@ -396,6 +396,10 @@ i {
   @include mixins.sprite(sprite.$ico-profile);
 }
 
+.ico__calendar {
+  @include mixins.sprite(sprite.$ico-calander);
+}
+
 .ico__community-arrow {
   @include mixins.sprite(sprite.$ico-community-arrow);
 }
