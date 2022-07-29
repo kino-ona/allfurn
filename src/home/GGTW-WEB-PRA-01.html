@@ -12,7 +12,7 @@
     "headertype":""
     })
 
-    <div id="container" class="container">
+    <div id="container" class="container registration--position">
       <div class="inner">
         <div class="content">
           <div class="registration__container">
@@ -726,8 +726,9 @@
                 <li class="form__list-wrap">
                   <label for="form-list09" class="list__title">상품 추가 공지</label>
                   <div class="list__desc">
-                    <textarea class="textfield__input textfield__input--gray" id="form-list09"
-                      placeholder="상품 추가 공지를 입력해주세요."></textarea>
+                    <div class="textarea-wrap">
+                      <textarea id="form-list09" placeholder="상품 추가 공지를 입력해주세요."></textarea>
+                    </div>
                   </div>
                 </li>
                 <!-- 인증 정보 -->
@@ -1118,6 +1119,216 @@
                 </li>
               </ul>
             </form>
+
+
+            <!-- 상품 기본 정보 -->
+            <div class="registration__title-sub registration__title-sub--order">
+              <h3>상품 주문 정보</h3>
+              <button type="button" class="button button--blank-gray" onclick="openModal('#default-modal10')">
+                주문 정보 불러오기
+              </button>
+
+              <!-- 주문 정보 팝업 -->
+              <div id="default-modal10" class="default-modal">
+                <div class="default-modal__container">
+                  <div class="default-modal__header">
+                    <h2>정보 불러오기</h2>
+                    <button type="button" class="ico__close28" onclick="closeModal('#default-modal10')">
+                      <span class="a11y">닫기</span>
+                    </button>
+                  </div>
+                  <div class="default-modal__content">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>&nbsp;</th>
+                          <th>No</th>
+                          <th>카테고리</th>
+                          <th>상품명</th>
+                          <th>상품 상태</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니 라운드 소파 포그니 라운드 소파그니 라운드 소파</td>
+                          <td>승인 대기</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니 라운드 소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>99999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>
+                              <input type="radio" name="order-info" class="checkbox__checked checked--single">
+                              <span></span>
+                            </label>
+                          </td>
+                          <td>9999</td>
+                          <td>안락의자/기능성의자 > 인테리어의자</td>
+                          <td>포그니라운드소파포그니라운드소파</td>
+                          <td>판매 중</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="default-modal__footer">
+                    <button type="button" class="button button--solid">선택 완료</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="registration__form">
+              <ul>
+                <li class="form__list-wrap">
+                  <span class="list__title">결제 안내</span>
+                  <div class="list__desc">
+                    <div class="radio__box--type01">
+                      <div>
+                        <input type="radio" id="order-info01-01" name="order-info01" checked>
+                        <label for="order-info01-01" class="label--payment01"><span>설정</span></label>
+                      </div>
+                      <div>
+                        <input type="radio" id="order-info01-02" name="order-info01">
+                        <label for="order-info01-02" class="label--payment02"><span>설정 안함</span></label>
+                      </div>
+                    </div>
+
+                    <div class="textarea-wrap margin-top16">
+                      <textarea placeholder="안내 상세 내용 입력"></textarea>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="form__list-wrap">
+                  <span class="list__title">배송 안내</span>
+                  <div class="list__desc">
+                    <div class="radio__box--type01">
+                      <div>
+                        <input type="radio" id="order-info02-01" name="order-info02" checked>
+                        <label for="order-info02-01" class="label--payment01"><span>설정</span></label>
+                      </div>
+                      <div>
+                        <input type="radio" id="order-info02-02" name="order-info02">
+                        <label for="order-info02-02" class="label--payment02"><span>설정 안함</span></label>
+                      </div>
+                    </div>
+
+                    <div class="textarea-wrap margin-top16">
+                      <textarea placeholder="안내 상세 내용 입력"></textarea>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="form__list-wrap">
+                  <span class="list__title">교환/반품/취소 안내</span>
+                  <div class="list__desc">
+                    <div class="radio__box--type01">
+                      <div>
+                        <input type="radio" id="order-info03-01" name="order-info03" checked>
+                        <label for="order-info03-01" class="label--payment01"><span>설정</span></label>
+                      </div>
+                      <div>
+                        <input type="radio" id="order-info03-02" name="order-info03">
+                        <label for="order-info03-02" class="label--payment02"><span>설정 안함</span></label>
+                      </div>
+                    </div>
+
+                    <div class="textarea-wrap margin-top16">
+                      <textarea placeholder="안내 상세 내용 입력"></textarea>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="form__list-wrap">
+                  <span class="list__title">주문 정보 직접 입력</span>
+                  <div class="list__desc">
+                    <div class="radio__box--type01">
+                      <div>
+                        <input type="radio" id="order-info04-01" name="order-info04" checked>
+                        <label for="order-info04-01" class="label--payment01"><span>설정</span></label>
+                      </div>
+                      <div>
+                        <input type="radio" id="order-info04-02" name="order-info04">
+                        <label for="order-info04-02" class="label--payment02"><span>설정 안함</span></label>
+                      </div>
+                    </div>
+                    <input class="input textfield__input textfield__input--gray" type="text" placeholder="항목 제목"
+                      style="margin: 16px 0 10px;">
+
+                    <div class="textarea-wrap">
+                      <textarea placeholder="안내 상세 내용 입력"></textarea>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="registration__footer-block">&nbsp;</div>
+      <div class="registration__footer">
+        <div class="footer__btn-wrap">
+          <div>
+            <button type="button" class="button button--blank-gray">등록 취소</button>
+          </div>
+          <div>
+            <button type="button" class="button button--solid-gray">미리 보기</button>
+            <button type="button" class="button button--solid-gray">임시 등록</button>
+            <button type="button" class="button button--solid">등록 신청</button>
           </div>
         </div>
       </div>
