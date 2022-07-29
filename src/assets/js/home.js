@@ -33,3 +33,15 @@ $(".modal__auth-input-wrap").on("click", function () {
     $(".modal__border-bottom").css("border-bottom", "1px solid #F2F2F2");
   }
 });
+
+// 하단 바
+$(window).scroll(function () {
+  var windowHeight = $(window).innerHeight();
+  var documentHeight = $(document).innerHeight();
+
+  if ($(document).scrollTop() > documentHeight - (windowHeight + 237)) {
+    $(".registration__footer").addClass("active");
+  } else {
+    $(".registration__footer").removeClass("active");
+  }
+});

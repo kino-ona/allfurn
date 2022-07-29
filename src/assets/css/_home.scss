@@ -1369,9 +1369,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 0;
-    bottom: 247px;
+    bottom: 0;
     width: 100%;
     height: 80px;
     background-color: #F7F7F7;
@@ -1398,6 +1398,11 @@
 
     .button--solid {
       border: 1px solid #FF1B3A;
+    }
+
+    &.active {
+      position: absolute;
+      bottom: 247px;
     }
   }
 }
