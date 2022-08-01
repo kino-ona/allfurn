@@ -36,11 +36,40 @@
           </div>
 
           <div class="category-btn-group">
-            <div class="category-btn category-btn--active" category-btn--active onclick="openModal('#default-modal01')">
-              <p class="category-btn__text">카테고리</p>
+            <!-- 하나도 선택 안됐을 때 -->
+            <!-- <div class="category-btn category-btn--01" category-btn--active onclick="openModal('#default-modal01')">
+              <p class="category-btn__text">카테고리<span class="category-btn__count">1</span></p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
             </div>
-            <div class="category-btn" onclick="openModal('#default-modal02')">
+            <div class="category-btn category-btn--02" onclick="openModal('#default-modal02')">
               <p class="category-btn__text">소재지</p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+            </div> -->
+            <!-- 하나만 선택 됐을때 -->
+            <!-- <div class="category-btn category-btn--01 category-btn--active" onclick="openModal('#default-modal01')">
+              <p class="category-btn__text">카테고리<span class="category-btn__count">1</span></p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+            </div>
+            <div class="category-btn category-btn--02" onclick="openModal('#default-modal02')">
+              <p class="category-btn__text">소재지</p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+            </div> -->
+            <!-- 둘다 선택 됐을때 -->
+            <div class="category-btn category-btn--01 category-btn--active active--pair"
+              onclick="openModal('#default-modal01')">
+              <p class="category-btn__text">카테고리</p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+            </div>
+            <div class="category-btn category-btn--02 category-btn--active active--pair"
+              onclick="openModal('#default-modal02')">
+              <p class="category-btn__text">소재지</p>
+              <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+              <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
             </div>
             <div class="category-btn category-btn--order" onclick="openModal('#default-modal03')">
               <p class="category-btn__text">추천순</p>
