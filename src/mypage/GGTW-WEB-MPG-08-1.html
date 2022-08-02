@@ -71,43 +71,90 @@
             </div>
           </div>
 
+          <div id="mpg_delete-folder" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                <div class="modal-box__container">
+                  <div class="modal-box__content">
+                    <div class="modal__desc">
+                      <p class="modal__text">
+                        폴더를 삭제하시겠습니까?<br>폴더에 담긴 상품도 함께 삭제됩니다.
+                      </p>
+                    </div>
+                    <div class="modal__buttons">
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button"><span>확인</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
 
-      <div id="default-modal--my-folder" class="default-modal default-modal--my-folder" style="display: block;">
-        <div class="default-modal__container">
-          <div class="default-modal__header">
+    <div id="default-modal--my-folder" class="default-modal default-modal--my-folder">
+      <div class="default-modal__container">
+        <div class="default-modal__header">
+          <div class="default-modal__header-wrap">
             <h2>폴더 관리</h2>
-            <button type="button" class="ico__close28" onclick="closeModal('#default-modal--my-folder')">
-              <span class="a11y">닫기</span>
-            </button>
+            <button type="button" class="button button-plus"><i class="ico__add--circle"></i>추가</button>
           </div>
-          <div class="default-modal__content">
-            <dl>
-              <dt><span class="a11y">폴더</span></dt>
-              <dd class="textfield">
-                <input type="text" value="A폴더" class="textfield__input textfield__input--gray">
-              </dd>
-              <dd><button type="button" class="button">삭제</button></dd>
-            </dl>
-            <dl>
-              <dt><span class="a11y">폴더</span></dt>
-              <dd class="textfield">
-                <input type="text" value="구매 예정" class="textfield__input textfield__input--gray">
-              </dd>
-              <dd><button type="button" class="button">삭제</button></dd>
-            </dl>
-            <dl>
-              <dt><span class="a11y">폴더</span></dt>
-              <dd class="textfield">
-                <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
-              </dd>
-              <dd><button type="button" class="button">삭제</button></dd>
-            </dl>
-          </div>
-          <div class="default-modal__footer">
-            <button type="button" class="button button--solid" onclick="closeModal('#default-modal--my-folder')">저장</button>
-          </div>
+          <button type="button" class="ico__close28" onclick="closeModal('#default-modal--my-folder')">
+            <span class="a11y">닫기</span>
+          </button>
+        </div>
+        <div class="default-modal__content">
+          <ul>
+            <li class="textfield">
+              <input type="text" value="A폴더" class="textfield__input textfield__input--gray">
+              <span class="count">(0)</span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li class="textfield">
+              <input type="text" value="구매 예정" class="textfield__input textfield__input--gray">
+              <span class="count">(0)</span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li class="textfield">
+              <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
+              <span class="count"></span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="default-modal__footer">
+          <button type="button" class="button button--solid" onclick="closeModal('#default-modal--my-folder')">저장</button>
         </div>
       </div>
     </div>

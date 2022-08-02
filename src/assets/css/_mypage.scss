@@ -996,9 +996,122 @@
       z-index: inherit;
     }
   }
+  
+  /* 마이 페이지 내 모달 */
+
+  .modal {
+    z-index: 1000;
+
+    &__container {
+      width: 350px;
+    }
+
+    &-box__container {
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #E0E0E0;
+    }
+
+    &__desc {
+      padding: 37px 24px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 0;
+      font-size: 16px;
+      font-size: 500;
+      color: #1B1B1B;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__button {
+      height: 40px;
+      width: 100%;
+      max-width: 100px;
+      display: block;
+      margin-bottom: 20px;
+      background-color: #FB4760;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      border-radius: 0;
+      span {
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      & + .modal__button {
+        margin-left: 10px;
+      }
+
+      &--gray {
+        background-color: #BDBDBD;
+      }
+    }
+  
+    .modal__button {
+      cursor: pointer;
+    }
+    
+    .modal__container {
+      overflow: hidden;
+      border-radius: 5px;
+    }
+  
+    .modal-box__heading {
+      margin-bottom: 16px;
+      color: #1B1B1B;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+  
+    .modal-box__bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  
+      .button {
+        width: 100%;
+        height: 48px;
+        box-sizing: border-box;
+      }
+    }
+  
+    .content .textarea {
+      padding: 11px 64px 11px 16px;
+  
+      &__count {
+        position: absolute;
+        right: 16px;
+        bottom: 11px;
+        color: #BDBDBD;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+      }
+  
+      &::placeholder {
+        color: #BDBDBD;
+      }
+    }
+  }
 }
 
-#my-modal-category, #my-modal-category-2 {
+#my-modal-category, 
+#my-modal-category-2 {
 
   .button--left {
     width: 156px !important;
@@ -1056,57 +1169,39 @@
   }
 }
 
-.default-modal.default-modal.default-modal--my-folder {
+.default-modal.default-modal--my-folder, 
+.default-modal.default-modal--my-refolder {
+
+  .default-modal__header-wrap {
+    display: flex;
+  }
 
   .default-modal__content {
-    height: 474px;
+    height: 426px;
 
-    dl {
+    ul {
+      max-width: 100%;
+      flex-shrink: 0;
+      flex-basis: 100%;
+      position: relative;
       display: flex;
       align-items: center;
-      margin-bottom: 16px;
-
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #F2F2F2;
       &:last-child {
         margin-bottom: 0;
-
-        dd {
-          .textfield {
-            margin-top: 10px;
-          }
-
-          .textfield__input--gray {
-            padding: 10px 16px;
-          }
-        }
+        border-bottom: 0;
       }
 
-      dt, dd {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25.6px;
-        letter-spacing: -0.02em;
-        color: #828282;
-      }
+      li {
+        display: flex;
+        align-items: center;
 
-      dt {
-        width: 73px;
-        margin-right: 10px;
-      }
-
-      dd {
-        color: #333333;
-        flex-grow: 1;
-
-        .textfield__input--gray {
+        .textfield__input {
           width: 100%;
           height: 48px;
           font-size: 16px;
-        }
-
-        .input-guid__input {
-          width: 239px;
-          margin-right: 6px;
-          border: 1px solid #DBDBDB;
 
           &:disabled {
             color: #BDBDBD;
@@ -1115,10 +1210,6 @@
             white-space: nowrap;
             background-color: #F7F7F7;
           }
-        }
-
-        .textfield__input--gray, .input-guid__input {
-          
           &::placeholder {
             font-weight: 400;
             color: #BDBDBD;
@@ -1134,7 +1225,51 @@
           }
         }
       }
+
+      .textfield {
+        width: 366px;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      .count {
+        min-width: 48px;
+        margin-left: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        line-height: 26px;
+        color: #4F4F4F;
+        white-space: nowrap;
+      }
     }
+  }
+
+  .button-plus {
+    margin-left: 12px;
+    justify-self: start;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #828282;
+    background: 0;
+
+    .ico__add--circle {
+      margin-bottom: 4px;
+    }
+  }
+
+  .button-delete,
+  .button-refolder {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #828282;
+    position: absolute;
+    right: 0;
+    top: 12px;
   }
 
   .default-modal__footer {
@@ -1150,6 +1285,27 @@
     }
   }
 }
+
+.default-modal.default-modal--my-refolder {
+
+  li {
+    box-sizing: border-box;
+
+    > p {
+      height: 42px;
+      max-width: 240px;
+      box-sizing: border-box;
+      padding: 10px 8px;
+      color: #1B1B1B;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      @include mixins.ellipse(1);
+    }
+  }
+}
+
 
 .my-page {
   .badge__new {
