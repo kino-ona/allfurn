@@ -10,11 +10,32 @@ $( function() {
     dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
     showMonthAfterYear: true,
     yearSuffix: '년',
-});
+    endDate: '0d',
+    autoclose: true,
 
+    onSelect: function(selectedDate) {
+      if(!$(this).data().datepicker.first){
+          $(this).data().datepicker.inline = true
+          $(this).data().datepicker.first = selectedDate;
+      }else{
+          if(selectedDate > $(this).data().datepicker.first){
+              $(this).val($(this).data().datepicker.first+" - "+selectedDate);
+          }else{
+            $(this).val(selectedDate+" - "+$(this).data().datepicker.first);
+          }
+          $(this).data().datepicker.inline = false;
+      }
+    },
+    
+    onClose:function(){
+      delete $(this).data().datepicker.first;
+      $(this).data().datepicker.inline = false;
+    }
+  });
 
 
   $(function() {
-    $(".my-page .calendar__button").datepicker();
+    $('.my-page .calendar input').datepicker()
+  
   });
-} );
+});

@@ -655,9 +655,8 @@
 .community.community-write {
   .community-content {
     position: relative;
-    width: 954px;
-    padding: 0 16px;
-    box-sizing: border-box;
+    width: 906px;
+    padding: 0 135px;
   }
 
   .community-content::before {
@@ -706,7 +705,7 @@
     margin-top: 25px;
   }
 
-  button[type='button'] {
+  .util button[type='button'] {
     width: 150px;
     height: 48px;
     line-height: 48px;

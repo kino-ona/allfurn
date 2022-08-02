@@ -390,6 +390,10 @@ i {
   @include mixins.sprite(sprite.$ico-mybadge-wholesaler);
 }
 
+.ico__warning {
+  @include mixins.sprite(sprite.$ico-warning);
+}
+
 //community
 .ico__profile {
   @include mixins.sprite(sprite.$ico-profile);

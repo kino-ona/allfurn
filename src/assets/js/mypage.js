@@ -185,11 +185,11 @@ $('.category-menu__sub-item').on('click', function() {
 	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
 });
 
-$('.buttons--refresh').on('click' ,function() {
+$('.buttons-refresh').on('click' ,function() {
 	$(this).closest('.modal').find('input').prop('checked', false);
 })
 
-$('.buttons--search').on('click', function () {
+$('.buttons-search').on('click', function () {
 	$('.category-data__wrap').html('');
 	$('.category-data').css('border', '1px solid #E0E0E0');
 
