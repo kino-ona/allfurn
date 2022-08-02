@@ -457,3 +457,11 @@ i {
 .ico__exclamation {
   @include mixins.sprite(sprite.$ico-exclamation);
 }
+
+.ico__star--off {
+  @include mixins.sprite(sprite.$ico-star-off);
+}
+
+.ico__star--on {
+  @include mixins.sprite(sprite.$ico-star-on);
+}
