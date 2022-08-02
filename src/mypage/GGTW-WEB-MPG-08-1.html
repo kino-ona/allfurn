@@ -1,0 +1,164 @@
+@@include('../inc/pagehead.inc',{
+  "pagetitle":" | 마이 올펀",
+  "webroot":".."
+  })
+  </head>
+  
+  <body>
+    <div class="skipnavigation"><a href="#container">skip to container</a></div>
+    <div id="wrap">
+      @@include('../inc/header.inc',{
+      "webroot":"..",
+      "headertype":""
+      }) 
+  
+      <div id="container" class="container">
+        <div class="my">
+          <div class="inner">
+            <div class="my__container">
+              <div class="my__top">
+                <div class="my__profile">
+                  <div class="user-type ico__mybadge"><span class="a11y">소매</span></div>
+                  <h3 class="user-name">홍길동</h3>
+                </div>
+              </div>
+              <div class="my__aside">
+                <div class="content">
+                  <div class="aside">
+                    <h2 class="aside__title">마이 올펀</h2>
+                    <div class="post-list">
+                      <div class="post-list__item post-list__item--active"><a href="#">관심 상품<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link ico__list-link--active"></div></div>
+                      <div class="post-list__item"><a href="#">좋아요<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link"></div></div>
+                      <div class="post-list__item"><a href="#">최근 본 상품</a><div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__line"></div>
+                      <div class="post-list__item"><a href="#">계정 관리</a><div class="ico__list-link"></div></div>
+                    </div>
+                    <div class="aside__bottom">
+                      <button type="button" class="button"><div class="ico__logout"></div><span>로그아웃</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my__section">
+                <div class="content">
+                  <div class="section">
+                    <div class="section__head">
+                      <h3 class="section__title">
+                        <p>관심 상품</p>
+                        <button type="button" class="button section__head-button" onclick="openModal('#default-modal--my-folder')">
+                          <i class="ico__setting"><span class="a11y">관리</span></i>
+                          <p>폴더 관리</p>
+                        </button>
+                      </h3>
+                    </div>
+                    <div class="inner__category">
+                      <div class="sub-category">
+                        <p class="sub-category__item sub-category__item--active"><a href="#">전체</a></p>
+                        <p class="sub-category__item"><a href="#">A폴더</a></p>
+                        <p class="sub-category__item"><a href="#">구매 예정</a></p>
+                      </div>
+                    </div>
+                    <div class="my-content--nodata">
+                      <span>
+                        <i class="ico__exclamation"></i>
+                      </span>
+                      <p>관심 상품을 추가해주세요.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="mpg_delete-folder" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                <div class="modal-box__container">
+                  <div class="modal-box__content">
+                    <div class="modal__desc">
+                      <p class="modal__text">
+                        폴더를 삭제하시겠습니까?<br>폴더에 담긴 상품도 함께 삭제됩니다.
+                      </p>
+                    </div>
+                    <div class="modal__buttons">
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button"><span>확인</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="default-modal--my-folder" class="default-modal default-modal--my-folder">
+      <div class="default-modal__container">
+        <div class="default-modal__header">
+          <div class="default-modal__header-wrap">
+            <h2>폴더 관리</h2>
+            <button type="button" class="button button-plus"><i class="ico__add--circle"></i>추가</button>
+          </div>
+          <button type="button" class="ico__close28" onclick="closeModal('#default-modal--my-folder')">
+            <span class="a11y">닫기</span>
+          </button>
+        </div>
+        <div class="default-modal__content">
+          <ul>
+            <li class="textfield">
+              <input type="text" value="A폴더" class="textfield__input textfield__input--gray">
+              <span class="count">(0)</span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li class="textfield">
+              <input type="text" value="구매 예정" class="textfield__input textfield__input--gray">
+              <span class="count">(0)</span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+          <ul>
+            <li class="textfield">
+              <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
+              <span class="count"></span>
+            </li>
+            <li>
+              <button 
+                type="button" 
+                class="button button-delete" 
+                onclick="openModal('#mpg_delete-folder')"
+                >
+                삭제
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="default-modal__footer">
+          <button type="button" class="button button--solid" onclick="closeModal('#default-modal--my-folder')">저장</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/mypage.js" type="text/javascript"></script>
+  </body>
+</html>
