@@ -46,7 +46,7 @@
                     <div class="section__head">
                       <h3 class="section__title">
                         <p>관심 상품</p>
-                        <button type="button" class="button section__head-button">
+                        <button type="button" class="button section__head-button" onclick="openModal('#default-modal--my-folder')">
                           <i class="ico__setting"><span class="a11y">관리</span></i>
                           <p>폴더 관리</p>
                         </button>
@@ -71,6 +71,43 @@
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div id="default-modal--my-folder" class="default-modal default-modal--my-folder" style="display: block;">
+        <div class="default-modal__container">
+          <div class="default-modal__header">
+            <h2>폴더 관리</h2>
+            <button type="button" class="ico__close28" onclick="closeModal('#default-modal--my-folder')">
+              <span class="a11y">닫기</span>
+            </button>
+          </div>
+          <div class="default-modal__content">
+            <dl>
+              <dt><span class="a11y">폴더</span></dt>
+              <dd class="textfield">
+                <input type="text" value="A폴더" class="textfield__input textfield__input--gray">
+              </dd>
+              <dd><button type="button" class="button">삭제</button></dd>
+            </dl>
+            <dl>
+              <dt><span class="a11y">폴더</span></dt>
+              <dd class="textfield">
+                <input type="text" value="구매 예정" class="textfield__input textfield__input--gray">
+              </dd>
+              <dd><button type="button" class="button">삭제</button></dd>
+            </dl>
+            <dl>
+              <dt><span class="a11y">폴더</span></dt>
+              <dd class="textfield">
+                <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
+              </dd>
+              <dd><button type="button" class="button">삭제</button></dd>
+            </dl>
+          </div>
+          <div class="default-modal__footer">
+            <button type="button" class="button button--solid" onclick="closeModal('#default-modal--my-folder')">저장</button>
+          </div>
         </div>
       </div>
     </div>
