@@ -1,7 +1,6 @@
 @use "mixins";
 @use 'sprite/sprite';
 
-
 i {
   display: inline-block;
   vertical-align: middle;
@@ -383,6 +382,10 @@ i {
   @include mixins.sprite(sprite.$ico-bookmark28-off);
 }
 
+.ico__mybadge {
+  @include mixins.sprite(sprite.$ico-mybadge);
+}
+
 .ico__mybadge-wholesaler {
   @include mixins.sprite(sprite.$ico-mybadge-wholesaler);
 }
@@ -445,4 +448,12 @@ i {
 
 .ico__set {
   @include mixins.sprite(sprite.$ico-set);
+}
+
+.ico__setting {
+  @include mixins.sprite(sprite.$ico-setting);
+}
+
+.ico__exclamation {
+  @include mixins.sprite(sprite.$ico-exclamation);
 }

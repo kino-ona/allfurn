@@ -1,0 +1,610 @@
+@@include('../inc/pagehead.inc',{
+  "pagetitle":" | 마이 올펀",
+  "webroot":".."
+  })
+  </head>
+  
+  <body>
+    <div class="skipnavigation"><a href="#container">skip to container</a></div>
+    <div id="wrap">
+      @@include('../inc/header.inc',{
+      "webroot":"..",
+      "headertype":""
+      }) 
+  
+      <div id="container" class="container">
+        <div class="my">
+          <div class="inner">
+            <div class="my__container">
+              <div class="my__top">
+                <div class="my__profile">
+                  <div class="user-type ico__mybadge"><span class="a11y">소매</span></div>
+                  <h3 class="user-name">홍길동</h3>
+                </div>
+              </div>
+              <div class="my__aside">
+                <div class="content">
+                  <div class="aside">
+                    <h2 class="aside__title">마이 올펀</h2>
+                    <div class="post-list">
+                      <div class="post-list__item post-list__item--active"><a href="#">관심 상품<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link ico__list-link--active"></div></div>
+                      <div class="post-list__item"><a href="#">좋아요<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link"></div></div>
+                      <div class="post-list__item"><a href="#">최근 본 상품</a><div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__line"></div>
+                      <div class="post-list__item"><a href="#">계정 관리</a><div class="ico__list-link"></div></div>
+                    </div>
+                    <div class="aside__bottom">
+                      <button type="button" class="button"><div class="ico__logout"></div><span>로그아웃</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my__section">
+                <div class="content">
+                  <div class="section">
+                    <div class="section__head">
+                      <h3 class="section__title">
+                        <p>관심 상품</p>
+                        <button type="button" class="button section__head-button">
+                          <i class="ico__setting"><span class="a11y">관리</span></i>
+                          <p>폴더 관리</p>
+                        </button>
+                      </h3>
+                    </div>
+                    <div class="inner__category">
+                      <div class="sub-category">
+                        <p class="sub-category__item sub-category__item--active"><a href="#">전체</a></p>
+                        <p class="sub-category__item"><a href="#">A폴더</a></p>
+                        <p class="sub-category__item"><a href="#">구매 예정</a></p>
+                      </div>
+                    </div>
+                    <div class="folder-setting">
+                      <label for="list-checkall">
+                        <input type="checkbox" id="list-checkall" class="checkbox__checked">
+                        <span>전체 선택</span>
+                      </label>
+                      <ul>
+                        <li><button type="button" class="button">폴더 이동</button></li>
+                        <li><button type="button" class="button">삭제</button></li>
+                        <li><button type="button" class="button">완료</button></li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <ul class="card-list">
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card01">
+                              <input type="checkbox" id="list-card01" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <div class="card__folder">
+                            <p>A폴더</p>
+                          </div>
+                          <a href="naver.com" title="230 코모도 3인 소파 머드그레이 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product01@2x.png" alt="230 코모도 3인 소파 머드그레이">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">라자가구</p>
+                              <p class="card__name">230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card02">
+                              <input type="checkbox" id="list-card02" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="CLI320 템버 참죽 거실장 베이지 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product02@2x.png" alt="CLI320 템버 참죽 거실장 베이지">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">CLI320 템버 참죽 거실장 베이지</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card03">
+                              <input type="checkbox" id="list-card04" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__folder">
+                            <p>구매 예정</p>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="멜론 리클라이너 4인+컵홀더 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product03@2x.png" alt="멜론 리클라이너 4인+컵홀더">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">캐릭터가구</p>
+                              <p class="card__name">멜론 리클라이너 4인+컵홀더</p>
+                              <p class="card__price">1,190,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card05">
+                              <input type="checkbox" id="list-card05" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="005 침대 프레임(K)(매트별도) 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product04@2x.png" alt="005 침대 프레임(K)(매트별도)">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">005 침대 프레임(K)(매트별도)</p>
+                              <p class="card__price">660,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card06">
+                              <input type="checkbox" id="list-card06" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="587 스윙카우치 소파 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product05@2x.png" alt="587 스윙카우치 소파">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">587 스윙카우치 소파</p>
+                              <p class="card__price">1,380,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card07">
+                              <input type="checkbox" id="list-card07" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__folder">
+                            <p>구매 예정</p>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="이모션 코지 리클라이너 4인 + 스피커 그레이 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product06@2x.png" alt="이모션 코지 리클라이너 4인 + 스피커 그레이">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">이모션 코지 리클라이너 4인 + 스피커 그레이</p>
+                              <p class="card__price">1,450,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card08">
+                              <input type="checkbox" id="list-card08" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__folder">
+                            <p>A폴더</p>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="하이브리드 Q 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product07@2x.png" alt="하이브리드 Q">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">허그앤슬립</p>
+                              <p class="card__name">하이브리드 Q</p>
+                              <p class="card__price">2,380,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card09">
+                              <input type="checkbox" id="list-card09" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="힐링소파 풀세트 (1+3 카우치) 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product08@2x.png" alt="힐링소파 풀세트 (1+3 카우치)">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">업체명</p>
+                              <p class="card__name">힐링소파 풀세트 (1+3 카우치)</p>
+                              <p class="card__price">매장방문할인상품</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card10">
+                              <input type="checkbox" id="list-card10" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="naver.com" title="230 코모도 3인 소파 머드그레이 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product01@2x.png" alt="230 코모도 3인 소파 머드그레이">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">라자가구</p>
+                              <p class="card__name">230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card11">
+                              <input type="checkbox" id="list-card11" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="CLI320 템버 참죽 거실장 베이지 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product02@2x.png" alt="CLI320 템버 참죽 거실장 베이지">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">CLI320 템버 참죽 거실장 베이지</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card12">
+                              <input type="checkbox" id="list-card12" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="멜론 리클라이너 4인+컵홀더 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product03@2x.png" alt="멜론 리클라이너 4인+컵홀더">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">캐릭터가구</p>
+                              <p class="card__name">멜론 리클라이너 4인+컵홀더</p>
+                              <p class="card__price">1,190,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card13">
+                              <input type="checkbox" id="list-card13" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="005 침대 프레임(K)(매트별도) 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product04@2x.png" alt="005 침대 프레임(K)(매트별도)">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">005 침대 프레임(K)(매트별도)</p>
+                              <p class="card__price">660,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card14">
+                              <input type="checkbox" id="list-card14" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="587 스윙카우치 소파 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product05@2x.png" alt="587 스윙카우치 소파">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">587 스윙카우치 소파</p>
+                              <p class="card__price">1,380,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card15">
+                              <input type="checkbox" id="list-card15" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="이모션 코지 리클라이너 4인 + 스피커 그레이 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product06@2x.png" alt="이모션 코지 리클라이너 4인 + 스피커 그레이">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">이모션 코지 리클라이너 4인 + 스피커 그레이</p>
+                              <p class="card__price">1,450,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card16">
+                              <input type="checkbox" id="list-card16" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="하이브리드 Q 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product07@2x.png" alt="하이브리드 Q">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">허그앤슬립</p>
+                              <p class="card__name">하이브리드 Q</p>
+                              <p class="card__price">2,380,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card18">
+                              <input type="checkbox" id="list-card18" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="힐링소파 풀세트 (1+3 카우치) 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product08@2x.png" alt="힐링소파 풀세트 (1+3 카우치)">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">업체명</p>
+                              <p class="card__name">힐링소파 풀세트 (1+3 카우치)</p>
+                              <p class="card__price">매장방문할인상품</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card19">
+                              <input type="checkbox" id="list-card19" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="naver.com" title="230 코모도 3인 소파 머드그레이 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product01@2x.png" alt="230 코모도 3인 소파 머드그레이">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">라자가구</p>
+                              <p class="card__name">230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card20">
+                              <input type="checkbox" id="list-card20" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="CLI320 템버 참죽 거실장 베이지 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product02@2x.png" alt="CLI320 템버 참죽 거실장 베이지">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">CLI320 템버 참죽 거실장 베이지</p>
+                              <p class="card__price">480,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card21">
+                              <input type="checkbox" id="list-card21" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="멜론 리클라이너 4인+컵홀더 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product03@2x.png" alt="멜론 리클라이너 4인+컵홀더">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">캐릭터가구</p>
+                              <p class="card__name">멜론 리클라이너 4인+컵홀더</p>
+                              <p class="card__price">1,190,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="card-list__card">
+                          <div class="card__check">
+                            <label for="list-card22">
+                              <input type="checkbox" id="list-card22" class="checkbox__checked"><span></span>
+                            </label>
+                          </div>
+                          <div class="card__bookmark">
+                            <i class="ico__bookmark24--on"><span class="a11y">스크랩 on</span></i>
+                          </div>
+                          <a href="#" title="005 침대 프레임(K)(매트별도) 상세 화면으로 이동">
+                            <div class="card__img--wrap">
+                              <img class="card__img" src="../assets/images/temp/product04@2x.png" alt="005 침대 프레임(K)(매트별도)">
+                              
+                            </div>
+                            <div class="card__text--wrap">
+                              <p class="card__brand">코윈스</p>
+                              <p class="card__name">005 침대 프레임(K)(매트별도)</p>
+                              <p class="card__price">660,000원</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="pagenation">
+                        <button type="button" class="prev">
+                          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="numbering">
+                          <a href="#" class="numbering--active">1</a>
+                          <a href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                        </div>
+                        <button type="button" class="next">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="default-modal01" class="default-modal default-modal--category">
+      <div class="default-modal__container">
+        <div class="default-modal__header">
+          <h2>카테고리 선택</h2>
+          <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
+            <span class="a11y">닫기</span>
+          </button>
+        </div>
+        <div class="default-modal__content">
+          <ul class="content__list">
+            <li>
+              <label for="category-check01">
+                <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                <span>소파/거실</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check02">
+                <input type="checkbox" id="category-check02" class="checkbox__checked">
+                <span>식탁/의자</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check03">
+                <input type="checkbox" id="category-check03" class="checkbox__checked">
+                <span>옷장/수납/서랍장</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check04">
+                <input type="checkbox" id="category-check04" class="checkbox__checked">
+                <span>서재/공부방</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check05">
+                <input type="checkbox" id="category-check05" class="checkbox__checked">
+                <span>화장대/거울/콘솔</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check06">
+                <input type="checkbox" id="category-check06" class="checkbox__checked">
+                <span>키즈/주니어</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check07">
+                <input type="checkbox" id="category-check07" class="checkbox__checked">
+                <span>진열장/장식장</span>
+              </label>
+            </li>
+            <li>
+              <label for="category-check08">
+                <input type="checkbox" id="category-check08" class="checkbox__checked">
+                <span>안락의자/기능성의자</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="default-modal__footer">
+          <button type="button" class="modal__buttons--refresh button button--blank-gray">
+            <i class="ico__refresh"><span class="a11y">초기화</span></i>
+            <p>초기화</p>
+          </button>
+          <button type="button" class="button button--solid" onclick="closeModal('#default-modal01')">업체 찾아보기</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/mypage.js" type="text/javascript"></script>
+  </body>
+</html>

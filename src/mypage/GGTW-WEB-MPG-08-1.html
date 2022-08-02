@@ -1,0 +1,80 @@
+@@include('../inc/pagehead.inc',{
+  "pagetitle":" | 마이 올펀",
+  "webroot":".."
+  })
+  </head>
+  
+  <body>
+    <div class="skipnavigation"><a href="#container">skip to container</a></div>
+    <div id="wrap">
+      @@include('../inc/header.inc',{
+      "webroot":"..",
+      "headertype":""
+      }) 
+  
+      <div id="container" class="container">
+        <div class="my">
+          <div class="inner">
+            <div class="my__container">
+              <div class="my__top">
+                <div class="my__profile">
+                  <div class="user-type ico__mybadge"><span class="a11y">소매</span></div>
+                  <h3 class="user-name">홍길동</h3>
+                </div>
+              </div>
+              <div class="my__aside">
+                <div class="content">
+                  <div class="aside">
+                    <h2 class="aside__title">마이 올펀</h2>
+                    <div class="post-list">
+                      <div class="post-list__item post-list__item--active"><a href="#">관심 상품<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link ico__list-link--active"></div></div>
+                      <div class="post-list__item"><a href="#">좋아요<div class="badge__new"><span class="a11y">new</span></div></a><div class="ico__list-link"></div></div>
+                      <div class="post-list__item"><a href="#">최근 본 상품</a><div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__line"></div>
+                      <div class="post-list__item"><a href="#">계정 관리</a><div class="ico__list-link"></div></div>
+                    </div>
+                    <div class="aside__bottom">
+                      <button type="button" class="button"><div class="ico__logout"></div><span>로그아웃</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my__section">
+                <div class="content">
+                  <div class="section">
+                    <div class="section__head">
+                      <h3 class="section__title">
+                        <p>관심 상품</p>
+                        <button type="button" class="button section__head-button">
+                          <i class="ico__setting"><span class="a11y">관리</span></i>
+                          <p>폴더 관리</p>
+                        </button>
+                      </h3>
+                    </div>
+                    <div class="inner__category">
+                      <div class="sub-category">
+                        <p class="sub-category__item sub-category__item--active"><a href="#">전체</a></p>
+                        <p class="sub-category__item"><a href="#">A폴더</a></p>
+                        <p class="sub-category__item"><a href="#">구매 예정</a></p>
+                      </div>
+                    </div>
+                    <div class="my-content--nodata">
+                      <span>
+                        <i class="ico__exclamation"></i>
+                      </span>
+                      <p>관심 상품을 추가해주세요.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/mypage.js" type="text/javascript"></script>
+  </body>
+</html>
