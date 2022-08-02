@@ -442,3 +442,7 @@ i {
 .ico__burger24 {
   @include mixins.sprite(sprite.$ico-burger24);
 }
+
+.ico__set {
+  @include mixins.sprite(sprite.$ico-set);
+}

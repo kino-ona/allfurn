@@ -1,0 +1,189 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | 마이 올펀",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="my" style="margin-bottom: 74px;">
+        <div class="inner">
+          <div class="my__container">
+            <div class="my__top">
+              <div class="my__profile">
+                <div class="user-type ico__mybadge-wholesaler"><span class="a11y">도매</span></div>
+                <h3 class="user-name">올펀</h3>
+              </div>
+              <ul class="my__count-wrap">
+                <li>
+                  <p class="text">좋아요 수</p>
+                  <p class="num">99</p>
+                </li>
+                <li>
+                  <p class="text">문의 수</p>
+                  <p class="num">1.1천만</p>
+                </li>
+                <li>
+                  <p class="text">방문 수</p>
+                  <p class="num">999</p>
+                </li>
+              </ul>
+            </div>
+            <div class="my__aside">
+              <div class="content">
+                <div class="aside">
+                  <h2 class="aside__title">마이 올펀</h2>
+                  <div class="post-list">
+                    <div class="post-list__item"><a href="#">거래 현황</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">주문 현황</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__line"></div>
+                    <div class="post-list__item"><a href="#">관심 상품</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">좋아요<div class="new">n</div></a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">최근 본 상품</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__line"></div>
+                    <div class="post-list__item post-list__item--active"><a href="#">업체 관리</a>
+                      <div class="ico__list-link ico__list-link--active"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">상품 관리</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">계정 관리</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                  </div>
+                  <div class="aside__bottom">
+                    <button type="button" class="button">
+                      <div class="ico__logout"></div><span>로그아웃</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my__section">
+              <div class="content">
+                <div class="section">
+                  <div class="section__head">
+                    <div class="section__head__group">
+                      <h3 class="section__title">업체 관리</h3>
+                      <button type="button">
+                        <i class="ico__set"></i>
+                        <span>설정</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="section__content">
+                    <div class="content__card">
+                      <div class="card__info">
+                        <div class="card__img">
+                          <img src="../assets/images/temp/dummy_thumbnail3.png" alt="dummy_thumbnail3">
+                        </div>
+                        <div>
+                          <p class="card__text01">코윈스</p>
+                          <p class="card__text02">서울, 경기</p>
+                          <ul class="card__list">
+                            <li>소파/거실</li>
+                            <li>식탁/의자</li>
+                            <li>안락의자/기능성의자</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card__notice">
+                        <i class="ico__info"><span class="a11y">공지</span></i>
+                        <p>업체 상세 정보를 등록하고 상품을 5개 이상 등록해야 도매 업체 리스트에 노출됩니다.</p>
+                      </div>
+                    </div>
+                    <ul class="content__list">
+                      <li class="list--underbar">
+                        <h4>업체 소개</h4>
+                        <!-- <button type="button" class="list__add-btn mt32">
+                          <i class="ico__add--circle"><span class="a11y">추가</span></i>
+                          <span>업체 소개를 등록해주세요</span>
+                        </button> -->
+                        <div class="editor-wrap">
+                          에디터로 작성된<br>
+                          업체 소개글 영역
+                        </div>
+                      </li>
+                      <li class="list__company-info">
+                        <h4>업체 정보</h4>
+                        <dl>
+                          <dt>대표자</dt>
+                          <dd>홍지호</dd>
+                        </dl>
+                        <!-- <button type="button" class="list__add-btn mt8">
+                          <i class="ico__add--circle"><span class="a11y">추가</span></i>
+                          <span>업체 소개를 등록해주세요</span>
+                        </button> -->
+                        <dl>
+                          <dt>주소</dt>
+                          <dd>경기도 파주시 월롱면 누현 1길 105</dd>
+                        </dl>
+                        <dl>
+                          <dt>근무일</dt>
+                          <dd>08:00 - 18:00</dd>
+                        </dl>
+                        <dl>
+                          <dt>이메일</dt>
+                          <dd>
+                            <a href="mailto:abcd@naver.com">abcd@naver.com</a>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>업체 연락처</dt>
+                          <dd>02-123-4567</dd>
+                        </dl>
+                        <dl>
+                          <dt>담당자</dt>
+                          <dd>문현준</dd>
+                        </dl>
+                        <dl>
+                          <dt>담당자 연락처</dt>
+                          <dd>010-1234-5678</dd>
+                        </dl>
+                        <dl>
+                          <dt>팩스</dt>
+                          <dd>031-947-3478</dd>
+                        </dl>
+                        <dl>
+                          <dt>웹사이트</dt>
+                          <dd>
+                            <a href="https://www.gagutalk.com" target="_blank">www.gagutalk.com</a>
+                          </dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
+
+  @@include('../inc/footer.inc',{
+  "webroot":".."
+  })
+</body>
+
+</html>
