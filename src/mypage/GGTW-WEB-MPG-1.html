@@ -19,7 +19,10 @@
               <div class="my__top">
                 <div class="my__profile">
                   <div class="user-type ico__mybadge-wholesaler"><span class="a11y">도매</span></div>
-                  <h3 class="user-name">올펀</h3>
+                  <div>
+                    <h3 class="user-name">올펀</h3>
+                    <p class="user-name-text">정윤선</p>
+                  </div>
                 </div>
                 <ul class="my__count-wrap">
                   <li>
@@ -162,7 +165,7 @@
                           <button type="button" class="textfield__icon--delete ico__sdelete"><span class="a11y">삭제하기</span></button>
                         </div>
                         <div class="calendar">
-                          <input type="text" placeholder="전체 기간" readonly>
+                          <input type="text" placeholder="전체 기간" readonly/>
                           <button type="button" class="calendar__button">
                             <i class="ico__calendar"></i>
                           </button>
@@ -171,70 +174,250 @@
                     </div>
                     <div class="list">
                       <div class="list__meta-wrap">
-                        <p class="list__total">총 100개</p>
+                        <p class="list__total">전체 100개</p>
                       </div>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style="width: 70px">No</th>
+                            <th style="width: 100px">주문번호</th>
+                            <th style="width: 100px">주문일자</th>
+                            <th style="width: 110px">거래 상태</th>
+                            <th style="width: 262px">주문 상품</th>
+                            <th style="width: 155px">구매 업체</th>
+                            <th style="width: 113px">관리</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>100</td>
+                            <td>22042728</td>
+                            <td>2022.04.27</td>
+                            <td>신규 주문</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  포그니 4인 소파
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                <button type="button">거래확정</button>
                               </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>99</td>
+                            <td>22042727</td>
+                            <td>2022.04.27</td>
+                            <td>상품 준비 중</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                <button type="button">발송</button>
+                                <button type="button">배차 신청</button>
                               </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>                      
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>98</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>발송 중</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  포그니 4인 소파 외 2건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                <button type="button">발송 완료</button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>97</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  920 전동리클라이너 이태리가죽 1인 소파
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>96</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>95</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>94</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>구매자 EFGHI 컴퍼니</td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>93</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>92</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>91</td>
+                            <td>22042726</td>
+                            <td>2022.04.27</td>
+                            <td>거래 취소</td>
+                            <td class="link">
+                              <a href="#">
+                                <span>
+                                  [fR005] 포그니 라운드 소파 외 24 건
+                                </span>
+                              </a>
+                            </td>
+                            <td>
+                              <span class="target">
+                                구매자 EFGHI 컴퍼니
+                              </span>
+                            </td>
+                            <td>
+                              <div class="button-popup">
+                                -
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                     
                       <div class="pagenation">
                         <button type="button" class="prev">
                           <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,6 +430,11 @@
                           <a href="#">3</a>
                           <a href="#">4</a>
                           <a href="#">5</a>
+                          <a href="#">6</a>
+                          <a href="#">7</a>
+                          <a href="#">8</a>
+                          <a href="#">9</a>
+                          <a href="#">10</a>
                         </div>
                         <button type="button" class="next">
                           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,6 +442,24 @@
                             </svg>
                         </button>
                       </div>  
+                    </div>
+                  </div>
+                  <div class="badge">
+                    <div class="order-badge">
+                      <span class="badge--solid-red">주문완료</span>
+                      <span class="badge--solid-red">거래 확정</span>
+                      <span class="badge--solid-red">배송 중</span>
+                      <span class="badge--solid-pink">구매 확정 대기</span>
+                      <span class="badge--solid-black">거래 완료</span>
+                      <span class="badge--cancle">거래 취소</span>
+                    </div>
+                    <div class="deal-badge">
+                      <span class="badge--solid-red">신규 주문</span>
+                      <span class="badge--solid-red">상품 준비 중</span>
+                      <span class="badge--solid-red">발송 중</span>
+                      <span class="badge--solid-pink">구매 확정 대기</span>
+                      <span class="badge--solid-black">거래 완료</span>
+                      <span class="badge--cancle">거래 취소</span>
                     </div>
                   </div>
                 </div>
