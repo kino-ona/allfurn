@@ -31,7 +31,7 @@
                     </div>
                   </div>
                   <div class="buttons">
-                    <button type="button" class="button button--blank-gray cancle">전체 주문 취소</button>
+                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">전체 주문 취소</button>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                         </div>
                       </div>
                       <div class="state">
-                        <button type="button" class="cancle">주문 취소</button>
+                        <button type="button" onclick="openModal('#modal-cancle')" class="cancle">주문 취소</button>
                       </div>
 
                     </div>
@@ -259,6 +259,24 @@
                 </div>
               </div>
             </div> 
+            <div id="modal-cancle" class="modal">
+              <div class="modal__container" style="width: 350px;">
+                <div class="modal__content">
+                  <div class="modal-box__container">
+                    <div class="modal-box__content">
+                      <div class="modal__desc">
+                        <p class="modal__text">
+                          주문을 취소하시겠습니까?
+                        </p>
+                      </div>
+                      <div class="modal__util">
+                        <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button"><span>확인</span></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
     

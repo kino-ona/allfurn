@@ -30,8 +30,8 @@
                     </div>
                   </div>
                   <div class="buttons">
-                    <button type="button" class="button button--blank-gray cancle">전체 거래 취소</button>
-                    <button type="button" class="button button--solid complete">거래 확정</button>
+                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">전체 거래 취소</button>
+                    <button type="button" onclick="openModal('#modal-deal')" class="button button--solid complete">거래 확정</button>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                         </div>
                       </div>
                       <div class="state">
-                        <button type="button" class="cancle">거래 취소</button>
+                        <button type="button" onclick="openModal('#modal-cancle')" class="cancle">거래 취소</button>
                       </div>
 
                     </div>
@@ -191,69 +191,112 @@
                   <div class="order__head">
                     <p class="order__main-title">취소 정보</p>
                   </div>
-                  <div class="my-detail__list">
-                    <div class="my-detail__item">
-                      <div class="info">
-                        <div>
-                          <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
-                          <div class="info__wrap">
-                            <p class="title">포그니 4인 소파</p>
-                            <p class="type">색상: 화이트 / 소재: 천연가죽</p>
-                            <p class="price">업체문의</p>
-                            <p class="count">10개</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div>
-                          <p class="description__title">취소 사유</p>
-                          <p class="description__text">
-                            <span>다른 제품 구매 </span>
-                          </p>
-                        </div>
-                        <div>
-                          <p class="description__title">취소 일자</p>
-                          <p class="description__text">
-                            <span>2022.06.22</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-detail__item">
-                      <div class="info">
-                        <div>
-                          <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
-                          <div class="info__wrap">
-                            <p class="title">[fR005] 포그니 라운드 소파</p>
-                            <p class="type">색상: 화이트 / 소재: 천연가죽</p>
-                            <p class="price">700,000원</p>
-                            <p class="count">10개</p>
-                          </div>
-                          <div class="add">
+                  <div class="my-detail__order">
+                    <div class="my-detail__list">
+                      <div class="my-detail__item">
+                        <div class="info">
+                          <div>
+                            <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
                             <div class="info__wrap">
-                              <p class="type">추가 구성 (선택): 소파스툴</p>
-                              <p class="price">500,000원</p>
+                              <p class="title">포그니 4인 소파</p>
+                              <p class="type">색상: 화이트 / 소재: 천연가죽</p>
+                              <p class="price">업체문의</p>
                               <p class="count">10개</p>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="description">
-                        <div>
-                          <p class="description__title">취소 사유</p>
-                          <p class="description__text">
-                            <span>다른 제품 구매 다른 제품 구매 다른 제품 구매 다른 제품 구매</span>
-                          </p>
+                        <div class="description">
+                          <div>
+                            <p class="description__title">취소 사유</p>
+                            <p class="description__text">
+                              <span>다른 제품 구매 </span>
+                            </p>
+                          </div>
+                          <div>
+                            <p class="description__title">취소 일자</p>
+                            <p class="description__text">
+                              <span>2022.06.22</span>
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p class="description__title">취소 일자</p>
-                          <p class="description__text">
-                            <span>2022.06.22</span>
-                          </p>
+                      </div>
+                      <div class="my-detail__item">
+                        <div class="info">
+                          <div>
+                            <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
+                            <div class="info__wrap">
+                              <p class="title">[fR005] 포그니 라운드 소파</p>
+                              <p class="type">색상: 화이트 / 소재: 천연가죽</p>
+                              <p class="price">700,000원</p>
+                              <p class="count">10개</p>
+                            </div>
+                            <div class="add">
+                              <div class="info__wrap">
+                                <p class="type">추가 구성 (선택): 소파스툴</p>
+                                <p class="price">500,000원</p>
+                                <p class="count">10개</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="description">
+                          <div>
+                            <p class="description__title">취소 사유</p>
+                            <p class="description__text">
+                              <span>다른 제품 구매 다른 제품 구매 다른 제품 구매 다른 제품 구매</span>
+                            </p>
+                          </div>
+                          <div>
+                            <p class="description__title">취소 일자</p>
+                            <p class="description__text">
+                              <span>2022.06.22</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div id="modal-deal" class="modal">
+                <div class="modal__container" style="width: 350px;">
+                  <div class="modal__content">
+                    <div class="modal-box__container">
+                      <div class="modal-box__content">
+                        <div class="modal__desc">
+                          <p class="modal__text">
+                            거래가 확정되었습니다.<br>
+                            상품이 준비되면 발송 버튼을 눌러주세요.
+                          </p>
+                        </div>
+                        <div class="modal__util">
+                          <button type="button" onclick="closeModal('#modal-deal');" type="button" class="modal__button"><span>확인</span></button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="modal-cancle" class="modal">
+                <div class="modal__container" style="width: 350px;">
+                  <div class="modal__content">
+                    <div class="modal-box__container">
+                      <div class="modal-box__content">
+                        <div class="modal__desc">
+                          <p class="modal__text">
+                            거래를 취소하시겠습니까?<br>
+                            취소 건은 다시 복구할 수 없습니다.
+                          </p>
+                        </div>
+                        <div class="modal__util">
+                          <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
+                          <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button"><span>확인</span></button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div> 

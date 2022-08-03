@@ -25,8 +25,8 @@
                 </div>
               </div>
               <div class="my-detail__content">
-                <div class="my-detail__order-cancle order">
-                  <div class="my-detail__list" style="margin-top: 16px;">
+                <div class="my-detail__order my-detail__order-cancle order">
+                  <div class="my-detail__list">
                     <div class="my-detail__item">
                       <div class="info">
                         <div>
@@ -121,13 +121,18 @@
                   <div class="order__head">
                     <p class="order__main-title">취소 사유</p>
                   </div>
-                  <textarea placeholder="취소 사유를 입력해주세요." rows=20 cols=30></textarea>
+                  <textarea placeholder="취소 사유를 입력해주세요." maxlength="100"></textarea>
                 </div>
               </div>
               <div class="my-detail__footer">
-                <div class="util">
-                  <button type="button" class="button button--blank-gray cancle">취소</button>
-                  <button type="button" class="button button--solid complete" onclick="openModal('#modal-cancle')">완료</button>
+                <div class="util" style="margin-bottom: 118px">
+                  <button type="button" class="button button--blank-gray cancle" disabled='disabled'>취소</button>
+                  <button type="button" class="button button--solid complete" disabled='disabled'>완료</button>
+                  
+                  <div class="active">
+                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">취소</button>
+                    <button type="button" class="button button--solid complete">완료</button>
+                  </div>
                 </div>
               </div>
             </div> 

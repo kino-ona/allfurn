@@ -68,7 +68,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button"" onclick="closeModal('#modal-ALT-04');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-04');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
             <button type="button" onclick="closeModal('#modal-ALT-04');" type="button" class="modal__button"><span>확인</span></button>
           </div>
           </div>
