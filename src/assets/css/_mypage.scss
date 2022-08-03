@@ -2314,6 +2314,17 @@
         line-height: 32px;
         border: 1px solid #E0E0E0;
       }
+
+      &.search-result--none {
+        padding-top: 112px;
+        height: auto;
+
+        p {
+          color: #828282;
+          margin-top: 8px;
+          margin-bottom: 0;
+        }
+      }
     }
 
     .list-none {
@@ -2373,6 +2384,19 @@
 
       &.mt16 {
         margin-top: 16px;
+      }
+    }
+
+    .search-result {
+      margin-top: 22px;
+
+      h4 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        color: #828282;
+        margin-bottom: 32px;
       }
     }
     
