@@ -461,13 +461,12 @@
       a {
         max-width: 140px;
         width: 100%;
-        display: flex;
-        align-items: center;
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
         letter-spacing: -0.02em;
         overflow: hidden;
+        @include mixins.ellipse(1);
       }
 
       .ico__list-link {
@@ -1432,9 +1431,11 @@
     }
 
     &__data span {
-      display: inline-block;
-      font-weight: 600;
+      width: 32px;
       color: #1B1B1B;
+      font-weight: 600;
+      text-align: right;
+      @include mixins.ellipse(1);
     }
 
     &__field {
@@ -1481,10 +1482,6 @@
      
     .calendar input::placeholder {
       color: #1B1B1B;
-    }
-
-    .calendar i {
-     
     }
   }
 
@@ -1538,6 +1535,8 @@
 
     .button-popup button {
       padding: 3px 11px;
+      width: 80px;
+      height: 32px;
       color: #FB4760;
       font-weight: 600;
       letter-spacing: -.02em;
@@ -1558,12 +1557,16 @@
       display: inline-block;
       color: #3D87F4;
       border-bottom: 1px solid #3D87F4;
-     
     }
 
     .link a span {
       text-align: left;
       @include mixins.ellipse(1);
+    }
+
+    .link.link--gray a {
+      color: #828282;
+      border-bottom: 1px solid #828282;
     }
 
     .target {
@@ -1610,6 +1613,17 @@
       color: #828282;
 
     }
+  }
+
+  .dropdown--active .dropdown__wrap {
+    height: 190px;
+    padding: 5px 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .dropdown__item {
+    padding: 11px  11px 11px 24px;
   }
 }
 
@@ -1833,6 +1847,16 @@
     font-weight: 600;
   }
 
+  .company-name {
+    margin-top: 10px;
+    margin-bottom: -4px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    letter-spacing: -.03em;
+  }
+
   .date {
     margin-top: 10px;
   }
@@ -1869,6 +1893,11 @@
       color: #ffffff;
     }
 
+    .button--border-gray {
+      border: 1px solid #FB4760;
+      color: #FB4760;
+    }
+
     button {
       width: 120px;
       height: 44px;
@@ -1884,13 +1913,6 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__list {
-    margin-top: 16px;
-    border: 1px solid #E0E0E0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
   }
 
   &__item {
@@ -1996,6 +2018,7 @@
     &__title {
       display: inline-block;
       margin-right: 20px;
+      width: 55px;
       color: #828282;
       font-size: 15px;
       font-weight: 500;
@@ -2014,13 +2037,14 @@
     }
 
     &__text span {
-      @include mixins.ellipse(1);
+      @include mixins.ellipse(2);
     }
   }
 
   .state {
     width: 180px;
     padding: 30px;
+    text-align: center;
 
     .cancle {
       width: 120px;
@@ -2035,17 +2059,24 @@
     }
   }
 
+  .my-detail__list + .my-detail__request {
+    border-top : 1px solid #E0E0E0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
   &__request {
     padding: 17px 16px;
     color: #1B1B1B;
     font-size: 16px;
     line-height: 25px;
     letter-spacing: -.02em;
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: #E0E0E0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  }
+
+  &__order {
+    margin-top: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
   }
 
   &__request p {
@@ -2065,7 +2096,7 @@
 
     &__title {
       display: inline-block;
-      width: 102px;
+      width: 126px;
       color: #828282;
       font-size: 16px;
       line-height: 25px;
@@ -2074,7 +2105,7 @@
 
     &__text {
       display: inline-block;
-      width: calc(100% - 110px);
+      width: calc(100% - 136px);
       color: #333333;
       font-size: 16px;
       line-height: 25px;
@@ -2137,8 +2168,6 @@
   }
 
   &__order-cancle {
-    margin-top: 72px;
-
     .info {
       width: 632px;
     }
@@ -2147,9 +2176,14 @@
       border-right: none;
     }
 
-    .my-detail__list {
+    .my-detail__order {
       margin-top: 24px;
     }
+  }
+
+  .my-detail__order-info + .my-detail__order-cancle {
+    margin-top: 72px;
+    margin-bottom: 97px;
   }
 
   &__cancle {
@@ -2160,13 +2194,34 @@
       height: 120px;
       border: 1px solid #E0E0E0;
       border-radius: 5px;
+      margin-top: 24px;
+      margin-bottom: 24px;
       padding: 11px;
       font-size: 16px;
       box-sizing: border-box;
     }
+
     textarea::placeholder {
       color: #BDBDBD;
     }
+  }
+
+  .util {
+    text-align: right;
+  }
+
+  .util button[type=button] {
+    width: 150px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .button--blank-gray {
+    border: 1px solid #E0E0E0;
   }
 }
 // 

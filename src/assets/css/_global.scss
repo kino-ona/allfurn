@@ -238,10 +238,12 @@ input::-ms-clear {
 		align-items: center;
 
 		:nth-child(4) {
+			position: relative;
 			margin-left: 20px;
 		}
 
 		:nth-child(5) {
+			position: relative;
 			margin-left: 12px;
 		}
 
@@ -256,6 +258,25 @@ input::-ms-clear {
 				width: 24px;
 				height: 24px;
 			}
+		}
+
+		.badge {
+			overflow: hidden;
+			display: inline-block;
+			position: absolute;
+			top: -4px;
+			right: -4px;
+			width: 21px;
+			height: 14px;
+			padding: 0 4px;
+			box-sizing: border-box;
+			background-color: #FB4760;
+			border-radius: 10px;
+			color: #ffffff;
+			font-size: 10px;
+			line-height: 14px;
+			font-weight: 600;
+			letter-spacing: -.03em;
 		}
 	}
 }

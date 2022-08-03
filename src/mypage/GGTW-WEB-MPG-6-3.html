@@ -1,0 +1,161 @@
+@@include('../inc/pagehead.inc',{
+    "pagetitle":" | community",
+    "webroot":".."
+    })
+    </head>
+    
+    <body>
+      <div class="skipnavigation"><a href="#container">skip to container</a></div>
+      <div id="wrap">
+        @@include('../inc/header.inc',{
+        "webroot":"..",
+        "headertype":""
+        })
+    
+        <div id="container" class="container my-page my-detail">
+          <div class="inner">
+            <div class="contents">
+              <div class="blank"></div>
+              <div class="my-detail__head">
+                <p class="my-detail__breadcrumbs">주문 현황 > 주문 상세 > 주문 취소</p>
+                <p class="my-detail__title">주문 취소</p>
+                <div class="date" style="margin-top: 0;">
+                  <p>주문번호 22042720</p>
+                  <p>주문일자 2022.04.27</p>
+                </div>
+              </div>
+              <div class="my-detail__content">
+                <div class="my-detail__order my-detail__order-cancle order">
+                  <div class="my-detail__list">
+                    <div class="my-detail__item">
+                      <div class="info">
+                        <div>
+                          <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
+                          <div class="info__wrap">
+                            <p class="title">포그니 4인 소파</p>
+                            <p class="type">색상: 화이트 / 소재: 천연가죽</p>
+                            <p class="price">업체문의</p>
+                            <p class="count">10개</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <div>
+                          <p class="description__title">배송 방법</p>
+                          <p class="description__text">
+                            <span>매장 배송 (착불)</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">결제 방식</p>
+                          <p class="description__text">
+                            <span>업체 협의</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">주문 금액</p>
+                          <p class="description__text">
+                            <span>업체 문의</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">업체명</p>
+                          <p class="description__text">
+                            <span>A컴퍼니</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-detail__item">
+                      <div class="info">
+                        <div>
+                          <span class="image" style="background-image: url('../assets/images/sub/img_my_page_profile.png')"></span>
+                          <div class="info__wrap">
+                            <p class="title">[fR005] 포그니 라운드 소파</p>
+                            <p class="type">색상: 화이트 / 소재: 천연가죽</p>
+                            <p class="price">700,000원</p>
+                            <p class="count">10개</p>
+                          </div>
+                          <div class="add">
+                            <div class="info__wrap">
+                              <p class="type">추가 구성 (선택): 소파스툴</p>
+                              <p class="price">500,000원</p>
+                              <p class="count">10개</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <div>
+                          <p class="description__title">배송 방법</p>
+                          <p class="description__text">
+                            <span>업체 직접 배송(착불),<br>소비자 직배 가능 (무료)</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">결제 방식</p>
+                          <p class="description__text">
+                            <span>계좌 이체</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">주문 금액</p>
+                          <p class="description__text">
+                            <span>7,500,000원</span>
+                          </p>
+                        </div>
+                        <div>
+                          <p class="description__title">업체명</p>
+                          <p class="description__text">
+                            <span>A컴퍼니</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-detail__cancle order">
+                  <div class="order__head">
+                    <p class="order__main-title">취소 사유</p>
+                  </div>
+                  <textarea placeholder="취소 사유를 입력해주세요." maxlength="100"></textarea>
+                </div>
+              </div>
+              <div class="my-detail__footer">
+                <div class="util">
+                  <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">취소</button>
+                  <button type="button" class="button button--solid complete">완료</button>
+                </div>
+              </div>
+            </div> 
+            <div id="modal-cancle" class="modal">
+              <div class="modal__container" style="width: 350px;">
+                <div class="modal__content">
+                  <div class="modal-box__container">
+                    <div class="modal-box__content">
+                      <div class="modal__desc">
+                        <p class="modal__text">
+                          주문을 취소하시겠습니까?<br>
+                          취소 건은 다시 복구할 수 없습니다.
+                        </p>
+                      </div>
+                      <div class="modal__util">
+                        <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
+                        <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button"><span>확인</span></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+        @@include('../inc/footer.inc',{
+        "webroot":".."
+        })
+      </div>
+      <script src="/assets/js/community.js" type="text/javascript"></script>
+    </body>
+    
+    </html>

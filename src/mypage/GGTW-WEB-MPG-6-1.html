@@ -17,21 +17,21 @@
             <div class="contents">
               <div class="blank"></div>
               <div class="my-detail__head">
-                <p class="my-detail__breadcrumbs">거래 현황 > 거래 상세</p>
-                <p class="my-detail__title">거래 상세</p>
+                <p class="my-detail__breadcrumbs">주문 현황 > 주문 상세</p>
+                <p class="my-detail__title">주문 상세</p>
                 <div class="my-detail__wrap">
                   <div>
                     <div class="badge">
-                      <span class="badge--solid-red">신규 주문</span>
+                      <span class="badge--solid-red">주문 완료</span>
                     </div>
+                    <p class="company-name">업체명 라자가구</p>
                     <div class="date">
                       <p>주문번호 22042720</p>
                       <p>주문일자 2022.04.27</p>
                     </div>
                   </div>
                   <div class="buttons">
-                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">전체 거래 취소</button>
-                    <button type="button" onclick="openModal('#modal-deal')" class="button button--solid complete">거래 확정</button>
+                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">전체 주문 취소</button>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                         </div>
                       </div>
                       <div class="state">
-                        <button type="button" onclick="openModal('#modal-cancle')" class="cancle">거래 취소</button>
+                        <button type="button" onclick="openModal('#modal-cancle')" class="cancle">주문 취소</button>
                       </div>
 
                     </div>
@@ -115,7 +115,7 @@
                         </div>
                       </div>
                       <div class="state">
-                        <p>거래 취소 완료</p>
+                        <p>주문 취소 완료</p>
                       </div>
                     </div>
                   </div>
@@ -258,48 +258,25 @@
                   </div>
                 </div>
               </div>
-
-              <div id="modal-deal" class="modal">
-                <div class="modal__container" style="width: 350px;">
-                  <div class="modal__content">
-                    <div class="modal-box__container">
-                      <div class="modal-box__content">
-                        <div class="modal__desc">
-                          <p class="modal__text">
-                            거래가 확정되었습니다.<br>
-                            상품이 준비되면 발송 버튼을 눌러주세요.
-                          </p>
-                        </div>
-                        <div class="modal__util">
-                          <button type="button" onclick="closeModal('#modal-deal');" type="button" class="modal__button"><span>확인</span></button>
-                        </div>
-                        </div>
+            </div> 
+            <div id="modal-cancle" class="modal">
+              <div class="modal__container" style="width: 350px;">
+                <div class="modal__content">
+                  <div class="modal-box__container">
+                    <div class="modal-box__content">
+                      <div class="modal__desc">
+                        <p class="modal__text">
+                          주문을 취소하시겠습니까?
+                        </p>
+                      </div>
+                      <div class="modal__util">
+                        <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button"><span>확인</span></button>
+                      </div>
                       </div>
                     </div>
                   </div>
-              </div>
-
-              <div id="modal-cancle" class="modal">
-                <div class="modal__container" style="width: 350px;">
-                  <div class="modal__content">
-                    <div class="modal-box__container">
-                      <div class="modal-box__content">
-                        <div class="modal__desc">
-                          <p class="modal__text">
-                            거래를 취소하시겠습니까?<br>
-                            취소 건은 다시 복구할 수 없습니다.
-                          </p>
-                        </div>
-                        <div class="modal__util">
-                          <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
-                          <button type="button" onclick="closeModal('#modal-cancle');" type="button" class="modal__button"><span>확인</span></button>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
                 </div>
-              </div>
-            </div> 
+            </div>
           </div>
         </div>
     
