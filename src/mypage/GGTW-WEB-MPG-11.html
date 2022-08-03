@@ -1,0 +1,72 @@
+@@include('../inc/pagehead.inc',{
+  "pagetitle":" | 마이 올펀",
+  "webroot":".."
+  })
+  </head>
+  
+  <body>
+    <div class="skipnavigation"><a href="#container">skip to container</a></div>
+    <div id="wrap">
+      @@include('../inc/header.inc',{
+      "webroot":"..",
+      "headertype":""
+      }) 
+  
+      <div id="container" class="container">
+        <div class="my">
+          <div class="inner">
+            <div class="my__container">
+              <div class="my__aside">
+                <div class="content">
+                  <div class="aside">
+                    <h2 class="aside__title">알림센터</h2>
+                    <div class="post-list">
+                      <div class="post-list__item post-list__item--active"><a href="#">전체</a><div class="ico__list-link ico__list-link--active"></div></div>
+                      <div class="post-list__item"><a href="#">주문</a><div class="ico__list-link"></div></div>
+                      <div class="post-list__item"><a href="#">활동</a><div class="ico__list-link"></div>
+                      </div>
+                      <div class="post-list__item"><a href="#">소식</a><div class="ico__list-link"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my__section">
+                <div class="content">
+                  <div class="section">
+                    <div class="my-content--nodata">
+                      <span><i class="ico__exclamation"></i></span>
+                      <p>도착한 알림이 없습니다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="mpg_delete-folder" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                <div class="modal-box__container">
+                  <div class="modal-box__content">
+                    <div class="modal__desc">
+                      <p class="modal__text">
+                        폴더를 삭제하시겠습니까?<br>폴더에 담긴 상품도 함께 삭제됩니다.
+                      </p>
+                    </div>
+                    <div class="modal__buttons">
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                      <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button"><span>확인</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/mypage.js" type="text/javascript"></script>
+  </body>
+</html>
