@@ -2590,3 +2590,14 @@
     }
   }
 }
+
+.category-btn {
+  &.registration-order-btn {
+    width: auto;
+
+    i {
+      flex-shrink: 0;
+      margin-right: 4px;
+    }
+  }
+}

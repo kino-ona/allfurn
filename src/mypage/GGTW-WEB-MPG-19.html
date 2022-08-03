@@ -128,7 +128,8 @@
                               <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
                               <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
                             </div>
-                            <div class="category-btn category-btn--order" onclick="openModal('#default-modal03')">
+                            <div class="category-btn registration-order-btn">
+                              <i class="ico__filter"><span class="a11y">필터</span></i>
                               <p class="category-btn__text">최근 등록순</p>
                             </div>
                           </div>
@@ -177,49 +178,6 @@
                               <p class="category-list__refresh__text">초기화</p>
                               <i class="ico__refresh"><span class="a11y">초기화</span></i>
                             </a>
-                          </div>
-                        </div>
-
-                        <!-- 상품 상태 변경 팝업 -->
-                        <div id="default-modal01" class="default-modal default-modal--radio-box">
-                          <div class="default-modal__container">
-                            <div class="default-modal__header">
-                              <h2>상품 상태 변경</h2>
-                              <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
-                                <span class="a11y">닫기</span>
-                              </button>
-                            </div>
-                            <div class="default-modal__content" style="height: auto;">
-                              <ul class="content__list">
-                                <li>
-                                  <label>
-                                    <input type="radio" name="product-status" class="radio__checked" checked>
-                                    <span>판매 중</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    <input type="radio" name="product-status" class="radio__checked">
-                                    <span>품절</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    <input type="radio" name="product-status" class="radio__checked">
-                                    <span>숨김</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    <input type="radio" name="product-status" class="radio__checked">
-                                    <span>판매 중지</span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="default-modal__footer">
-                              <button type="button" class="button button--solid">완료</button>
-                            </div>
                           </div>
                         </div>
 
@@ -295,37 +253,6 @@
                                 <i class="ico__refresh"><span class="a11y">초기화</span></i>
                                 <p>초기화</p>
                               </button>
-                              <button type="button" class="button button--solid">선택 완료</button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- 최근 등록순 팝업 -->
-                        <div id="default-modal03" class="default-modal default-modal--radio">
-                          <div class="default-modal__container">
-                            <div class="default-modal__header">
-                              <h2>정렬 선택</h2>
-                              <button type="button" class="ico__close28" onclick="closeModal('#default-modal03')">
-                                <span class="a11y">닫기</span>
-                              </button>
-                            </div>
-                            <div class="default-modal__content" style="height: auto;">
-                              <ul class="content__list">
-                                <li>
-                                  <label>
-                                    <input type="radio" name="order" class="checkbox__checked" checked>
-                                    <span>최근 등록순</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    <input type="radio" name="order" class="checkbox__checked">
-                                    <span>등록순</span>
-                                  </label>
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="default-modal__footer">
                               <button type="button" class="button button--solid">선택 완료</button>
                             </div>
                           </div>
@@ -519,7 +446,11 @@
                                       <p>포그니 7인 소파</p>
                                     </div>
                                     <ul class="edit-delete-wrap">
-                                      <li><button type="button">상태 변경</button></li>
+                                      <li>
+                                        <button type="button" onclick="openModal('#default-modal-status')">
+                                          상태 변경
+                                        </button>
+                                      </li>
                                       <li><button type="button">수정</button></li>
                                       <li><button type="button">삭제</button></li>
                                     </ul>
@@ -783,6 +714,50 @@
                                 </li>
                               </ul>
                             </div> -->
+                          </div>
+
+                          <!-- 상품 상태 변경 팝업 -->
+                          <div id="default-modal-status" class="default-modal default-modal--radio-box">
+                            <div class="default-modal__container">
+                              <div class="default-modal__header">
+                                <h2>상품 상태 변경</h2>
+                                <button type="button" class="ico__close28"
+                                  onclick="closeModal('#default-modal-status')">
+                                  <span class="a11y">닫기</span>
+                                </button>
+                              </div>
+                              <div class="default-modal__content" style="height: auto;">
+                                <ul class="content__list">
+                                  <li>
+                                    <label>
+                                      <input type="radio" name="product-status" class="radio__checked" checked>
+                                      <span>판매 중</span>
+                                    </label>
+                                  </li>
+                                  <li>
+                                    <label>
+                                      <input type="radio" name="product-status" class="radio__checked">
+                                      <span>품절</span>
+                                    </label>
+                                  </li>
+                                  <li>
+                                    <label>
+                                      <input type="radio" name="product-status" class="radio__checked">
+                                      <span>숨김</span>
+                                    </label>
+                                  </li>
+                                  <li>
+                                    <label>
+                                      <input type="radio" name="product-status" class="radio__checked">
+                                      <span>판매 중지</span>
+                                    </label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="default-modal__footer">
+                                <button type="button" class="button button--solid">완료</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
 

@@ -221,3 +221,13 @@ $('.buttons-search').on('click', function () {
 $(".recommend-btn").on("click", function () {
   $(this).toggleClass("active");
 });
+
+$(".category-btn.registration-order-btn").on("click", function () {
+	var btnText = $(this).children(".category-btn__text");
+
+	if ( btnText.text() == "최근 등록순") {
+		btnText.text("등록순");
+	} else {
+		btnText.text("최근 등록순");
+	}
+});
