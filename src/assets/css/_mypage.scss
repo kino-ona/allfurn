@@ -2200,11 +2200,12 @@
     position: relative;
 
     button {
-      font-weight: 400px;
+      font-weight: 400;
       font-size: 15px;
       line-height: 24px;
       letter-spacing: -0.02em;
       color: #828282;
+      padding: 0;
     }
 
     &::after {
@@ -2537,6 +2538,52 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .tab02 {
+    .card-wrap {
+      margin-top: 18px;
+
+      .card__list-item {
+        padding: 23px 20px 32px;
+        box-sizing: border-box;
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .list__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 14px;
+          border-bottom: 1px solid #E0E0E0;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.02em;
+            color: #828282;
+          }
+        }
+
+        .list__bottom {
+          margin-top: 32px;
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: -0.03em;
+            color: #1B1B1B;
           }
         }
       }
