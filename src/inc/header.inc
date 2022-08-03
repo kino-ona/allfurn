@@ -25,9 +25,11 @@
           <a href="#">고객센터</a>
           <a href="#">
             <i class="ico__alram"><span class="a11y">알람</span></i>
+            <span class="badge">99</span>
           </a>
           <a href="#">
             <i class="ico__basket"><span class="a11y">장바구니</span></i>
+             <span class="badge">99</span>
           </a>
         </div>
       </div>

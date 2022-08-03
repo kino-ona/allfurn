@@ -35,9 +35,9 @@
       <div class="inner">
         <p class="inner__title">Overlays</p>
 
-        <button type="button" class="inner__button modal-type--single">modal-type--single</button>
-        <button type="button" class="inner__button modal-type--pair">modal-type--pair</button>
-        <button type="button" class="inner__button modal-type--basic">modal-type--basic</button>
+        <button type="button" class="inner__button modal-type--single" onclick="openModal('#modal-type--single')">modal-type--single</button>
+        <button type="button" class="inner__button modal-type--pair" onclick="openModal('#modal-type--pair')">modal-type--pair</button>
+        <button type="button" class="inner__button modal-type--basic" onclick="openModal('#modal-type--basic')">modal-type--basic</button>
         <button type="button" class="inner__button" onclick="openModal('#text-modal--pair')">modal-type (취소,확인)</button>
         <button type="button" class="inner__button" onclick="openModal('#text-modal--single')">modal-type (확인)</button>
 
@@ -50,7 +50,7 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons">
-                    <a href="#" onclick="closeModal('#modal-type--single'); return false;" class="modal__button"><span>Button</span></a>
+                    <button type="button" onclick="closeModal('#modal-type--single');" class="modal__button"><span>Button</span></button>
                   </div>
                 </div>
               </div>
@@ -67,8 +67,8 @@
                     <p class="modal__text">Text</p>
                   </div>
                   <div class="modal__buttons modal__buttons--half">
-                    <a href="#" onclick="closeModal('#modal-type--pair');return false;" class="modal__button"><span>Button</span></a>
-                    <a href="#" onclick="closeModal('#modal-type--pair'); return false;" class="modal__button"><span>Button</span></a>
+                    <button type="button" onclick="closeModal('#modal-type--pair');" class="modal__button"><span>Button</span></button>
+                    <button type="button" onclick="closeModal('#modal-type--pair');" class="modal__button"><span>Button</span></button>
                   </div>
                 </div>
               </div>
@@ -274,8 +274,8 @@
                     </p>
                   </div>
                   <div class="modal__util">
-                    <a href="#" onclick="closeModal('#text-modal--pair'); return false;" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
-                    <a href="#" onclick="closeModal('#text-modal--pair'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                    <button type="button" onclick="closeModal('#text-modal--pair');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
+                    <button type="button" onclick="closeModal('#text-modal--pair');" type="button" class="modal__button"><span>확인</span></button>
                   </div>
                   </div>
                 </div>
@@ -295,7 +295,7 @@
                   </p>
                 </div>
                 <div class="modal__util">
-                  <a href="#" onclick="closeModal('#text-modal--single'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                  <button type="button" onclick="closeModal('#text-modal--single');" type="button" class="modal__button"><span>확인</span></button>
                 </div>
                 </div>
               </div>

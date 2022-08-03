@@ -497,6 +497,28 @@
       background-color: #FB4760;
       border-radius: 5px;
     }
+
+    .modal__buttons .modal__buttons--refresh {
+      width: calc(100% - 270px) !important;
+      color: #1B1B1B !important;
+      font-weight: 600;
+      background-color: #ffffff !important;
+      border: 1px solid #E0E0E0 !important;
+      border-radius: 5px;
+    }
+  
+    .modal__buttons .modal__buttons--search {
+      width: calc(100% - 180px);
+      margin-left: 8px;
+      background-color: #FB4760;
+      color: #ffffff;
+      border-radius: 5px !important;
+    }
+  
+    .modal-category .content{
+      overflow-y: scroll;
+      height: 450px; 
+    }
   }
 
   svg {
@@ -507,28 +529,6 @@
   &__check {
     display: block;
     text-align: left;
-  }
-
-  a.modal__buttons--refresh {
-    width: calc(100% - 270px) !important;
-    color: #1B1B1B !important;
-    font-weight: 600;
-    background-color: #ffffff !important;
-    border: 1px solid #E0E0E0 !important;
-    border-radius: 5px;
-  }
-
-  a.modal__buttons--search {
-    width: calc(100% - 180px);
-    margin-left: 8px;
-    background-color: #FB4760;
-    color: #ffffff;
-    border-radius: 5px !important;
-  }
-
-  .modal-category .content{
-    overflow-y: scroll;
-    height: 450px; 
   }
 }
 
@@ -996,7 +996,7 @@
   }
 
   &__heart span {
-    display: inline-block;
+    display: block;
     color: #828282;
     font-size: 16px;
     font-weight: 600;
@@ -1004,7 +1004,7 @@
   }
 
   &__img {
-    display: inline-block;
+    display: block;
     float: left;
     width: 276px;
     height: 276px;
@@ -1027,7 +1027,7 @@
   }
 
   &__date {
-    display: inline-block;
+    display: block;
     float: left;
     margin-top: 4px;
     margin-left: 6px;

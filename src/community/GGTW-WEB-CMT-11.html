@@ -65,6 +65,15 @@
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--failure');">금지어 오류 팝업 팝업</button>
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--complete');">등록완료 팝업</button>
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--correction');">수정완료 팝업</button>
+              <p>*공통팝업*</p>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-01');">필수 항목 입력 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-02');">접속 감지 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-03');">작성 중인 내용 진행취소 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-04');">삭제 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-05');"> 삭제 완료 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-06');">링크가 복사 팝업</button>
+              <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-ALT-07');">입력한 정보 저장 팝업</button>
+            </div>
             </div>
             
 
@@ -102,12 +111,12 @@
                         </p>
                       </div>
                       <div class="modal__util">
-                        <a href="#" onclick="closeModal('#modal-declaration--done'); return false;" type="button" class="modal__button"><span>확인</span></a>
-                      </div>
+                        <button type="button" onclick="closeModal('#modal-declaration--done');" type="button" class="modal__button"><span>확인</span></button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
             <div id="modal-regist--failure" class="modal">
               <div class="modal__container" style="width: 350px;">
@@ -121,12 +130,12 @@
                         </p>
                       </div>
                       <div class="modal__util">
-                        <a href="#" onclick="closeModal('#modal-regist--failure'); return false;" type="button" class="modal__button"><span>확인</span></a>
-                      </div>
+                        <button type="button" onclick="closeModal('#modal-regist--failure');" type="button" class="modal__button"><span>확인</span></button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
             <div id="modal-regist--complete" class="modal">
               <div class="modal__container" style="width: 350px;">
@@ -139,7 +148,7 @@
                         </p>
                       </div>
                       <div class="modal__util">
-                        <a href="#" onclick="closeModal('#modal-regist--complete'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                        <button type="button" onclick="closeModal('#modal-regist--complete');" type="button" class="modal__button"><span>확인</span></button>
                       </div>
                       </div>
                     </div>
@@ -157,13 +166,17 @@
                         </p>
                       </div>
                       <div class="modal__util">
-                        <a href="#" onclick="closeModal('#modal-regist--correction'); return false;" type="button" class="modal__button"><span>확인</span></a>
+                        <button type="button" onclick="closeModal('#modal-regist--correction');" type="button" class="modal__button"><span>확인</span></button>
                       </div>
                       </div>
                     </div>
                   </div>
                 </div>
             </div>
+
+            @@include('../inc/common-popup.inc',{
+              "webroot":".."
+              })
           </div>
         </div>
     
