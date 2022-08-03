@@ -227,3 +227,7 @@ $(".category-btn.registration-order-btn").on("click", function () {
 		btnText.text("최근 등록순");
 	}
 });
+
+$(".order-info__title").on("click", function () {
+  $(this).toggleClass("active");
+});
