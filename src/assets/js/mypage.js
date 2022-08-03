@@ -217,3 +217,7 @@ $('.buttons-search').on('click', function () {
 		$('.category-filter__refresh').removeClass('active');
 	}
 })
+
+$(".recommend-btn").on("click", function () {
+  $(this).toggleClass("active");
+});
