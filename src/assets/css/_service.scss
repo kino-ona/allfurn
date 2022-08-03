@@ -9,7 +9,6 @@
     min-height: 150px;
     padding: 24px 24px;
     box-sizing: border-box;
-    margin-top: 42px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -17,6 +16,26 @@
     background: #ffffff;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
+  }
+
+  &__top-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-button {
+    padding: 11px 23.5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #333333;
+
+    & + .top-button {
+      margin-top: 8px;
+    }
   }
 
   &__slogan {
@@ -29,11 +48,12 @@
   }
 
   &__title {
+    cursor: default;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    h3 {
+    h2 {
       font-size: 30px;
       font-weight: 600;
       line-height: 45px;
@@ -62,31 +82,19 @@
         height: 12px;
         display: inline-block;
         position: absolute;
-        top: 6.667px;
+        top: 4px;
         left: 16px;
         background-color: #828282;
       }
     }
   }
-
-  &__top-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  
+  .sub-category {
+    margin-bottom: 24px;
   }
 
-  .top-button {
-    padding: 11px 23.5px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: -0.02em;
-    color: #333333;
-
-    & + .top-button {
-      margin-top: 8px;
-    }
+  .sub-category__item + .sub-category__item {
+    margin-left: 24px;
   }
 
   .section {
@@ -140,6 +148,22 @@
       font-weight: 600;
       line-height: 36px;
       letter-spacing: -0.03em;
+    }
+
+    &__title-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .head-button {
+      padding: 11px 37px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      color: #333333;
     }
 
     &__head__group {
@@ -422,9 +446,10 @@
     margin-top: -24px;
   }
 
-  /* accordion */
+  /* accordion & tab */
 
   .ui-accordion {
+    cursor: default;
     margin-top: 4px;
   }
 
@@ -497,6 +522,98 @@
 
   .tab .ui-accordion-content > p {
     padding-left: 20px;
+  }
+
+  .tab__list li {
+    border-right: 0;
+    &:last-of-type {
+      border-left: 1px solid #E0E0E0;
+      border-right: 1px solid #E0E0E0;
+    }
+  }
+
+  .list table {
+    margin-bottom: 40px;
+
+    thead {
+      background-color: #F7F7F7;
+      height: 50px;
+      box-sizing: border-box;
+      border-left: 1px solid #E0E0E0;
+    }
+
+    thead th {
+      color: #1B1B1B;
+      font-size: 16px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: -.02em;
+      border-width: 1px 1px 1px 0;
+      border-color: #E0E0E0;
+      border-style: solid ;
+    }
+
+    tbody {
+      border-width: 0 1px 1px 1px;
+      border-color: #E0E0E0;
+      border-style: solid ;
+    }
+
+    tbody tr+tr {
+      border-top: 1px solid #F2F2F2;
+    }
+
+    tbody td {
+      display: table-cell;
+      vertical-align: middle;
+      color: #1B1B1B;
+      text-align: center;
+    }
+
+    tbody td + td {
+      border-left: 1px solid #F2F2F2;
+    }
+
+    .button-popup {
+      padding: 14px 16px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .button-popup button {
+      padding: 3px 11px;
+      color: #FB4760;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      border: 1px solid #FB4760;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .button-popup button + button {
+      margin-top: 6px;
+    }
+
+    .link {
+      padding: 0 16px;
+    }
+
+    .link a {
+      display: inline-block;
+      color: #3D87F4;
+      border-bottom: 1px solid #3D87F4;
+     
+    }
+
+    .link a span {
+      text-align: left;
+      @include mixins.ellipse(1);
+    }
+
+    .target {
+      padding: 0 18px;
+      @include mixins.ellipse(1);
+    }
   }
   
   /* 고객센터 내 모달 */

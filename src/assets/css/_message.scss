@@ -4,6 +4,10 @@
 .message {
   margin-bottom: 40px;
 
+  [type="button"] {
+    cursor: pointer;
+  }
+
   [aria-hidden="false"] {
     display: block !important;
   }
@@ -574,7 +578,6 @@
       letter-spacing: -0.02em;
 
       [type="button"] {
-        cursor: pointer;
         color: #828282;
         font-size: 13px;
         font-weight: 400;
@@ -1188,7 +1191,7 @@
   }
 }
 
-.message + .modal {
+.modal-conversation {
   z-index: 998;
 
   .modal__button {
@@ -1263,6 +1266,10 @@
   .footer {
     height: 22px;
   }
+}
+
+#msg_report-submit {
+  z-index: 1000;
 }
 
 #msg_imgviewer {

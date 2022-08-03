@@ -190,8 +190,8 @@
                       <a href="#" class="row navi-link">업체 자세히 보기<span class="ico__arrow--right14"></span></a>
                     </div>
                     <div class="content__usermenu" aria-hidden="false">
-                      <div type="button" class="usermenu__item" onclick="openModal('#msg_alarm'); return false;">알림끄기</div>
-                      <div type="button" class="usermenu__item" onclick="openModal('#msg_report'); return false;">신고하기</div>
+                      <div type="button" class="usermenu__item" onclick="openModal('#msg_alarm')">알림끄기</div>
+                      <div type="button" class="usermenu__item" onclick="openModal('#msg_report')">신고하기</div>
                     </div>
                     <div class="dialogue-insearch" aria-hidden="true">
                       <div type="button" class="head-button dialogue-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
@@ -333,7 +333,7 @@
 
         </div>
 
-        <div id="msg_report" class="modal modal-type--basic">
+        <div id="msg_report" class="modal modal-conversation">
           <div class="modal__container">
             <div class="modal__content">
               <div class="modal-box__container" style="width: 480px">
@@ -354,7 +354,7 @@
                     </div>
                   </div>
                   <div class="footer"></div>
-                  <div class="modal-close" onclick="closeModal('#msg_report'); return false;">
+                  <div class="modal-close" onclick="closeModal('#msg_report')">
                     <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
                   </div>
                 </div>
