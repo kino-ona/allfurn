@@ -2475,12 +2475,27 @@
     
     .card-wrap {
       .card__list-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 32px;
         padding-bottom: 32px;
         border-bottom: 1px solid #E0E0E0;
+        position: relative;
+
+        .edit-delete-wrap {
+          position: absolute;
+          right: 0;
+          top: 64px;
+          z-index: 9999;
+        }
+
+        .list__btn {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
 
         .list__img {
           width: 216px;
@@ -2604,14 +2619,29 @@
       margin-top: 18px;
 
       .card__list-item {
-        padding: 23px 20px 32px;
-        box-sizing: border-box;
-        border: 1px solid #BDBDBD;
-        border-radius: 5px;
         margin-bottom: 32px;
+        position: relative;
 
         &:last-child {
           margin-bottom: 0;
+        }
+
+        .edit-delete-wrap {
+          position: absolute;
+          top: 22px;
+          right: 20px;
+          z-index: 9999;
+        }
+
+        .list__btn {
+          padding: 23px 20px 32px;
+          box-sizing: border-box;
+          border: 1px solid #BDBDBD;
+          border-radius: 5px;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         .list__top {
