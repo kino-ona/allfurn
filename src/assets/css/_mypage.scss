@@ -2286,8 +2286,25 @@
 }
 
 .section__content {
+  .category-list {
+    &.category-list--product {
+      margin-top: 8px;
+      margin-bottom: 0;
+
+      .category-list__wrap {
+        width: initial;
+      }
+    }
+  }
+
   .tab01 {
     position: relative;
+
+    .default-modal__content {
+      .content__list li {
+        margin-bottom: 0;
+      }
+    }
 
     .fixed-wrap {
       position: absolute;

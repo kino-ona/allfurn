@@ -107,15 +107,25 @@
                             <div class="set__filter-area">
                               <div class="category-btn-group">
                                 <div class="category-btn category-btn--01" onclick="openModal('#default-modal01')">
-                                  <p class="category-btn__text">상품 상태<span class="category-btn__count">1</span></p>
+                                  <p class="category-btn__text">상품 상태</p>
                                   <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
                                   <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
                                 </div>
+                                <!-- <div class="category-btn category-btn--01 category-btn--active" onclick="openModal('#default-modal01')">
+                                  <p class="category-btn__text">판매중</p>
+                                  <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+                                  <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+                                </div> -->
                                 <div class="category-btn category-btn--02" onclick="openModal('#default-modal02')">
-                                  <p class="category-btn__text">카테고리</p>
+                                  <p class="category-btn__text">카테고리<span class="category-btn__count">1</span></p>
                                   <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
                                   <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
                                 </div>
+                                <!-- <div class="category-btn category-btn--02 category-btn--active" onclick="openModal('#default-modal02')">
+                                  <p class="category-btn__text">카테고리<span class="category-btn__count">1</span></p>
+                                  <i class="ico__arrow--down14"><span class="a11y">아래 화살표</span></i>
+                                  <i class="ico__arrow--down14-red"><span class="a11y">위 화살표</span></i>
+                                </div> -->
                                 <div class="category-btn category-btn--order" onclick="openModal('#default-modal03')">
                                   <p class="category-btn__text">최근 등록순</p>
                                 </div>
@@ -128,6 +138,206 @@
                                 <button type="button" class="textfield__icon--delete ico__sdelete">
                                   <span class="a11y">삭제하기</span>
                                 </button>
+                              </div>
+                            </div>
+                            <!-- 카테고리 선택 결과 -->
+                            <!-- <div class="category-list category-list--product">
+                              <div>
+                                <ul class="category-list__wrap">
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">소파/거실</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">핑크안락의자/기능성의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">테이블/의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">소파/거실</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">핑크안락의자/기능성의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">테이블/의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">소파/거실</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">핑크안락의자/기능성의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                  <li class="category-list__item">
+                                    <p class="category-list__name">테이블/의자</p>
+                                    <a href="#" class="ico__delete16"><span class="a11y">삭제</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="category-list__refresh">
+                                <a href="#">
+                                  <p class="category-list__refresh__text">초기화</p>
+                                  <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                                </a>
+                              </div>
+                            </div> -->
+
+                            <!-- 상품 상태 변경 팝업 -->
+                            <div id="default-modal01" class="default-modal default-modal--radio">
+                              <div class="default-modal__container">
+                                <div class="default-modal__header">
+                                  <h2>상품 상태 변경</h2>
+                                  <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
+                                    <span class="a11y">닫기</span>
+                                  </button>
+                                </div>
+                                <div class="default-modal__content" style="height: auto;">
+                                  <ul class="content__list">
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="product-status" class="checkbox__checked" checked>
+                                        <span>판매 중</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="product-status" class="checkbox__checked">
+                                        <span>품절</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="product-status" class="checkbox__checked">
+                                        <span>숨김</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="product-status" class="checkbox__checked">
+                                        <span>판매 중지</span>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="default-modal__footer">
+                                  <button type="button" class="button button--solid">완료</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- 카테고리 팝업 -->
+                            <div id="default-modal02" class="default-modal default-modal--category">
+                              <div class="default-modal__container">
+                                <div class="default-modal__header">
+                                  <h2>카테고리 선택</h2>
+                                  <button type="button" class="ico__close28" onclick="closeModal('#default-modal02')">
+                                    <span class="a11y">닫기</span>
+                                  </button>
+                                </div>
+                                <div class="default-modal__content">
+                                  <ul class="content__list">
+                                    <li>
+                                      <label for="category-check01">
+                                        <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
+                                        <span>침실</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check02">
+                                        <input type="checkbox" id="category-check02" class="checkbox__checked">
+                                        <span>소파/거실</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check03">
+                                        <input type="checkbox" id="category-check03" class="checkbox__checked">
+                                        <span>식탁/의자</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check04">
+                                        <input type="checkbox" id="category-check04" class="checkbox__checked">
+                                        <span>옷장/수납/서랍장</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check05">
+                                        <input type="checkbox" id="category-check05" class="checkbox__checked">
+                                        <span>서재/공부방</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check06">
+                                        <input type="checkbox" id="category-check06" class="checkbox__checked">
+                                        <span>화장대/거울/콘솔</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check07">
+                                        <input type="checkbox" id="category-check07" class="checkbox__checked">
+                                        <span>키즈/주니어</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check08">
+                                        <input type="checkbox" id="category-check08" class="checkbox__checked">
+                                        <span>진열장/장식장</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label for="category-check09">
+                                        <input type="checkbox" id="category-check09" class="checkbox__checked">
+                                        <span>안락의자/기능성의자</span>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="default-modal__footer">
+                                  <button type="button" class="button button--blank-gray">
+                                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                                    <p>초기화</p>
+                                  </button>
+                                  <button type="button" class="button button--solid">선택 완료</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- 최근 등록순 팝업 -->
+                            <div id="default-modal03" class="default-modal default-modal--radio">
+                              <div class="default-modal__container">
+                                <div class="default-modal__header">
+                                  <h2>정렬 선택</h2>
+                                  <button type="button" class="ico__close28" onclick="closeModal('#default-modal03')">
+                                    <span class="a11y">닫기</span>
+                                  </button>
+                                </div>
+                                <div class="default-modal__content" style="height: auto;">
+                                  <ul class="content__list">
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="order" class="checkbox__checked" checked>
+                                        <span>최근 등록순</span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label>
+                                        <input type="radio" name="order" class="checkbox__checked">
+                                        <span>등록순</span>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="default-modal__footer">
+                                  <button type="button" class="button button--solid">선택 완료</button>
+                                </div>
                               </div>
                             </div>
 
