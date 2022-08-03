@@ -218,10 +218,6 @@ $('.buttons-search').on('click', function () {
 	}
 })
 
-$(".recommend-btn").on("click", function () {
-  $(this).toggleClass("active");
-});
-
 $(".category-btn.registration-order-btn").on("click", function () {
 	var btnText = $(this).children(".category-btn__text");
 
