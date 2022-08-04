@@ -1,574 +1,428 @@
 @@include('../inc/pagehead.inc',{
   "pagetitle":" | 마이 올펀",
   "webroot":".."
+})
+</head>
+
+<body>
+<div class="skipnavigation"><a href="#container">skip to container</a></div>
+<div id="wrap">
+  @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
   })
-  </head>
-  
-  <body>
-    <div class="skipnavigation"><a href="#container">skip to container</a></div>
-    <div id="wrap">
-      @@include('../inc/header.inc',{
-      "webroot":"..",
-      "headertype":""
-      }) 
-  
-      <div id="container" class="container">
-        <div class="my">
-          <div class="inner">
-            <div class="my__container">
-              <div class="my__top">
-                <div class="my__profile">
-                  <div class="user-type ico__mybadge-wholesaler"><span class="a11y">도매</span></div>
-                  <h3 class="user-name">올펀</h3>
-                </div>
-                <ul class="my__count-wrap">
-                  <li>
-                    <p class="text">좋아요 수</p>
-                    <p class="num">200</p>
-                  </li>
-                  <li>
-                    <p class="text">문의 수</p>
-                    <p class="num">1.1천</p>
-                  </li>
-                  <li>
-                    <p class="text">방문 수</p>
-                    <p class="num">120만</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="my__aside">
-                <div class="content">
-                  <div class="aside">
-                    <h2 class="aside__title">마이 올펀</h2>
-                    <div class="post-list">
-                      <div class="post-list__item"><a href="#">거래 현황</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__item"><a href="#">주문 현황</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__line"></div>
-                      <div class="post-list__item"><a href="#">관심 상품</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__item post-list__item--active">
-                        <a href="#">좋아요<div class="badge__new"><span class="a11y">new</span></div></a>
-                        <div class="ico__list-link ico__list-link--active"></div>
-                      </div>
-                      <div class="post-list__item"><a href="#">최근 본 상품</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__line"></div>
-                      <div class="post-list__item"><a href="#">업체 관리</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__item"><a href="#">상품 관리</a><div class="ico__list-link"></div></div>
-                      <div class="post-list__item"><a href="#">계정 관리</a><div class="ico__list-link"></div></div>
-                    </div>
-                    <div class="aside__bottom">
-                      <button type="button" class="button"><div class="ico__logout"></div><span>로그아웃</span></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="my__section">
-                <div class="content">
-                  <div class="section">
-                    <div class="section__head">
-                      <h3 class="section__title">좋아요</h3>
-                      <div class="category-type">
-                        <div class="category-type__item">
-                          <a href="#" class="category-type__item-1" onclick="openModal('.modal-category')">
-                            카테고리
-                            <i class="ico__arrow--down14"></i>
-                          </a>
-                          <a href="#" class="category-type__item-2"  onclick="openModal('.modal-category-2')">
-                            소재지
-                            <i class="ico__arrow--down14"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="category-data">
-                        <div class="category-data__wrap">
-                        </div>
 
-                        <div class="category-filter__util">
-                          <div class="category-filter__data"></div>
-                          <a href="#" class="category-filter__refresh">
-                            초기화
-                            <i class="ico__refresh"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="list">
-                      <div class="list__meta-wrap">
-                        <p class="list__total">총 100개</p>
-                      </div>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">침실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>
-                      <section class="list__item">
-                        <div class="my__info">
-                          <div class="my__desc">
-                            <div class="my__img my__img--circle">
-                              <img src="../assets/images/temp/cowins.png" alt="썸네일">
-                            </div>
-                            <div class="my__text-wrap">
-                              <div class="my__name">
-                                <p class="name">코윈스</p>
-                                <p class="badge">NEW</p>
-                              </div>
-                              <p class="my__location">서울, 경기</p>
-                              <ul>
-                                <li class="my__product">소파/거실</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="my__right-wrap">
-                            <div class="my__like active">
-                              <i class="like"><span class="a11y">좋아요</span></i>
-                              <p>좋아요</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my__thumnail-container">
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
-                          <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
-                        </div>
-                      </section>                      
-                      <div class="pagenation">
-                        <button type="button" class="prev">
-                          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <div class="numbering">
-                          <a href="#" class="numbering--active">1</a>
-                          <a href="#">2</a>
-                          <a href="#">3</a>
-                          <a href="#">4</a>
-                          <a href="#">5</a>
-                        </div>
-                        <button type="button" class="next">
-                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                      </div>  
-                    </div>
+  <div id="container" class="container">
+    <div class="my">
+      <div class="inner">
+        <div class="my__container">
+          <div class="my__top">
+            <div class="my__profile">
+              <div class="user-type ico__mybadge-wholesaler"><span class="a11y">도매</span></div>
+              <h3 class="user-name">올펀</h3>
+            </div>
+            <ul class="my__count-wrap">
+              <li>
+                <p class="text">좋아요 수</p>
+                <p class="num">200</p>
+              </li>
+              <li>
+                <p class="text">문의 수</p>
+                <p class="num">1.1천</p>
+              </li>
+              <li>
+                <p class="text">방문 수</p>
+                <p class="num">120만</p>
+              </li>
+            </ul>
+          </div>
+          <div class="my__aside">
+            <div class="content">
+              <div class="aside">
+                <h2 class="aside__title">마이 올펀</h2>
+                <div class="post-list">
+                  <div class="post-list__item"><a href="#">거래 현황</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__item"><a href="#">주문 현황</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__line"></div>
+                  <div class="post-list__item"><a href="#">관심 상품</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__item post-list__item--active">
+                    <a href="#">좋아요<div class="badge__new"><span class="a11y">new</span></div></a>
+                    <div class="ico__list-link ico__list-link--active"></div>
                   </div>
+                  <div class="post-list__item"><a href="#">최근 본 상품</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__line"></div>
+                  <div class="post-list__item"><a href="#">업체 관리</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__item"><a href="#">상품 관리</a><div class="ico__list-link"></div></div>
+                  <div class="post-list__item"><a href="#">계정 관리</a><div class="ico__list-link"></div></div>
+                </div>
+                <div class="aside__bottom">
+                  <button type="button" class="button"><div class="ico__logout"></div><span>로그아웃</span></button>
                 </div>
               </div>
             </div>
           </div>
-
-        </div>
-
-        <div id="my-modal-category" class="modal modal-category">
-          <div class="modal__container">
-            <div class="modal__content">
-              <div class="modal-box__container" style="width: 480px;">
-                <div class="modal-box__content">
-                  <div class="header">
-                    <p>카테고리 선택</p>
-                  </div>
-                  <div class="content">
-                    <label for="category__check-1" class="category__check">
-                      <input type="checkbox" id="category__check-1">
-                      <span>침실</span>
-                    </label>
-                    <label for="category__check-2" class="category__check">
-                      <input type="checkbox" id="category__check-2">
-                      <span>소파/거실</span>
-                    </label>
-                    <label for="category__check-3" class="category__check">
-                      <input type="checkbox" id="category__check-3">
-                      <span>식탁/의자</span>
-                    </label>
-                    <label for="category__check-4" class="category__check">
-                      <input type="checkbox" id="category__check-4">
-                      <span>옷장/수납장/서랍장</span>
-                    </label>
-                    <label for="category__check-5" class="category__check">
-                      <input type="checkbox" id="category__check-5">
-                      <span>화장대/거울/콘솔</span>
-                    </label>
-                    <label for="category__check-6" class="category__check">
-                      <input type="checkbox" id="category__check-6">
-                      <span>서재/공부방</span>
-                    </label>
-                    <label for="category__check-7" class="category__check">
-                      <input type="checkbox" id="category__check-7">
-                      <span>키즈/주니어</span>
-                    </label>
-                    <label for="category__check-8" class="category__check">
-                      <input type="checkbox" id="category__check-8">
-                      <span>진열장/장식장</span>
-                    </label>
-                    <label for="category__check-9" class="category__check">
-                      <input type="checkbox" id="category__check-9">
-                      <span>안락의자/기능성의자</span>
-                    </label>
-                    <label for="category__check-10" class="category__check">
-                      <input type="checkbox" id="category__check-10">
-                      <span>테이블/의자</span>
-                    </label>
-                    <label for="category__check-11" class="category__check">
-                      <input type="checkbox" id="category__check-11">
-                      <span>선반</span>
-                    </label>
-                    <label for="category__check-12" class="category__check">
-                      <input type="checkbox" id="category__check-12">
-                      <span>아웃도어가구</span>
-                    </label>
-                    <label for="category__check-13" class="category__check">
-                      <input type="checkbox" id="category__check-13">
-                      <span>소품가구/기타</span>
-                    </label>
-                    <label for="category__check-14" class="category__check">
-                      <input type="checkbox" id="category__check-14">
-                      <span>사무용가구</span>
-                    </label>
-                  </div>
-                  <div class="footer" style="height: 100px">
-                    <div class="footer__wrap">
-                      <button type="button" class="buttons-refresh button button--left button--blank-gray">
-                        <i class="ico__refresh"><span class="a11y">초기화</span></i>
-                        <p>초기화</p>
-                      </button>
-                      <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+          <div class="my__section">
+            <div class="content">
+              <div class="section">
+                <div class="section__head">
+                  <h3 class="section__title">좋아요</h3>
+                  <div class="category-type">
+                    <div class="category-type__item">
+                      <a href="#" class="category-type__item-1" onclick="openModal('.modal-category')">
+                        카테고리
+                        <i class="ico__arrow--down14"></i>
+                      </a>
+                      <a href="#" class="category-type__item-2"  onclick="openModal('.modal-category-2')">
+                        소재지
+                        <i class="ico__arrow--down14"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="modal-close">
-                    <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category')"><span class="a11y">close</span></button>
+                  <div class="category-data">
+                    <div class="category-data__wrap">
+                    </div>
+
+                    <div class="category-filter__util">
+                      <div class="category-filter__data"></div>
+                      <a href="#" class="category-filter__refresh">
+                        초기화
+                        <i class="ico__refresh"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="my-modal-category-2" class="modal modal-category-2">
-          <div class="modal__container">
-            <div class="modal__content">
-              <div class="modal-box__container" style="width: 480px;">
-                <div class="modal-box__content">
-                  <div class="header">
-                    <p>소재지 선택</p>
+                <div class="list">
+                  <div class="list__meta-wrap">
+                    <p class="list__total">총 100개</p>
                   </div>
-                  <div class="content" style="overflow: auto;">
-                    <label for="category__check-2-1" class="category__check">
-                      <input type="checkbox" id="category__check-2-1">
-                      <span>서울</span>
-                    </label>
-                    <label for="category__check-2-2" class="category__check">
-                      <input type="checkbox" id="category__check-2-2">
-                      <span>경기</span>
-                    </label>
-                    <label for="category__check-2-3" class="category__check">
-                      <input type="checkbox" id="category__check-2-3">
-                      <span>인천</span>
-                    </label>
-                    <label for="category__check-2-4" class="category__check">
-                      <input type="checkbox" id="category__check-2-4">
-                      <span>강원</span>
-                    </label>
-                    <label for="category__check-2-5" class="category__check">
-                      <input type="checkbox" id="category__check-2-5">
-                      <span>충청</span>
-                    </label>
-                    <label for="category__check-2-6" class="category__check">
-                      <input type="checkbox" id="category__check-2-6">
-                      <span>경상</span>
-                    </label>
-                    <label for="category__check-2-7" class="category__check">
-                      <input type="checkbox" id="category__check-2-7">
-                      <span>전라</span>
-                    </label>
-                    <label for="category__check-2-8" class="category__check">
-                      <input type="checkbox" id="category__check-2-8">
-                      <span>제주</span>
-                    </label>
-                  </div>
-                  <div class="footer" style="height: 100px">
-                    <div class="footer__wrap">
-                      <button type="button" class="buttons-refresh button button--left button--blank-gray">
-                        <i class="ico__refresh"><span class="a11y">초기화</span></i>
-                        <p>초기화</p>
-                      </button>
-                      <button type="button" onclick="closeModal('#my-modal-category-2')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">침실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="modal-close">
-                    <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category-2')"><span class="a11y">close</span></button>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <section class="list__item">
+                    <div class="my__info">
+                      <div class="my__desc">
+                        <div class="my__img my__img--circle">
+                          <img src="../assets/images/temp/cowins.png" alt="썸네일">
+                        </div>
+                        <div class="my__text-wrap">
+                          <div class="my__name">
+                            <p class="name">코윈스</p>
+                            <p class="badge">NEW</p>
+                          </div>
+                          <p class="my__location">서울, 경기</p>
+                          <ul>
+                            <li class="my__product">소파/거실</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="my__right-wrap">
+                        <div class="my__like active">
+                          <i class="like"><span class="a11y">좋아요</span></i>
+                          <p>좋아요</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my__thumnail-container">
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item02.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item03.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item04.png)"></div>
+                      <div class="my__thumnail" style="background-image: url(../assets/images/temp/item05.png)"></div>
+                    </div>
+                  </section>
+                  <div class="pagenation">
+                    <button type="button" class="prev">
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="numbering">
+                      <a href="#" class="numbering--active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                    </div>
+                    <button type="button" class="next">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -576,7 +430,153 @@
           </div>
         </div>
       </div>
+
     </div>
-    <script src="../assets/js/mypage.js" type="text/javascript"></script>
-  </body>
+
+    <div id="my-modal-category" class="modal modal-category">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal-box__container" style="width: 480px;">
+            <div class="modal-box__content">
+              <div class="header">
+                <p>카테고리 선택</p>
+              </div>
+              <div class="content">
+                <label for="category__check-1" class="category__check">
+                  <input type="checkbox" id="category__check-1">
+                  <span>침실</span>
+                </label>
+                <label for="category__check-2" class="category__check">
+                  <input type="checkbox" id="category__check-2">
+                  <span>소파/거실</span>
+                </label>
+                <label for="category__check-3" class="category__check">
+                  <input type="checkbox" id="category__check-3">
+                  <span>식탁/의자</span>
+                </label>
+                <label for="category__check-4" class="category__check">
+                  <input type="checkbox" id="category__check-4">
+                  <span>옷장/수납장/서랍장</span>
+                </label>
+                <label for="category__check-5" class="category__check">
+                  <input type="checkbox" id="category__check-5">
+                  <span>화장대/거울/콘솔</span>
+                </label>
+                <label for="category__check-6" class="category__check">
+                  <input type="checkbox" id="category__check-6">
+                  <span>서재/공부방</span>
+                </label>
+                <label for="category__check-7" class="category__check">
+                  <input type="checkbox" id="category__check-7">
+                  <span>키즈/주니어</span>
+                </label>
+                <label for="category__check-8" class="category__check">
+                  <input type="checkbox" id="category__check-8">
+                  <span>진열장/장식장</span>
+                </label>
+                <label for="category__check-9" class="category__check">
+                  <input type="checkbox" id="category__check-9">
+                  <span>안락의자/기능성의자</span>
+                </label>
+                <label for="category__check-10" class="category__check">
+                  <input type="checkbox" id="category__check-10">
+                  <span>테이블/의자</span>
+                </label>
+                <label for="category__check-11" class="category__check">
+                  <input type="checkbox" id="category__check-11">
+                  <span>선반</span>
+                </label>
+                <label for="category__check-12" class="category__check">
+                  <input type="checkbox" id="category__check-12">
+                  <span>아웃도어가구</span>
+                </label>
+                <label for="category__check-13" class="category__check">
+                  <input type="checkbox" id="category__check-13">
+                  <span>소품가구/기타</span>
+                </label>
+                <label for="category__check-14" class="category__check">
+                  <input type="checkbox" id="category__check-14">
+                  <span>사무용가구</span>
+                </label>
+              </div>
+              <div class="footer" style="height: 100px">
+                <div class="footer__wrap">
+                  <button type="button" class="buttons-refresh button button--left button--blank-gray">
+                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                    <p>초기화</p>
+                  </button>
+                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                </div>
+              </div>
+              <div class="modal-close">
+                <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category')"><span class="a11y">close</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="my-modal-category-2" class="modal modal-category-2">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal-box__container" style="width: 480px;">
+            <div class="modal-box__content">
+              <div class="header">
+                <p>소재지 선택</p>
+              </div>
+              <div class="content" style="overflow: auto;">
+                <label for="category__check-2-1" class="category__check">
+                  <input type="checkbox" id="category__check-2-1">
+                  <span>서울</span>
+                </label>
+                <label for="category__check-2-2" class="category__check">
+                  <input type="checkbox" id="category__check-2-2">
+                  <span>경기</span>
+                </label>
+                <label for="category__check-2-3" class="category__check">
+                  <input type="checkbox" id="category__check-2-3">
+                  <span>인천</span>
+                </label>
+                <label for="category__check-2-4" class="category__check">
+                  <input type="checkbox" id="category__check-2-4">
+                  <span>강원</span>
+                </label>
+                <label for="category__check-2-5" class="category__check">
+                  <input type="checkbox" id="category__check-2-5">
+                  <span>충청</span>
+                </label>
+                <label for="category__check-2-6" class="category__check">
+                  <input type="checkbox" id="category__check-2-6">
+                  <span>경상</span>
+                </label>
+                <label for="category__check-2-7" class="category__check">
+                  <input type="checkbox" id="category__check-2-7">
+                  <span>전라</span>
+                </label>
+                <label for="category__check-2-8" class="category__check">
+                  <input type="checkbox" id="category__check-2-8">
+                  <span>제주</span>
+                </label>
+              </div>
+              <div class="footer" style="height: 100px">
+                <div class="footer__wrap">
+                  <button type="button" class="buttons-refresh button button--left button--blank-gray">
+                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                    <p>초기화</p>
+                  </button>
+                  <button type="button" onclick="closeModal('#my-modal-category-2')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                </div>
+              </div>
+              <div class="modal-close">
+                <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category-2')"><span class="a11y">close</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/mypage.js" type="text/javascript"></script>
+</body>
 </html>

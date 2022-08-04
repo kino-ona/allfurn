@@ -1,157 +1,156 @@
 @@include('../inc/pagehead.inc',{
-"pagetitle":" | 비밀번호 재설정",
-"webroot":".."
+  "pagetitle":" | 비밀번호 재설정",
+  "webroot":".."
 })
 </head>
 
 <body>
-  <div class="skipnavigation"><a href="#container">skip to container</a></div>
-  <div id="wrap">
-    @@include('../inc/header.inc',{
+<div class="skipnavigation"><a href="#container">skip to container</a></div>
+<div id="wrap">
+  @@include('../inc/header.inc',{
     "webroot":"..",
     "headertype":"headertype__logo-only"
-    }) 
+  })
 
-    <div id="container" class="container">
-      <div class="member">
-        <div class="inner__large">
-          <div class="resetting">
-            <h2 class="resetting__heading">비밀번호 재설정</h2>
-            <div class="notice-box">
-              <ul>
-                <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>대표 계정의 비밀번호만 재설정 가능합니다. 직원 계정의 비밀번호 재설정은 대표 계정 로그인 후, 마이페이지에서 재설정하실 수 있습니다.</li>
-              </ul>
-            </div>  
-
-            <div class="content">
-              <div class="content__item">
-                <div class="content__title">회원 인증을 해주세요.</div>
-                <form id="" method="">
-                  <div class="form">
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="resetting_email">이메일</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input--necessary input-guid__input" 
-                        id="resetting_email" 
-                        type="text" 
-                        required 
-                        placeholder="이메일을 입력해주세요."
-                        >
-                        <button class="button input-guid__button" type="button">인증번호 전송</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증번호가 전송되었습니다. 이메일을 확인해주세요.</div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label" for="accreditation">인증번호</label>
-                      </div>
-                      <div class="input-guid">
-                        <input class="input input-guid__input" 
-                        id="accreditation" 
-                        type="number" 
-                        disabled=""
-                        placeholder=""
-                        value="12345"
-                        >
-                        <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                        <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="resetting_newpw">새 비밀번호</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="resetting_newpw"
-                        type="password" 
-                        required 
-                        minlength="8" 
-                        placeholder="비밀번호를 입력해주세요."
-                        >
-                        <div class="form__notice-box">
-                          <ul>
-                            <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__list">
-                      <div class="form__label">
-                        <label class="label label--necessary" for="resetting_newpwcheck">새 비밀번호 확인</label>
-                      </div>
-                      <div class="textfield">
-                        <input class="input input--necessary textfield__input textfield__input--gray" 
-                        id="resetting_newpwcheck" 
-                        type="password" 
-                        required 
-                        minlength="8" 
-                        placeholder="비밀번호를 다시 입력해주세요."
-                        >
-                      </div>
-                    </div>
-                    <div class="button-wrap">
-                      <a href="#" 
-                        class="button form__submit-button"
-                        disabled=""
-                        onclick="openModal('#modal-type--single')">
-                        완료
-                      </a>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+  <div id="container" class="container">
+    <div class="member">
+      <div class="inner__large">
+        <div class="resetting">
+          <h2 class="resetting__heading">비밀번호 재설정</h2>
+          <div class="notice-box">
+            <ul>
+              <li><div class="ico__info"><span class="a11y">정보 아이콘</span></div>대표 계정의 비밀번호만 재설정 가능합니다. 직원 계정의 비밀번호 재설정은 대표 계정 로그인 후, 마이페이지에서 재설정하실 수 있습니다.</li>
+            </ul>
           </div>
-        </div> 
-
-        <!-- 재설정 완료 팝업 -->
-        <div id="modal-type--single" class="modal">
-          <div class="modal__container">
-            <div class="modal__content">
-              <div class="modal-box__container">
-                <div class="modal-box__content">
-                  <div class="modal__desc">
-                    <p class="modal__text">
-                      비밀번호가 재설정 되었습니다.
-                      <br>로그인 해주세요.
-                    </p>
+          <div class="content">
+            <div class="content__item">
+              <div class="content__title">회원 인증을 해주세요.</div>
+              <form id="" method="">
+                <div class="form">
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="resetting_email">이메일</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input--necessary input-guid__input"
+                      id="resetting_email"
+                      type="text"
+                      required
+                      placeholder="이메일을 입력해주세요."
+                      >
+                      <button class="button input-guid__button" type="button">인증번호 전송</button>
+                      <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증번호가 전송되었습니다. 이메일을 확인해주세요.</div>
+                    </div>
                   </div>
-                  <div class="modal__buttons">
-                    <a href="GGTW-WEB-LGI-01.html" class="modal__button"><span>확인</span></a>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label" for="accreditation">인증번호</label>
+                    </div>
+                    <div class="input-guid">
+                      <input class="input input-guid__input"
+                      id="accreditation"
+                      type="number"
+                      disabled=""
+                      placeholder=""
+                      value="12345"
+                      >
+                      <button class="button input-guid__button" disabled="" type="button">인증하기</button>
+                      <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="resetting_newpw">새 비밀번호</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray"
+                      id="resetting_newpw"
+                      type="password"
+                      required
+                      minlength="8"
+                      placeholder="비밀번호를 입력해주세요."
+                      >
+                      <div class="form__notice-box">
+                        <ul>
+                          <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__list">
+                    <div class="form__label">
+                      <label class="label label--necessary" for="resetting_newpwcheck">새 비밀번호 확인</label>
+                    </div>
+                    <div class="textfield">
+                      <input class="input input--necessary textfield__input textfield__input--gray"
+                      id="resetting_newpwcheck"
+                      type="password"
+                      required
+                      minlength="8"
+                      placeholder="비밀번호를 다시 입력해주세요."
+                      >
+                    </div>
+                  </div>
+                  <div class="button-wrap">
+                    <a href="#"
+                      class="button form__submit-button"
+                      disabled=""
+                      onclick="openModal('#LGI-05-modal1')">
+                      완료
+                    </a>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
-        </div>
 
-        <!-- 인증번호 오류 안내 팝업 -->
-        <div id="LGI-05-modal2" class="modal">
-          <div class="modal__container">
-            <div class="modal__content">
-              <div class="modal-box__container">
-                <div class="modal-box__content">
-                  <div class="modal__desc">
-                    <p class="modal__text">
-                      인증 번호 전송 횟수 5회가 초과했습니다. <br>
-                      내일 다시 시도해주세요.
-                    </p>
-                  </div>
-                  <div class="modal__buttons">
-                    <button type="button" onclick="closeModal('#LGI-05-modal2')" class="modal__button"><span>확인</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
+
+      <!-- 재설정 완료 팝업 -->
+      <div id="LGI-05-modal1" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    비밀번호가 재설정 되었습니다.
+                    <br>로그인 해주세요.
+                  </p>
+                </div>
+                <div class="modal__buttons">
+                  <a href="GGTW-WEB-LGI-01.html" class="modal__button"><span>확인</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 인증번호 오류 안내 팝업 -->
+      <div id="LGI-05-modal2" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    인증 번호 전송 횟수 5회가 초과했습니다. <br>
+                    내일 다시 시도해주세요.
+                  </p>
+                </div>
+                <div class="modal__buttons">
+                  <button type="button" onclick="closeModal('#LGI-05-modal2')" class="modal__button"><span>확인</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  <script src="../assets/js/ui.js" type="text/javascript"></script>
+</div>
+<script src="../assets/js/ui.js" type="text/javascript"></script>
 </body>
 </html>
