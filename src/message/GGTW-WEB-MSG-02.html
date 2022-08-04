@@ -1,370 +1,369 @@
 @@include('../inc/pagehead.inc',{
   "pagetitle":" | 메세지",
   "webroot":".."
+})
+</head>
+
+<body>
+<div class="skipnavigation"><a href="#container">skip to container</a></div>
+<div id="wrap">
+  @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
   })
-  </head>
-  
-  <body>
-    <div class="skipnavigation"><a href="#container">skip to container</a></div>
-    <div id="wrap">
-      @@include('../inc/header.inc',{
-      "webroot":"..",
-      "headertype":""
-      }) 
-  
-      <div id="container" class="container">
-        <div class="message">
-          <div class="inner">
-            <div class="message__container">
-              <div class="message__aside">
-                <div class="content">
-                  <div class="content__head">
-                    <h2 class="content__title">올톡</h2>
-                    <div class="content__head-button">
-                      <div type="button" class="head-button list-insearch-toggle" aria-checked=""><div class="ico__search ico__search--gray"><span class="a11y">검색</span></div></div>
-                    </div>
-                    <div class="list-insearch" aria-hidden="true">
-                      <div type="button" class="head-button list-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
-                      <div class="textfield">
-                        <div class="textfield__icon ico__search"><span class="a11y">검색</span></div>
-                        <input type="text" class="textfield__search" placeholder="업체명 및 대화 내용을 검색해주세요." />
-                        <button type="button" class="textfield__icon--delete ico__sdelete">
-                          <span class="a11y">삭제하기</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="aside">
-                    <div class="list-insearch-history" aria-hidden="true">
-                      <div class="row">
-                        <div class="title">최근 검색어</div>
-                        <div class="head-button"><div type="button" class="head-button">전체 삭제</div></div>
-                      </div>
-                      <div class="row">
-                        <div>코윈스</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div>배차</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div>라자가구</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div>대화 목록에서 업체를 선택하세요. 대화 목록에서 대화 목록에서 업체하여 메세지를 확인하세요.</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div>코윈스</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div>올톡</div>
-                        <div type="button">
-                          <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 검색 기록 없음 -->
-                    <div class="list-insearch-history list-insearch-history--empty" aria-hidden="true" style="display: none;">
-                      <div class="row">
-                        <div class="title">최근 검색어</div>
-                      </div>
-                      <div class="empty">최근 검색한 내역이 없습니다.</div>
-                    </div>
-                    <!--// 검색 기록 없음 -->
-                    <!-- 검색된 메시지 없음 -->
-                    <div class="list-insearch-history list-insearch-history--no-result" aria-hidden="true" style="display: none;">
-                      <div class="no-result">
-                        <div class="ico__search-circle"><div class="a11y">돋보기 아이콘</div></div>
-                        검색된 메세지가 없습니다.
-                      </div>
-                    </div>
-                    <!--// 검색된 메시지 없음 -->
-                    <ul class="aside-list">
-                      <li class="aside-list__item">
-                        <figure class="profile"><img src="../assets/images/temp/dummy-thumnail1.png"></figure>
-                        <div class="aside-list__content">
-                          <div class="list__info">
-                            <div class="title">올펀</div>
-                            <div class="timestamp">
-                              <div class="row"><span>00</span><span>:</span><span>00</span></div>
-                            </div>
-                          </div>
-                          <div class="list__badge">
-                            <div class="preview">첫 거래를 축하드립니다</div>
-                            <div class="new">4</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="aside-list__item">
-                        <figure class="profile"><img src="../assets/images/temp/dummy-thumnail2.png"></figure>
-                        <div class="aside-list__content">
-                          <div class="list__info">
-                            <div class="title">허그앤슬립그앤허그앤슬립허그앤슬립슬립</div>
-                            <div class="timestamp">
-                              <div class="row"><span>어제</span></div>
-                            </div>
-                          </div>
-                          <div class="list__badge">
-                            <div class="preview">이용해 주셔서 감사합니다. 허그앤슬립 매장 이용해 주셔서 감사합니다. 허그앤슬립 매장</div>
-                            <div class="new">23</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="aside-list__item">
-                        <figure class="profile"><img src="../assets/images/temp/dummy-thumnail.png"></figure>
-                        <div class="aside-list__content">
-                          <div class="list__info">
-                            <div class="title">라자가구</div>
-                            <div class="timestamp">
-                              <div class="row"><span>11</span><span>월</span></div>
-                              <div class="row"><span>10</span><span>일</span></div>
-                            </div>
-                          </div>
-                          <div class="list__badge">
-                            <div class="preview">올펀 송장번호가 어떻게 되나요? 허그 앤 올펀</div>
-                            <div class="new">999+</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="aside-list__item">
-                        <figure class="profile"><img src="../assets/images/temp/dummy-logo.png"></figure>
-                        <div class="aside-list__content">
-                          <div class="list__info">
-                            <div class="title">가구세상가구세상가구세상가구세상가구세상</div>
-                            <div class="timestamp">
-                              <div class="row"><span>2021</span><span>년</span></div>
-                              <div class="row"><span>12</span><span>월</span></div>
-                              <div class="row"><span>10</span><span>일</span></div>
-                            </div>
-                          </div>
-                          <div class="list__badge">
-                            <div class="preview">올펀 송장번호가 어떻게 되나요? 허그 앤 올펀</div>
-                            <div class="new">999+</div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="message__section">
-                <div class="content content--empty">
-                  <div class="ico__dialogue"><span class="a11y">대화 아이콘</span></div>
-                  <div class="empty">대화 목록에서 업체를 선택하여 메세지를 확인하세요.</div>
-                </div>
-                <div class="content">
-                  <div class="content__head">
-                    <div class="content__info">
-                      <figure class="logo"><img src="../assets/images/temp/dummy-logo.png"></figure>
-                      <h2 class="content__title">코윈스</h2>
-                      <div class="alarm alarm--on">알림 켜짐</div>
-                      <div type="button" class="head-button navi-toggle" aria-checked="true"><div class="ico__arrow--down14"><span class="a11y">더 보기</span></div></div>
-                    </div>
-                    <div class="content__head-button">
-                      <div type="button" class="head-button dialogue-insearch-toggle" aria-checked=""><div class="ico__search ico__search--gray"><span class="a11y">검색</span></div></div>
-                      <div type="button" class="head-button usermenu-toggle" aria-checked="true"><div class="ico__more"><span class="a11y">더 보기</span></div></div>
-                    </div>
-                    <div class="content__navi" aria-hidden="false">
-                      <div class="row">서울, 경기</div>
-                      <div class="row cate">
-                        <div class="cate__badge">진열장/장식장</div>
-                        <div class="cate__badge">소파/거실</div>
-                        <div class="cate__badge">식탁/의자</div>
-                        <div class="cate__badge">안락의자/기능성의자</div>
-                        <div class="cate__badge">서재/공부방</div>
-                      </div>
-                      <a href="#" class="row navi-link">업체 자세히 보기<span class="ico__arrow--right14"></span></a>
-                    </div>
-                    <div class="content__usermenu" aria-hidden="false">
-                      <div type="button" class="usermenu__item" onclick="openModal('#msg_alarm')">알림끄기</div>
-                      <div type="button" class="usermenu__item" onclick="openModal('#msg_report')">신고하기</div>
-                    </div>
-                    <div class="dialogue-insearch" aria-hidden="true">
-                      <div type="button" class="head-button dialogue-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
-                      <div class="textfield">
-                        <div class="textfield__icon ico__search"><span class="a11y">검색</span></div>
-                        <input type="text" class="textfield__search" placeholder="대화 내용을 검색해주세요." />
-                        <button type="button" class="textfield__icon--delete ico__sdelete">
-                          <span class="a11y">삭제하기</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <div id="dialogue" class="dialogue">
-                      <div class="date"><span>0000년 0월 00일 월요일</span></div>
-                      <div class="chat-box chat-box--product chat-box--right">
-                        <div class="chat chat--product chat--right">
-                          <div class="chat-box__head">상품 문의드립니다.</div>
-                          <div class="chat-box__inner">
-                            <div class="product-thumnail" style="background-image: url(../assets/images/temp/dummy-thumnail.png);"></div>
-                            <div class="product-info">
-                              <div class="product-info__title">포그니 라운드 소파</div>
-                              <div class="product-info__desc"><span class="price">630,000</span><span class="unit">원</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--right">
-                        <div class="chat chat--right">
-                          ㅇㅇ
-                        </div>
-                        <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--right">
-                        <div class="chat chat--right">
-                          가득 딴은 나는 흙으로 가난한 별 버리었습니다. 새겨지는 언덕 써 청춘이 별 잔디가 된 릴케 무엇인지 봅니다. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 벌써 써 위에 파란 나는 듯합니다. 내 계절이 가을로 사랑과 까닭입니다. 밤을 새겨지는 겨울이 자랑처럼 덮어 추억과 벌레는 봄이 이름을 계절이 당신은 별 릴케 이런 버리었습니다.
-                        </div>
-                        <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--left">
-                        <div class="chat chat--left">
-                          도매업체 답변입니다.
-                        </div>
-                        <figure class="avatar"><img src="../assets/images/temp/dummy-logo.png"></figure>
-                        <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--left">
-                        <div class="chat chat--left chat--photo" style="height: 390px; background-image: url(../assets/images/temp/dummy-img.png);"></div>
-                        <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--left">
-                        <div class="chat chat--left chat--disabled">
-                          이미지가 만료되었습니다.
-                        </div>
-                        <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                      <div class="chat-box chat-box--cs chat-box--left">
-                        <div class="chat chat--cs chat--left">
-                          <div class="chat-box__head">주문번호: <span>22042720</span></div>
-                          <div class="cs-info__title">
-                            거래가 확정되었습니다. <br>
-                            상품이 준비 중이니 기다려주세요!
-                          </div>
-                          <a href="#" type="button" class="cs-info__button button--blank">주문 현황 보러가기</a>
-                        </div>
-                        <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
-                      </div>
-                    </div>
-                    <div class="section__bottom">
-                      <div class="product-quotation">
-                        <div class="row">포그니 라운드 소파</div>
-                        <div class="row cate">상품 문의</div>
-                        <div class="section__bottom-button">
-                          <div type="button" class="bottom-button" onclick="DeleteBottomTarget()">
-                            <div class="ico__delete12"><span class="a11y">삭제하기</span></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="section__bottom-button">
-                        <div type="button" class="bottom-button"><div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div></div>
-                      </div>
-                      <div class="textfield">
-                        <input 
-                        id="chatbox" 
-                        class="message-input textfield__input" 
-                        type="text" 
-                        name="chat" 
-                        placeholder="메세지를 입력해주세요." 
-                        onfocus="ResetInput()" 
-                        />
-                      </div>
-                      <button type="submit" disabled="" class="message-submit">전송</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div id="msg_alarm" class="modal">
-            <div class="modal__container">
-              <div class="modal__content">
-                <div class="modal-box__container">
-                  <div class="modal-box__content">
-                    <div class="modal__desc">
-                      <p class="modal__text">
-                        해당 업체의 메세지 알림을 해제하시겠습니까?
-                      </p>
-                    </div>
-                    <div class="modal__buttons">
-                      <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
-                      <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button"><span>확인</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div id="msg_report-submit" class="modal">
-            <div class="modal__container">
-              <div class="modal__content">
-                <div class="modal-box__container">
-                  <div class="modal-box__content">
-                    <div class="modal__desc">
-                      <p class="modal__text">
-                        해당 업체 신고가 완료되었습니다.
-                      </p>
-                    </div>
-                    <div class="modal__buttons">
-                      <input type="button" onclick="closeModal('#msg_report-submit')" class="modal__button" value="확인" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-        </div>
-
-        <div id="msg_report" class="modal modal-conversation">
-          <div class="modal__container">
-            <div class="modal__content">
-              <div class="modal-box__container" style="width: 480px">
-                <div class="modal-box__content">
-                  <div class="header">
-                    <p>업체 신고</p>
+  <div id="container" class="container">
+    <div class="message">
+      <div class="inner">
+        <div class="message__container">
+          <div class="message__aside">
+            <div class="content">
+              <div class="content__head">
+                <h2 class="content__title">올톡</h2>
+                <div class="content__head-button">
+                  <div type="button" class="head-button list-insearch-toggle" aria-checked=""><div class="ico__search ico__search--gray"><span class="a11y">검색</span></div></div>
+                </div>
+                <div class="list-insearch" aria-hidden="true">
+                  <div type="button" class="head-button list-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
+                  <div class="textfield">
+                    <div class="textfield__icon ico__search"><span class="a11y">검색</span></div>
+                    <input type="text" class="textfield__search" placeholder="업체명 및 대화 내용을 검색해주세요." />
+                    <button type="button" class="textfield__icon--delete ico__sdelete">
+                      <span class="a11y">삭제하기</span>
+                    </button>
                   </div>
-                  <div class="content">
-                    <div class="content__inner">
-                      <p class="modal-box__heading">해당 업체를 신고하시겠습니까?</p>
-                      <div class="textfield">
-                        <textarea rows="10" class="textarea textfield__input" placeholder="신고 사유를 입력해주세요."></textarea>
-                        <div class="textarea__count"><span>1</span>/100</div>
+                </div>
+              </div>
+              <div class="aside">
+                <div class="list-insearch-history" aria-hidden="true">
+                  <div class="row">
+                    <div class="title">최근 검색어</div>
+                    <div class="head-button"><div type="button" class="head-button">전체 삭제</div></div>
+                  </div>
+                  <div class="row">
+                    <div>코윈스</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>배차</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>라자가구</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>대화 목록에서 업체를 선택하세요. 대화 목록에서 대화 목록에서 업체하여 메세지를 확인하세요.</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>코윈스</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>올톡</div>
+                    <div type="button">
+                      <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 검색 기록 없음 -->
+                <div class="list-insearch-history list-insearch-history--empty" aria-hidden="true" style="display: none;">
+                  <div class="row">
+                    <div class="title">최근 검색어</div>
+                  </div>
+                  <div class="empty">최근 검색한 내역이 없습니다.</div>
+                </div>
+                <!--// 검색 기록 없음 -->
+                <!-- 검색된 메시지 없음 -->
+                <div class="list-insearch-history list-insearch-history--no-result" aria-hidden="true" style="display: none;">
+                  <div class="no-result">
+                    <div class="ico__search-circle"><div class="a11y">돋보기 아이콘</div></div>
+                    검색된 메세지가 없습니다.
+                  </div>
+                </div>
+                <!--// 검색된 메시지 없음 -->
+                <ul class="aside-list">
+                  <li class="aside-list__item">
+                    <figure class="profile"><img src="../assets/images/temp/dummy-thumnail1.png"></figure>
+                    <div class="aside-list__content">
+                      <div class="list__info">
+                        <div class="title">올펀</div>
+                        <div class="timestamp">
+                          <div class="row"><span>00</span><span>:</span><span>00</span></div>
+                        </div>
                       </div>
-                      <div class="modal-box__bottom">
-                        <input type="button" class="button" onclick="openModal('#msg_report-submit')" value="완료" />
+                      <div class="list__badge">
+                        <div class="preview">첫 거래를 축하드립니다</div>
+                        <div class="new">4</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="aside-list__item">
+                    <figure class="profile"><img src="../assets/images/temp/dummy-thumnail2.png"></figure>
+                    <div class="aside-list__content">
+                      <div class="list__info">
+                        <div class="title">허그앤슬립그앤허그앤슬립허그앤슬립슬립</div>
+                        <div class="timestamp">
+                          <div class="row"><span>어제</span></div>
+                        </div>
+                      </div>
+                      <div class="list__badge">
+                        <div class="preview">이용해 주셔서 감사합니다. 허그앤슬립 매장 이용해 주셔서 감사합니다. 허그앤슬립 매장</div>
+                        <div class="new">23</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="aside-list__item">
+                    <figure class="profile"><img src="../assets/images/temp/dummy-thumnail.png"></figure>
+                    <div class="aside-list__content">
+                      <div class="list__info">
+                        <div class="title">라자가구</div>
+                        <div class="timestamp">
+                          <div class="row"><span>11</span><span>월</span></div>
+                          <div class="row"><span>10</span><span>일</span></div>
+                        </div>
+                      </div>
+                      <div class="list__badge">
+                        <div class="preview">올펀 송장번호가 어떻게 되나요? 허그 앤 올펀</div>
+                        <div class="new">999+</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="aside-list__item">
+                    <figure class="profile"><img src="../assets/images/temp/dummy-logo.png"></figure>
+                    <div class="aside-list__content">
+                      <div class="list__info">
+                        <div class="title">가구세상가구세상가구세상가구세상가구세상</div>
+                        <div class="timestamp">
+                          <div class="row"><span>2021</span><span>년</span></div>
+                          <div class="row"><span>12</span><span>월</span></div>
+                          <div class="row"><span>10</span><span>일</span></div>
+                        </div>
+                      </div>
+                      <div class="list__badge">
+                        <div class="preview">올펀 송장번호가 어떻게 되나요? 허그 앤 올펀</div>
+                        <div class="new">999+</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="message__section">
+            <div class="content content--empty">
+              <div class="ico__dialogue"><span class="a11y">대화 아이콘</span></div>
+              <div class="empty">대화 목록에서 업체를 선택하여 메세지를 확인하세요.</div>
+            </div>
+            <div class="content">
+              <div class="content__head">
+                <div class="content__info">
+                  <figure class="logo"><img src="../assets/images/temp/dummy-logo.png"></figure>
+                  <h2 class="content__title">코윈스</h2>
+                  <div class="alarm alarm--on">알림 켜짐</div>
+                  <div type="button" class="head-button navi-toggle" aria-checked="true"><div class="ico__arrow--down14"><span class="a11y">더 보기</span></div></div>
+                </div>
+                <div class="content__head-button">
+                  <div type="button" class="head-button dialogue-insearch-toggle" aria-checked=""><div class="ico__search ico__search--gray"><span class="a11y">검색</span></div></div>
+                  <div type="button" class="head-button usermenu-toggle" aria-checked="true"><div class="ico__more"><span class="a11y">더 보기</span></div></div>
+                </div>
+                <div class="content__navi" aria-hidden="false">
+                  <div class="row">서울, 경기</div>
+                  <div class="row cate">
+                    <div class="cate__badge">진열장/장식장</div>
+                    <div class="cate__badge">소파/거실</div>
+                    <div class="cate__badge">식탁/의자</div>
+                    <div class="cate__badge">안락의자/기능성의자</div>
+                    <div class="cate__badge">서재/공부방</div>
+                  </div>
+                  <a href="#" class="row navi-link">업체 자세히 보기<span class="ico__arrow--right14"></span></a>
+                </div>
+                <div class="content__usermenu" aria-hidden="false">
+                  <div type="button" class="usermenu__item" onclick="openModal('#msg_alarm')">알림끄기</div>
+                  <div type="button" class="usermenu__item" onclick="openModal('#msg_report')">신고하기</div>
+                </div>
+                <div class="dialogue-insearch" aria-hidden="true">
+                  <div type="button" class="head-button dialogue-insearch-close"><div class="ico__arrow--big_left24"><span class="a11y">뒤로 가기</span></div></div>
+                  <div class="textfield">
+                    <div class="textfield__icon ico__search"><span class="a11y">검색</span></div>
+                    <input type="text" class="textfield__search" placeholder="대화 내용을 검색해주세요." />
+                    <button type="button" class="textfield__icon--delete ico__sdelete">
+                      <span class="a11y">삭제하기</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="section">
+                <div id="dialogue" class="dialogue">
+                  <div class="date"><span>0000년 0월 00일 월요일</span></div>
+                  <div class="chat-box chat-box--product chat-box--right">
+                    <div class="chat chat--product chat--right">
+                      <div class="chat-box__head">상품 문의드립니다.</div>
+                      <div class="chat-box__inner">
+                        <div class="product-thumnail" style="background-image: url(../assets/images/temp/dummy-thumnail.png);"></div>
+                        <div class="product-info">
+                          <div class="product-info__title">포그니 라운드 소파</div>
+                          <div class="product-info__desc"><span class="price">630,000</span><span class="unit">원</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--right">
+                    <div class="chat chat--right">
+                      ㅇㅇ
+                    </div>
+                    <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--right">
+                    <div class="chat chat--right">
+                      가득 딴은 나는 흙으로 가난한 별 버리었습니다. 새겨지는 언덕 써 청춘이 별 잔디가 된 릴케 무엇인지 봅니다. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 벌써 써 위에 파란 나는 듯합니다. 내 계절이 가을로 사랑과 까닭입니다. 밤을 새겨지는 겨울이 자랑처럼 덮어 추억과 벌레는 봄이 이름을 계절이 당신은 별 릴케 이런 버리었습니다.
+                    </div>
+                    <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--left">
+                    <div class="chat chat--left">
+                      도매업체 답변입니다.
+                    </div>
+                    <figure class="avatar"><img src="../assets/images/temp/dummy-logo.png"></figure>
+                    <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--left">
+                    <div class="chat chat--left chat--photo" style="height: 390px; background-image: url(../assets/images/temp/dummy-img.png);"></div>
+                    <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--left">
+                    <div class="chat chat--left chat--disabled">
+                      이미지가 만료되었습니다.
+                    </div>
+                    <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                  <div class="chat-box chat-box--cs chat-box--left">
+                    <div class="chat chat--cs chat--left">
+                      <div class="chat-box__head">주문번호: <span>22042720</span></div>
+                      <div class="cs-info__title">
+                        거래가 확정되었습니다. <br>
+                        상품이 준비 중이니 기다려주세요!
+                      </div>
+                      <a href="#" type="button" class="cs-info__button button--blank">주문 현황 보러가기</a>
+                    </div>
+                    <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
+                </div>
+                <div class="section__bottom">
+                  <div class="product-quotation">
+                    <div class="row">포그니 라운드 소파</div>
+                    <div class="row cate">상품 문의</div>
+                    <div class="section__bottom-button">
+                      <div type="button" class="bottom-button" onclick="DeleteBottomTarget()">
+                        <div class="ico__delete12"><span class="a11y">삭제하기</span></div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer"></div>
-                  <div class="modal-close" onclick="closeModal('#msg_report')">
-                    <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+                  <div class="section__bottom-button">
+                    <div type="button" class="bottom-button"><div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div></div>
                   </div>
+                  <div class="textfield">
+                    <input
+                    id="chatbox"
+                    class="message-input textfield__input"
+                    type="text"
+                    name="chat"
+                    placeholder="메세지를 입력해주세요."
+                    onfocus="ResetInput()"
+                    />
+                  </div>
+                  <button type="submit" disabled="" class="message-submit">전송</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="msg_alarm" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    해당 업체의 메세지 알림을 해제하시겠습니까?
+                  </p>
+                </div>
+                <div class="modal__buttons">
+                  <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                  <a onclick="closeModal('#msg_alarm')" type="button" class="modal__button"><span>확인</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="msg_report-submit" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    해당 업체 신고가 완료되었습니다.
+                  </p>
+                </div>
+                <div class="modal__buttons">
+                  <input type="button" onclick="closeModal('#msg_report-submit')" class="modal__button" value="확인" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <script src="../assets/js/ui.js" type="text/javascript"></script>
-    <script src="../assets/js/message.js" type="text/javascript"></script>
-  </body>
+
+    <div id="msg_report" class="modal modal-conversation">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal-box__container" style="width: 480px">
+            <div class="modal-box__content">
+              <div class="header">
+                <p>업체 신고</p>
+              </div>
+              <div class="content">
+                <div class="content__inner">
+                  <p class="modal-box__heading">해당 업체를 신고하시겠습니까?</p>
+                  <div class="textfield">
+                    <textarea rows="10" class="textarea textfield__input" placeholder="신고 사유를 입력해주세요."></textarea>
+                    <div class="textarea__count"><span>1</span>/100</div>
+                  </div>
+                  <div class="modal-box__bottom">
+                    <input type="button" class="button" onclick="openModal('#msg_report-submit')" value="완료" />
+                  </div>
+                </div>
+              </div>
+              <div class="footer"></div>
+              <div class="modal-close" onclick="closeModal('#msg_report')">
+                <button type="button" class="modal__close-button"><span class="a11y">닫기</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/ui.js" type="text/javascript"></script>
+<script src="../assets/js/message.js" type="text/javascript"></script>
+</body>
 </html>
