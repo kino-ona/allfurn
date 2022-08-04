@@ -818,7 +818,9 @@
   &--solid:hover:not([disabled]) {
     background-color: #d04d5a;
     color: #ffffff;
-    pointer-events: none;
+
+    // 클릭 오동작 때문에 주석 처리
+    // pointer-events: none;
   }
 
   &--solid:disabled {
