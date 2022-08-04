@@ -615,11 +615,6 @@
           width: 280px;
           height: 48px;
           line-height: 48px;
-
-          // 컴포넌트 수정되면 삭제
-          &--solid:hover:not([disabled]) {
-            pointer-events: initial;
-          }
         }
       }
     }
@@ -1010,11 +1005,6 @@
           width: 388px;
           height: 48px;
           line-height: 48px;
-
-          // 컴포넌트 수정되면 삭제
-          &--solid:hover:not([disabled]) {
-            pointer-events: initial;
-          }
         }
       }
     }
@@ -1714,11 +1704,6 @@
       justify-content: center;
       width: 100%;
       height: 48px;
-
-      // 컴포넌트 수정되면 삭제
-      &:hover:not([disabled]) {
-        pointer-events: initial;
-      }
     }
   }
 
@@ -2026,11 +2011,6 @@
           width: 66px;
           height: 40px;
           line-height: 40px;
-
-          // 컴포넌트 수정되면 삭제
-          &--solid:hover:not([disabled]) {
-            pointer-events: initial;
-          }
         }
       }
     }
@@ -2344,14 +2324,6 @@
           padding: 0;
         }
       }
-    }
-  }
-
-  .button {
-
-    // 컴포넌트 수정되면 삭제
-    &:hover:not([disabled]) {
-      pointer-events: initial;
     }
   }
 }
