@@ -3,15 +3,15 @@
   "webroot":".."
   })
   </head>
-  
+
   <body>
     <div class="skipnavigation"><a href="#container">skip to container</a></div>
     <div id="wrap">
       @@include('../inc/header.inc',{
       "webroot":"..",
       "headertype":""
-      }) 
-  
+      })
+
       <div id="container" class="container">
         <div class="service">
           <div class="inner">
@@ -35,231 +35,276 @@
                   <table>
                     <thead>
                       <tr>
-                        <th style="width: 70px">문의 유형</th>
-                        <th style="width: 100px">내용</th>
-                        <th style="width: 100px">문의 일자</th>
-                        <th style="width: 110px">진행 상태</th>
+                        <th style="width: 167px">문의 유형</th>
+                        <th style="width: 678px">내용</th>
+                        <th style="width: 167px">문의 일자</th>
+                        <th style="width: 167px">진행 상태</th>
                       </tr>
                     </thead>
                     <tbody class="accordion">
                       <tr class="accordion__head">
                         <td>취소/교환/반품</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            <button type="button">거래확정</button>
+                          <div class="badge-wrap">
+                            <div class="badge badge--answered">답변 완료</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                            </div>
                           </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                          <div class="accordion__content">
+                            <div class="title">A</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="contents__meta">2022.06.06</div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>취소/교환/반품</td>
-                        <td>문의 제목입니다.</td>
+                        <td>
+                          <p class="title">
+                            문의 제목이 긴 경우의 예시입니다. 문의 제목이 긴 경우의 예시입니다. 문의 제목이 긴 경우의 예시입니다. 문의 제목이 긴 경우의 예시입니다. 
+                          </p>
+                        </td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            <button type="button">발송</button>
-                            <button type="button">배차 신청</button>
+                          <div class="badge-wrap">
+                            <div class="badge badge--answered">답변 완료</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                            </div>
                           </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                          <div class="accordion__content">
+                            <div class="title">A</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="contents__meta">2022.06.06</div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>취소/교환/반품</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            <button type="button">발송 완료</button>
+                          <div class="badge-wrap">
+                            <div class="badge badge--answered">답변 완료</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                            </div>
                           </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                          <div class="accordion__content">
+                            <div class="title">A</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="contents__meta">2022.06.06</div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr class="accordion__head">
                         <td>배송 관련</td>
-                        <td>문의 제목입니다.</td>
+                        <td><p class="title">문의 제목입니다.<p></td>
                         <td>2022.04.27</td>
                         <td>
-                          <div class="button-popup">
-                            -
+                          <div class="badge-wrap">
+                            <div class="badge badge--taken">문의 접수</div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="4">
-                          <div>
-                            <div>Q</div>
-                            <div>lorem ipsum</div>
-                          </div>
-                          <div>
-                            <div>A</div>
-                            <div>lorem ipsum</div>
+                        <td colspan="4" class="accordion__panel">
+                          <div class="accordion__content">
+                            <div class="title">Q</div>
+                            <div class="contents">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
+                              etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
+                              <div class="button__wrap">
+                                <button type="button" class="button button--blank">문의 취소</button>
+                                <button type="button" class="button button--solid">수정</button>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -277,11 +322,6 @@
                       <a href="#">3</a>
                       <a href="#">4</a>
                       <a href="#">5</a>
-                      <a href="#">6</a>
-                      <a href="#">7</a>
-                      <a href="#">8</a>
-                      <a href="#">9</a>
-                      <a href="#">10</a>
                     </div>
                     <button type="button" class="next">
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -293,7 +333,7 @@
               </div>
             </div>
           </div>
- 
+
         </div>
       </div>
     </div>
