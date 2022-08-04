@@ -2681,3 +2681,144 @@
     }
   }
 }
+
+// 이메일 인증
+.my__section.email-auth {
+  .section__head {
+    margin-bottom: 0;
+  }
+
+  .content__head {
+    padding-bottom: 16px;
+    border-bottom: 2px solid #4F4F4F;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+  }
+
+  .content__body {
+    .body__auth-wrap {
+      width: 702px;
+      padding: 0 107px 32px;
+      border-bottom: 1px solid #E0E0E0;
+      
+      .auth__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        &:last-child {
+          .input__guid {
+            position: relative;
+
+            input {
+              &:disabled {
+                background-color: #F7F7F7;
+
+                &::placeholder {
+                  opacity: 0;
+                }
+
+                &:hover {
+                  cursor: default;
+                }
+
+                &+.time-wrap {
+                  left: 16px;
+
+                  p {
+                    color: #BDBDBD;
+                  }
+                }
+              }
+            }
+
+            .time-wrap {
+              position: absolute;
+              top: 11px;
+              right: 146px;
+
+              p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25.6px;
+                letter-spacing: -0.02em;
+                color: #1B1B1B;
+              }
+            }
+          }
+
+          input {
+            padding-right: 68px;
+          }
+        }
+
+        .input__guid {
+          display: inline-flex;
+        }
+
+        label {
+          width: 100px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25.6px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+          margin-top: 11px;
+        }
+
+        input {
+          width: 370px;
+          padding: 0 16px;
+        }
+
+        button {
+          width: 120px;
+          margin-left: 10px;
+          padding: 0;
+          line-height: 48px;
+
+          &:disabled {
+            border-color: #BDBDBD;
+            color: #BDBDBD;
+
+            &:hover {
+              cursor: default;
+            }
+          }
+        }
+
+        .attchment-wrap {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          .attchment__text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25.6px;
+            letter-spacing: -0.02em;
+            color: #3D87F4;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    .body__button {
+      text-align: center;
+      margin-top: 32px;
+
+      button {
+        width: 200px;
+        height: 48px;
+      }
+    }
+  }
+}
