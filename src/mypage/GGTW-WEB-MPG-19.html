@@ -181,6 +181,61 @@
                           </div>
                         </div>
 
+                        <!-- 상품 상태 팝업 -->
+                        <div id="default-modal01" class="default-modal default-modal--radio">
+                          <div class="default-modal__container">
+                            <div class="default-modal__header">
+                              <h2>상품 상태</h2>
+                              <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
+                                <span class="a11y">닫기</span>
+                              </button>
+                            </div>
+                            <div class="default-modal__content">
+                              <ul class="content__list">
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked" checked>
+                                    <span>승인 대기</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked">
+                                    <span>판매중</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked">
+                                    <span>품절</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked">
+                                    <span>숨김</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked">
+                                    <span>판매 중지</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="product-status01" class="checkbox__checked">
+                                    <span>반려</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="default-modal__footer">
+                              <button type="button" class="button button--solid">선택 완료</button>
+                            </div>
+                          </div>
+                        </div>
+
                         <!-- 카테고리 팝업 -->
                         <div id="default-modal02" class="default-modal default-modal--category">
                           <div class="default-modal__container">
@@ -244,6 +299,12 @@
                                   <label for="category-check09">
                                     <input type="checkbox" id="category-check09" class="checkbox__checked">
                                     <span>안락의자/기능성의자</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label for="category-check10">
+                                    <input type="checkbox" id="category-check10" class="checkbox__checked">
+                                    <span>테이블/의자</span>
                                   </label>
                                 </li>
                               </ul>
@@ -777,7 +838,7 @@
                                     <span class="a11y">닫기</span>
                                   </button>
                                 </div>
-                                <div class="default-modal__content" style="height: auto;">
+                                <div class="default-modal__content">
                                   <ul class="content__list">
                                     <li>
                                       <label>

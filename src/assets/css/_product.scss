@@ -1733,6 +1733,10 @@
           &:first-child {
             padding-top: 0;
           }
+
+          &:last-child {
+            border-bottom: 0;
+          }
         }
       }
     }
@@ -1758,6 +1762,28 @@
 
       .button--solid {
         width: 268px;
+      }
+    }
+  }
+
+  // 정렬 선택
+  &.default-modal--radio {
+    .default-modal__content {
+      height: auto;
+
+      .content__list {
+        li {
+          padding: 10px 0;
+          border-bottom: 1px solid #F2F2F2;
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -2119,6 +2145,7 @@
 
     .default-modal__content {
       padding: 0 28px;
+      height: auto;
 
       ul {
         display: inline-flex;

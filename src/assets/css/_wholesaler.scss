@@ -431,26 +431,6 @@
   }
 }
 
-// 정렬 선택
-.default-modal {
-  &.default-modal--radio {
-    .default-modal__content {
-      height: 274px;
-
-      .content__list {
-        li {
-          padding: 10px 0;
-          border-bottom: 1px solid #F2F2F2;
-
-          &:first-child {
-            padding-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
 .tab.tab--type02 {
   .tab__list {
     justify-content: left !important;
