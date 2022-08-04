@@ -17,69 +17,79 @@
       <div class="inner">
         <div class="section">
           <div class="section__head">
+            <ul class="breadcrumbs-wrap">
+              <li>고객센터</li>
+              <li>1:1 문의</li>
+            </ul>
             <h3 class="section__title">
-              <p>게시글 작성</p>
+              <p>1:1 문의하기</p>
             </h3>
           </div>
         </div>
         <div class="content">
           <div class="service-content">
-            <div class="dropdown" style="width: 100%">
-              <p class="dropdown__title">문의 유형을 선택해주세요.</p>
-              <div class="dropdown__wrap">
-                <a href="#" class="dropdown__item">
-                  <span>회원 정보</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>거래/주문</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>교환/반품/취소</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>상품</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>배송</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>결제</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>상품 속성 추가 요청</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>커뮤니티 및 메세지</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>서비스 관련</span>
-                </a>
-                <a href="#" class="dropdown__item">
-                  <span>기타 문의</span>
-                </a>
-              </div>
-            </div>
-            <input type="text" placeholder="제목을 입력해주세요.">
-            <div class="editor">
-              <img src="/assets/images/temp/img_community_editor.png" alt="커뮤니티 에디터">
-              <div class="date">
-                <p>최초 등록 일시 : 2022.04.20 18:00</p>
-                <p>최근 수정 일시 : 2022.04.25 18:00</p>
-              </div>
-              <div class="util" style="margin-bottom: 118px">
-                <button type="button" class="button button--blank-gray cancle" disabled='disabled'>취소</button>
-                <button type="button" class="button button--solid complete" disabled='disabled'>완료</button>
-
-                <div class="active">
-                  <button type="button" class="button button--blank-gray cancle" onclick="openModal('#modal-ALT-03')">취소</button>
-                  <button type="button" class="button button--solid complete">완료</button>
+            <div class="service-content__item">
+              <div class="form">
+                <div class="form__list">
+                  <div class="form__label">
+                    <label class="label label--necessary">문의 유형</label>
+                  </div>
+                  <div class="textfield">
+                    <div class="dropdown">
+                      <p class="dropdown__title">유형을 선택해주세요.</p>
+                      <div class="dropdown__wrap">
+                        <a href="#" class="dropdown__item">
+                          <span>회원 정보</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>거래/주문</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>교환/반품/취소</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>상품</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>배송</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>결제</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>상품 속성 추가 요청</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>커뮤니티 및 메세지</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>서비스 관련</span>
+                        </a>
+                        <a href="#" class="dropdown__item">
+                          <span>기타 문의</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__list">
+                  <div class="form__label">
+                    <label class="label label--necessary">문의 내용</label>
+                  </div>
+                  <div class="textfield">
+                    <textarea class="textarea textfield__input" placeholder="문의 내용을 입력해 주세요."></textarea>
+                  </div>
+                </div>
+                <div class="button-wrap">
+                  <button type="button" class="button button--etc">취소</button>
+                  <button type="button" class="button button--solid">문의하기</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="modal-button" style="margin-bottom: 50px;">
+        <div class="modal-button" style="margin: 50px 0;">
           <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--failure');">금지어 오류 팝업</button>
           <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--complete');">등록완료 팝업</button>
           <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--correction');">수정완료 팝업</button>
@@ -155,7 +165,7 @@
           "webroot":".."
           })
       </div>
-      
+
     </div>
   </div>
 </div>
