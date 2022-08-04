@@ -2244,6 +2244,7 @@
 .edit-delete-wrap {
   display: flex;
   align-items: center;
+  z-index: 10;
 
   li {
     margin-right: 25px;
@@ -2479,7 +2480,6 @@
           position: absolute;
           right: 0;
           top: 64px;
-          z-index: 9999;
         }
 
         .list__btn {
@@ -2625,7 +2625,6 @@
           position: absolute;
           top: 22px;
           right: 20px;
-          z-index: 9999;
         }
 
         .list__btn {
