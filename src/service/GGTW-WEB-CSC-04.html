@@ -151,8 +151,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -176,8 +176,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -201,8 +201,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -226,8 +226,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -251,8 +251,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -276,8 +276,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -301,8 +301,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consect
                           etur adipiscing elit. Praesnt placerat sem a consectetur eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectet ur eleifend.
                           <div class="button-wrap">
-                            <button type="button" class="button button--blank">문의 취소</button>
-                            <button type="button" class="button button--solid">수정</button>
+                            <button type="button" onclick="openModal('#modal-cs--abort')" class="button button--blank">문의 취소</button>
+                            <a href="./GGTW-WEB-CSC-07.html" type="button" class="button button--solid">수정</a>
                           </div>
                         </div>
                       </div>
@@ -328,6 +328,44 @@
                     <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-cs--abort" class="modal">
+        <div class="modal__container" style="width: 350px;">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    문의를 취소하시겠습니까?
+                  </p>
+                </div>
+                <div class="modal__util">
+                  <button type="button" onclick="closeModal('#modal-cs--abort');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
+                  <button type="button" onclick="openModal('#modal-cs--abort_complete');" type="button" class="modal__button"><span>확인</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-cs--abort_complete" class="modal">
+        <div class="modal__container" style="width: 350px;">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    문의가 취소되었습니다.
+                  </p>
+                </div>
+                <div class="modal__util">
+                  <button type="button" onclick="closeModal('#modal-cs--abort_complete');" type="button" class="modal__button"><span>확인</span></button>
+                </div>
               </div>
             </div>
           </div>
