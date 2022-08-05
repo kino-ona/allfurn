@@ -228,7 +228,12 @@ i {
 .ico__arrow--gray18 {
   @include mixins.sprite(sprite.$ico-arrow-gray18);
 }
-
+.ico__banner-next {
+  @include mixins.sprite(sprite.$ico-banner-next);
+}
+.ico__banner-prev {
+  @include mixins.sprite(sprite.$ico-banner-prev);
+}
 
 //category
 .ico__furniture1 {

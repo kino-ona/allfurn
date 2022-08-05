@@ -37,6 +37,29 @@
     .swiper-pagination-bullet-active {
       background-color: #1A1A1A;
     }
+
+    .swiper-button-prev {
+      @include mixins.sprite(sprite.$ico-banner-prev);
+    }
+
+    .swiper-button-next {
+      @include mixins.sprite(sprite.$ico-banner-next);
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      opacity: 0;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      opacity: 1;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
   }
 
   .inner::after {
