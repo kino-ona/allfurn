@@ -29,17 +29,25 @@
             <div class="category-type__item">
               <a href="#" class="category-type__item-1" onclick="openModal('#modal-category')">
                 카테고리
+                <span class="category__count"></span>
                 <i class="ico__arrow--down14"></i>
               </a>
               <a href="#" class="category-type__item-2"  onclick="openModal('#modal-category-2')">
                 소재지
+                <span class="category__count"></span>
                 <i class="ico__arrow--down14"></i>
               </a>
             </div>
           </div>
           <div class="category-data">
             <div class="category-data__wrap">
+              <div class="category-data__wrap--first"></div>
+              <div class="category-data__wrap--second"></div>
             </div>
+            <a href="#" class="category-filter__refresh">
+              <i class="ico__refresh--gray"></i>
+              <span>초기화</span>     
+            </a>
           </div>
 
           <div class="product">
@@ -157,7 +165,11 @@
                   <div class="radio">
                     <label class="radio__item">
                       <input type="radio" name="filter" checked>
-                      <span>신상품순</span>
+                      <span>추천순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>최근 상품 등록순</span>
                     </label>
                     <label class="radio__item">
                       <input type="radio" name="filter">
@@ -165,7 +177,15 @@
                     </label>
                     <label class="radio__item">
                       <input type="radio" name="filter">
-                      <span>주문 많은 순</span>
+                      <span>거래 많은 순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>상품 많은 순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>가나다순</span>
                     </label>
                   </div>
                 </div>
