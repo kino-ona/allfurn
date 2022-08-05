@@ -27,10 +27,10 @@ $(".label--payment01, .label--payment02, .label--payment03").on(
 $(".modal__auth-input-wrap").on("click", function () {
   if ($(".modal__auth-input-wrap input").is(":checked") == true) {
     $(".modal__auth-input").slideDown("");
-    $(".modal__border-bottom").css("border-bottom", "0");
+    // $(".modal__border-bottom").css("border-bottom", "0");
   } else {
     $(".modal__auth-input").slideUp("");
-    $(".modal__border-bottom").css("border-bottom", "1px solid #F2F2F2");
+    // $(".modal__border-bottom").css("border-bottom", "1px solid #F2F2F2");
   }
 });
 

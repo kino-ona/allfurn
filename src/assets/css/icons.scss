@@ -478,3 +478,7 @@ i {
 .ico__star--on {
   @include mixins.sprite(sprite.$ico-star-on);
 }
+
+.ico__check--blue {
+  @include mixins.sprite(sprite.$ico-check-blue);
+}
