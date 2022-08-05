@@ -2719,14 +2719,8 @@
 
             input {
               &:disabled {
-                background-color: #F7F7F7;
-
                 &::placeholder {
                   opacity: 0;
-                }
-
-                &:hover {
-                  cursor: default;
                 }
 
                 &+.time-wrap {
@@ -2783,15 +2777,6 @@
           margin-left: 10px;
           padding: 0;
           line-height: 48px;
-
-          &:disabled {
-            border-color: #BDBDBD;
-            color: #BDBDBD;
-
-            &:hover {
-              cursor: default;
-            }
-          }
         }
 
         .attchment-wrap {

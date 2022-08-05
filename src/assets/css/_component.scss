@@ -779,6 +779,11 @@
     &::placeholder {
       color: #BDBDBD;
     }
+
+    &:disabled {
+      background-color: #F7F7F7;
+      pointer-events: none;
+    }
   }
 
   &__button {
@@ -790,6 +795,12 @@
     border: 1px solid #4F4F4F;
     border-radius: 5px;
     font-weight: 600;
+
+    &:disabled {
+      pointer-events: none;
+      color: #BDBDBD;
+      border-color: #BDBDBD;
+    }
   }
 }
 
