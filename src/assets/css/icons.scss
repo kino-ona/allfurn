@@ -482,3 +482,7 @@ i {
 .ico__check--blue {
   @include mixins.sprite(sprite.$ico-check-blue);
 }
+
+.ico__gallery28--gray {
+  @include mixins.sprite(sprite.$ico-gallery28-gray);
+}

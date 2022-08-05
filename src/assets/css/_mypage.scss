@@ -2663,10 +2663,54 @@
   }
 }
 
-// 이메일 인증
-.my__section.email-auth {
+// 이메일 인증, 계정 정보
+.my__section.account-managemenet {
   .section__head {
     margin-bottom: 0;
+  }
+
+  .section__content {
+    .content__item02 {
+      margin-top: 32px;
+
+      .account-none {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed #BDBDBD;
+        border-radius: 5px;
+        height: 100px;
+        box-sizing: border-box;
+        margin-top: 32px;
+        margin-bottom: 16px;
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          color: #828282;
+          margin-left: 6px;
+        }
+      }
+
+      .item__button--group {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 32px;
+  
+        button {
+          width: 200px;
+          height: 52px;
+          line-height: 52px;
+          margin-right: 16px;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 
   .content__head {
@@ -2680,6 +2724,33 @@
       letter-spacing: -0.02em;
       color: #333333;
       margin-bottom: 10px;
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25.6px;
+        color: #828282;
+        margin-left: 6px;
+      }
+    }
+  }
+  
+  .head__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      margin-bottom: 0;
+    }
+    button {
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25.6px;
+        letter-spacing: -0.02em;
+        color: #828282;
+      }
     }
   }
 
@@ -2736,21 +2807,16 @@
 
         .input__guid {
           display: inline-flex;
-        }
 
-        label {
-          width: 100px;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 25.6px;
-          letter-spacing: -0.02em;
-          color: #1B1B1B;
-          margin-top: 11px;
+          .input-guid__input {
+            width: 370px;
+            padding: 0 16px;
+          }
         }
 
         input {
-          width: 370px;
-          padding: 0 16px;
+          width: 100%;
+          height: 48px;
         }
 
         button {
@@ -2772,6 +2838,50 @@
             letter-spacing: -0.02em;
             color: #3D87F4;
             margin-left: 8px;
+          }
+        }
+
+        .item__head {
+          width: 120px;
+
+          .head__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25.6px;
+            letter-spacing: -0.02em;
+            color: #1B1B1B;
+            margin-top: 11px;
+            display: inline-block;
+          }
+        }
+
+        .item__body {
+          width: 500px;
+
+          .input {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #1B1B1B;
+
+            &:disabled {
+              background-color: #F7F7F7;
+              pointer-events: none;
+              color: #828282;
+            }
+          }
+
+          &.download {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+              width: 28px;
+              height: 28px;
+              flex-shrink: 0;
+            }
           }
         }
       }
