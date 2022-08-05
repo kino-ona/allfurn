@@ -2793,12 +2793,16 @@
       margin-bottom: 0;
     }
     button {
+      display: flex;
+      align-items: center;
+
       span {
         font-weight: 600;
         font-size: 16px;
         line-height: 25.6px;
         letter-spacing: -0.02em;
         color: #828282;
+        margin-left: 2px;
       }
     }
   }
