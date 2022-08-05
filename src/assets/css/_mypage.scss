@@ -2949,8 +2949,10 @@
           }
 
           .body__button-group {
+            width: 100%;
+            display: inline-flex;
+            justify-content: right;
             margin-top: 22px;
-            text-align: right;
           }
         }
       }
