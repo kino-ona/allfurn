@@ -2694,23 +2694,6 @@
         }
       }
 
-      .item__button--group {
-        display: inline-flex;
-        align-items: center;
-        margin-top: 32px;
-  
-        button {
-          width: 200px;
-          height: 52px;
-          line-height: 52px;
-          margin-right: 16px;
-  
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-
       .table-wrap {
         padding-bottom: 32px;
         border-bottom: 1px solid #E0E0E0;
@@ -2969,6 +2952,54 @@
       button {
         width: 200px;
         height: 48px;
+      }
+    }
+  }
+
+  .password-wrap {
+    margin-top: 32px;
+
+    .content__button--group {
+      display: inline-flex;
+      align-items: center;
+
+      button {
+        width: 200px;
+        height: 52px;
+        line-height: 52px;
+        margin-right: 16px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .content__body {
+      margin-top: 16px;
+      border-top: 2px solid #4F4F4F;
+      display: none;
+
+      .head__text {
+        &.required {
+          position: relative;
+    
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 3px;
+            right: -9px;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background-color: #FB4760;
+          }
+        }
+      }
+
+      .notice-wrap {
+        margin-top: 8px;
       }
     }
   }

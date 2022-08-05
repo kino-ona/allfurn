@@ -231,3 +231,10 @@ $(".category-btn.registration-order-btn").on("click", function () {
 $(".order-info__title").on("click", function () {
   $(this).toggleClass("active");
 });
+
+$(".password__button").on("click", function () {
+  $(".password__container").slideDown("");
+});
+$(".password__cancel").on("click", function () {
+  $(".password__container").slideUp("");
+});
