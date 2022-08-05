@@ -2710,6 +2710,55 @@
           }
         }
       }
+
+      .table-wrap {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #E0E0E0;
+      
+        table {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25.6px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+  
+          tr {
+            height: 48px;
+          }
+  
+          th,
+          td {
+            box-sizing: border-box;
+            vertical-align: middle;
+            padding: 0 14px;
+          }
+  
+          thead {
+            text-align: left;
+            border-bottom: 1px solid #E0E0E0;
+  
+            th:nth-child(1) {
+              width: 120px;
+            }
+  
+            th:nth-child(2) {
+              width: 160px;
+            }
+  
+            th:nth-child(3) {
+              width: 260px;
+            }
+  
+            th:nth-child(4) {
+              width: 267px;
+            }
+  
+            th:nth-child(5) {
+              width: 77px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -2765,8 +2814,15 @@
         justify-content: space-between;
         margin-top: 32px;
 
-        &:last-child {
-          .input__guid {
+        .input__guid {
+          display: inline-flex;
+
+          .input-guid__input {
+            width: 370px;
+            padding: 0 16px;
+          }
+
+          &.input__guid--time {
             position: relative;
 
             input {
@@ -2798,19 +2854,10 @@
                 color: #1B1B1B;
               }
             }
-          }
-
-          input {
-            padding-right: 68px;
-          }
-        }
-
-        .input__guid {
-          display: inline-flex;
-
-          .input-guid__input {
-            width: 370px;
-            padding: 0 16px;
+  
+            input {
+              padding-right: 68px;
+            }
           }
         }
 
@@ -2843,6 +2890,12 @@
 
         .item__head {
           width: 120px;
+
+          &.item__head-radio {
+            .head__text {
+              margin-top: 0;
+            }
+          }
 
           .head__text {
             font-weight: 400;
@@ -2882,6 +2935,22 @@
               height: 28px;
               flex-shrink: 0;
             }
+          }
+
+          .body__radio-wrap {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            span {
+              padding-left: 26px;
+              margin-right: 20px;
+            }
+          }
+
+          .body__button-group {
+            margin-top: 22px;
+            text-align: right;
           }
         }
       }
