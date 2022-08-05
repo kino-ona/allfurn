@@ -29,13 +29,15 @@ $('.community-content__like').on('click', function (event) {
 	let bookMarkImg = $(this).find("i");
 	event.preventDefault();
 
-	$(this).toggleClass("active");
+	if(!$(this).closest('.community-content__item--disabled').length > 0) {
+		$(this).toggleClass("active");
 
-  if ($(this).hasClass("active")) {
-    bookMarkImg.attr("class", "ico__like--active");
-  } else {
-    bookMarkImg.attr("class", "ico__like");
-  }
+		if ($(this).hasClass("active")) {
+			bookMarkImg.attr("class", "ico__like--active");
+		} else {
+			bookMarkImg.attr("class", "ico__like");
+		}
+	}
 })
 
 //검색창

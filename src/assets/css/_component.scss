@@ -251,6 +251,27 @@
     border-radius: 5px;
   }
 
+  &__item--disabled {
+    position: relative;
+    background-color: rgba(224, 224, 224, .1);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #BDBDBD;
+      font-size: 20px;
+      letter-spacing: .03em;
+      transform: translate(-50%, -50%);
+      content: '관리자에 의해 게시글이 숨김 처리되었습니다.'
+    }
+
+    .community-content__container,
+    .community-content__info {
+      opacity: .1;
+    }
+  }
+
   &__container {
     position: relative;
     padding-bottom: 30px;
@@ -1162,10 +1183,11 @@
   }
 
   .dropdown__wrap {
-    width: inherit;
-    height: 170px;
     overflow-y: scroll;
     position: absolute;
+    width: inherit;
+    height: 170px;
+    padding: 7px 0;
     margin-top: 6px;
     border: 1px solid #FB4760;
   }
