@@ -1,0 +1,108 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | 계정 추가",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="inner">
+        <div class="content">
+          <div class="mypage__set account--add">
+            <ul class="breadcrumbs-wrap">
+              <li>계정 관리</li>
+              <li>직원 계정 추가</li>
+            </ul>
+
+            <div class="set__head">
+              <h2>계정 추가</h2>
+              <!-- 계정 수정 -->
+              <!-- <div class="notice-wrap display-flex mt10">
+                <i class="ico__info"><span class="a11y">공지</span></i>
+                <p>비밀번호 변경을 원하시는 경우만 비밀번호/비밀번호 확인을 입력해주세요.</p>
+              </div> -->
+            </div>
+
+            <div class="set__inner">
+              <div class="set__form">
+                <ul class="form__list-wrap">
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list01">이름</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list01" type="text" required
+                        placeholder="이름을 입력해주세요." required>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list02">휴대폰 번호</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list02" type="text" required
+                        placeholder="-없이 숫자만 입력해주세요." required>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list03">아이디</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="text" required
+                        placeholder="아이디를 입력해주세요.">
+                      <div class="notice-wrap mt10">
+                        <p>· 4자리 이상 입력해주세요</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list04">비밀번호</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list04" type="text" required
+                        placeholder="비밀번호를 입력해주세요.">
+                      <div class="notice-wrap mt10">
+                        <p>· 영문 및 숫자 혼합하여 8자리 이상 입력해주세요</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list05">비밀번호 확인</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list05" type="text" required
+                        placeholder="비밀번호를 다시 입력해주세요.">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form__button-group">
+              <button type="button" class="button button--blank-gray"
+                onclick="location.href='/mypage/GGTW-WEB-MPG-27.html#'">취소</button>
+              <button type="button" class="button button--solid">완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+  <script></script>
+</body>
+
+</html>
