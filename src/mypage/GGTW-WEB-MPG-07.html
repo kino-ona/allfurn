@@ -59,8 +59,29 @@
                     <p class="sub-category__item"><a href="#">구매 예정</a></p>
                   </div>
                 </div>
-                <div class="category-menu" onclick="openModal('#default-modal01')">
-                  <p class="category-menu__title"><a href="#">카테고리</a></p>
+                <div class="category-type">
+                  <div class="category-type__item">
+                    <a href="#" class="category-type__item-1" onclick="openModal('.modal-category')">
+                      카테고리
+                      <i class="ico__arrow--down14"></i>
+                    </a>
+                    <a href="#" class="category-type__item-2"  onclick="openModal('.modal-category-2')">
+                      소재지
+                      <i class="ico__arrow--down14"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="category-data">
+                  <div class="category-data__wrap">
+                  </div>
+
+                  <div class="category-filter__util">
+                    <div class="category-filter__data"></div>
+                    <a href="#" class="category-filter__refresh">
+                      초기화
+                      <i class="ico__refresh"></i>
+                    </a>
+                  </div>
                 </div>
                 <div class="list">
                   <div class="list__meta-wrap">
@@ -631,78 +652,152 @@
       </div>
 
     </div>
+
+    <div id="my-modal-category" class="modal modal-category">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal-box__container" style="width: 480px;">
+            <div class="modal-box__content">
+              <div class="header">
+                <p>카테고리 선택</p>
+              </div>
+              <div class="content">
+                <label for="category__check-1" class="category__check">
+                  <input type="checkbox" id="category__check-1">
+                  <span>침실</span>
+                </label>
+                <label for="category__check-2" class="category__check">
+                  <input type="checkbox" id="category__check-2">
+                  <span>소파/거실</span>
+                </label>
+                <label for="category__check-3" class="category__check">
+                  <input type="checkbox" id="category__check-3">
+                  <span>식탁/의자</span>
+                </label>
+                <label for="category__check-4" class="category__check">
+                  <input type="checkbox" id="category__check-4">
+                  <span>옷장/수납장/서랍장</span>
+                </label>
+                <label for="category__check-5" class="category__check">
+                  <input type="checkbox" id="category__check-5">
+                  <span>화장대/거울/콘솔</span>
+                </label>
+                <label for="category__check-6" class="category__check">
+                  <input type="checkbox" id="category__check-6">
+                  <span>서재/공부방</span>
+                </label>
+                <label for="category__check-7" class="category__check">
+                  <input type="checkbox" id="category__check-7">
+                  <span>키즈/주니어</span>
+                </label>
+                <label for="category__check-8" class="category__check">
+                  <input type="checkbox" id="category__check-8">
+                  <span>진열장/장식장</span>
+                </label>
+                <label for="category__check-9" class="category__check">
+                  <input type="checkbox" id="category__check-9">
+                  <span>안락의자/기능성의자</span>
+                </label>
+                <label for="category__check-10" class="category__check">
+                  <input type="checkbox" id="category__check-10">
+                  <span>테이블/의자</span>
+                </label>
+                <label for="category__check-11" class="category__check">
+                  <input type="checkbox" id="category__check-11">
+                  <span>선반</span>
+                </label>
+                <label for="category__check-12" class="category__check">
+                  <input type="checkbox" id="category__check-12">
+                  <span>아웃도어가구</span>
+                </label>
+                <label for="category__check-13" class="category__check">
+                  <input type="checkbox" id="category__check-13">
+                  <span>소품가구/기타</span>
+                </label>
+                <label for="category__check-14" class="category__check">
+                  <input type="checkbox" id="category__check-14">
+                  <span>사무용가구</span>
+                </label>
+              </div>
+              <div class="footer" style="height: 100px">
+                <div class="footer__wrap">
+                  <button type="button" class="buttons-refresh button button--left button--blank-gray">
+                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                    <p>초기화</p>
+                  </button>
+                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                </div>
+              </div>
+              <div class="modal-close">
+                <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category')"><span class="a11y">close</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="my-modal-category-2" class="modal modal-category-2">
+      <div class="modal__container">
+        <div class="modal__content">
+          <div class="modal-box__container" style="width: 480px;">
+            <div class="modal-box__content">
+              <div class="header">
+                <p>소재지 선택</p>
+              </div>
+              <div class="content" style="overflow: auto;">
+                <label for="category__check-2-1" class="category__check">
+                  <input type="checkbox" id="category__check-2-1">
+                  <span>서울</span>
+                </label>
+                <label for="category__check-2-2" class="category__check">
+                  <input type="checkbox" id="category__check-2-2">
+                  <span>경기</span>
+                </label>
+                <label for="category__check-2-3" class="category__check">
+                  <input type="checkbox" id="category__check-2-3">
+                  <span>인천</span>
+                </label>
+                <label for="category__check-2-4" class="category__check">
+                  <input type="checkbox" id="category__check-2-4">
+                  <span>강원</span>
+                </label>
+                <label for="category__check-2-5" class="category__check">
+                  <input type="checkbox" id="category__check-2-5">
+                  <span>충청</span>
+                </label>
+                <label for="category__check-2-6" class="category__check">
+                  <input type="checkbox" id="category__check-2-6">
+                  <span>경상</span>
+                </label>
+                <label for="category__check-2-7" class="category__check">
+                  <input type="checkbox" id="category__check-2-7">
+                  <span>전라</span>
+                </label>
+                <label for="category__check-2-8" class="category__check">
+                  <input type="checkbox" id="category__check-2-8">
+                  <span>제주</span>
+                </label>
+              </div>
+              <div class="footer" style="height: 100px">
+                <div class="footer__wrap">
+                  <button type="button" class="buttons-refresh button button--left button--blank-gray">
+                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
+                    <p>초기화</p>
+                  </button>
+                  <button type="button" onclick="closeModal('#my-modal-category-2')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                </div>
+              </div>
+              <div class="modal-close">
+                <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category-2')"><span class="a11y">close</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="default-modal01" class="default-modal default-modal--category">
-  <div class="default-modal__container">
-    <div class="default-modal__header">
-      <h2>카테고리 선택</h2>
-      <button type="button" class="ico__close28" onclick="closeModal('#default-modal01')">
-        <span class="a11y">닫기</span>
-      </button>
-    </div>
-    <div class="default-modal__content">
-      <ul class="content__list">
-        <li>
-          <label for="category-check01">
-            <input type="checkbox" id="category-check01" class="checkbox__checked" checked>
-            <span>소파/거실</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check02">
-            <input type="checkbox" id="category-check02" class="checkbox__checked">
-            <span>식탁/의자</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check03">
-            <input type="checkbox" id="category-check03" class="checkbox__checked">
-            <span>옷장/수납/서랍장</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check04">
-            <input type="checkbox" id="category-check04" class="checkbox__checked">
-            <span>서재/공부방</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check05">
-            <input type="checkbox" id="category-check05" class="checkbox__checked">
-            <span>화장대/거울/콘솔</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check06">
-            <input type="checkbox" id="category-check06" class="checkbox__checked">
-            <span>키즈/주니어</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check07">
-            <input type="checkbox" id="category-check07" class="checkbox__checked">
-            <span>진열장/장식장</span>
-          </label>
-        </li>
-        <li>
-          <label for="category-check08">
-            <input type="checkbox" id="category-check08" class="checkbox__checked">
-            <span>안락의자/기능성의자</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div class="default-modal__footer">
-      <button type="button" class="modal__buttons-refresh button button--blank-gray">
-        <i class="ico__refresh"><span class="a11y">초기화</span></i>
-        <p>초기화</p>
-      </button>
-      <button type="button" class="button button--solid" onclick="closeModal('#default-modal01')">업체 찾아보기</button>
-    </div>
-  </div>
-</div>
 <div id="default-modal--my-folder" class="default-modal default-modal--my-folder">
   <div class="default-modal__container">
     <div class="default-modal__header">

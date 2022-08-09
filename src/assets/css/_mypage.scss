@@ -59,7 +59,6 @@
     align-items: center;
 
     .name {
-      max-width: 480px;
       margin-right: 6px;
       font-weight: 400;
       font-size: 20px;
@@ -295,9 +294,13 @@
   .category-filter__refresh {
     display: none;
     top: -42px;
-
+    color: #4F4F4F;
     &.active {
       display: block;
+    }
+
+    i {
+      margin-bottom: 3px;
     }
   }
 }
