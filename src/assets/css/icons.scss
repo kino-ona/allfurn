@@ -491,3 +491,7 @@ i {
 .ico_circle_delete {
   @include mixins.sprite(sprite.$ico_circle_delete);
 }
+
+.ico__mybadge--normal {
+  @include mixins.sprite(sprite.$ico-mybadge-normal);
+}
