@@ -367,6 +367,7 @@
   margin-top: 48px;
 
   &__left-wrap {
+    position: relative;
     margin-right: 50px;
   }
 
@@ -381,6 +382,48 @@
         border-radius: 5px;
       }
     }
+
+    &__arrow {
+      position: absolute;
+      width: 550px;
+      height: 550px;
+
+      button {
+        width: 60px;
+        height: 550px;
+        padding-left: 21px;
+      }
+
+      button + button {
+        position: absolute;
+        right: 0;
+        padding-left: 0;
+        padding-right: 21px;
+      }
+
+      .ico_back.active {
+        display: block;
+      }
+  
+      .ico_next.active {
+        display: block;
+      } 
+
+      .ico_back, 
+      .ico_next {
+        display: none;
+        opacity: 0;
+      }
+
+      .ico_back:hover,
+      .ico_next:hover {
+        opacity: 1;
+      }
+  
+    }
+
+
+
 
     &__img--small {
       display: flex;
@@ -401,14 +444,33 @@
         }
 
         &.selected {
-          border: 2px solid red;
-          border-radius: 5px;
-
           img {
             width: 100%;
             height: 100%;
             border-radius: 5px;
           }
+
+          button::before {
+            display: inline-block;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid red;
+            border-radius: 5px;
+            box-sizing: border-box;
+            content: '';
+          }
+        }
+
+        button {
+          display: block;
+          font-size: 0;
+          margin: 0;
+          padding: 0;
+          width: 60px;
+          height: 60px;
+          border-radius: 5px;
+          box-sizing: border-box;
         }
 
         img {
@@ -688,16 +750,20 @@
         }
 
         dt {
+          display: flex;
+          align-items: center;
           width: 148px;
-          height: 40px;
+          min-height: 40px;
           box-sizing: border-box;
           color: #828282;
           background-color: #F7F7F7;
         }
 
         dd {
+          display: flex;
+          align-items: center;
           width: 440px;
-          height: 40px;
+          min-height: 40px;
           box-sizing: border-box;
           color: #333333;
         }
