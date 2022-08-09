@@ -1,5 +1,5 @@
 @@include('../inc/pagehead.inc',{
-"pagetitle":" | 계정 관리 - 정보(대표)",
+"pagetitle":" | 계정 관리 - 정보(일반)",
 "webroot":".."
 })
 </head>
@@ -13,7 +13,7 @@
     })
 
     <div id="container" class="container">
-      <div class="my" style="margin-bottom: 146px;">
+      <div class="my" style="margin-bottom: 74px;">
         <div class="inner">
           <div class="my__container">
             <div class="my__top">
@@ -41,13 +41,6 @@
                 <div class="aside">
                   <h2 class="aside__title">마이 올펀</h2>
                   <div class="post-list">
-                    <div class="post-list__item"><a href="#">거래 현황</a>
-                      <div class="ico__list-link"></div>
-                    </div>
-                    <div class="post-list__item"><a href="#">주문 현황</a>
-                      <div class="ico__list-link"></div>
-                    </div>
-                    <div class="post-list__line"></div>
                     <div class="post-list__item"><a href="#">관심 상품</a>
                       <div class="ico__list-link"></div>
                     </div>
@@ -64,12 +57,6 @@
                       <div class="ico__list-link"></div>
                     </div>
                     <div class="post-list__line"></div>
-                    <div class="post-list__item"><a href="#">업체 관리</a>
-                      <div class="ico__list-link"></div>
-                    </div>
-                    <div class="post-list__item"><a href="#">상품 관리</a>
-                      <div class="ico__list-link"></div>
-                    </div>
                     <div class="post-list__item post-list__item--active"><a href="#">계정 관리</a>
                       <div class="ico__list-link ico__list-link--active"></div>
                     </div>
@@ -91,12 +78,13 @@
                     </div>
                   </div>
                   <div class="section__content">
+
                     <div class="content__item01">
                       <div class="content__head">
-                        <h4>대표</h4>
+                        <h4>일반</h4>
                         <div class="notice-wrap display-flex">
                           <i class="ico__info"><span class="a11y">공지</span></i>
-                          <p>대표 계정 정보는 고객센터에 문의하여 변경 요청해주세요.</p>
+                          <p>정회원 승격 시, 대표 계정으로 전환됩니다.</p>
                         </div>
                       </div>
 
@@ -122,54 +110,36 @@
                           </li>
                           <li class="auth__item">
                             <div class="item__head">
-                              <span class="head__text" for="input-list03">사업자 등록 번호</span>
+                              <span class="head__text" for="input-list03">가입자명</span>
                             </div>
                             <div class="item__body download">
-                              <input type="text" placeholder="" value="000-00-00000"
+                              <input type="text" placeholder="" value="홍길동"
                                 class="input textfield__input textfield__input--gray" id="input-list03" disabled>
                               <button type="button" class="ico__gallery28--gray"><span class="a11y">다운로드</span></button>
-                            </div>
-                          </li>
-                          <li class="auth__item">
-                            <div class="item__head">
-                              <span class="head__text" for="input-list04">업체명</span>
-                            </div>
-                            <div class="item__body">
-                              <input type="text" placeholder="" value="코윈스"
-                                class="input textfield__input textfield__input--gray" id="input-list04" disabled>
-                            </div>
-                          </li>
-                          <li class="auth__item">
-                            <div class="item__head">
-                              <span class="head__text" for="input-list05">대표자명</span>
-                            </div>
-                            <div class="item__body">
-                              <input type="text" placeholder="" value="홍길동"
-                                class="input textfield__input textfield__input--gray" id="input-list05" disabled>
                             </div>
                           </li>
 
                           <li class="auth__item">
                             <div class="item__head">
-                              <label class="head__text" for="input-list06">휴대폰 번호</label>
+                              <label class="head__text" for="input-list04">휴대폰 번호</label>
                             </div>
                             <div>
                               <div class="input__guid">
                                 <input type="text" placeholder="휴대폰 번호를 입력해주세요." value="010-1234-5678"
-                                  class="input-guid__input" id="input-list06">
+                                  class="input-guid__input" id="input-list04">
                                 <button type="button" class="input-guid__button">수정</button>
                               </div>
                             </div>
                           </li>
-                          <!-- GGTW-WEB-MPG-29_1_A -->
-                          <!-- <li class="auth__item">
+                          <!-- GGTW-WEB-MPG-34 -->
+                          <li class="auth__item">
                             <div class="item__head">
-                              <label class="head__text" for="input-list06">휴대폰 번호</label>
+                              <label class="head__text" for="input-list04">휴대폰 번호</label>
                             </div>
                             <div class="item__body">
                               <div class="input__guid">
                                 <input type="text" placeholder="휴대폰 번호를 입력해주세요." value="010-1234-5678"
-                                  class="input-guid__input" id="input-list06">
+                                  class="input-guid__input" id="input-list04">
                                 <button type="button" class="input-guid__button">인증번호 재전송</button>
                               </div>
                               <div class="input__guid input__guid--time" style="margin-top: 10px;">
@@ -184,53 +154,7 @@
                                 <button type="button" class="button button--blank" disabled>완료</button>
                               </div>
                             </div>
-                          </li> -->
-
-                          <li class="auth__item">
-                            <div class="item__head">
-                              <label class="head__text" for="input-list07">사업자 주소</label>
-                            </div>
-                            <div>
-                              <div class="input__guid">
-                                <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126, 1층 입구"
-                                  class="input-guid__input" id="input-list07">
-                                <button type="button" class="input-guid__button">수정</button>
-                              </div>
-                            </div>
                           </li>
-                          <!-- GGTW-WEB-MPG-29_2_A -->
-                          <!-- <li class="auth__item">
-                            <div class="item__head item__head-radio">
-                              <label class="head__text" for="input-list07">사업자 주소</label>
-                            </div>
-                            <div class="item__body">
-                              <ul class="body__radio-wrap">
-                                <li>
-                                  <label>
-                                    <input type="radio" name="radio-group" class="checkbox__checked" checked>
-                                    <span>국내</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    <input type="radio" name="radio-group" class="checkbox__checked">
-                                    <span>해외</span>
-                                  </label>
-                                </li>
-                              </ul>
-                              <div class="input__guid">
-                                <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126, 1층 입구"
-                                  class="input-guid__input" id="input-list07">
-                                <button type="button" class="input-guid__button" onclick="openModal('#default-modal-address')">주소 검색</button>
-                              </div>
-                              <input type="text" placeholder="상세 주소를 입력해주세요." value="613호 앱노트"
-                                class="input textfield__input textfield__input--gray" style="margin-top: 10px;">
-                              <div class="body__button-group">
-                                <button type="button" class="button button--blank-gray">취소</button>
-                                <button type="button" class="button button--blank" disabled>완료</button>
-                              </div>
-                            </div>
-                          </li> -->
                         </ul>
 
                         <!-- 주소검색 팝업 -->
@@ -249,77 +173,6 @@
                             </div>
                             <div class="default-modal__footer"></div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="content__item02">
-                      <div class="content__head">
-                        <div class="head__group">
-                          <h4>직원<span>(최대 5명)</span></h4>
-                          <button type="button" onclick="location.href='/mypage/GGTW-WEB-MPG-31.html#'">
-                            <i class="ico__add--circle"><span class="a11y">추가</span></i>
-                            <span>계정 추가</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="content__body">
-                        <!-- 계정 없을때 -->
-                        <!-- <div class="account-none">
-                          <i class="ico__info"><span class="a11y">공지</span></i>
-                          <p>계정을 등록해주세요.</p>
-                        </div> -->
-
-                        <div class="table-wrap">
-                          <table>
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>이름</th>
-                                <th>휴대폰 번호</th>
-                                <th>아이디</th>
-                                <th>&nbsp;</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>대리</td>
-                                <td>010-1234-5678</td>
-                                <td>abc12</td>
-                                <td>
-                                  <ul class="edit-delete-wrap">
-                                    <li><button type="button">수정</button></li>
-                                    <li><button type="button">삭제</button></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>대리</td>
-                                <td>010-1234-5678</td>
-                                <td>abc12</td>
-                                <td>
-                                  <ul class="edit-delete-wrap">
-                                    <li><button type="button">수정</button></li>
-                                    <li><button type="button">삭제</button></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>대리</td>
-                                <td>010-1234-5678</td>
-                                <td>abc12</td>
-                                <td>
-                                  <ul class="edit-delete-wrap">
-                                    <li><button type="button">수정</button></li>
-                                    <li><button type="button">삭제</button></li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
                         </div>
                       </div>
                     </div>
