@@ -486,3 +486,8 @@ i {
 .ico__gallery28--gray {
   @include mixins.sprite(sprite.$ico-gallery28-gray);
 }
+
+
+.ico_circle_delete {
+  @include mixins.sprite(sprite.$ico_circle_delete);
+}

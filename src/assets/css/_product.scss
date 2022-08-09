@@ -2,23 +2,64 @@
 @use "mixins";
 @use 'sprite/sprite';
 
-.banner {
-  margin-top: 16px;
-  margin-bottom: 24px;
+.swiper-container {
+  overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 235px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+ 
+  .swiper-wrapper {
+    height: 100%;
+  }
 
-  .swiper {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 0;
+  .swiper-slide {
+    height: 100%;
+  }
 
-    img {
-      width: 63px;
-      height: 9px;
+  .event__banner {
+    width: 100%;
+    height: 100%;
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center center;
     }
   }
+
+  .swiper-pagination-bullet {
+    background-color: #C7C2CA;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #1A1A1A;
+  }
+
+  .swiper-button-prev {
+    @include mixins.sprite(sprite.$ico-banner-prev);
+  }
+
+  .swiper-button-next {
+    @include mixins.sprite(sprite.$ico-banner-next);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 0;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: 1;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
 }
+
 
 .product__container {
   .category-btn {
