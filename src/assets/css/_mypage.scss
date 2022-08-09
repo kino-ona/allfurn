@@ -1670,27 +1670,6 @@
           background-color: #FB4760;
         }
       }
-
-      .list__text01, .list__text02 {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25.6px;
-        letter-spacing: -0.02em;
-        color: #1B1B1B;
-      }
-
-      .list__text01 {
-        display: inline-block;
-        margin-top: 11px;
-
-        &.mt0 {
-          margin-top: 0;
-        }
-      }
-
-      .list__text02 {
-        font-weight: 500;
-      }
     }
 
     .list__desc {
@@ -1769,6 +1748,27 @@
       }
     }
 
+    .list__text01, .list__text02 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+    }
+
+    .list__text01 {
+      display: inline-block;
+      margin-top: 11px;
+
+      &.mt0 {
+        margin-top: 0;
+      }
+    }
+
+    .list__text02 {
+      font-weight: 500;
+    }
+
     .list__add-btn {
       width: 100%;
       height: 48px;
@@ -1809,7 +1809,7 @@
     .set__inner {
       width: 1176px;
       margin: 0;
-      padding: 0 90px 32px;
+      padding: 0 107px 32px;
       box-sizing: border-box;
       border-bottom: 1px solid #E0E0E0;
     }
@@ -1832,6 +1832,112 @@
 
     .form__button-group {
       margin-top: 32px;
+    }
+  }
+
+  // 승격 요청
+  &.promotion--request {
+    padding-bottom: 128px;
+
+    .set__inner {
+      width: 1176px;
+      margin: 0;
+      padding: 0 107px 44px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    .form__list-wrap {
+      &:first-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .form__list-item {
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .form__button-group {
+      margin-top: 32px;
+    }
+
+    .form__list-item {
+      display: flex;
+      justify-content: space-between;
+
+      .input__guid {
+        display: inline-flex;
+
+        .input-guid__input {
+          width: 630px;
+          padding: 0 16px;
+        }
+      }
+
+      input {
+        width: 100%;
+        height: 48px;
+      }
+
+      button {
+        width: 120px;
+        margin-left: 10px;
+        padding: 0;
+        line-height: 48px;
+      }
+
+      .textfield__input--gray {
+        &.mt10 {
+          margin-top: 10px;
+        }
+      }
+
+      .list__desc {
+        .input {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 48px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+
+          &:disabled {
+            background-color: #F7F7F7;
+            pointer-events: none;
+            color: #828282;
+          }
+        }
+
+        .body__radio-wrap {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          span {
+            padding-left: 26px;
+            margin-right: 20px;
+          }
+        }
+
+        .desc__gallery {
+          width: 200px;
+          height: 200px;
+
+          input {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .list__text02 {
+      font-weight: 400;
     }
   }
 }
@@ -2319,6 +2425,22 @@
   &.mt16 {
     margin-top: 16px;
   }
+
+  &.notice-wrap--group {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      p {
+        margin-left: 6px;
+      }
+    }
+  }
 }
 
 // 임시 영역
@@ -2729,6 +2851,7 @@
       }
 
       .table-wrap {
+        padding-top: 21px;
         padding-bottom: 32px;
         border-bottom: 1px solid #E0E0E0;
       

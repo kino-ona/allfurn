@@ -319,7 +319,6 @@
                           </div>
                         </div>
 
-
                         <!-- 미리 보기 팝업 -->
                         <div id="default-modal-preview01" class="default-modal default-modal--preview">
                           <div class="default-modal__container">
@@ -1073,6 +1072,47 @@
                                 </div>
                                 <div class="default-modal__footer">
                                   <button type="button" class="button button--solid">완료</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- 상태값 변경 미게시 안내 팝업 -->
+                            <div id="alert-modal01" class="alert-modal">
+                              <div class="alert-modal__container">
+                                <div class="alert-modal__top">
+                                  <p>
+                                    해당 상태값으로 변경 시, 서비스에서 상품이<br>
+                                    미노출 처리됩니다. 변경하시겠습니까?
+                                  </p>
+                                </div>
+                                <div class="alert-modal__bottom">
+                                  <div class="button-group">
+                                    <button type="button" class="button button--solid-gray"
+                                      onclick="closeModal('#alert-modal01')">
+                                      취소
+                                    </button>
+                                    <button type="button" class="button button--solid">
+                                      확인
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- 상태값 변경 불가 팝업 -->
+                            <div id="alert-modal02" class="alert-modal">
+                              <div class="alert-modal__container">
+                                <div class="alert-modal__top">
+                                  <p>
+                                    현재 거래 중인 상품은<br>
+                                    ’0000’ 처리하실 수 없습니다.
+                                  </p>
+                                </div>
+                                <div class="alert-modal__bottom">
+                                  <button type="button" class="button button--solid"
+                                    onclick="closeModal('#alert-modal02')">
+                                    확인
+                                  </button>
                                 </div>
                               </div>
                             </div>
