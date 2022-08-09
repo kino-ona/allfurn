@@ -3165,3 +3165,68 @@
     }
   }
 }
+
+// 회원 탈퇴
+.my__section.account-managemenet--secession {
+  .section__head {
+    margin-bottom: 0;
+  }
+
+  .content__head {
+    padding-bottom: 16px;
+    border-bottom: 2px solid #4F4F4F;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #333333;
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25.6px;
+        color: #828282;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .content__body {
+    margin-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E0E0E0;
+
+    .body__textarea {
+      height: 200px;
+      border: 1px solid #DBDBDB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        color: #828282;
+      }
+    }
+
+    .body__check {
+      margin-top: 16px;
+
+    }
+  }
+
+  .content__button {
+    margin-top: 32px;
+    text-align: center;
+
+    button {
+      width: 200px;
+      height: 48px;
+    }
+  }
+}
