@@ -275,6 +275,13 @@
                     <figure class="avatar"><img src="../assets/images/temp/dummy-logo.png"></figure>
                     <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
                   </div>
+                  <div class="chat-box chat-box--right">
+                    <div class="chat chat--right chat--photo"
+                      style="height: 390px; background-image: url(../assets/images/temp/dummy-img.png);"
+                      onclick="openModal('#msg_imgviewer')">
+                    </div>
+                    <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
+                  </div>
                   <div class="chat-box chat-box--cs chat-box--left">
                     <div class="chat chat--cs chat--left">
                       <div class="chat-box__head">주문번호: <span>22042720</span></div>
@@ -369,7 +376,7 @@
 
     </div>
 
-    <div id="msg_imgviewer" class="modal" style="display: block;">
+    <div id="msg_imgviewer" class="modal">
       <div class="modal__container">
         <div class="modal__content">
           <div class="modal-box__container">
