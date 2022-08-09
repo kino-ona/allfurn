@@ -1627,7 +1627,6 @@
     line-height: 30px;
     letter-spacing: -0.03em;
     color: #1B1B1B;
-    margin-bottom: 16px; 
   }
 
   .set__inner {
@@ -1789,19 +1788,50 @@
         margin-left: 8px;
       }
     }
+  }
+
+  .form__button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+
+    .button {
+      width: 200px;
+      height: 48px;
+      line-height: 48px;
+      margin: 0 6px;
+    }
+  }
+
+  // 계정 추가, 수정
+  &.account--add {
+    .set__inner {
+      width: 1176px;
+      margin: 0;
+      padding: 0 90px 32px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    .form__list-wrap {
+      &:first-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .form__list-item {
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
 
     .form__button-group {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 76px;
-
-      .button {
-        width: 200px;
-        height: 48px;
-        line-height: 48px;
-        margin: 0 6px;
-      }
+      margin-top: 32px;
     }
   }
 }
@@ -2284,6 +2314,10 @@
 
   &.mt10 {
     margin-top: 10px;
+  }
+
+  &.mt16 {
+    margin-top: 16px;
   }
 }
 
