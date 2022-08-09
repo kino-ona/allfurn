@@ -59,7 +59,6 @@
     align-items: center;
 
     .name {
-      max-width: 480px;
       margin-right: 6px;
       font-weight: 400;
       font-size: 20px;
@@ -295,9 +294,13 @@
   .category-filter__refresh {
     display: none;
     top: -42px;
-
+    color: #4F4F4F;
     &.active {
       display: block;
+    }
+
+    i {
+      margin-bottom: 3px;
     }
   }
 }
@@ -1670,27 +1673,6 @@
           background-color: #FB4760;
         }
       }
-
-      .list__text01, .list__text02 {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25.6px;
-        letter-spacing: -0.02em;
-        color: #1B1B1B;
-      }
-
-      .list__text01 {
-        display: inline-block;
-        margin-top: 11px;
-
-        &.mt0 {
-          margin-top: 0;
-        }
-      }
-
-      .list__text02 {
-        font-weight: 500;
-      }
     }
 
     .list__desc {
@@ -1769,6 +1751,27 @@
       }
     }
 
+    .list__text01, .list__text02 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+    }
+
+    .list__text01 {
+      display: inline-block;
+      margin-top: 11px;
+
+      &.mt0 {
+        margin-top: 0;
+      }
+    }
+
+    .list__text02 {
+      font-weight: 500;
+    }
+
     .list__add-btn {
       width: 100%;
       height: 48px;
@@ -1809,7 +1812,7 @@
     .set__inner {
       width: 1176px;
       margin: 0;
-      padding: 0 90px 32px;
+      padding: 0 107px 32px;
       box-sizing: border-box;
       border-bottom: 1px solid #E0E0E0;
     }
@@ -1832,6 +1835,112 @@
 
     .form__button-group {
       margin-top: 32px;
+    }
+  }
+
+  // 승격 요청
+  &.promotion--request {
+    padding-bottom: 128px;
+
+    .set__inner {
+      width: 1176px;
+      margin: 0;
+      padding: 0 107px 44px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    .form__list-wrap {
+      &:first-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .form__list-item {
+        margin-bottom: 32px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .form__button-group {
+      margin-top: 32px;
+    }
+
+    .form__list-item {
+      display: flex;
+      justify-content: space-between;
+
+      .input__guid {
+        display: inline-flex;
+
+        .input-guid__input {
+          width: 630px;
+          padding: 0 16px;
+        }
+      }
+
+      input {
+        width: 100%;
+        height: 48px;
+      }
+
+      button {
+        width: 120px;
+        margin-left: 10px;
+        padding: 0;
+        line-height: 48px;
+      }
+
+      .textfield__input--gray {
+        &.mt10 {
+          margin-top: 10px;
+        }
+      }
+
+      .list__desc {
+        .input {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 48px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+
+          &:disabled {
+            background-color: #F7F7F7;
+            pointer-events: none;
+            color: #828282;
+          }
+        }
+
+        .body__radio-wrap {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+
+          span {
+            padding-left: 26px;
+            margin-right: 20px;
+          }
+        }
+
+        .desc__gallery {
+          width: 200px;
+          height: 200px;
+
+          input {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .list__text02 {
+      font-weight: 400;
     }
   }
 }
@@ -2319,6 +2428,22 @@
   &.mt16 {
     margin-top: 16px;
   }
+
+  &.notice-wrap--group {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      p {
+        margin-left: 6px;
+      }
+    }
+  }
 }
 
 // 임시 영역
@@ -2729,6 +2854,7 @@
       }
 
       .table-wrap {
+        padding-top: 21px;
         padding-bottom: 32px;
         border-bottom: 1px solid #E0E0E0;
       
@@ -2955,6 +3081,7 @@
               width: 28px;
               height: 28px;
               flex-shrink: 0;
+              margin: 0 16px;
             }
           }
 
@@ -3035,6 +3162,71 @@
       .notice-wrap {
         margin-top: 8px;
       }
+    }
+  }
+}
+
+// 회원 탈퇴
+.my__section.account-managemenet--secession {
+  .section__head {
+    margin-bottom: 0;
+  }
+
+  .content__head {
+    padding-bottom: 16px;
+    border-bottom: 2px solid #4F4F4F;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #333333;
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25.6px;
+        color: #828282;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .content__body {
+    margin-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E0E0E0;
+
+    .body__textarea {
+      height: 200px;
+      border: 1px solid #DBDBDB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        color: #828282;
+      }
+    }
+
+    .body__check {
+      margin-top: 16px;
+
+    }
+  }
+
+  .content__button {
+    margin-top: 32px;
+    text-align: center;
+
+    button {
+      width: 200px;
+      height: 48px;
     }
   }
 }

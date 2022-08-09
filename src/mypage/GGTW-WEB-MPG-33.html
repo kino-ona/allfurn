@@ -1,0 +1,223 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | 계정 관리 - 정보(일반)",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="my" style="margin-bottom: 74px;">
+        <div class="inner">
+          <div class="my__container">
+            <div class="my__top">
+              <div class="my__profile">
+                <div class="user-type ico__mybadge--normal"><span class="a11y">일반</span></div>
+                <h3 class="user-name">홍길동</h3>
+              </div>
+            </div>
+            <div class="my__aside">
+              <div class="content">
+                <div class="aside">
+                  <h2 class="aside__title">마이 올펀</h2>
+                  <div class="post-list">
+                    <div class="post-list__item"><a href="#">관심 상품</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item">
+                      <a href="#">
+                        좋아요
+                        <div class="badge__new">
+                          <span class="a11y">new</span>
+                        </div>
+                      </a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__item"><a href="#">최근 본 상품</a>
+                      <div class="ico__list-link"></div>
+                    </div>
+                    <div class="post-list__line"></div>
+                    <div class="post-list__item post-list__item--active"><a href="#">계정 관리</a>
+                      <div class="ico__list-link ico__list-link--active"></div>
+                    </div>
+                  </div>
+                  <div class="aside__bottom">
+                    <button type="button" class="button">
+                      <div class="ico__logout"></div><span>로그아웃</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my__section account-managemenet">
+              <div class="content">
+                <div class="section">
+                  <div class="section__head">
+                    <div class="section__head__group">
+                      <h3 class="section__title">계정 관리</h3>
+                    </div>
+                  </div>
+                  <div class="section__content">
+                    <div class="content__item01">
+                      <div class="content__head">
+                        <h4>일반</h4>
+                        <div class="notice-wrap display-flex">
+                          <i class="ico__info"><span class="a11y">공지</span></i>
+                          <p>정회원 승격 시, 대표 계정으로 전환됩니다.</p>
+                        </div>
+                      </div>
+
+                      <div class="content__body">
+                        <ul class="body__auth-wrap">
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <span class="head__text" for="input-list01">회원 구분</span>
+                            </div>
+                            <div class="item__body">
+                              <div class="input__guid">
+                                <input type="text" placeholder="" value="도매" class="input-guid__input" id="input-list0"
+                                  disabled>
+                                <button type="button" class="input-guid__button" onclick="openModal('#alert-modal')">
+                                  정회원 승격 요청
+                                </button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <span class="head__text" for="input-list02">이메일(아이디)</span>
+                            </div>
+                            <div class="item__body">
+                              <input type="text" placeholder="" value="abcd@naver.com"
+                                class="input textfield__input textfield__input--gray" id="input-list02" disabled>
+                            </div>
+                          </li>
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <span class="head__text" for="input-list03">가입자명</span>
+                            </div>
+                            <div class="item__body download">
+                              <input type="text" placeholder="" value="홍길동"
+                                class="input textfield__input textfield__input--gray" id="input-list03" disabled>
+                              <button type="button" class="ico__gallery28--gray"><span class="a11y">다운로드</span></button>
+                            </div>
+                          </li>
+
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <label class="head__text" for="input-list04">휴대폰 번호</label>
+                            </div>
+                            <div>
+                              <div class="input__guid">
+                                <input type="text" placeholder="휴대폰 번호를 입력해주세요." value="010-1234-5678"
+                                  class="input-guid__input" id="input-list04">
+                                <button type="button" class="input-guid__button">수정</button>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- GGTW-WEB-MPG-34 -->
+                          <!-- <li class="auth__item">
+                            <div class="item__head">
+                              <label class="head__text" for="input-list04">휴대폰 번호</label>
+                            </div>
+                            <div class="item__body">
+                              <div class="input__guid">
+                                <input type="text" placeholder="휴대폰 번호를 입력해주세요." value="010-1234-5678"
+                                  class="input-guid__input" id="input-list04">
+                                <button type="button" class="input-guid__button">인증번호 재전송</button>
+                              </div>
+                              <div class="input__guid input__guid--time" style="margin-top: 10px;">
+                                <input type="text" placeholder="인증 번호를 입력해주세요." class="input-guid__input">
+                                <div class="time-wrap">
+                                  <p>04:59</p>
+                                </div>
+                                <button type="button" class="input-guid__button">인증하기</button>
+                              </div>
+                              <div class="body__button-group">
+                                <button type="button" class="button button--blank-gray">취소</button>
+                                <button type="button" class="button button--blank" disabled>완료</button>
+                              </div>
+                            </div>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="password-wrap">
+                      <div class="content__button--group">
+                        <button type="button" class="button button--blank"
+                          onclick="location.href='/mypage/GGTW-WEB-MPG-36.html#'">회원 탈퇴</button>
+                        <button type="button" class="button button--solid password__button">비밀번호 변경</button>
+                      </div>
+                      <div class="content__body password__container">
+                        <ul class="body__auth-wrap">
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <label class="head__text required" for="input-password01">새 비밀 번호</label>
+                            </div>
+                            <div class="item__body">
+                              <input type="text" placeholder="비밀번호를 입력해주세요."
+                                class="input textfield__input textfield__input--gray" id="input-password01" required>
+                              <div class="notice-wrap">
+                                <p>· 영문 및 숫자 혼합하여 8자리 이상 입력해주세요</p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="auth__item">
+                            <div class="item__head">
+                              <label class="head__text required" for="input-password02">새 비밀 번호 확인</label>
+                            </div>
+                            <div class="item__body">
+                              <input type="text" placeholder="비밀번호를 다시 입력해주세요."
+                                class="input textfield__input textfield__input--gray" id="input-password02" required>
+                              <div class="body__button-group">
+                                <button type="button" class="button button--blank-gray password__cancel">취소</button>
+                                <button type="button" class="button button--blank">완료</button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 정회원 승격 요청 팝업 -->
+            <div id="alert-modal" class="alert-modal">
+              <div class="alert-modal__container">
+                <div class="alert-modal__top">
+                  <p>
+                    정회원 승격 요청 시, 사업자 등록증 첨부가<br>
+                    필요합니다. 일반 회원 가입 시 입력한 정보는<br>
+                    수정 불가합니다. 정회원 승격 후에도<br>
+                    일반 회원으로 활동한 정보는 유지됩니다.
+                  </p>
+                </div>
+                <div class="alert-modal__bottom">
+                  <button type="button" class="button button--solid" onclick="closeModal('#alert-modal')">
+                    확인
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/mypage.js" type="text/javascript"></script>
+
+  @@include('../inc/footer.inc',{
+  "webroot":".."
+  })
+</body>
+
+</html>

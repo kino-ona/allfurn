@@ -498,3 +498,7 @@ i {
 .ico_next {
   @include mixins.sprite(sprite.$ico_next);
 }
+
+.ico__mybadge--normal {
+  @include mixins.sprite(sprite.$ico-mybadge-normal);
+}

@@ -1,0 +1,226 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | 계정 관리 - 승격 요청",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container">
+      <div class="inner">
+        <div class="content">
+          <div class="mypage__set promotion--request">
+            <ul class="breadcrumbs-wrap">
+              <li>계정 관리</li>
+              <li>정회원 승격 요청</li>
+            </ul>
+
+            <div class="set__head">
+              <h2>정회원 승격 요청</h2>
+              <ul class="notice-wrap notice-wrap--group mt16">
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p>일반 회원 가입 시 입력한 정보는 수정하실 수 없습니다.</p>
+                </li>
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p>다른 이메일로 정회원 승격을 원하실 경우 신규 가입을 진행해주세요.</p>
+                </li>
+                <li>
+                  <i class="ico__info"><span class="a11y">공지</span></i>
+                  <p>승인 이후 대표 계정에 소속된 직원 계정을 생성하실 수 있습니다.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="set__inner">
+              <div class="set__form">
+                <ul class="form__list-wrap">
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <span class="list__text01 required mt0">회원 구분</span>
+                    </div>
+                    <div class="list__desc">
+                      <ul class="body__radio-wrap">
+                        <li>
+                          <label>
+                            <input type="radio" name="radio-group01" class="checkbox__checked" checked>
+                            <span>도매</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="radio-group01" class="checkbox__checked">
+                            <span>소매</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <span class="list__text01 mt0 required">가입자명</span>
+                    </div>
+                    <div class="list__desc">
+                      <p class="list__text02">홍길동</p>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list03">사업자 등록 번호</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="text" required
+                        placeholder="사업자 등록 번호를 입력해주세요.">
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list04">사업자 등록증 첨부</label>
+                    </div>
+                    <div class="list__desc">
+                      <div class="desc__gallery">
+                        <input class="input file-input" id="form-list04" type="file" placeholder="이미지 추가">
+                        <div class="desc__input-placeholder">
+                          <i class="ico__gallery--gray"><span class="a11y">갤러리</span></i>
+                          <p>이미지 추가</p>
+                        </div>
+                      </div>
+                      <div class="notice-wrap mt10">
+                        <p>· 권장 형식: jpg, jpeg, png</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list05">업체명</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list05" type="text" required
+                        placeholder="업체명을 입력해주세요.">
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 required" for="form-list06">대표자명</label>
+                    </div>
+                    <div class="list__desc">
+                      <input class="input textfield__input textfield__input--gray" id="form-list06" type="text" required
+                        placeholder="대표자명을 입력해주세요.">
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <span class="list__text01 mt0 required">휴대폰 번호</span>
+                    </div>
+                    <div class="list__desc">
+                      <p class="list__text02">010-1234-5678</p>
+                      <div class="notice-wrap mt10">
+                        <p>· 해당 번호로 가입 승인 결과 문자가 전송됩니다.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <label class="list__text01 mt0 required" for="form-list08">사업자 주소</label>
+                    </div>
+                    <div class="list__desc">
+                      <ul class="body__radio-wrap">
+                        <li>
+                          <label>
+                            <input type="radio" name="radio-group02" class="checkbox__checked" checked>
+                            <span>국내</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="radio-group02" class="checkbox__checked">
+                            <span>해외</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="input__guid">
+                        <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126"
+                          class="input-guid__input" id="form-list08">
+                        <button type="button" class="input-guid__button"
+                          onclick="openModal('#default-modal-address')">주소 검색</button>
+                      </div>
+                      <input type="text" placeholder="상세 주소를 입력해주세요."
+                        class="input textfield__input textfield__input--gray mt10" disabled>
+                    </div>
+                  </li>
+                  <li class="form__list-item">
+                    <div class="list__title">
+                      <span class="list__text01 mt0 required">이메일(아이디)</span>
+                    </div>
+                    <div class="list__desc">
+                      <p class="list__text02">abcd@naver.com</p>
+                      <div class="notice-wrap mt10">
+                        <p>· 이메일이 아이디로 사용됩니다.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- 주소검색 팝업 -->
+                <div id="default-modal-address" class="default-modal default-modal--address-search">
+                  <div class="default-modal__container">
+                    <div class="default-modal__header">
+                      <h2>주소 검색</h2>
+                      <button type="button" class="ico__close28" onclick="closeModal('#default-modal-address')">
+                        <span class="a11y">닫기</span>
+                      </button>
+                    </div>
+                    <div class="default-modal__content">
+                      <div class="kakao-api-wrap">
+                        <p>카카오 api 사용</p>
+                      </div>
+                    </div>
+                    <div class="default-modal__footer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__button-group">
+              <button type="button" class="button button--blank-gray">취소</button>
+              <button type="button" class="button button--solid" onclick="openModal('#alert-modal')">완료</button>
+            </div>
+          </div>
+
+          <!-- 정회원 승격 요청 완료 팝업 -->
+          <div id="alert-modal" class="alert-modal">
+            <div class="alert-modal__container">
+              <div class="alert-modal__top">
+                <p>
+                  정회원 승격 요청이 완료되었습니다.<br>
+                  승인 결과는 영업일 기준 5일 내 문자로<br>
+                  전송됩니다. 가입 시 입력한 이메일로<br>
+                  로그인해주세요.
+                </p>
+              </div>
+              <div class="alert-modal__bottom">
+                <button type="button" class="button button--solid" onclick="closeModal('#alert-modal')">
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+  <script></script>
+</body>
+
+</html>
