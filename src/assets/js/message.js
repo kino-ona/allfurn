@@ -174,3 +174,8 @@ $("#chatbox").on("propertychange change keyup keydown paste input", function() {
 		$(this).parent().parent().find('.message-submit').attr('disabled', 'true');
 	}
 })
+
+$('.aside-list__item').click( function() {
+  $('.aside-list__item').removeClass('aside-list__item--active');
+  $(this).addClass('aside-list__item--active');
+})

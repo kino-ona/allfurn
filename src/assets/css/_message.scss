@@ -271,6 +271,7 @@
       width: 100%;
       max-height: calc(100% - 73px);
       padding-top: 16px;
+      padding-bottom: 16px;
       position: relative;
       box-sizing: border-box;
       overflow-y: auto;
@@ -415,6 +416,7 @@
       box-sizing: border-box;
       border-top: 1px solid #DBDBDB;
       background-color: #ffffff;
+      border-radius: 5px;
       
       &-button {
         display: flex;
