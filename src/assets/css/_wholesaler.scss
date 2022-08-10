@@ -4,8 +4,8 @@
 
 .eventkeyvisual.eventkeyvisual--inner {
   overflow: hidden;
-  height: 240px;
-  margin-bottom: 36px;
+  height: 240px !important;
+  margin-bottom: 36px !important;
 
   .swiper-pagination {
     right: 20px;
