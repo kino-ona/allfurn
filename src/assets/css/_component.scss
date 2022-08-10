@@ -674,8 +674,8 @@
     position: absolute;
     top: 13px;
     left: 1px;
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     background-size: 11px;
     content:'';
     @include mixins.sprite(sprite.$ico-check-gray);
