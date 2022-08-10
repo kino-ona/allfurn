@@ -416,7 +416,7 @@
       box-sizing: border-box;
       border-top: 1px solid #DBDBDB;
       background-color: #ffffff;
-      border-radius: 5px;
+      border-bottom-right-radius: 5px;
       
       &-button {
         display: flex;
@@ -679,6 +679,7 @@
     box-sizing: border-box;
     overflow-y: auto;
     background: #F7F7F7;
+    border-radius: 5px;
 
     .date {
       padding: 16px 0;
@@ -1107,6 +1108,7 @@
       box-sizing: border-box;
       border-top: 1px solid #E0E0E0;
       background-color: #ffffff;
+      border-bottom-right-radius: 5px;
     
       .section__bottom-button {
         max-width: 100%;
@@ -1163,6 +1165,7 @@
       align-items: center;
       border-top: 1px solid #E0E0E0;
       background-color: #ffffff;
+      border-radius: 5px;
     
       .section__bottom-button {
         max-width: 100%;
@@ -1296,6 +1299,11 @@
 }
 
 #msg_imgviewer {
+
+  .modal__container {
+    overflow: hidden;
+    border-radius: 5px;
+  }
 
   .header {
     height: 48px;
