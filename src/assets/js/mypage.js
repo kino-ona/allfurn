@@ -252,16 +252,36 @@ $(".password__cancel").on("click", function () {
   $(".password__container").slideUp("");
 });
 
-
+//cate click
 $('.sub-category .sub-category__item').on("click", function() {
 	$('.sub-category .sub-category__item').removeClass("sub-category__item--active");
 	$(this).addClass("sub-category__item--active");
 });
 
-document.querySelectorAll('.sub-category .sub-category__item').forEach(item => {
-	item.addEventListener('click', (event) => {
-	let target = event.target;
-	let oL = target.offsetLeft;		
-	document.querySelector('.sub-category').scrollLeft = oL/2;
-})
-})
+let cateW = 0;
+let cateOverflowItemsArr = [];
+const cate = document.querySelector('.sub-category');
+const cateItems = document.querySelectorAll('.sub-category .sub-category__item');
+let itemLength = cateItems.length;
+
+const CateClickToScroll = () => {
+	let target;
+	let oL;
+	cateItems.forEach(i => {
+		cateW = cateW + i.clientWidth + 24;
+		if (cateW > 916) { 
+			i.addEventListener('click', (e) => {
+				target = e.target;
+				oL = target.offsetLeft;
+				cate.scrollLeft = oL/2;
+			})
+		} else {
+			i.addEventListener('click', (e) => {
+				target = e.target;
+				oL = target.offsetLeft;
+				cate.scrollLeft = - oL/2;
+			})
+		}
+	})
+}
+CateClickToScroll();
