@@ -672,11 +672,10 @@
   &__check input + span::after { 
     display: inline-block;
     position: absolute;
-    top: 13px;
+    top: 14px;
     left: 1px;
-    width: 17px;
-    height: 17px;
-    background-size: 11px;
+    width: 17px !important;
+    height: 17px !important;
     content:'';
     @include mixins.sprite(sprite.$ico-check-gray);
   }
