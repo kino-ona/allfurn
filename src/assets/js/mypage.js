@@ -1,3 +1,78 @@
+// head 
+$(".dropdown.dropdown--01").on("click", function () {
+  $(this).toggleClass("dropdown--active");
+  $(".dropdown.dropdown--02").removeClass("dropdown--active");
+  $(".dropdown.dropdown--03").removeClass("dropdown--active");
+});
+
+$(".dropdown__item.dropdown__item--01").on("click", function (evnet) {
+  evnet.preventDefault();
+  $(".dropdown__title.dropdown__title--01").text(
+    $(this).text().trim(" ").split("\n")[0]
+  );
+});
+
+$(".dropdown.dropdown--02").on("click", function () {
+  $(this).toggleClass("dropdown--active");
+  $(".dropdown.dropdown--01").removeClass("dropdown--active");
+  $(".dropdown.dropdown--03").removeClass("dropdown--active");
+});
+
+$(".dropdown__item.dropdown__item--02").on("click", function (evnet) {
+  evnet.preventDefault();
+  $(".dropdown__title.dropdown__title--02").text(
+    $(this).text().trim(" ").split("\n")[0]
+  );
+});
+
+// category-menu
+$('.category-menu__title').on('click', function() {
+	$('.category-menu').toggleClass('category-menu--active');
+})
+
+$('.category-menu__item').hover(function() {
+	$('.category-menu__sub').removeClass('active');
+	$(this).find('.category-menu__sub').addClass('active');
+	if(!$(this).find('.category-menu__sub').hasClass('active')) {
+		$('.category-menu__wrap').css('width', '250px');
+	}else {
+		$('.category-menu__wrap').css('width', '500px');
+	}
+})
+
+$('.category-menu__sub-item').on('click', function() {
+	if($(this).text().trim(' ') === '전체') {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text());
+	}else {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
+	}
+
+	if($(this).text().trim(' ') === '일반소파') {
+		$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
+		$('.category-filter').css('display', 'block').addClass('category-filter--active');
+		$('.category-refresh').css('display', 'block');
+
+		$('.category-refresh .category-filter__refresh').on('click', function () {
+			$('.category-menu__title a').html('카테고리');
+			$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
+			
+			$('.category-refresh').css('display', 'none');
+			$('.category-filter').css('display', 'none');
+			$('.category-menu__item').removeClass('category-menu__item--active');
+		});
+	}
+
+	$('.category-menu').removeClass('category-menu--active');
+
+	$.each($('.category-menu__item i'),function (index, item) {
+		item.classList = item.classList[0].split('--on')[0];
+	})
+	$('.category-menu__item').removeClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
+	
+});
+
 // like & bookmark
 $(".my__info .my__like").on("click", function (evnet) {
   $(this).toggleClass("active");
@@ -29,7 +104,17 @@ function closeModal(name) {
 	$('body').css('overflow', '');
 }
 
+
 //filter
+$('.category-filter__arrow').on('click', function  () {
+	if($(this).closest('.category-filter__item').hasClass('category-filter__item--active')) {
+		$('.category-filter__item').removeClass('category-filter__item--active');
+	}else {
+		$('.category-filter__item').removeClass('category-filter__item--active');
+		$(this).closest('.category-filter__item').toggleClass('category-filter__item--active');
+	}
+})
+
 $('.category-filter__item button').on('click', function () {
 	$(this).closest('p').toggleClass('select-button');
 	$('.category-filter__footer').addClass('active');
@@ -63,6 +148,53 @@ $('.category-filter__refresh').on('click' , function () {
 		$('[class*="modal-category"]').find('input').prop('checked', false);
 	}
 })
+
+//category-menu
+$('.category-menu__title').on('click', function() {
+	$('.category-menu').toggleClass('category-menu--active');
+})
+
+$('.category-menu__item').hover(function() {
+	$('.category-menu__sub').removeClass('active');
+	$(this).find('.category-menu__sub').addClass('active');
+	if(!$(this).find('.category-menu__sub').hasClass('active')) {
+		$('.category-menu__wrap').css('width', '250px');
+	}else {
+		$('.category-menu__wrap').css('width', '500px');
+	}
+})
+
+$('.category-menu__sub-item').on('click', function() {
+	if($(this).text().trim(' ') === '전체') {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text());
+	}else {
+		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
+	}
+
+	if($(this).text().trim(' ') === '일반소파') {
+		$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
+		$('.category-filter').css('display', 'block').addClass('category-filter--active');
+		$('.category-refresh').css('display', 'block');
+
+		$('.category-refresh .category-filter__refresh').on('click', function () {
+			$('.category-menu__title a').html('카테고리');
+			$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
+			
+			$('.category-refresh').css('display', 'none');
+			$('.category-filter').css('display', 'none');
+			$('.category-menu__item').removeClass('category-menu__item--active');
+		});
+	}
+
+	$('.category-menu').removeClass('category-menu--active');
+
+	$.each($('.category-menu__item i'),function (index, item) {
+		item.classList = item.classList[0].split('--on')[0];
+	})
+	$('.category-menu__item').removeClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').parent().addClass('category-menu__item--active');
+	$(this).closest('.category-menu__sub').prev().find('i').attr('class', $(this).closest('.category-menu__sub').prev().find('i').attr("class") + '--on');
+});
 
 $('.buttons-refresh').on('click' ,function() {
 	$('.category-type__item > a').removeClass('active');
@@ -126,17 +258,18 @@ $('.sub-category .sub-category__item').on("click", function() {
 	$(this).addClass("sub-category__item--active");
 });
 
+let cateW = 0;
+let cateOverflowItemsArr = [];
 const cate = document.querySelector('.sub-category');
 const cateItems = document.querySelectorAll('.sub-category .sub-category__item');
-let cateIdxW = 0;
 let itemLength = cateItems.length;
 
 const CateClickToScroll = () => {
 	let target;
 	let oL;
 	cateItems.forEach(i => {
-		cateIdxW += i.clientWidth + 24;
-		if (cateIdxW > 916) { 
+		cateW = cateW + i.clientWidth + 24;
+		if (cateW > 916) { 
 			i.addEventListener('click', (e) => {
 				target = e.target;
 				oL = target.offsetLeft;
@@ -146,7 +279,7 @@ const CateClickToScroll = () => {
 			i.addEventListener('click', (e) => {
 				target = e.target;
 				oL = target.offsetLeft;
-				cate.scrollLeft = -oL/2;
+				cate.scrollLeft = - oL/2;
 			})
 		}
 	})
