@@ -251,3 +251,17 @@ $(".password__button").on("click", function () {
 $(".password__cancel").on("click", function () {
   $(".password__container").slideUp("");
 });
+
+
+$('.sub-category .sub-category__item').on("click", function() {
+	$('.sub-category .sub-category__item').removeClass("sub-category__item--active");
+	$(this).addClass("sub-category__item--active");
+});
+
+document.querySelectorAll('.sub-category .sub-category__item').forEach(item => {
+	item.addEventListener('click', (event) => {
+	let target = event.target;
+	let oL = target.offsetLeft;		
+	document.querySelector('.sub-category').scrollLeft = oL/2;
+})
+})
