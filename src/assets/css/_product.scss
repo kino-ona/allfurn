@@ -2,6 +2,7 @@
 @use "mixins";
 @use 'sprite/sprite';
 
+
 .swiper-container {
   overflow: hidden;
   position: relative;
@@ -9,7 +10,7 @@
   height: 235px;
   margin-top: 40px;
   margin-bottom: 32px;
- 
+  
   .swiper-wrapper {
     height: 100%;
   }
@@ -59,7 +60,6 @@
     display: none;
   }
 }
-
 
 .product__container {
   .category-btn {
