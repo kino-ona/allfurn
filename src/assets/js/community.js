@@ -4,6 +4,7 @@ if($('.container').hasClass('community')) {
       autoplay: {
         delay: 3000,
       },
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       paginationClickable: false,
