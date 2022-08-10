@@ -35,7 +35,12 @@ $( function() {
 
 
   $(function() {
-    $('.my-page .calendar input').datepicker()
+    $('.my-page .calendar input').datepicker({
+      showOn: "button",
+      buttonImage: "../assets/images/sub/ico_calander.png",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    })
   
   });
 });

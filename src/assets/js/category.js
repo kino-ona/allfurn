@@ -57,20 +57,20 @@ $('.category-menu__sub-item').on('click', function() {
 		$('.category-menu__title a').html( $(this).closest('.category-menu__sub').prev().text() + '>'+ $(this).text());
 	}
 
-	if($(this).text().trim(' ') === '일반소파') {
-		$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
-		$('.category-filter').css('display', 'block').addClass('category-filter--active');
-		$('.category-refresh').css('display', 'block');
+	// if($(this).text().trim(' ') === '일반소파') {
+	// 	$('.category-menu').removeClass('category-menu--active').addClass('select-menu');
+	// 	$('.category-filter').css('display', 'block').addClass('category-filter--active');
+	// 	$('.category-refresh').css('display', 'block');
 
-		$('.category-refresh .category-filter__refresh').on('click', function () {
-			$('.category-menu__title a').html('카테고리');
-			$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
+	// 	$('.category-refresh .category-filter__refresh').on('click', function () {
+	// 		$('.category-menu__title a').html('카테고리');
+	// 		$('.category-menu__item--active i').attr("class", $('.category-menu__item--active i').attr("class").split('--')[0])
 			
-			$('.category-refresh').css('display', 'none');
-			$('.category-filter').css('display', 'none');
-			$('.category-menu__item').removeClass('category-menu__item--active');
-		});
-	}
+	// 		$('.category-refresh').css('display', 'none');
+	// 		$('.category-filter').css('display', 'none');
+	// 		$('.category-menu__item').removeClass('category-menu__item--active');
+	// 	});
+	// }
 
 	$('.category-menu').removeClass('category-menu--active');
 

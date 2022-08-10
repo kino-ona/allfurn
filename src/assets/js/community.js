@@ -1,11 +1,13 @@
 if($('.container').hasClass('community')) {
   if($('.swiper-container').length > 0) {
     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 3000,
+      },
       slidesPerView: 1,
       spaceBetween: 0,
       paginationClickable: false,
       keyboard: false,
-      speed: 400,
       pagination: {
         el: '.swiper-pagination',
       },

@@ -42,7 +42,7 @@
 
   &__content .content {
     overflow-y: auto;
-    // max-height: 50vh;
+    max-height: 70vh;
     padding: 1px 20px 0 24px;
     background-color: #ffffff;
   }
@@ -672,7 +672,7 @@
   &__check input + span::after { 
     display: inline-block;
     position: absolute;
-    top: 14px;
+    top: 13px;
     left: 1px;
     width: 18px;
     height: 18px;

@@ -1468,6 +1468,15 @@
     .calendar input::placeholder {
       color: #1B1B1B;
     }
+
+    .calendar .ui-datepicker-trigger {
+      position: absolute;
+      right: 16px;
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;  
+      cursor: pointer;
+    }
   }
 
   .list table {
@@ -2094,6 +2103,11 @@
       padding-top: 8px;
       margin-left: 100px;
       border-top: 1px solid #F2F2F2;
+    }
+
+    .add + .add {
+      margin-top: 8px;
+      padding-bottom: 8px;
     }
 
     .price {

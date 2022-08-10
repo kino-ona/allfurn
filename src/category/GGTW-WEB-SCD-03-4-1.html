@@ -1,0 +1,79 @@
+@@include('../inc/pagehead.inc',{
+"pagetitle":" | New category",
+"webroot":".."
+})
+</head>
+
+<body>
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
+    "webroot":"..",
+    "headertype":""
+    })
+
+    <div id="container" class="container category">
+      <div class="inner">
+        <p class="inner__type">
+          ‘<span>소파</span>' 검색 결과
+        </p>
+        <div class="inner__category">
+          <div class="sub-category sub-category--type-2">
+            <p class="sub-category__item sub-category__item--active"><a href="./GGTW-WEB-SCD-03-1.html">상품</a></p>
+            <p class="sub-category__item"><a href="./GGTW-WEB-SCD-03-4.html">업체</a></p>
+          </div>
+        </div>
+        <!--data 없을때-->
+        <div class="no-data">
+          <p>
+            <i class="ico__search-circle"></i>
+            ‘소파’ 에 대한 상품 검색 결과가 없습니다.
+          </p>
+          <a href="#">올펀 상품 보러가기</a>
+        </div>
+      </div>
+      <div id="modal-type--basic" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container" style="width: 480px">
+              <div class="modal-box__content">
+                <div class="header">
+                  <p>정렬 선택</p>
+                </div>
+                <div class="content">
+                  <div class="radio">
+                    <label class="radio__item">
+                      <input type="radio" name="filter" checked>
+                      <span>신상품순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>검색 많은 순</span>
+                    </label>
+                    <label class="radio__item">
+                      <input type="radio" name="filter">
+                      <span>주문 많은 순</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="footer" style="height: 42px">
+                  <button type="button" onclick="closeModal('#modal-type--basic')">선택 완료</p>
+                </div>
+                <div class="modal-close">
+                  <button type="button" class="modal__close-button" onclick="closeModal('#modal-type--basic')"><span class="a11y">close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('../inc/footer.inc',{
+    "webroot":".."
+    })
+  </div>
+  <script src="/assets/js/category.js" type="text/javascript"></script>
+</body>
+
+</html>
