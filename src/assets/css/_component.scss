@@ -237,6 +237,14 @@
       clear: both;
     }
   }
+
+  &.mt0 {
+    margin-top: 0;
+  }
+
+  &.mt40 {
+    margin-top: 40px;
+  }
 }
 
 [class^=community-] {
