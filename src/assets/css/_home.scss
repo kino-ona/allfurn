@@ -1404,7 +1404,7 @@
 
     &.active {
       position: absolute;
-      bottom: 247px;
+      bottom: 0;
     }
   }
 }
@@ -1514,4 +1514,8 @@
     height: 300px;
     margin: 0;
   }
+}
+
+.registration--position + .footer {
+  margin: 0;
 }
