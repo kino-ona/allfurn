@@ -877,10 +877,28 @@
     }
   }
   
+  .sub-category {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    &::-webkit-scrollbar {
+      height: 8px;
+      margin-top: -8px;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+
   /* 마이 페이지 내 모달 */
 
   .modal {
-    z-index: 1000;
+    z-index: 10000;
 
     &__container {
       width: 350px;
@@ -972,6 +990,7 @@
 }
 
 .notificaiton-list {
+  min-height: 700px;
 	margin-top: 44px;
 
   &__item {
