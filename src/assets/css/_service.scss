@@ -382,6 +382,7 @@
   }
 
   .accordion__head {
+    cursor: pointer;
     width: 100%;
     max-width: 100%;
     text-align: left;
@@ -531,6 +532,8 @@
     padding: 11px 16px 48px 16px;
     box-sizing: border-box;
     overflow-y: scroll;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     &::placeholder {
       color: #BDBDBD;
     }
