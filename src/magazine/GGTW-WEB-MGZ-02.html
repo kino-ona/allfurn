@@ -21,7 +21,23 @@
                 <h2>가구톡세상 베스트 리뷰어 이벤트!</h2>
                 <p>2022.04.25 - 2022.05.05</p>
               </div>
-              <button class="ico__share28"><span class="a11y">공유</span></button>
+              <button class="ico__share28" onclick="openModal('#alert-modal')"><span class="a11y">공유</span></button>
+
+              <!-- 공유 팝업 -->
+              <div id="alert-modal" class="alert-modal">
+                <div class="alert-modal__container">
+                  <div class="alert-modal__top">
+                    <p>
+                      링크가 복사되었습니다.
+                    </p>
+                  </div>
+                  <div class="alert-modal__bottom">
+                    <button type="button" class="button button--solid" onclick="closeModal('#alert-modal')">
+                      확인
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="magazine__detail">
