@@ -1,8 +1,6 @@
 @use 'sass:math';
 
 .member {
-  margin-bottom: 40px;
-
   .tab__item {
     color: #1B1B1B;
     font-size: 16px;
@@ -232,10 +230,6 @@
 
   .content > .content__item {
     padding: 0 107px;
-  }
-  
-  .content__item {
-    margin-bottom: 72px;
   }
 
   .tab-content {

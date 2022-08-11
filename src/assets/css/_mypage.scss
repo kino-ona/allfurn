@@ -750,8 +750,7 @@
   .my-content {
 
     &--nodata {
-      margin: 36% auto 0;
-      padding-bottom: 385px;
+      margin: 27% auto 0;
       text-align: center;
   
       p {
@@ -808,8 +807,6 @@
     }
 
     .pagenation {
-      margin-top: 16px;
-
       .numbering {
 
         a {
@@ -1044,8 +1041,6 @@
   }
 
   .pagenation {
-    margin-top: 16px;
-
     .numbering {
 
       a {
@@ -1661,7 +1656,7 @@
 
   .set__inner {
     width: 962px;
-    margin: 0 auto 90px;
+    margin: 0 auto;
 
     .form__list-wrap {
       &:first-child {
@@ -1867,8 +1862,6 @@
 
   // 승격 요청
   &.promotion--request {
-    padding-bottom: 128px;
-
     .set__inner {
       width: 1176px;
       margin: 0;
@@ -2331,7 +2324,6 @@
 
   .my-detail__order-info + .my-detail__order-cancle {
     margin-top: 72px;
-    margin-bottom: 97px;
   }
 
   &__cancle {

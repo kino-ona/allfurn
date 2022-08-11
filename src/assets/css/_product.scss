@@ -223,7 +223,6 @@
   &__card {
     width: 276px;
     margin-right: 24px;
-    margin-bottom: 40px;
     position: relative;
 
     .card__bookmark {
@@ -853,7 +852,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 40px;
   display: none;
 
   &.active {
@@ -1125,6 +1123,10 @@
 
       .order-info__desc {
         margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         &:first-child .order-info__title {
           padding-bottom: 24px;
