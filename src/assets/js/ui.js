@@ -100,7 +100,7 @@ $('.dropdown').on('click', function (evnet) {
 	  evnet.preventDefault();
 	  dropDownTitle.text($(this).text().trim(" ").split("\n")[0]);
 	});
-})
+});
 
 //heart action
 $('.category-product__heart').on('click', function (event) {
@@ -115,7 +115,7 @@ $('.category-product__heart').on('click', function (event) {
 		$(this).addClass('active');
 		$(this).find('span').css('color', '#FB4760');	
 	}
-})
+});
 
 $('.ico__more').on('click', function (event) {
 	event.preventDefault();
@@ -126,6 +126,4 @@ $('.ico__more').on('click', function (event) {
 		$(this).addClass('ico__more--black');
 		$(this).next().css('display', 'block');
 	}
-})
-
-
+});
