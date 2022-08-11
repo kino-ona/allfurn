@@ -12,7 +12,7 @@ const navCancel = $('.navigator-close');
 const headerNav = () => {
 
 	header.find(".textfield__search").on("propertychange change keyup paste click input", () => {
-		$('.body').addClass('.noscroll');
+		$('body').addClass('noscroll');
 		header.addClass(headerNavActive);
 		navModal.addClass(navModalActive);
 
@@ -25,7 +25,7 @@ const headerNav = () => {
 headerNav();
 
 const headerNavClose = () => {
-	$('.body').removeClass('.noscroll');
+	$('body').removeClass('noscroll');
 	navModal.removeClass(navModalActive);
 	header.removeClass(headerNavActive);
 }
