@@ -44,4 +44,5 @@
   </a>
 </footer>
 
+<script src="@@webroot/assets/js/plugin/swiper-bundle.min.js" type="text/javascript"></script>
 <script src="@@webroot/assets/js/ui.js" type="text/javascript"></script>
