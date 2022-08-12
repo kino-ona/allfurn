@@ -14,7 +14,8 @@
 
     <div id="container" class="container">
       <div class="inner">
-        <div class="product-swiper swiper-container">
+        <div id="eventkvSwipe" class="eventkeyvisual swiper-container eventkeyvisual--inner"
+          style="margin: 16px 0 24px !important;">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#">
@@ -306,17 +307,19 @@
     })
   </div>
   <script>
-    var swiper = new Swiper('.product-swiper', {
+    var swiper = new Swiper('#eventkvSwipe', {
       autoplay: {
         delay: 3000,
       },
       loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
-      paginationClickable: false,
-      keyboard: false,
+      paginationClickable: true,
+      keyboard: true,
+      speed: 400,
       pagination: {
-        el: '.swiper-pagination',
+        el: '#eventkvSwipe .swiper-pagination',
+        type: 'fraction',
       },
       navigation: {
         nextEl: '.swiper-button-next',

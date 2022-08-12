@@ -13,6 +13,30 @@
     })
 
     <div id="container" class="container">
+      <div class="inner__full">
+        <div id="eventkvSwipe" class="eventkeyvisual swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-util">
+            <div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
       <div class="inner">
         <div class="content">
           <ul class="magazine__wrap" style="margin-bottom: -40px;">
@@ -213,7 +237,27 @@
     "webroot":".."
     })
   </div>
-  <script></script>
+  <script>
+    var swiper = new Swiper('#eventkvSwipe', {
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      paginationClickable: true,
+      keyboard: true,
+      speed: 400,
+      pagination: {
+        el: '#eventkvSwipe .swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
