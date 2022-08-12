@@ -114,7 +114,7 @@
               </div>
               <div class="row">
                 <div class="numbering">1</div>
-                <a href="./category/GGTW-WEB-CTG-03.html">
+                <a href="/category/GGTW-WEB-CTG-03.html">
                   <ul class="breadcrumbs-wrap">
                     <li>안락의자/기능성의자</li>
                     <li>스툴</li>
@@ -123,7 +123,7 @@
               </div>
               <div class="row">
                 <div class="numbering">2</div>
-                <a href="./category/GGTW-WEB-CTG-03.html">
+                <a href="/category/GGTW-WEB-CTG-03.html">
                   <ul class="breadcrumbs-wrap">
                     <li>소파/거실</li>
                     <li>리클라이너</li>
@@ -132,7 +132,7 @@
               </div>
               <div class="row">
                 <div class="numbering">3</div>
-                <a href="./category/GGTW-WEB-CTG-03.html">
+                <a href="/category/GGTW-WEB-CTG-03.html">
                   <ul class="breadcrumbs-wrap">
                     <li>아웃도어가구</li>
                     <li>파라솔</li>
@@ -141,7 +141,7 @@
               </div>
               <div class="row">
                 <div class="numbering">4</div>
-                <a href="./category/GGTW-WEB-CTG-03.html">
+                <a href="/category/GGTW-WEB-CTG-03.html">
                   <ul class="breadcrumbs-wrap">
                     <li>옷장/수납/서랍장</li>
                     <li>수납장</li>
@@ -150,7 +150,7 @@
               </div>
               <div class="row">
                 <div class="numbering">5</div>
-                <a href="./category/GGTW-WEB-CTG-03.html">
+                <a href="/category/GGTW-WEB-CTG-03.html">
                   <ul class="breadcrumbs-wrap">
                     <li>사무용가구</li>
                     <li>책장/캐비닛/사물함</li>
@@ -208,6 +208,154 @@
                     <p class="event__banner" style="background-image:url(/assets/images/temp/headernav_banner_1.png)"></p>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="navigator-insearch">
+            <div class="navigator-insearch__inner">
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>전체</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li><span class="selection">소파</span>베드</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>일반<span class="selection">소파</span></li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>2인용의자</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>1인용의자</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>TV스탠드</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>3인<span class="selection">소파</span></li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>리클라이너</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li><span class="selection">소파</span>스툴</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li><span class="selection">소파</span>테이블</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>거실장</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>전체</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>일반<span class="selection">소파</span></li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>1인용의자</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>TV스탠드</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="row">
+                <div class="ico__search20"><span class="a11y">검색</span></div>
+                <a href="/">
+                  <ul class="breadcrumbs-wrap">
+                    <li><span class="selection">소파</span>/거실</li>
+                    <li>리클라이너</li>
+                  </ul>
+                </a>
               </div>
             </div>
           </div>

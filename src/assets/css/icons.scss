@@ -36,6 +36,10 @@ i {
   @include mixins.sprite(sprite.$ico-search);
 }
 
+.ico__search20 {
+  @include mixins.sprite(sprite.$ico-search20);
+}
+
 .ico__info {
   @include mixins.sprite(sprite.$ico-info);
 }
