@@ -1,13 +1,13 @@
 
 
-//header navigator
+//header globalsearch
 const header = $('.header');
-const headerNavActive = 'navigator--active';
+const headerNavActive = 'globalsearch--active';
 
-const navModal = $('.navigator-modal');
-const navModalActive = 'navigator-modal--active';
+const navModal = $('.globalsearch-modal');
+const navModalActive = 'globalsearch-modal--active';
 
-const navCancel = $('.navigator-close');
+const navCancel = $('.globalsearch-close');
 
 const headerNav = () => {
 
@@ -16,7 +16,7 @@ const headerNav = () => {
 		header.addClass(headerNavActive);
 		navModal.addClass(navModalActive);
 
-		const blank = document.querySelector('.navigator-modal.navigator-modal--active');
+		const blank = document.querySelector('.globalsearch-modal.globalsearch-modal--active');
 		if(blank === null) return; else {blank.addEventListener('click', () => { headerNavClose(); })};
 	});
 		
@@ -30,7 +30,7 @@ const headerNavClose = () => {
 	header.removeClass(headerNavActive);
 }
 
-if(header.find('.navigator__banner .swiper-container').length > 0) {
+if(header.find('.globalsearch__banner .swiper-container').length > 0) {
 	var swiper = new Swiper('.swiper-container', {
 		autoplay: {
 			delay: 3000,
