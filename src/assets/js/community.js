@@ -11,6 +11,7 @@ if($('.container').hasClass('community')) {
       keyboard: false,
       pagination: {
         el: '.swiper-pagination',
+        type: 'fraction',
       },
       navigation: {
         nextEl: '.swiper-button-next',
