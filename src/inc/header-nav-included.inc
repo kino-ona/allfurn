@@ -15,7 +15,7 @@
             <span class="a11y">삭제하기</span>
           </button>
         </div>
-        <button type="button" class="navigator-close">취소</button>
+        <button type="button" class="globalsearch-close">취소</button>
       </div>
 
       <div class="head__util">
@@ -46,24 +46,18 @@
         </ul>
       </div>
     </div>
-    <div class="head__navigator">
-      <div id="navigator" class="navigator">
-        <div class="navigator__inner">
-          <div class="navigator__section navigator__section--history">
+    <div class="head__globalsearch">
+      <div id="globalsearch" class="globalsearch">
+        <div class="globalsearch__inner">
+          <div class="globalsearch__section globalsearch__section--history">
             <!-- 검색 기록 -->
-            <div class="navigator-history" aria-hidden="false">
+            <div class="globalsearch-history" aria-hidden="false">
               <div class="row">
                 <div class="title">최근 검색어</div>
                 <div class="head-button"><div type="button" class="head-button">전체 삭제</div></div>
               </div>
               <div class="row">
                 <div>리바트 소파 베드</div>
-                <div type="button">
-                  <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-                </div>
-              </div>
-              <div class="row">
-                <div>가죽 소파</div>
                 <div type="button">
                   <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
                 </div>
@@ -95,7 +89,7 @@
             </div>
             <!--// 검색 기록 -->
             <!-- 검색 기록 없음 -->
-            <div class="navigator-history navigator-history--empty" aria-hidden="true" style="display: none;">
+            <div class="globalsearch-history globalsearch-history--empty" aria-hidden="true" style="display: none;">
               <div class="row">
                 <div class="title">최근 검색어</div>
               </div>
@@ -103,9 +97,9 @@
             </div>
             <!--// 검색 기록 없음 -->
           </div>
-          <div class="navigator__section navigator__section--best">
+          <div class="globalsearch__section globalsearch__section--best">
             <!-- 인기 집계 -->
-            <div class="navigator-best" aria-hidden="false">
+            <div class="globalsearch-best" aria-hidden="false">
               <div class="row">
                 <div class="title">
                   인기 카테고리
@@ -160,7 +154,7 @@
             </div>
             <!--// 인기 집계 -->
             <!-- 인기 집계 없음 -->
-            <div class="navigator-best navigator-best--empty" aria-hidden="true" style="display: none;">
+            <div class="globalsearch-best globalsearch-best--empty" aria-hidden="true" style="display: none;">
               <div class="row">
                 <div class="title">
                   인기 카테고리
@@ -171,8 +165,8 @@
             </div>
             <!--// 인기 집계 없음 -->
           </div>
-          <div class="navigator__section navigator__section--recommend">
-            <div class="navigator-recommend">
+          <div class="globalsearch__section globalsearch__section--recommend">
+            <div class="globalsearch-recommend">
               <div class="row">
                 <div class="title">
                   추천 키워드
@@ -191,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="navigator__banner">
+          <div class="globalsearch__banner">
             <div class="swiper-container">
               <div class="swiper-util">
                 <div class="swiper-button-next"></div>
@@ -211,8 +205,8 @@
               </div>
             </div>
           </div>
-          <div class="navigator-insearch">
-            <div class="navigator-insearch__inner">
+          <div class="globalsearch-insearch">
+            <div class="globalsearch-insearch__inner">
               <div class="row">
                 <div class="ico__search20"><span class="a11y">검색</span></div>
                 <a href="/">
@@ -364,4 +358,4 @@
     </div>
   </div>
 </header>
-<div id="navigator-modal" class="navigator-modal"></div>
+<div id="globalsearch-modal" class="globalsearch-modal"></div>

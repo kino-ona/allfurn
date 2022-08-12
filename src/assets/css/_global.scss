@@ -516,8 +516,8 @@ input::-ms-clear {
 	}
 }
 
-// navigator
-.header.navigator--active {
+// globalsearch
+.header.globalsearch--active {
 
 	.textfield {
 		margin-left: 134px;
@@ -531,16 +531,16 @@ input::-ms-clear {
 		display: none;
 	}
 
-	.head__navigator {
+	.head__globalsearch {
 		display: block;
 	}
 
-	.navigator-close {
+	.globalsearch-close {
 		display: block;
 	}
 }
 
-.head__navigator {
+.head__globalsearch {
 	display: none;
 	position: absolute;
 	top: 80px;
@@ -550,7 +550,7 @@ input::-ms-clear {
 	z-index: 1000;
 }
 
-.navigator {
+.globalsearch {
 
 	&-close {
 		display: none;
@@ -566,7 +566,7 @@ input::-ms-clear {
 	&__section {
 		padding: 16px 16px 0 16px;
 
-		> [class^='navigator-'] {
+		> [class^='globalsearch-'] {
 			display: flex;
 			flex-direction: column;
 			box-sizing: border-box;
