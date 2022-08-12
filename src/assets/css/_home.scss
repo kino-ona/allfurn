@@ -71,6 +71,24 @@
     }
   }
 
+  .swiper-button-wrap {
+    position: absolute;
+    width: 1176px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    .swiper-button-prev {
+      left: -10px;
+    }
+
+    .swiper-button-next {
+      right: -10px;
+    }
+  }
+
   .swiper-button-prev {
     @include mixins.sprite(sprite.$ico-banner-prev);
   }
