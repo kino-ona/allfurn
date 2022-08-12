@@ -64,7 +64,7 @@
       width: calc(100% - 3px);
     }
   }
-  
+
   .content {
     height: 100%;
     background-color: #ffffff;
@@ -80,7 +80,7 @@
       padding: 21px 24px;
       box-sizing: border-box;
       border-bottom: 1px solid #E0E0E0;
-      
+
       &-button {
         display: flex;
         align-items: center;
@@ -104,13 +104,14 @@
     }
 
     &__title {
+      max-width: 480px;
       @include mixins.ellipse(1);
       margin: 0;
       font-size: 18px;
       line-height: 28px;
       text-align: left;
     }
- 
+
     &__info {
       width: 600px;
       display: flex;
@@ -250,7 +251,7 @@
       letter-spacing: -0.02em;
       text-align: center;
     }
-    
+
     .ico__dialogue {
       margin-bottom: 14.5px;
     }
@@ -290,7 +291,7 @@
           background: #FFF5F6;
         }
       }
-  
+
       &__content {
         flex-basis: 100%;
         display: flex;
@@ -343,7 +344,7 @@
             margin-left: 2px;
           }
         }
-        
+
         span {
           color: #828282;
           font-size: 14px;
@@ -362,7 +363,7 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
-  
+
       .preview {
         flex-grow: 0;
         width: 232px;
@@ -415,7 +416,7 @@
       border-top: 1px solid #DBDBDB;
       background-color: #ffffff;
       border-bottom-right-radius: 5px;
-      
+
       &-button {
         display: flex;
         align-items: center;
@@ -613,7 +614,7 @@
       font-weight: 500;
       line-height: 26px;
       letter-spacing: -0.02em;
-      text-align: center;      
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
 
@@ -735,7 +736,7 @@
       height: 12px;
       position: absolute;
       bottom: 4px;
-      
+
       span {
         color: #828282;
         font-size: 12px;
@@ -747,7 +748,7 @@
       &--left {
         left: calc(100% + 8px);
       }
-    
+
       &--right {
         right: calc(100% + 8px);
       }
@@ -805,7 +806,7 @@
         padding-left: 48px;
         float: left;
       }
-    
+
       &--right {
         max-width: 65%;
         float: right;
@@ -904,7 +905,7 @@
         text-align: center;
         border: 1px solid #E0E0E0;
         border-radius: 5px;
-        
+
         span {
           color: inherit;
           font-size: inherit;
@@ -985,7 +986,7 @@
       }
     }
   }
-  
+
   /* section__bottom 사진 첨부 */
 
   .section__bottom--photo {
@@ -1005,7 +1006,7 @@
       padding: 99px 16px 6px 16px;
     }
   }
-  
+
   .textfield--photo {
 
     .photo-container {
@@ -1043,7 +1044,7 @@
   }
 
   /* section__bottom 상품 문의 첨부 */
-    
+
   .product-quotation {
     cursor: default;
     z-index: 3;
@@ -1107,14 +1108,14 @@
       border-top: 1px solid #E0E0E0;
       background-color: #ffffff;
       border-bottom-right-radius: 5px;
-    
+
       .section__bottom-button {
         max-width: 100%;
         width: 100%;
         justify-content: space-between;
         align-items: center;
       }
-  
+
       .sticked-button {
         flex: 1 1 100%;
         height: 56px;
@@ -1143,7 +1144,7 @@
   }
 
   *.selection {
-    display: inline-block; 
+    display: inline-block;
   }
 
   .section__bottom--insearch {
@@ -1164,7 +1165,7 @@
       border-top: 1px solid #E0E0E0;
       background-color: #ffffff;
       border-radius: 5px;
-    
+
       .section__bottom-button {
         max-width: 100%;
         width: 100%;
@@ -1177,7 +1178,7 @@
       margin-left: 12px;
     }
 
-    .insearch-up { 
+    .insearch-up {
       &[aria-disabled="true"] {
         [class^="ico__arrow"] {
           transform: rotate(180deg);
@@ -1185,7 +1186,7 @@
       }
     }
 
-    .insearch-down { 
+    .insearch-down {
       &[aria-disabled="false"] [class^="ico__arrow"] {
         transform: rotate(180deg);
       }
@@ -1199,7 +1200,7 @@
   .modal__button {
     cursor: pointer;
   }
-  
+
   .modal__container {
     overflow: hidden;
     border-radius: 5px;
@@ -1271,7 +1272,7 @@
 }
 
 #msg_report {
-  
+
   .content__inner {
     height: 475px;
     position: relative;
@@ -1306,7 +1307,7 @@
   .header {
     height: 48px;
   }
-  
+
   .content {
     width: 600px;
     height: 800px;
@@ -1327,7 +1328,7 @@
       repeat: no-repeat;
     }
   }
-  
+
   .modal-close {
     width: 28px;
     height: 18px;
