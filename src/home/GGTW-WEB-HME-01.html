@@ -10,9 +10,9 @@
     @@include('../inc/header.inc',{
     "webroot":"..",
     "headertype":""
-    }) 
+    })
 
-  <div id="container" class="container">
+    <div id="container" class="container">
       <div class="inner__full">
         <div id="eventkvSwipe" class="eventkeyvisual swiper-container">
           <div class="swiper-wrapper">
@@ -32,9 +32,13 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+          <div class="swiper-button-wrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
-      
+
       <div class="inner">
         <div class="content">
           <!-- 상품 -->
@@ -119,7 +123,9 @@
             <h2 class="content__title">올펀 커뮤니티</h2>
             <div class="view-all">
               <a href="#" title="전체보기">전체보기</a>
-              <i class="ico__arrow--right14"><spans class="a11y">오른쪽 화살표</spans></i>
+              <i class="ico__arrow--right14">
+                <spans class="a11y">오른쪽 화살표</spans>
+              </i>
             </div>
           </div>
           <ul class="content__container--community">
@@ -185,18 +191,28 @@
             </li>
           </ul>
 
-          <a href="#" title="3D 시뮬레이터 바로가기" class="simulator">
-            <div class="simulator__title-wrap">
-              <p>
-                3D 시뮬레이터로<br>
-                올펀 가구를 배치해보세요!
-              </p>
-              <i class="ico__arrow--right18"><span class="a11y">오른쪽 화살표</span></i>
+          <div id="eventkvSwipe" class="eventkeyvisual swiper-container eventkeyvisual--inner"
+            style="margin-bottom: 0 !important;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                </a>
+              </div>
             </div>
-            <div class="simulator__img-wrap">
-              <img src="/assets/images/sub/simulator@2x.png" alt="시뮬레이터">
+            <div class="swiper-util">
+              <div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-          </a>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
 
@@ -214,12 +230,14 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <a href="#">
-                            <p class="event__banner" style="background-image:url(/assets/images/temp/img_main_popup.png)"></p>
+                            <p class="event__banner"
+                              style="background-image:url(/assets/images/temp/img_main_popup.png)"></p>
                           </a>
                         </div>
                         <div class="swiper-slide">
                           <a href="#">
-                            <p class="event__banner" style="background-image:url(/assets/images/temp/img_main_popup.png)"></p>
+                            <p class="event__banner"
+                              style="background-image:url(/assets/images/temp/img_main_popup.png)"></p>
                           </a>
                         </div>
                       </div>
@@ -228,6 +246,8 @@
                           <div class="swiper-pagination"></div>
                         </div>
                       </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
                     </div>
                   </div>
                 </div>
@@ -238,48 +258,56 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  @@include('../inc/footer.inc',{
+    @@include('../inc/footer.inc',{
     "webroot":".."
-  })
-  <script>
-    openModal('#main-event');
+    })
+    <script>
+      openModal('#main-event');
 
-    var swiper = new Swiper('#eventkvSwipe', {
-      autoplay: {
-        delay: 3000,
-      },
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-      paginationClickable: true,
-      keyboard: true,
-      speed: 400,
-      pagination: {
-        el: '#eventkvSwipe .swiper-pagination',
-        type: 'fraction',
-      },
-    });
+      var swiper = new Swiper('#eventkvSwipe', {
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        paginationClickable: true,
+        keyboard: true,
+        speed: 400,
+        pagination: {
+          el: '#eventkvSwipe .swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
-    var swiper = new Swiper('#modalkvSwipe', {
-      autoplay: {
-        delay: 3000,
-      },
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-      paginationClickable: true,
-      keyboard: true,
-      speed: 400,
-      pagination: {
-        el: '#modalkvSwipe .swiper-pagination',
-        type: 'fraction',
-      },
-    });
-  </script>
+      var swiper = new Swiper('#modalkvSwipe', {
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        paginationClickable: true,
+        keyboard: true,
+        speed: 400,
+        pagination: {
+          el: '#modalkvSwipe .swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 
 </html>
