@@ -187,6 +187,7 @@
         </div>
       </div>
     </div>
+      
     <div class="globalsearch__banner">
       <div id="headerNavBanner" class="swiper-container">
         <div class="swiper-util">
@@ -255,7 +256,9 @@
         </div>
       </div>
     </div>
-    <div class="globalsearch-insearch">
+
+    <!-- 키워드 연관 검색 -->
+    <div class="globalsearch-insearch" style="display:none;">
       <div class="globalsearch-insearch__inner">
         <div class="row">
           <div class="ico__search20"><span class="a11y">검색</span></div>
@@ -403,6 +406,8 @@
         </div>
       </div>
     </div>
+    <!--// 키워드 연관 검색 -->
+
   </div>
 </div>
 
