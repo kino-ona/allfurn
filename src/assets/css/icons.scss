@@ -510,3 +510,11 @@ i {
 .ico__carousel-right {
   @include mixins.sprite(sprite.$ico-carousel-right);
 }
+
+.ico__chevron--left {
+  @include mixins.sprite(sprite.$ico-chevron-left);
+}
+
+.ico__chevron--right {
+  @include mixins.sprite(sprite.$ico-chevron-right);
+}

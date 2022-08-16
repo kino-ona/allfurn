@@ -323,6 +323,209 @@ input::-ms-clear {
 			a {
 				font-size: 16px;
 				letter-spacing: -0.02em;
+
+				&.active {
+					color: #FB4760;
+					font-weight: 700;
+					position: relative;
+
+					&::after {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						left: 0;
+						bottom: -12px;
+						height: 2px;
+						width: 100%;
+						background-color: #FB4760;
+					}
+				}
+			}
+		}
+	}
+
+	.gnb__category {
+		border: 1px solid #E0E0E0;
+		background-color: #FFFFFF;
+		display: none;
+
+		.category-list-wrap {
+			display: inline-flex;
+		}
+
+		.category-wrap {
+			width: 250px;
+		}
+
+		.category-wrap--active {
+			width: 284px;
+			border-left: 1px solid #E0E0E0;
+			display: none;
+
+			a.active {
+				background-color: #FFF5F6;
+
+				span {
+					color: #FB4760;
+					font-weight: 600;
+				}
+			} 
+		}
+
+		li {
+			a {
+				display: block;
+				width: 100%;
+				padding: 10px 16px;
+				height: 44px;
+				box-sizing: border-box;
+
+				&:hover {
+					background-color: #F7F7F7;
+	
+					span {
+						font-weight: 600;
+					}
+				}
+
+				&.active {
+					span {
+						color: #FB4760;
+					}
+				}
+
+				&.category-list01.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-1-on);
+					}
+				}
+
+				&.category-list02.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-2-on);
+					}
+				}
+
+				&.category-list03.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-on);
+					}
+				}
+
+				&.category-list04.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-4-on);
+					}
+				}
+
+				&.category-list05.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-5-on);
+					}
+				}
+
+				&.category-list06.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-6-on);
+					}
+				}
+
+				&.category-list07.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-7-on);
+					}
+				}
+
+				&.category-list08.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-8-on);
+					}
+				}
+
+				&.category-list09.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-9-on);
+					}
+				}
+
+				&.category-list10.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-10-on);
+					}
+				}
+
+				&.category-list11.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-11-on);
+					}
+				}
+
+				&.category-list12.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-12-on);
+					}
+				}
+
+				&.category-list13.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-13-on);
+					}
+				}
+
+				&.category-list14.active {
+					i {
+						@include mixins.sprite(sprite.$ico-furniture-14-on);
+					}
+				}
+			}
+
+			span {
+				font-weight: 400;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+				color: #333333;
+				margin-left: 10px;
+			}
+		}
+
+		.category-banner-wrap {
+			padding: 16px;
+			border-top: 1px solid #E0E0E0;
+			display: none;
+		}
+
+		.category-banner {
+			width: 502px !important;
+			height: 100px !important;
+			border-radius: 5px;
+			overflow: hidden;
+			margin: auto;
+
+		  .swiper-pagination {
+				width: 60px;
+				height: 22px;
+		    right: 15px;
+		    bottom: 10px;
+				font-size: 12px;
+				line-height: 12px;
+
+				span {
+					font-size: 12px;
+					line-height: 12px;
+				}
+		  }
+
+			.swiper-button-prev {
+				@include mixins.sprite(sprite.$ico-chevron-left);
+				width: 36px;
+				height: 36px;
+				left: 2px;
+			}
+			.swiper-button-next {
+				@include mixins.sprite(sprite.$ico-chevron-right);
+				width: 36px;
+				height: 36px;
+				right: 2px;
 			}
 		}
 	}

@@ -37,13 +37,181 @@
     <div class="head__gnb">
       <div class="inner">
         <ul class="gnb__menu">
-          <li><a href="#">카테고리</a></li>
+          <li><a href="#" class="category-select">카테고리</a></li>
           <li><a href="#">신상품</a></li>
           <li><a href="#">도매 업체</a></li>
           <li><a href="#">이 달의 도매</a></li>
           <li><a href="#">매거진</a></li>
           <li><a href="#">커뮤니티</a></li>
         </ul>
+
+        <div class="gnb__category">
+          <div class="category-list-wrap">
+            <ul class="category-wrap">
+              <li>
+                <a href="#" class="category-list01">
+                  <i class="ico__furniture1"></i>
+                  <span>침실</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list02">
+                  <i class="ico__furniture2"></i>
+                  <span>소파/거실</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list03">
+                  <i class="ico__furniture3"></i>
+                  <span>식탁/의자</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list04">
+                  <i class="ico__furniture4"></i>
+                  <span>옷장/수납장/서랍장</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list05">
+                  <i class="ico__furniture5"></i>
+                  <span>서재/공부방</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list06">
+                  <i class="ico__furniture6"></i>
+                  <span>화장대/거울/콘솔</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list07">
+                  <i class="ico__furniture7"></i>
+                  <span>키즈/주니어</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list08">
+                  <i class="ico__furniture8"></i>
+                  <span>진열장/장식장</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list09">
+                  <i class="ico__furniture9"></i>
+                  <span>안락의자/기능성의자</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list10">
+                  <i class="ico__furniture10"></i>
+                  <span>테이블/의자</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list11">
+                  <i class="ico__furniture11"></i>
+                  <span>선반</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list12">
+                  <i class="ico__furniture12"></i>
+                  <span>아웃도어가구</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list13">
+                  <i class="ico__furniture13"></i>
+                  <span>소품가구/기타</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="category-list14">
+                  <i class="ico__furniture14"></i>
+                  <span>사무용가구</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="category-wrap--active">
+              <li>
+                <a href="#">
+                  <span>전체</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>일반소파</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>1인용의자</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>리클라이너</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>소파스툴</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>소파베드</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>좌식소파</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>소파테이블</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>거실장</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>TV스탠드</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category-banner-wrap">
+            <div id="eventkvSwipeHeader" class="eventkeyvisual swiper-container category-banner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <p class="event__banner" style="background-image:url(/assets/images/temp/banner_event.png)"></p>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-util">
+                <div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

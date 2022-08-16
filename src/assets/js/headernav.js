@@ -68,3 +68,54 @@ if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
 }
 
 headerNav();
+
+var swiper = new Swiper('#eventkvSwipeHeader', {
+	autoplay: {
+		delay: 3000,
+	},
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	paginationClickable: true,
+	keyboard: true,
+	speed: 400,
+	pagination: {
+		el: '#eventkvSwipeHeader .swiper-pagination',
+		type: 'fraction',
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+// 카테고리 gnb
+$(".gnb__menu li a").on("click", function () {
+	if($(this).hasClass("active") === false) {
+		$(this).addClass("active");
+		$(".gnb__menu li a").not($(this)).removeClass("active");
+	}
+
+	if($(".category-select").hasClass("active") === true) {
+		$(".gnb__category").css("display", "inline-block");
+	} else {
+		$(".gnb__category").css("display", "none");
+	}
+});
+$(".gnb__category .category-wrap a").on("click", function () {
+	if($(this).hasClass("active") === false) {
+		$(this).addClass("active");
+		$(".gnb__category .category-wrap a").not($(this)).removeClass("active");
+	}
+
+	if($(this).hasClass("active") === true) {
+		$(".category-wrap--active").css("display", "block");
+		$(".category-banner-wrap").css("display", "block");
+	}
+});
+$(".gnb__category .category-wrap--active a").on("click", function () {
+	if($(this).hasClass("active") === false) {
+		$(this).addClass("active");
+		$(".gnb__category .category-wrap--active a").not($(this)).removeClass("active");
+	}
+});
