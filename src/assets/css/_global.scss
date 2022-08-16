@@ -363,8 +363,6 @@ input::-ms-clear {
 			display: none;
 
 			a.active {
-				background-color: #FFF5F6;
-
 				span {
 					color: #FB4760;
 					font-weight: 600;
@@ -381,102 +379,118 @@ input::-ms-clear {
 				box-sizing: border-box;
 
 				&:hover {
-					background-color: #F7F7F7;
+					background-color: #FFF5F6;
+
+					.category__ico {
+						filter: grayscale(0%);
+					}
 	
 					span {
 						font-weight: 600;
-					}
-				}
-
-				&.active {
-					span {
 						color: #FB4760;
 					}
 				}
 
-				&.category-list01.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-1-on);
+				&.active {
+					.category__ico {
+						filter: grayscale(0%);
+					}
+
+					span {
+						font-weight: 600;
+						color: #FB4760;
 					}
 				}
 
-				&.category-list02.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-2-on);
-					}
+				.category__ico {
+					width: 24px;
+					height: 24px;
+					filter: grayscale(100%);
 				}
 
-				&.category-list03.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-on);
-					}
-				}
+				// &.category-list01.active {
+				// 	.category__ico {
+				// 		filter: grayscale(0%);
+				// 	}
+				// }
 
-				&.category-list04.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-4-on);
-					}
-				}
+				// &.category-list02.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-2-on);
+				// 	}
+				// }
 
-				&.category-list05.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-5-on);
-					}
-				}
+				// &.category-list03.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-on);
+				// 	}
+				// }
 
-				&.category-list06.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-6-on);
-					}
-				}
+				// &.category-list04.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-4-on);
+				// 	}
+				// }
 
-				&.category-list07.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-7-on);
-					}
-				}
+				// &.category-list05.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-5-on);
+				// 	}
+				// }
 
-				&.category-list08.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-8-on);
-					}
-				}
+				// &.category-list06.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-6-on);
+				// 	}
+				// }
 
-				&.category-list09.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-9-on);
-					}
-				}
+				// &.category-list07.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-7-on);
+				// 	}
+				// }
 
-				&.category-list10.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-10-on);
-					}
-				}
+				// &.category-list08.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-8-on);
+				// 	}
+				// }
 
-				&.category-list11.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-11-on);
-					}
-				}
+				// &.category-list09.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-9-on);
+				// 	}
+				// }
 
-				&.category-list12.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-12-on);
-					}
-				}
+				// &.category-list10.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-10-on);
+				// 	}
+				// }
 
-				&.category-list13.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-13-on);
-					}
-				}
+				// &.category-list11.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-11-on);
+				// 	}
+				// }
 
-				&.category-list14.active {
-					i {
-						@include mixins.sprite(sprite.$ico-furniture-14-on);
-					}
-				}
+				// &.category-list12.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-12-on);
+				// 	}
+				// }
+
+				// &.category-list13.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-13-on);
+				// 	}
+				// }
+
+				// &.category-list14.active {
+				// 	i {
+				// 		@include mixins.sprite(sprite.$ico-furniture-14-on);
+				// 	}
+				// }
 			}
 
 			span {

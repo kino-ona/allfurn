@@ -50,85 +50,85 @@
             <ul class="category-wrap">
               <li>
                 <a href="#" class="category-list01">
-                  <i class="ico__furniture1"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_01.png" alt="침실 아이콘">
                   <span>침실</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list02">
-                  <i class="ico__furniture2"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_02.png" alt="소파/거실 아이콘">
                   <span>소파/거실</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list03">
-                  <i class="ico__furniture3"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_03.png" alt="식탁/의자 아이콘">
                   <span>식탁/의자</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list04">
-                  <i class="ico__furniture4"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_04.png" alt="옷장/수납장/서랍장 아이콘">
                   <span>옷장/수납장/서랍장</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list05">
-                  <i class="ico__furniture5"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_05.png" alt="서재/공부방 아이콘">
                   <span>서재/공부방</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list06">
-                  <i class="ico__furniture6"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_06.png" alt="화장대/거울/콘솔 아이콘">
                   <span>화장대/거울/콘솔</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list07">
-                  <i class="ico__furniture7"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_07.png" alt="키즈/주니어 아이콘">
                   <span>키즈/주니어</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list08">
-                  <i class="ico__furniture8"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_08.png" alt="진열장/장식장 아이콘">
                   <span>진열장/장식장</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list09">
-                  <i class="ico__furniture9"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_09.png" alt="안락의자/기능성의자 아이콘">
                   <span>안락의자/기능성의자</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list10">
-                  <i class="ico__furniture10"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_10.png" alt="테이블/의자 아이콘">
                   <span>테이블/의자</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list11">
-                  <i class="ico__furniture11"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_11.png" alt="선반 아이콘">
                   <span>선반</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list12">
-                  <i class="ico__furniture12"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_12.png" alt="아웃도어가구 아이콘">
                   <span>아웃도어가구</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list13">
-                  <i class="ico__furniture13"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_13.png" alt="소품가구/기타 아이콘">
                   <span>소품가구/기타</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="category-list14">
-                  <i class="ico__furniture14"></i>
+                  <img class="category__ico" src="../assets/images/sub/ico_furniture_14.png" alt="사무용가구 아이콘">
                   <span>사무용가구</span>
                 </a>
               </li>
