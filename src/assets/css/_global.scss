@@ -750,11 +750,21 @@ input::-ms-clear {
 			width: 100%;
 			height: 114px;
 			margin: 0;
+			overflow: hidden;
 		}
 
-		.swiper-slide {
+		.swiper-slide , .swiper-slide > a {
 			border-radius: 5px;
-			overflow: hidden;
+		}
+
+		.event__banner {
+			width: 100%;
+			height: 114px;
+			background: {
+				size: 100%;
+				position: center;
+				repeat: no-repeat;
+			}
 		}
 
 		.swiper-pagination {

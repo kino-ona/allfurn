@@ -61,7 +61,9 @@ if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
 				}
 			},
     },
-		autoplay: 2000,
+		autoplay: {
+			delay: 3000,
+		},
 		observer: true,
 		observeParents: true,
 	});
@@ -69,25 +71,25 @@ if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
 
 headerNav();
 
-var swiper = new Swiper('#eventkvSwipeHeader', {
-	autoplay: {
-		delay: 3000,
-	},
-	loop: true,
-	slidesPerView: 1,
-	spaceBetween: 0,
-	paginationClickable: true,
-	keyboard: true,
-	speed: 400,
-	pagination: {
-		el: '#eventkvSwipeHeader .swiper-pagination',
-		type: 'fraction',
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-});
+// var swiper = new Swiper('#eventkvSwipeHeader', {
+// 	autoplay: {
+// 		delay: 3000,
+// 	},
+// 	loop: true,
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	paginationClickable: true,
+// 	keyboard: true,
+// 	speed: 400,
+// 	pagination: {
+// 		el: '#eventkvSwipeHeader .swiper-pagination',
+// 		type: 'fraction',
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+// });
 
 // 카테고리 gnb
 $(".gnb__menu li a").on("click", function () {
