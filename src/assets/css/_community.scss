@@ -11,6 +11,13 @@
     height: 235px;
     margin-top: 40px;
     margin-bottom: 32px;
+
+    &:hover {
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 1;
+      }
+    }
    
     .swiper-wrapper {
       height: 100%;
@@ -41,11 +48,6 @@
     .swiper-button-prev,
     .swiper-button-next {
       opacity: 0;
-    }
-
-    .swiper-button-prev:hover,
-    .swiper-button-next:hover {
-      opacity: 1;
     }
 
     .swiper-button-next::after,

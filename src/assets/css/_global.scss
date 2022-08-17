@@ -751,6 +751,13 @@ input::-ms-clear {
 			height: 114px;
 			margin: 0;
 			overflow: hidden;
+
+			&:hover {
+				.carousel-nav-next, 
+				.carousel-nav-prev {
+					opacity: 1;
+				}
+			}
 		}
 
 		.swiper-slide , .swiper-slide > a {
@@ -795,6 +802,7 @@ input::-ms-clear {
 			right: 16px;
 			top: 50%;
 			transform: translateY(-50%);
+			opacity: 0;
 		}
 
 		.carousel-nav-prev {
@@ -805,6 +813,7 @@ input::-ms-clear {
 			left: 16px;
 			top: 50%;
 			transform: translateY(-50%);
+			opacity: 0;
 		}
 	}
 
