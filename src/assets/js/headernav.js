@@ -132,6 +132,12 @@ $(".gnb__category .category-wrap--active a").on("click", function () {
 	}
 });
 
+$(document).on('mouseenter mouseleave', '.gnb__category', function(event){
+	if (event.type === 'mouseleave') {
+		gnbReset();
+	}
+});
+
 function gnbReset() {
 	$(".gnb__category").css("display", "none");
 	$(".gnb__menu li a").removeClass('active');
