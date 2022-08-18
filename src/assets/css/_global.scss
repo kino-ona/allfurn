@@ -282,10 +282,11 @@ input::-ms-clear {
 	}
 
 	.textfield {
-		transition: margin .2s ease-in-out, width .8s ease-in-out;
+		transition: margin .4s ease-in-out;
 
 		.textfield__search {
 			width: 400px !important;
+			transition: width .4s ease-in-out;
 		}
 	}
 }
@@ -654,6 +655,8 @@ input::-ms-clear {
 
 // globalsearch
 .header.globalsearch--active {
+	height: 79px; 
+
 	.head__fixed {
 		border-bottom: 1px solid #E0E0E0;
 	}
@@ -723,12 +726,12 @@ input::-ms-clear {
 
 		&--history {
 			position: relative;
-			padding-bottom: 16px;
+			padding-bottom: 15px;
 			border-bottom: 1px solid #E0E0E0;
 		}
 
 		&--best {
-			padding-bottom: 6px;
+			padding-bottom: 15px;
 			border-bottom: 1px solid #E0E0E0;
 		}
 	}
@@ -776,22 +779,27 @@ input::-ms-clear {
 
 		.swiper-pagination {
 			width: 60px;
-			padding: 3px 12px;
+			padding: 2.5px 12px;
 			box-sizing: border-box;
 			bottom: 10px;
 			left: inherit;
 			right: 15px;
+			color: #E0E0E0;
 			font-size: 12px;
-			font-weight: 600;
+			font-weight: 400;
 			letter-spacing: -0.03em;
-			color: #ffffff;
 			background-color: rgba(0, 0, 0, .4);
 			border-radius: 50px;
 		}
 
+		.swiper-pagination-current {
+			color: #FFFFFF;
+			font-weight: 600;
+		}
+		
 		.swiper-pagination-total {
-			font-weight: 400;
-			color: #E0E0E0;
+			color: inherit;
+			font-weight: inherit;
 		}
 
 		.carousel-nav-next {
@@ -799,7 +807,7 @@ input::-ms-clear {
 			z-index: 9;
 			position: absolute;
 			left: unset;
-			right: 16px;
+			right: 5px;
 			top: 50%;
 			transform: translateY(-50%);
 			opacity: 0;
@@ -810,7 +818,7 @@ input::-ms-clear {
 			z-index: 9;
 			position: absolute;
 			right: unset;
-			left: 16px;
+			left: 5px;
 			top: 50%;
 			transform: translateY(-50%);
 			opacity: 0;
@@ -821,6 +829,7 @@ input::-ms-clear {
 		display: flex;
 		align-items: center;
 		cursor: default;
+		color: #1B1B1B;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 26px;
@@ -849,6 +858,9 @@ input::-ms-clear {
 		font-size: 16px;
 		font-weight: 600;
 		letter-spacing: -0.02em;
+		&:last-child {
+			margin-bottom: 10px;
+		}
 
 		[type="button"] {
 			cursor: pointer;
@@ -867,6 +879,11 @@ input::-ms-clear {
 			font-weight: 600;
 			line-height: 26px;
 			letter-spacing: -0.02em;
+		}
+
+		.ico__search20 {
+			flex-shrink: 0;
+			flex-grow: 0;
 		}
 	}
 
