@@ -31,6 +31,8 @@
     background-color: #ffffff;
     text-align: left;
     box-sizing: border-box;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
 
   &__content .header p {
@@ -43,13 +45,15 @@
   &__content .content {
     overflow-y: auto;
     max-height: 70vh;
-    padding: 1px 20px 0 24px;
+    padding: 1px 24px 0 24px;
     background-color: #ffffff;
   }
 
   &__content .footer {
     margin-top: -1px;
     background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
 
@@ -110,7 +114,7 @@
     position: absolute;
     top: 29px;
     right: 24px;
-    z-index: 999;
+    z-index: 10002;
   }
 
   &__close-button {
