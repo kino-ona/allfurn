@@ -285,3 +285,11 @@ const CateClickToScroll = () => {
 	})
 }
 CateClickToScroll();
+
+// 상품 관리
+$("#tabs-1").on("click", function () {
+	$(".category-btn-group .category-btn--01").css("display", "flex");
+});
+$("#tabs-2").on("click", function () {
+	$(".category-btn-group .category-btn--01").css("display", "none");
+});
