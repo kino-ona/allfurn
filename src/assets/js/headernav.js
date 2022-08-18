@@ -15,10 +15,6 @@ const headerNav = () => {
 		header.addClass(headerNavActive);
 		globalsearch.addClass(headerNavActive);
 		navModal.addClass(navModalActive);
-
-		if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
-			searchBanner();
-		}
 		gnbReset()
 
 		const blank = document.querySelector('.globalsearch-modal.globalsearch-modal--active');
@@ -26,6 +22,10 @@ const headerNav = () => {
 	});
 
 	navCancel.on('click', () => { headerNavClose(); });
+
+	if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
+		searchBanner();
+	}
 }
 
 const headerNavClose = () => {
