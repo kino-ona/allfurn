@@ -38,11 +38,11 @@
       <div class="inner">
         <ul class="gnb__menu">
           <li><a href="#" class="category-select">카테고리</a></li>
-          <li><a href="#">신상품</a></li>
-          <li><a href="#">도매 업체</a></li>
-          <li><a href="#">이 달의 도매</a></li>
-          <li><a href="#">매거진</a></li>
-          <li><a href="#">커뮤니티</a></li>
+          <li><a href="../product/GGTW-WEB-PDL-01.html">신상품</a></li>
+          <li><a href="../wholesaler/GGTW-WEB-WSC-01.html">도매 업체</a></li>
+          <li><a href="../wholesaler/GGTW-WEB-WSP-01.html">이 달의 도매</a></li>
+          <li><a href="../magazine/GGTW-WEB-MGZ-01.html">매거진</a></li>
+          <li><a href="../community/GGTW-WEB-CMT-01.html">커뮤니티</a></li>
         </ul>
 
         <div class="gnb__category">
