@@ -1,53 +1,109 @@
 @@include('../inc/pagehead.inc',{
-  "pagetitle":" | 로그인",
-  "webroot":".."
+"pagetitle":" | 로그인",
+"webroot":".."
 })
 </head>
 
 <body>
-<div class="skipnavigation"><a href="#container">skip to container</a></div>
-<div id="wrap">
-  @@include('../inc/header.inc',{
+  <div class="skipnavigation"><a href="#container">skip to container</a></div>
+  <div id="wrap">
+    @@include('../inc/header.inc',{
     "webroot":"..",
     "headertype":"headertype__none"
-  })
+    })
 
-  <div id="container" class="container" style="min-height:calc(100vh - 287px)">
-    <div class="member">
-      <div class="inner__center" style="min-height:calc(100vh - 287px)">
-        <div class="login">
-          <h1 class="head__logo head__logo--large"><span class="a11y">All FURN</span></h1>
-          <div class="login__inner">
-            <label class="textfield__inputlabel" for="LGI-01_loginId">아이디</label>
-            <input type="text" id="LGI-01_loginId" class="textfield__input textfield__input--gray" placeholder="아이디를 입력해주세요." />
-            <label class="textfield__inputlabel" for="LGI-01_loginPassWord">비밀번호</label>
-            <input type="text" id="LGI-01_loginPassWord" class="textfield__input textfield__input--gray" placeholder="비밀번호를 입력해주세요." />
-          </div>
-          <div class="login__notice-box">
-            <ul>
-              <li>도소매 및 일반 회원은 가입 시 입력한 이메일을 아이디로 입력해주세요.</li>
-              <li>직원 계정은 대표 계정에게 전달받은 아이디를 입력해주세요.</li>
+    <div id="container" class="container" style="min-height:calc(100vh - 287px)">
+      <div class="member">
+        <div class="inner__center" style="min-height:calc(100vh - 287px)">
+          <div class="login">
+            <h1 class="head__logo head__logo--large"><span class="a11y">All FURN</span></h1>
+            <div class="login__inner">
+              <label class="textfield__inputlabel" for="LGI-01_loginId">아이디</label>
+              <input type="text" id="LGI-01_loginId" class="textfield__input textfield__input--gray"
+                placeholder="아이디를 입력해주세요." />
+              <label class="textfield__inputlabel" for="LGI-01_loginPassWord">비밀번호</label>
+              <input type="text" id="LGI-01_loginPassWord" class="textfield__input textfield__input--gray"
+                placeholder="비밀번호를 입력해주세요." />
+            </div>
+            <div class="login__notice-box">
+              <ul>
+                <li>도소매 및 일반 회원은 가입 시 입력한 이메일을 아이디로 입력해주세요.</li>
+                <li>직원 계정은 대표 계정에게 전달받은 아이디를 입력해주세요.</li>
+              </ul>
+            </div>
+            <div class="button-wrap">
+              <button type="button" class="button button--solid" onclick="openModal('#alert-modal01')">로그인하기</button>
+              <button type="button" onclick="location.href='GGTW-WEB-LGI-02.html'" class="button button--blank-gray">올펀
+                가입하기</button>
+            </div>
+            <ul class="link-button-wrap">
+              <li><a href="GGTW-WEB-LGI-05.html" type="button" class="link-button">비밀번호 재설정</a></li>
+              <li><a href="#" type="button" class="link-button">서비스 이용 문의</a></li>
             </ul>
-          </div>
-          <div class="button-wrap">
-            <button type="button" class="button button--solid">로그인하기</button>
-            <button type="button" class="button button--solid" disabled>로그인하기</button>
-            <button type="button" onclick="location.href='GGTW-WEB-LGI-02.html'" class="button button--blank-gray">올펀 가입하기</button>
-          </div>
-          <ul class="link-button-wrap">
-            <li><a href="GGTW-WEB-LGI-05.html" type="button" class="link-button">비밀번호 재설정</a></li>
-            <li><a href="#" type="button" class="link-button">서비스 이용 문의</a></li>
-          </ul>
 
+            <!-- 아이디, 패스워드 불일치 -->
+            <div id="alert-modal01" class="alert-modal">
+              <div class="alert-modal__container">
+                <div class="alert-modal__top">
+                  <p>
+                    아이디 패스워드가 일치하지 않습니다.<br>
+                    다시 확인해주세요.
+                  </p>
+                </div>
+                <div class="alert-modal__bottom">
+                  <button type="button" class="button button--solid" onclick="closeModal('#alert-modal01')">
+                    확인
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 미승인 -->
+            <div id="alert-modal02" class="alert-modal">
+              <div class="alert-modal__container">
+                <div class="alert-modal__top">
+                  <p>
+                    가입 승인 후 로그인해주세요.<br>
+                    가입 승인 결과는 문자로 전송됩니다.
+                  </p>
+                </div>
+                <div class="alert-modal__bottom">
+                  <button type="button" class="button button--solid" onclick="closeModal('#alert-modal02')">
+                    확인
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 관리자에서 생성한 계정 최초 진입 -->
+            <div id="alert-modal03" class="alert-modal">
+              <div class="alert-modal__container">
+                <div class="alert-modal__top">
+                  <p>
+                    약관 동의 화면으로 이동합니다.
+                  </p>
+                  <p class="text--gray">
+                    관리자가 계정을 생성한 경우,<br>
+                    최초 로그인 시 약관 동의가 필요합니다.
+                  </p>
+                </div>
+                <div class="alert-modal__bottom">
+                  <button type="button" class="button button--solid" onclick="closeModal('#alert-modal03')">
+                    확인
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-  @@include('../inc/footer.inc',{
+    @@include('../inc/footer.inc',{
     "webroot":".."
     })
-</div>
+  </div>
 
 </body>
+
 </html>
