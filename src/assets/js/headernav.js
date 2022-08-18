@@ -21,11 +21,10 @@ const headerNav = () => {
 		if(blank === null) return; else {blank.addEventListener('click', () => { headerNavClose(); })};
 	});
 
-	navCancel.on('click', () => { headerNavClose(); });
-
-	if(globalsearch.find('.globalsearch__banner .swiper-container').length > 0) {
-		searchBanner();
-	}
+	navCancel.on('click', () => { 
+		headerNavClose(); 
+		// swiper.destroy();
+	});
 }
 
 const headerNavClose = () => {
@@ -34,45 +33,85 @@ const headerNavClose = () => {
 	navModal.removeClass(navModalActive);
 }
 
-function searchBanner() {
-		var swiper = new Swiper('#headerNavBanner', {
-			loop: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			allowTouchMove: false,
-			paginationClickable: false,
-			keyboard: false,
-			navigation: {
-				nextEl: '.carousel-nav-next',
-				prevEl: '.carousel-nav-prev',
-			},
-			pagination: {
-				el: '#headerNavBanner .swiper-pagination',
-				type: 'fraction',
-				formatFractionCurrent: function (number) {
-					let fraction = '0';
-					if (number < 10) {
-						return fraction + number;
-					} else {
-						return number;
-					}
-				},
-				formatFractionTotal: function (number) {
-					let fraction = '0';
-					if (number < 10) {
-						return fraction + number;
-					} else {
-						return number;
-					}
-				},
-			},
-			autoplay: {
-				delay: 3000,
-			},
-			observer: true,
-			observeParents: true,
-		});
-}
+var swiper = new Swiper('#headerNavBanner', {
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	allowTouchMove: false,
+	paginationClickable: false,
+	keyboard: false,
+	navigation: {
+		nextEl: '.carousel-nav-next',
+		prevEl: '.carousel-nav-prev',
+	},
+	pagination: {
+		el: '#headerNavBanner .swiper-pagination',
+		type: 'fraction',
+		formatFractionCurrent: function (number) {
+			let fraction = '0';
+			if (number < 10) {
+				return fraction + number;
+			} else {
+				return number;
+			}
+		},
+		formatFractionTotal: function (number) {
+			let fraction = '0';
+			if (number < 10) {
+				return fraction + number;
+			} else {
+				return number;
+			}
+		},
+	},
+	autoplay: {
+		delay: 3000,
+	},
+	observer: true,
+	observeParents: true,
+});
+
+
+
+// function searchBanner() {
+// 		var swiper = new Swiper('#headerNavBanner', {
+// 			loop: true,
+// 			slidesPerView: 1,
+// 			spaceBetween: 0,
+// 			allowTouchMove: false,
+// 			paginationClickable: false,
+// 			keyboard: false,
+// 			navigation: {
+// 				nextEl: '.carousel-nav-next',
+// 				prevEl: '.carousel-nav-prev',
+// 			},
+// 			pagination: {
+// 				el: '#headerNavBanner .swiper-pagination',
+// 				type: 'fraction',
+// 				formatFractionCurrent: function (number) {
+// 					let fraction = '0';
+// 					if (number < 10) {
+// 						return fraction + number;
+// 					} else {
+// 						return number;
+// 					}
+// 				},
+// 				formatFractionTotal: function (number) {
+// 					let fraction = '0';
+// 					if (number < 10) {
+// 						return fraction + number;
+// 					} else {
+// 						return number;
+// 					}
+// 				},
+// 			},
+// 			autoplay: {
+// 				delay: 3000,
+// 			},
+// 			observer: true,
+// 			observeParents: true,
+// 		});
+// }
 
 headerNav();
 
