@@ -642,8 +642,8 @@
                   </p>
                 </div>
                 <div class="modal__buttons">
-                  <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button modal__button--gray"><span>취소</span></a>
-                  <a onclick="closeModal('#mpg_delete-folder')" type="button" class="modal__button"><span>확인</span></a>
+                  <a onclick="closeModal('#mpg_delete-folder')" role="button" class="modal__button modal__button--gray"><span>취소</span></a>
+                  <a onclick="closeModal('#mpg_delete-folder')" role="button" class="modal__button"><span>확인</span></a>
                 </div>
               </div>
             </div>
@@ -818,21 +818,21 @@
           <input type="text" value="A폴더" class="textfield__input textfield__input--gray">
           <span class="count">(00)</span>
         </li>
-        <li><button type="button" class="button button-delete">삭제</button></li>
+        <li><button type="button" onclick="openModal('#mpg_delete-folder')" class="button button-delete">삭제</button></li>
       </ul>
       <ul>
         <li class="textfield">
           <input type="text" value="구매 예정" class="textfield__input textfield__input--gray">
           <span class="count">(999+)</span>
         </li>
-        <li><button type="button" class="button button-delete">삭제</button></li>
+        <li><button type="button" onclick="openModal('#mpg_delete-folder')" class="button button-delete">삭제</button></li>
       </ul>
       <ul>
         <li class="textfield">
           <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
           <span class="count"></span>
         </li>
-        <li><button type="button" class="button button-delete">삭제</button></li>
+        <li><button type="button" onclick="openModal('#mpg_delete-folder')" class="button button-delete">삭제</button></li>
       </ul>
     </div>
     <div class="default-modal__footer">

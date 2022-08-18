@@ -224,37 +224,37 @@
       <div class="globalsearch-history" aria-hidden="false">
         <div class="row">
           <div class="title">최근 검색어</div>
-          <div class="head-button"><div type="button" class="head-button">전체 삭제</div></div>
+          <div class="head-button"><a role="button" class="head-button">전체 삭제</a></div>
         </div>
         <div class="row">
           <div>리바트 소파 베드</div>
-          <div type="button">
+          <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-          </div>
+          </a>
         </div>
         <div class="row">
           <div>3인 소파</div>
-          <div type="button">
+          <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-          </div>
+          </a>
         </div>
         <div class="row">
           <div>코윈스</div>
-          <div type="button">
+          <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-          </div>
+          </a>
         </div>
         <div class="row">
           <div>라자가구</div>
-          <div type="button">
+          <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-          </div>
+          </a>
         </div>
         <div class="row">
           <div>대화 목록에서 업체를 선택하세요. 대화 목록에서 대화 목록에서 업체하여 메세지를 확인하세요.</div>
-          <div type="button">
+          <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
-          </div>
+          </a>
         </div>
       </div>
       <!--// 검색 기록 -->

@@ -2,7 +2,9 @@
 @use 'sass:math';
 
 .message {
-  [type="button"] {
+
+  [type="button"], 
+  [role="button"] {
     cursor: pointer;
   }
 
@@ -222,6 +224,7 @@
 
       .usermenu__item {
         cursor: pointer;
+        display: block;
         padding: 9px 24px;
         color: #1B1B1B;
         font-weight: 400;
@@ -578,7 +581,7 @@
       font-weight: 600;
       letter-spacing: -0.02em;
 
-      [type="button"] {
+      [role="button"] {
         color: #828282;
         font-size: 13px;
         font-weight: 400;
@@ -1348,4 +1351,8 @@
   .footer {
     height: 48px;
   }
+}
+
+.modal .header {
+  z-index: 998;
 }
