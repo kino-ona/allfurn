@@ -9,7 +9,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-01');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-01');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-02');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-02');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -48,8 +48,8 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-03');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
-            <button type="button" onclick="closeModal('#modal-ALT-03');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-03');" class="modal__button modal__button--gray"><span>취소</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-03');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -68,8 +68,8 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-04');" type="button" class="modal__button modal__button--gray"><span>취소</span></button>
-            <button type="button" onclick="closeModal('#modal-ALT-04');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-04');" class="modal__button modal__button--gray"><span>취소</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-04');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-05');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-05');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-06');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-06');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
             </p>
           </div>
           <div class="modal__util">
-            <button type="button" onclick="closeModal('#modal-ALT-07');" type="button" class="modal__button"><span>확인</span></button>
+            <button type="button" onclick="closeModal('#modal-ALT-07');" class="modal__button"><span>확인</span></button>
           </div>
           </div>
         </div>
