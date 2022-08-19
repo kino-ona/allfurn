@@ -572,8 +572,7 @@
     border-width: 1px 1px 0 1px;
     border-color: #FB4760;
     border-style: solid;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     box-sizing: border-box;
   }
 
@@ -592,18 +591,16 @@
 
   &__item--active .category-filter__sub-title {
     background-color: #FFF5F6;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
   }
 
   &__sub-title {
     display: flex;
     position: relative;
     width: 200px;
-    padding: 8px 16px;
+    padding: 11px 16px;
     color: #1B1B1B;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 22px;
     letter-spacing: -.02em;
     text-align: left;
     border-right: 1px solid #E0E0E0;
@@ -650,11 +647,13 @@
 
   &__box {
     width: calc(100% - 200px);
-    padding: 4.5px 0;
+    padding: 0;
   }
 
   &__box > div {
-    padding: 4.5px 16px;
+    padding: 9px 16px;
+    height: 44px;
+    box-sizing: border-box;
   }
 
   &__box p {
@@ -665,6 +664,7 @@
     letter-spacing: -.02em;
     border-radius: 5px;
     box-sizing: border-box;
+    height: 26px;
   }
 
   &__box p + p {
@@ -686,7 +686,6 @@
     position: relative;
     width: 1176px;
     padding: 0;
-    margin-top: -67px;
     border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -696,8 +695,8 @@
   &__footer button {
     display: inline-block;
     position: relative;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     padding: 5px 30px 5px 12px;
     color: #333333;
     font-size: 15px;
@@ -732,8 +731,12 @@
 
   &__refresh {
     position: absolute;
-    top: 26px;
+    top: 22px;
     right: 14px;
+
+    .ico__refresh {
+      margin-bottom: 3px;
+    }
   }
 
   &__data {
@@ -753,7 +756,6 @@
 .category-filter.category-filter--active {
   .category-filter__wrap {
     display: block;
-    margin-bottom: 67px;
     border-width: 1px;
   }
 
@@ -765,7 +767,7 @@
 
 .category-filter__footer.active {
   display: block;
-  padding: 16px;
+  padding: 16px 16px 11px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #FB4760;

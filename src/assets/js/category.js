@@ -15,6 +15,11 @@ $('.' + filterItem).find('button').on('click', function () {
 	
 	$(this).closest('p').toggleClass(select);
 	$('.category-filter__footer').addClass('active');
+
+	if($('.category-filter__footer').hasClass('active') === true) {
+		$('.category-filter__wrap').css('border-bottom-right-radius', '0');
+		$('.category-filter__wrap').css('border-bottom-left-radius', '0');
+	}
 	
 	if($(this).closest('p').hasClass(select)) {
 		$('.category-filter__data').append(`<button type='button'><span>` + $(this).text() + `</span></button>`);
@@ -94,6 +99,8 @@ function refresh () {
 	$('.category-type__item-2 i').attr('class', 'ico__arrow--down14');
 	$('.category-type__item-1 .category__count').text(' ');
 	$('.category-type__item-2 .category__count').text(' ');
+	$('.category-filter__wrap').css('border-bottom-right-radius', '5px');
+	$('.category-filter__wrap').css('border-bottom-left-radius', '5px');
 }
 
 $('.modal__buttons--refresh').on('click' ,function() {
