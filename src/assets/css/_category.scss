@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use "mixins";
+@use 'sprite/sprite';
 
 // 홈
 .inner {
@@ -568,7 +569,7 @@
     overflow: scroll;
     position: relative;
     max-height: 288px;
-    margin-top: 4px;
+    margin-top: 5px;
     border-width: 1px 1px 0 1px;
     border-color: #FB4760;
     border-style: solid;
@@ -651,24 +652,22 @@
   }
 
   &__box > div {
-    padding: 9px 16px;
-    height: 44px;
+    padding: 0 16px;
     box-sizing: border-box;
+    max-height: 176px;
+    overflow: auto;
   }
 
   &__box p {
     display: inline-block;
     padding: 2px 10px;
+    margin: 9px 12px 9px 0;
     color: #4F4F4F;
     font-size: 14px;
     letter-spacing: -.02em;
     border-radius: 5px;
     box-sizing: border-box;
     height: 26px;
-  }
-
-  &__box p + p {
-    margin-left: 12px;
   }
 
   &__box p:hover {
@@ -696,7 +695,7 @@
     display: inline-block;
     position: relative;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 5px 30px 5px 12px;
     color: #333333;
     font-size: 15px;
@@ -704,29 +703,13 @@
     border-radius: 17px;
   }
 
-
-  &__footer button::before {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    right: 12px;
-    width: 9px;
-    height: 2px;
-    background-color: #BDBDBD;
-    transform: rotate(-45deg);
-    content: '';
-  }
-
   &__footer button::after {
+    content: "";
     display: inline-block;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 12px;
-    width: 9px;
-    height: 2px;
-    background-color: #BDBDBD;
-    transform: rotate(225deg);
-    content: '';
+    @include mixins.sprite(sprite.$ico-delete16);
   }
 
   &__refresh {
@@ -767,7 +750,7 @@
 
 .category-filter__footer.active {
   display: block;
-  padding: 16px 16px 11px;
+  padding: 16px 16px 6px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #FB4760;
