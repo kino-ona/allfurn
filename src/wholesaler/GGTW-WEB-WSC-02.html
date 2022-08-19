@@ -45,19 +45,35 @@
                     </li>
                     <li>
                       <p class="num">120만</p>
-                      <p class="text">방문 자수</p>
+                      <p class="text">방문 수</p>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="company__right-wrap">
-                <div class="company__share">
+                <div class="company__share" onclick="openModal('#alert-modal')">
                   <i class="ico__share28"><span class="a11y">공유</span></i>
                   <p>공유</p>
                 </div>
                 <div class="company__like active">
                   <i class="like"><span class="a11y">좋아요</span></i>
                   <p>좋아요</p>
+                </div>
+              </div>
+
+              <!-- 공유 팝업 -->
+              <div id="alert-modal" class="alert-modal">
+                <div class="alert-modal__container">
+                  <div class="alert-modal__top">
+                    <p>
+                      링크가 복사되었습니다.
+                    </p>
+                  </div>
+                  <div class="alert-modal__bottom">
+                    <button type="button" class="button button--solid" onclick="closeModal('#alert-modal')">
+                      확인
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,7 +123,7 @@
                       </dl>
                       <dl>
                         <dt>웹사이트</dt>
-                        <dd><a href="www.gagutalk.com" target="_blank">www.gagutalk.com</a></dd>
+                        <dd><a href="https://www.gagutalk.com/" target="_blank">www.gagutalk.com</a></dd>
                       </dl>
                     </div>
                   </div>
@@ -230,7 +246,9 @@
                           </div>
                           <div class="card__text--wrap">
                             <p class="card__brand">라자가구</p>
-                            <p class="card__name">230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이</p>
+                            <p class="card__name">
+                              230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이230 코모도 3인 소파 머드그레이
+                            </p>
                             <p class="card__price">480,000원</p>
                           </div>
                         </a>
@@ -428,7 +446,7 @@
       </div>
     </div>
     @@include('../inc/footer.inc',{
-      "webroot":".."
+    "webroot":".."
     })
     <script src="/assets/js/wholesaler.js" type="text/javascript"></script>
 </body>
