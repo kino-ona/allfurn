@@ -6,6 +6,11 @@
   overflow: hidden;
   height: 240px !important;
   margin-bottom: 36px !important;
+  border-radius: 5px;
+
+  &.radius--none {
+    border-radius: 0;
+  }
 
   .swiper-pagination {
     right: 20px;
