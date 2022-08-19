@@ -227,31 +227,31 @@
           <div class="head-button"><a role="button" class="head-button">전체 삭제</a></div>
         </div>
         <div class="row">
-          <div>리바트 소파 베드</div>
+          <div class="row__text">리바트 소파 베드</div>
           <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
           </a>
         </div>
         <div class="row">
-          <div>3인 소파</div>
+          <div class="row__text">3인 소파</div>
           <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
           </a>
         </div>
         <div class="row">
-          <div>코윈스</div>
+          <div class="row__text">코윈스</div>
           <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
           </a>
         </div>
         <div class="row">
-          <div>라자가구</div>
+          <div class="row__text">라자가구</div>
           <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
           </a>
         </div>
         <div class="row">
-          <div>대화 목록에서 업체를 선택하세요. 대화 목록에서 대화 목록에서 업체하여 메세지를 확인하세요.</div>
+          <div class="row__text">대화 목록에서 업체를 선택하세요. 대화 목록에서 대화 목록에서 업체하여 메세지를 확인하세요.</div>
           <a role="button">
             <div class="ico__delete10"><span class="a11y">삭제하기</span></div>
           </a>

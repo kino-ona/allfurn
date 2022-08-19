@@ -287,6 +287,11 @@ input::-ms-clear {
 		.textfield__search {
 			width: 400px !important;
 			transition: width .4s ease-in-out;
+			font-size: 15px;
+			line-height: 24px;
+			font-weight: 400;
+			letter-spacing: -0.02em;
+			color: #828282
 		}
 	}
 }
@@ -662,7 +667,7 @@ input::-ms-clear {
 	}
 
 	.textfield {
-		margin-left: 134px;
+		margin-left: 123px;
 
 		.textfield__search {
 			width: 560px !important;
@@ -700,8 +705,8 @@ input::-ms-clear {
 
 	&-close {
 		display: none;
-		margin-left: 8px;
-		padding: 8px;
+		margin-left: 16px;
+		padding: 0;
 		color: #828282;
 		font-size: 15px;
 		font-weight: 500;
@@ -711,6 +716,8 @@ input::-ms-clear {
 
 	&__section {
 		padding: 16px 16px 0 16px;
+		width: 602px;
+		box-sizing: border-box;
 
 		> [class^='globalsearch-'] {
 			display: flex;
@@ -722,12 +729,29 @@ input::-ms-clear {
 
 		.row:first-child {
 			margin-bottom: 22px;
+			
+			a {
+				display: block;
+				margin-top: 3px;
+			}
 		}
 
 		&--history {
 			position: relative;
 			padding-bottom: 15px;
 			border-bottom: 1px solid #E0E0E0;
+			padding-right: 0;
+
+			.row {
+				.row__text {
+					width: 90%;
+
+					&+a {
+						margin-top: 6px;
+						margin-right: 4px;
+					}
+				}
+			}
 		}
 
 		&--best {
@@ -738,7 +762,7 @@ input::-ms-clear {
 
 	&__inner {
 		width: 100%;
-		max-width: 600px;
+		max-width: 602px;
 		position: relative;
 		padding: 0;
 		margin: 0 auto;
@@ -779,6 +803,7 @@ input::-ms-clear {
 
 		.swiper-pagination {
 			width: 60px;
+			height: 22px;
 			padding: 2.5px 12px;
 			box-sizing: border-box;
 			bottom: 10px;
@@ -902,11 +927,6 @@ input::-ms-clear {
 	}
 
 	&-history {
-
-		.ico__delete10 {
-			margin-top: 6px;
-		}
-
 		.empty {
 			margin-top: 47px;
 			margin-bottom: 88px;
