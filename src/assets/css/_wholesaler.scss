@@ -547,6 +547,7 @@
 
       li {
         margin-right: 24px;
+        margin-bottom: 40px;
 
         .best__product-img {
           img {
@@ -590,7 +591,6 @@
 
         .best__product-text {
           margin-top: 21px;
-          margin-bottom: 40px;
           padding: 0 16px;
           width: 276px;
           box-sizing: border-box;
@@ -637,7 +637,6 @@
           letter-spacing: -0.02em;
           color: #1B1B1B;
           width: 171px;
-          margin-bottom: 40px;
           // 두번째 줄 말줄임 표시 IE 적용 불가
           overflow: hidden;
           display: -webkit-box;
