@@ -1192,6 +1192,116 @@
   &__item:hover {
     background-color: #FFF5F6;
   }
+
+  &.dropdown--type01 {
+    .dropdown__title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+      height: 48px;
+      box-sizing: border-box;
+
+      &::before {
+        width: 8px;
+        height: 8px;
+      }
+
+      &:hover {
+        border-color: #FB4760;
+
+        &::before {
+          border-color: #FB4760;
+        }
+      }
+    }
+
+    .dropdown__wrap {
+      .dropdown__item {
+        height: 50px;
+        box-sizing: border-box;
+        padding: 12px 16px;
+
+        span,
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25.6px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+        }
+      }
+    }
+
+    &.dropdown--type01.dropdown--active {
+      .dropdown__wrap {
+        height: auto;
+        box-sizing: border-box;
+        max-height: 240px;
+        overflow-y: scroll;
+        padding: 0;
+      }
+    }
+
+    &.text--gray {
+      .dropdown__title {
+        color: #BDBDBD;
+      }
+    }
+  }
+
+  &.dropdown--type02 {
+    .dropdown__title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+      height: 48px;
+      box-sizing: border-box;
+
+      &::before {
+        width: 8px;
+        height: 8px;
+      }
+
+      &:hover {
+        border-color: #FB4760;
+
+        &::before {
+          border-color: #FB4760;
+        }
+      }
+    }
+
+    .dropdown__wrap {
+      .dropdown__item {
+        height: 44px;
+        box-sizing: border-box;
+        padding: 9px 24px;
+
+        span,
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25.6px;
+          letter-spacing: -0.02em;
+          color: #1B1B1B;
+        }
+      }
+    }
+
+    &.dropdown--type01.dropdown--active {
+      .dropdown__wrap {
+        height: auto;
+        box-sizing: border-box;
+        max-height: 240px;
+        overflow-y: scroll;
+        padding: 6px 0;
+      }
+    }
+  }
 }
 
 .dropdown.dropdown--active {

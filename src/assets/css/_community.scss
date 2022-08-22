@@ -159,17 +159,31 @@
         color: #1B1B1B;
         height: 48px;
         box-sizing: border-box;
+
+        &::before {
+          width: 8px;
+          height: 8px;
+        }
+
+        &:hover {
+          border-color: #FB4760;
+
+          &::before {
+            border-color: #FB4760;
+          }
+        }
       }
 
       .dropdown.dropdown--active {
         .dropdown__wrap {
           height: auto;
+          max-height: 240px;
+          overflow-y: scroll;
+          box-sizing: border-box;
+          padding: 6px 0;
         }
       }
       .dropdown__wrap {
-        box-sizing: border-box;
-        padding: 6px 0;
-
         .dropdown__item {
           height: 44px;
           box-sizing: border-box;
