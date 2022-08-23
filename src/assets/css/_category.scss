@@ -67,6 +67,18 @@
     height: 34px;
     border: 1px solid #E0E0E0;
     border-radius: 17px;
+
+    &.filter--order {
+      width: initial;
+      height: 34px;
+      padding: 5px 12px;
+      box-sizing: border-box;
+
+      span {
+        font-size: 15px;
+        color: #4F4F4F;
+      }
+    }
   }
 
   .ico__filter {
