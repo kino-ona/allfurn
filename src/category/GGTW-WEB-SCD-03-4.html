@@ -19,7 +19,7 @@
         </p>
         <div class="inner__category">
           <div class="sub-category sub-category--type-2">
-            <p class="sub-category__item"><a href="./GGTW-WEB-SCD-03-1.html">상품</a></p>
+            <p class="sub-category__item"><a href="./GGTW-WEB-SCD-03-3.html">상품</a></p>
             <p class="sub-category__item sub-category__item--active"><a href="./GGTW-WEB-SCD-03-4.html">업체</a></p>
           </div>
         </div>
@@ -45,17 +45,17 @@
               <div class="category-data__wrap--second"></div>
             </div>
             <a href="#" class="category-filter__refresh">
-              <i class="ico__refresh--gray"></i>
               <span>초기화</span>     
+              <i class="ico__refresh"></i>
             </a>
           </div>
 
           <div class="product">
             <div class="product__text--wrap">
               <p class="product__count">‘소파' 검색 결과 총 1,000개의 상품</p>
-              <a href="#" class="product__filter" onclick="openModal('#modal-type--basic')">
+              <a href="#" class="product__filter filter--order" onclick="openModal('#default-modal')">
                 <i class="ico__filter"><span class="a11y">필터 아이콘</span></i>
-                <span>신상품순</span>
+                <span>추천순</span>
               </a>
             </div>
           </div>
@@ -153,54 +153,63 @@
           <a href="#">올펀 상품 보러가기</a>
         </div> -->
       </div>
-      <div id="modal-type--basic" class="modal">
-        <div class="modal__container">
-          <div class="modal__content">
-            <div class="modal-box__container" style="width: 480px">
-              <div class="modal-box__content">
-                <div class="header">
-                  <p>정렬 선택</p>
-                </div>
-                <div class="content">
-                  <div class="radio">
-                    <label class="radio__item">
-                      <input type="radio" name="filter" checked>
-                      <span>추천순</span>
-                    </label>
-                    <label class="radio__item">
-                      <input type="radio" name="filter">
-                      <span>최근 상품 등록순</span>
-                    </label>
-                    <label class="radio__item">
-                      <input type="radio" name="filter">
-                      <span>검색 많은 순</span>
-                    </label>
-                    <label class="radio__item">
-                      <input type="radio" name="filter">
-                      <span>거래 많은 순</span>
-                    </label>
-                    <label class="radio__item">
-                      <input type="radio" name="filter">
-                      <span>상품 많은 순</span>
-                    </label>
-                    <label class="radio__item">
-                      <input type="radio" name="filter">
-                      <span>가나다순</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="footer" style="height: 42px">
-                  <button type="button" onclick="closeModal('#modal-type--basic')">선택 완료</p>
-                </div>
-                <div class="modal-close">
-                  <button type="button" class="modal__close-button" onclick="closeModal('#modal-type--basic')"><span class="a11y">close</span></button>
-                </div>
-              </div>
-            </div>
+      <!-- 추천순 팝업 -->
+      <div id="default-modal" class="default-modal default-modal--radio">
+        <div class="default-modal__container">
+          <div class="default-modal__header">
+            <h2>정렬 선택</h2>
+            <button type="button" class="ico__close28" onclick="closeModal('#default-modal')">
+              <span class="a11y">닫기</span>
+            </button>
+          </div>
+          <div class="default-modal__content">
+            <ul class="content__list">
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked" checked>
+                  <span>추천순</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked">
+                  <span>최근 상품 등록순</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked">
+                  <span>검색 많은 순</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked">
+                  <span>거래 많은 순</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked">
+                  <span>상품 많은 순</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="order" class="checkbox__checked">
+                  <span>가나다 순</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="default-modal__footer">
+            <button type="button" class="button button--solid">선택 완료</button>
           </div>
         </div>
       </div>
-      <div id="modal-category" class="modal modal-category">
+
+      <!-- 카테고리 선택 팝업 -->
+      <div id="modal-category" class="modal modal-category modal-category--modify">
         <div class="modal__container">
           <div class="modal__content">
             <div class="modal-box__container" style="width: 480px;">
@@ -266,7 +275,7 @@
                     <span>사무용가구</span>
                   </label>
                 </div>
-                <div class="footer" style="height: 42px">
+                <div class="footer">
                   <div class="modal__buttons modal__buttons--half">
                     <button type="button" onclick="" class="modal__button modal__buttons--refresh">
                       <i class="ico__refresh"></i>
@@ -283,7 +292,9 @@
           </div>
         </div>
       </div>
-      <div id="modal-category-2" class="modal modal-category-2">
+
+      <!-- 소재지 선택 팝업 -->
+      <div id="modal-category-2" class="modal modal-category-2 modal-category--modify">
         <div class="modal__container">
           <div class="modal__content">
             <div class="modal-box__container" style="width: 480px;">
@@ -325,7 +336,7 @@
                     <span>제주</span>
                   </label>
                 </div>
-                <div class="footer" style="height: 42px">
+                <div class="footer">
                   <div class="modal__buttons modal__buttons--half">
                     <button type="button" onclick="" class="modal__button modal__buttons--refresh">
                       <i class="ico__refresh"></i>

@@ -15,7 +15,7 @@
 
 .sub-category {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #F2F2F2;
 
   &__item {
@@ -67,6 +67,18 @@
     height: 34px;
     border: 1px solid #E0E0E0;
     border-radius: 17px;
+
+    &.filter--order {
+      width: initial;
+      height: 34px;
+      padding: 5px 12px;
+      box-sizing: border-box;
+
+      span {
+        font-size: 15px;
+        color: #4F4F4F;
+      }
+    }
   }
 
   .ico__filter {
@@ -536,7 +548,6 @@
 }
 
 .category-filter {
-  margin-top: 4px;
 
   &__title {
     display: block;
@@ -757,6 +768,20 @@
 }
 
 .category-menu {
+  &.category-menu--modify {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .category-filter__refresh {
+      position: initial;
+      margin-top: 0;
+      width: 104px;
+      height: 48px;
+      margin-left: 10px;
+    }
+  }
+
   &__title {
     display: inline-block;
   }
@@ -1093,32 +1118,78 @@
     border-radius: 17px;
   }
 
-  button::before {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    right: 12px;
-    width: 9px;
-    height: 2px;
-    background-color: #BDBDBD;
-    transform: rotate(-45deg);
-    content: "";
-  }
-
   button::after {
+    content: "";
     display: inline-block;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 12px;
-    width: 9px;
-    height: 2px;
-    background-color: #BDBDBD;
-    transform: rotate(225deg);
-    content: "";
+    @include mixins.sprite(sprite.$ico-delete16);
   }
 
   .category-filter__refresh {
     display: none;
     top: 21px;
+  }
+}
+
+.modal.modal-category--modify {
+  .modal-box__content {
+    .content {
+      height: 426px;
+      box-sizing: border-box;
+
+      .category__check {
+        &:first-child {
+          span {
+            padding-top: 0;
+
+            &::after {
+              top: 4px;
+            }
+          }
+        }
+
+        &:last-child {
+          span {
+            border-bottom: 0;
+          }
+        }
+
+        input:checked+span {
+          color: #1B1B1B;
+          font-weight: 600;
+        }
+
+        span {
+          margin-left: 0;
+          border-bottom: 1px solid #E0E0E0;
+          line-height: 26px;
+          padding: 10px 0;
+          color: #828282;
+          font-weight: 400;
+
+          &::before {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      padding: 22px 24px;
+      height: 92px;
+      box-sizing: border-box;
+
+      .modal__buttons {
+        &::before {
+          display: none;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
   }
 }
