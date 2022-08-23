@@ -15,7 +15,7 @@
 
 .sub-category {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #F2F2F2;
 
   &__item {
@@ -548,7 +548,6 @@
 }
 
 .category-filter {
-  margin-top: 4px;
 
   &__title {
     display: block;
@@ -769,6 +768,20 @@
 }
 
 .category-menu {
+  &.category-menu--modify {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .category-filter__refresh {
+      position: initial;
+      margin-top: 0;
+      width: 104px;
+      height: 48px;
+      margin-left: 10px;
+    }
+  }
+
   &__title {
     display: inline-block;
   }
