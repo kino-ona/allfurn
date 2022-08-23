@@ -62,7 +62,7 @@
                           <div class="form__label">
                             <label class="label label--necessary" for="certificate0">사업자 등록증 첨부</label>
                           </div>
-                          <div class="filefield filefield--type-1">
+                          <!-- <div class="filefield filefield--type-1">
                             <div class="file-input file-input--attached" style="background-image: url('../assets/images/temp/default.png');">
                               <input class="input input--necessary file-input__input"
                               id="certificate0"
@@ -79,7 +79,7 @@
                                 <li>권장 형식: jpg, jpeg, png</li>
                               </ul>
                             </div>
-                          </div>
+                          </div> -->
                           <div class="filefield filefield--type-1">
                             <div class="file-input file-input--default">
                               <input class="input input--necessary file-input__input"
@@ -193,8 +193,10 @@
                               placeholder="상세 주소를 입력해주세요."
                               >
                             </div>
-                            <div class="radio-tab-content">
-                              <div class="dropdown dropdown--type01" style="display: none;">
+
+                            <!-- 해외 -->
+                            <div class="radio-tab-content" style="display: none;">
+                              <div class="dropdown dropdown--type01">
                                 <p class="dropdown__title">지역</p>
                                 <div class="dropdown__wrap">
                                   <a href="#" class="dropdown__item">
@@ -469,15 +471,15 @@
                           <div class="addressfield">
                             <div class="radio radio-tab">
                               <label class="radio__item" for="businessaddress1-1">
-                                <input type="radio" id="businessaddress1-1" name="filter-02">
+                                <input type="radio" id="businessaddress1-1" name="filter-02" checked>
                                 <span>국내</span>
                               </label>
                               <label class="radio__item" for="businessaddress1-2">
-                                <input type="radio" id="businessaddress1-2" name="filter-02" checked>
+                                <input type="radio" id="businessaddress1-2" name="filter-02">
                                 <span>해외</span>
                               </label>
                             </div>
-                            <div class="radio-tab-content" style="display: none;">
+                            <div class="radio-tab-content" style="display: block;">
                               <div class="input-guid">
                                 <input class="input input--necessary input-guid__input"
                                 id="businessaddress1-3"
@@ -494,7 +496,9 @@
                               placeholder="상세 주소를 입력해주세요."
                               >
                             </div>
-                            <div class="radio-tab-content" style="display: block;">
+
+                            <!-- 해외 -->
+                            <div class="radio-tab-content" style="display: none;">
                               <div class="dropdown dropdown--type01">
                                 <p class="dropdown__title">지역</p>
                                 <div class="dropdown__wrap">
