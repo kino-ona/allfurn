@@ -6,6 +6,7 @@
 .product__container {
   .category-btn {
     margin-bottom: 16px;
+    width: 93px;
 
     &+.category-list {
       display: none;
@@ -22,14 +23,15 @@
 }
 
 .category-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 91px;
-  height: 32px;
+  height: 34px;
   border: 1px solid #E0E0E0;
   border-radius: 34px;
   margin-bottom: 24px;
+  padding: 0 12px;
+  box-sizing: border-box;
 
   &:hover {
     cursor: pointer;
