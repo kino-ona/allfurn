@@ -490,6 +490,12 @@
           margin-left: 39px;
           text-align: center;
 
+          &.product-share {
+            a {
+              display: inline-block;
+            }
+          }
+
           img {
             width: 28px;
             height: 28px;

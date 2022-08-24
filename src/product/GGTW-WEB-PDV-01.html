@@ -88,7 +88,7 @@
                 </div>
                 <ul>
                   <li class="product-share">
-                    <a href="#">
+                    <a href="#" onclick="openModal('#alert-modal')">
                       <i class="ico__share28"><span class="a11y">공유</span></i>
                       <p>공유</p>
                     </a>
@@ -98,6 +98,22 @@
                     <p>관심 상품</p>
                   </li>
                 </ul>
+
+                <!-- 공유 팝업 -->
+                <div id="alert-modal" class="alert-modal">
+                  <div class="alert-modal__container">
+                    <div class="alert-modal__top">
+                      <p>
+                        링크가 복사되었습니다.
+                      </p>
+                    </div>
+                    <div class="alert-modal__bottom">
+                      <button type="button" class="button button--solid" onclick="closeModal('#alert-modal')">
+                        확인
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="right-wrap__code">
