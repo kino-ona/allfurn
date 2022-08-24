@@ -277,6 +277,7 @@
         .card__name {
           text-overflow: initial;
           white-space: initial;
+          margin-top: 10px;
           // 두번째 줄 말줄임 표시 IE 적용 불가
           display: -webkit-box;
           -webkit-line-clamp: 2;
