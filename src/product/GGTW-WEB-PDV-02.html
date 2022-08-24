@@ -48,7 +48,8 @@
                         <input type="checkbox" id="selected01-1">
                         <span>포그니 라운드 소파</span>
                       </label>
-                      <button class="ico__delete18" onclick="openModal('#alert-modal07')"><span class="a11y">삭제</span></button>
+                      <button class="ico__delete18" onclick="openModal('#alert-modal07')"><span
+                          class="a11y">삭제</span></button>
                     </div>
 
                     <div class="content__desc">
@@ -64,7 +65,7 @@
                               <li>라이트 베이지</li>
                               <li>패브릭</li>
                             </ul>
-                            <button class="ico__delete18"><span class="a11y">삭제</span></button>
+                            <button class="ico__delete18" onclick="openModal('#alert-modal02')"><span class="a11y">삭제</span></button>
                           </div>
                           <div class="selection__box">
                             <ul class="selection__count">
@@ -463,6 +464,25 @@
               <div class="alert-modal__bottom">
                 <div class="button-group">
                   <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal07')">
+                    취소
+                  </button>
+                  <button type="button" class="button button--solid">
+                    확인
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 옵션 삭제 팝업 -->
+          <div id="alert-modal02" class="alert-modal">
+            <div class="alert-modal__container">
+              <div class="alert-modal__top">
+                <p>옵션을 삭제하시겠습니까?</p>
+              </div>
+              <div class="alert-modal__bottom">
+                <div class="button-group">
+                  <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal02')">
                     취소
                   </button>
                   <button type="button" class="button button--solid">
