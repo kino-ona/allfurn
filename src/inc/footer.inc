@@ -42,6 +42,9 @@
   <a href="#" title="추가하기" class="add-button">
     <i class="btn__floating"></i>
   </a>
+  <!-- <a href="#" title="문의하기" class="add-button">
+    <i class="btn__floating--chat"></i>
+  </a> -->
 </footer>
 
 <script src="@@webroot/assets/js/plugin/swiper-bundle.min.js" type="text/javascript"></script>

@@ -518,3 +518,7 @@ i {
 .ico__chevron--right {
   @include mixins.sprite(sprite.$ico-chevron-right);
 }
+
+.btn__floating--chat {
+  @include mixins.sprite(sprite.$btn-floating-chat);
+}
