@@ -292,7 +292,7 @@
               </ul>
             </div>
             <div class="default-modal__footer">
-              <button type="button" class="button button--blank-gray">
+              <button type="button" onclick="reset(this);" class="button button--blank-gray">
                 <i class="ico__refresh"><span class="a11y">초기화</span></i>
                 <p>초기화</p>
               </button>
@@ -327,6 +327,12 @@
         prevEl: '.swiper-button-prev',
       },
     });
+
+    // category > checked reset
+    function reset(set) {
+      var $id = $(set).parents('.default-modal--category');
+      $($id).find('input[type=checkbox]').prop("checked", false);
+    }
   </script>
 </body>
 
