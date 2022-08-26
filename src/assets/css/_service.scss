@@ -323,7 +323,8 @@
     &-icon {
       position: absolute;
       right: 0;
-      top: 16px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .ico {

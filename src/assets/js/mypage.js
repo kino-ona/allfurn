@@ -26,6 +26,9 @@ $(".dropdown__item.dropdown__item--02").on("click", function (evnet) {
 });
 
 // category-menu
+let firstCount = 0;
+let secondCount = 0;
+
 $('.category-menu__title').on('click', function() {
 	$('.category-menu').toggleClass('category-menu--active');
 })
@@ -94,7 +97,6 @@ $(".card__bookmark").on("click", function () {
 });
 
 function openModal(name) {
-	console.log('test');
 	$(`${name}`).css('display', 'block');
 	$('body').css('overflow', 'hidden');
 }
@@ -133,6 +135,10 @@ $('.category-filter__title').on('click', function (event) {
 })
 
 $('.category-filter__refresh').on('click' , function () {
+	firstCount = 0;
+	secondCount = 0;
+	$('.category-type__item-1 .category__count').text(' ');
+	$('.category-type__item-2 .category__count').text(' ');
 	$('.category-filter__data button').remove();
 	$('.category-filter__footer').removeClass('active');
 	$('.category-filter__box p').removeClass('select-button');
@@ -228,6 +234,38 @@ $('.buttons-search').on('click', function () {
 	} else {
 		$('.category-data').css({'border': 0, 'height': 0});
 		$('.category-filter__refresh').removeClass('active');
+	}
+})
+
+$('.modal-category .buttons-refresh').on('click' ,function() {
+	$('.category-type__item-1 .category__count').text(' ');
+	firstCount = 0;
+})
+
+$('.modal-category-2 .buttons-refresh').on('click' ,function() {
+	$('.category-type__item-2 .category__count').text(' ');
+	secondCount = 0;
+})
+
+$('.modal-category .buttons-search').on('click', function () {
+	firstCount = 0;
+
+	for ( var i = 0; i < $(".modal-category input").length; i++) {
+		if ($(".modal-category input:checkbox")[i].checked === true ) {
+			firstCount = firstCount+1;
+			$('.category-type__item-1 .category__count').text(firstCount);
+		}
+	}
+})
+
+$('.modal-category-2 .buttons-search').on('click', function () {
+	secondCount = 0;
+
+	for ( var i = 0; i < $(".modal-category-2 input").length; i++) {
+		if ($(".modal-category-2 input:checkbox")[i].checked === true ) {
+			secondCount = secondCount+1;
+			$('.category-type__item-2 .category__count').text(secondCount);
+		}
 	}
 })
 

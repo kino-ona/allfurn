@@ -444,6 +444,10 @@
         flex-wrap: nowrap;
         justify-content: space-between;
       }
+
+      .textfield__icon--delete {
+        top: 14px;
+      }
     }
   }
 
@@ -806,13 +810,16 @@
 
       &--left {
         max-width: 70%;
-        padding-left: 48px;
         float: left;
       }
 
       &--right {
         max-width: 65%;
         float: right;
+      }
+
+      &--avatar {
+        padding-left: 48px;
       }
     }
 
