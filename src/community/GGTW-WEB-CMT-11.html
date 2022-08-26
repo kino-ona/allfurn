@@ -80,7 +80,7 @@
             </div>
             
 
-            <div id="modal-declaration" class="modal">
+            <div id="modal-declaration" class="modal modal-declaration--modify">
               <div class="modal__container">
                 <div class="modal__content">
                   <div class="modal-box__container" style="width: 480px">
@@ -92,11 +92,11 @@
                         <p>해당 게시글을 신고하시겠습니까?</p>
                         <textarea placeholder="신고 사유를 입력해주세요." rows=20 cols=30></textarea>
                       </div>
-                      <div class="footer" style="height: 42px">
+                      <div class="footer">
                         <button type="button">완료</p>
                       </div>
                       <div class="modal-close">
-                        <button type="button" class="modal__close-button" onclick="closeModal('.modal-declaration')"><span class="a11y">close</span></button>
+                        <button type="button" class="modal__close-button" onclick="closeModal('#modal-declaration')"><span class="a11y">close</span></button>
                       </div>
                     </div>
                   </div>

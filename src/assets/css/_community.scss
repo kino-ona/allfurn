@@ -855,7 +855,7 @@
   .util button[type='button'] {
     width: 150px;
     height: 48px;
-    line-height: 48px;
+    line-height: 46px;
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
@@ -905,6 +905,23 @@
       position: initial;
       margin-top: 52px;
       margin-bottom: 17px;
+    }
+  }
+}
+
+.modal.modal-declaration--modify {
+  .content p {
+    text-align: left;
+  }
+
+  .footer {
+    height: 92px;
+    box-sizing: border-box;
+    padding: 22px 24px;
+
+    button {
+      height: 48px;
+      line-height: 46px;
     }
   }
 }
