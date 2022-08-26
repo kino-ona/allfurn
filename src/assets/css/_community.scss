@@ -650,13 +650,18 @@
 
     &__more-comment {
       margin: 16px auto 0;
-      color: #1B1B1B;
       text-align: center;
-      font-size: 15px;
     }
 
     &__more-comment button{
       height: 40px;
+      padding: 0;
+
+      .button__text {
+        color: #1B1B1B;
+        font-size: 15px;
+        margin-left: 3px;
+      }
     }
   }
 
