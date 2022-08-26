@@ -1506,13 +1506,17 @@
     }
 
     .count__text {
-      width: 28px;
-      margin: 0 8px;
+      width: 20px;
+      // margin: 0 8px;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: -0.02em;
       color: #1D1D1D;
       text-align: center;
+      input {
+        margin-left: -2px;
+        font-size: 16px;
+      }
     }
   }
 

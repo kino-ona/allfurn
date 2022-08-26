@@ -475,18 +475,18 @@
     $(function () {
       $('.btn_minus').click(function (e) {
         e.preventDefault();
-        var stat = $("input[name='qty_input']").val();
+        var stat = $(this).parents('.selection__count').find("input[name='qty_input']").val();
         var num = parseInt(stat, 10);
         num--;
         if (num <= 0) {
           alert('더이상 줄일수 없습니다.');
           num = 1;
         }
-        $("input[name='qty_input']").val(num);
+        $(this).parents('.selection__count').find("input[name='qty_input']").val(num);
       });
       $('.btn_plus').click(function (e) {
         e.preventDefault();
-        var stat = $("input[name='qty_input']").val();
+        var stat = $(this).parents('.selection__count').find("input[name='qty_input']").val();
         var num = parseInt(stat, 10);
         num++;
 
@@ -494,7 +494,7 @@
         //   alert('더이상 늘릴수 없습니다.');
         //   num = 5;
         // }
-        $("input[name='qty_input']").val(num);
+        $(this).parents('.selection__count').find("input[name='qty_input']").val(num);
       });
     });
   </script>
