@@ -769,6 +769,10 @@
         height: 40px;
         border-radius: 50%;
       }
+
+      &.nodata--modify {
+        margin-top: 174px;
+      }
     }
   }
 
@@ -1340,7 +1344,7 @@
     color: #828282;
     position: absolute;
     right: 0;
-    top: 12px;
+    top: 11px;
   }
 
   .default-modal__footer {
