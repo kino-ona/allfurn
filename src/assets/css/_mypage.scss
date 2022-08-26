@@ -1417,7 +1417,7 @@
       left: 20px;
       width: 1px;
       height: 12px;
-      margin-top: 4px;
+      margin-top: 5px;
       background-color: #BDBDBD;
       content: '';
     }
@@ -2016,6 +2016,17 @@
 
   .buttons {
     margin-top: 5px;
+    &.buttons--modify {
+      display: inline-flex;
+
+      .cancle {
+        line-height: 42px;
+      }
+
+      .complete {
+        margin-left: 10px;
+      }
+    }
 
     .cancle {
       color: #333333;
@@ -2032,6 +2043,10 @@
     .button--border-gray {
       border: 1px solid #FB4760;
       color: #FB4760;
+
+      &.border-gray--modify {
+        line-height: 42px;
+      }
     }
 
     button {
@@ -2142,6 +2157,7 @@
       margin-right: 8px;
       background-color: #E0E0E0;
       content: '';
+      margin-bottom: -1px;
      }
      
   }
@@ -2348,6 +2364,20 @@
 
   .util {
     text-align: right;
+
+    &.util--modify {
+      .active {
+        display: inline-flex;
+
+        .cancle {
+          line-height: 42px;
+        }
+
+        .complete {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 
   .util button[type=button] {
