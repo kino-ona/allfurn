@@ -553,6 +553,16 @@
         }
       });
 
+      $('.card__head').find('label').click(function () {
+        var chkVal = $(this).parents('.basket__card').find('input[type=checkbox]').prop("checked");
+
+        if(chkVal === false) {
+          $(this).parents('.basket__card').find('input[type=checkbox]').prop("checked", true);
+        } else {
+          $(this).parents('.basket__card').find('input[type=checkbox]').prop("checked", false);
+        }
+      });
+
     });
   </script>
 </body>
