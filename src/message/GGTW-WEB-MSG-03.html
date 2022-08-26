@@ -124,7 +124,7 @@
                     </div>
                   </li>
                   <li class="aside-list__item">
-                    <figure class="profile"><img src="../assets/images/temp/dummy-thumnail2.png"></figure>
+                    <figure class="profile"><img src="../assets/images/temp/allfurn-defult_thumnail.png"></figure>
                     <div class="aside-list__content">
                       <div class="list__info">
                         <div class="title">허그앤슬립그앤허그앤슬립허그앤슬립슬립</div>
@@ -189,11 +189,18 @@
                   <a role="button" class="head-button usermenu-toggle" aria-checked=""><div class="ico__more"><span class="a11y">더 보기</span></div></a>
                 </div>
                 <div class="content__navi" aria-hidden="true">
-                  <div class="row">서울시 성동구 아차산로 110 1층</div>
-                  <a href="tel:010-1234-5678" class="row tel">010-1234-5678</a>
+                  <div class="row">서울, 경기</div>
+                  <div class="row cate">
+                    <div class="cate__badge">진열장/장식장</div>
+                    <div class="cate__badge">소파/거실</div>
+                    <div class="cate__badge">식탁/의자</div>
+                    <div class="cate__badge">안락의자/기능성의자</div>
+                    <div class="cate__badge">서재/공부방</div>
+                  </div>
+                  <a href="#" class="row navi-link">업체 자세히 보기<span class="ico__arrow--right14"></span></a>
                 </div>
                 <div class="content__usermenu" aria-hidden="true">
-                  <a role="button" class="usermenu__item" onclick="openModal('#msg_alarm')">알림끄기</a>
+                  <a role="button" class="usermenu__item" onclick="openModal('#msg_alarm')">알림켜기</a>
                   <a role="button" class="usermenu__item" onclick="openModal('#msg_report')">신고하기</a>
                 </div>
                 <div class="dialogue-insearch" aria-hidden="true">
@@ -222,19 +229,6 @@
                       </div>
                     </div>
                     <div class="timestamp timestamp--right"><span>00</span><span>:</span><span>00</span></div>
-                  </div>
-                  <div class="chat-box chat-box--product chat-box--left">
-                    <div class="chat chat--product chat--left">
-                      <div class="chat-box__head">상품 문의드립니다.</div>
-                      <div class="chat-box__inner">
-                        <div class="product-thumnail" style="background-image: url(../assets/images/temp/dummy-thumnail.png);"></div>
-                        <div class="product-info">
-                          <div class="product-info__title">포그니 라운드 소파</div>
-                          <div class="product-info__desc"><span class="price">630,000</span><span class="unit">원</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="timestamp timestamp--left"><span>00</span><span>:</span><span>00</span></div>
                   </div>
                   <div class="chat-box chat-box--right">
                     <div class="chat chat--right">
@@ -300,7 +294,10 @@
                 </div>
                 <div class="section__bottom section__bottom--photo section__bottom--photo-text">
                   <div class="section__bottom-button">
-                    <a role="button" class="bottom-button"><div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div></a>
+                    <div class="bottom-button file-input">
+                      <input type="file" class="input file-input__input" />
+                      <div class="ico__gallery-image"><span class="a11y">사진 불러오기</span></div>
+                    </div>
                   </div>
                   <div class="textfield textfield--photo">
                     <input
@@ -314,7 +311,7 @@
                     />
                     <div class="photo-container">
                       <div class="photo" style="background-image: url(../assets/images/temp/product01@2x.png);">
-                        <span class="a11y">나의 첨부 이미지</span>
+                        <span class="a11y">첨부 이미지</span>
                         <button type="button" class="button ico__sdelete"><span class="a11y">삭제하기</span></button>
                       </div>
                     </div>
@@ -367,7 +364,7 @@
 
     </div>
 
-    <div id="msg_imgviewer" class="modal" style="display: block;">
+    <div id="msg_imgviewer" class="modal">
       <div class="modal__container">
         <div class="modal__content">
           <div class="modal-box__container">
@@ -403,7 +400,7 @@
                   <p class="modal-box__heading">해당 업체를 신고하시겠습니까?</p>
                   <div class="textfield">
                     <textarea rows="10" class="textarea textfield__input" placeholder="신고 사유를 입력해주세요."></textarea>
-                    <div class="textarea__count"><span class="textarea__count-meta">14</span><i>/</i><span>1000</span></div>
+                    <div class="textarea__count"><span class="textarea__count-meta">14</span><i>/</i><span>100</span></div>
                   </div>
                   <div class="modal-box__bottom">
                     <input type="button" class="button" onclick="openModal('#msg_report-submit')" value="완료" />
