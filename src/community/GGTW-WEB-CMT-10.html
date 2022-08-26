@@ -82,7 +82,7 @@
                       <a href="#" class="ico__more"></a>
                       <div class="community-reply__box">
                         <a href="#">수정</a>
-                        <a href="#">삭제</a>
+                        <a href="#" onclick="openModal('#alert-modal')">삭제</a>
                       </div>
                     </div>
                     <p class="detail__writer">익명</p>
@@ -134,7 +134,7 @@
                         </div>
                         <a href="#" class="ico__more"></a>
                         <div class="community-reply__box">
-                          <a href="#">삭제</a>
+                          <a href="#">신고하기</a>
                         </div>
                       </div>
                       <div class="community-comment__item community-comment__reply">
@@ -150,7 +150,7 @@
                         </p>
                         <a href="#" class="ico__more"></a>
                         <div class="community-reply__box">
-                          <a href="#">삭제</a>
+                          <a href="#" onclick="openModal('#alert-modal')">삭제</a>
                         </div>
                       </div>
                       <div class="community-comment__item">
@@ -178,7 +178,7 @@
                         </div>
                         <a href="#" class="ico__more"></a>
                         <div class="community-reply__box">
-                          <a href="#">삭제</a>
+                          <a href="#">신고하기</a>
                         </div>
                       </div>
                     </div>
@@ -188,6 +188,25 @@
                     </div>
                   </div> 
                 </div>     
+              </div>
+
+              <!-- 삭제 팝업 -->
+              <div id="alert-modal" class="alert-modal">
+                <div class="alert-modal__container">
+                  <div class="alert-modal__top">
+                    <p>삭제하시겠습니까?</p>
+                  </div>
+                  <div class="alert-modal__bottom">
+                    <div class="button-group">
+                      <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal')">
+                        취소
+                      </button>
+                      <button type="button" class="button button--solid">
+                        확인
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             @@include('../inc/common-popup.inc',{

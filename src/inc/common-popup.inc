@@ -44,7 +44,8 @@
         <div class="modal-box__content">
           <div class="modal__desc">
             <p class="modal__text">
-             작성 중인 내용이 있습니다. 진행을 취소하시겠습니까?
+             작성 중인 내용이 있습니다.<br>
+             진행을 취소하시겠습니까?
             </p>
           </div>
           <div class="modal__util">

@@ -18,7 +18,7 @@
             <div class="contents">
               <div class="blank"></div>
                 <div class="community-content community-content--write">
-                  <p class="community-content__title">게시글 작성</p> 
+                  <p class="community-content__title">게시글 수정</p> 
                   <div class="dropdown dropdown--disabled" style="width: 100%">
                     <p class="dropdown__title">게시판 선택</p>
                     <div class="dropdown__wrap">
@@ -39,20 +39,27 @@
                       </a>
                     </div>
                   </div>  
-                  <input type="text" placeholder="제목을 입력해주세요.">
+                  <input type="text" placeholder="제목을 입력해주세요." maxlength="45">
                   <div class="editor">
                     <img src="/assets/images/temp/img_community_editor.png" alt="커뮤니티 에디터">
-                    <div class="date">
+                    <div class="date" style="width: initial;">
                       <p>최초 등록 일시 : 2022.04.20 18:00</p>
                       <p>최근 수정 일시 : 2022.04.25 18:00</p>
                     </div>
                     <div class="util">
-                      <button type="button" class="button button--blank-gray cancle" disabled='disabled'>취소</button>
-                      <button type="button" class="button button--solid complete" disabled='disabled'>완료</button>
+                      <!-- <button type="button" class="button button--blank-gray cancle" disabled='disabled'>취소</button>
+                      <button type="button" class="button button--solid complete" disabled='disabled'>완료</button> -->
                       
                       <div class="active">
-                        <button type="button" class="button button--blank-gray cancle">취소</button>
-                        <button type="button" class="button button--solid complete">완료</button>
+                        <button type="button" class="button button--blank-gray cancle" onclick="openModal('#modal-ALT-03')">
+                          취소
+                        </button>
+
+                        <!-- 금지어 작성시 수정사항 onclick="openModal('#modal-regist--failure')" -->
+                        <!-- 정상 작성 -->
+                        <button type="button" class="button button--solid complete" onclick="openModal('#modal-regist--complete')">
+                          완료
+                        </button>
                       </div>
                     </div>
                   </div>       
@@ -60,12 +67,12 @@
             </div>
 
 
-            <div class="modal-button">
+            <!-- <div class="modal-button">
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-declaration');">게시글 신고 팝업</button>
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--failure');">금지어 오류 팝업 팝업</button>
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--complete');">등록완료 팝업</button>
               <button type="button" style="border: 1px solid #000" onclick="openModal('#modal-regist--correction');">수정완료 팝업</button>
-            </div>
+            </div> -->
             
 
             <div id="modal-declaration" class="modal">
@@ -165,6 +172,10 @@
                 </div>
             </div>
           </div>
+
+          @@include('../inc/common-popup.inc',{
+            "webroot":".."
+            })
         </div>
     
         @@include('../inc/footer.inc',{
