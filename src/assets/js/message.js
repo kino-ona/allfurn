@@ -179,3 +179,19 @@ $('.aside-list__item').click( function() {
   $('.aside-list__item').removeClass('aside-list__item--active');
   $(this).addClass('aside-list__item--active');
 })
+
+//chatbox
+$("#chatbox").on("propertychange change keyup paste input", function() {
+	var currentVal = $(this).val();
+
+	if(!(currentVal === '')) { 
+		$(this).parent().addClass('textfield--active');
+	}else {
+		$(this).parent().removeClass('textfield--active');
+	}
+	
+	$(".textfield__icon--delete").on('click' , function() {
+		$(this).prev().val('');
+		$(".textfield").removeClass('textfield--active');
+	})
+});
