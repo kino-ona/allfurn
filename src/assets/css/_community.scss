@@ -526,6 +526,7 @@
     .badge__new--big {
       display: inline-block;
       vertical-align: middle;
+      margin-bottom: 4px;
     }
 
     &__util {
@@ -537,10 +538,16 @@
     &__viewcnt {
       width: 80%;
       color: #828282;
+      font-size: 15px;
+
+      span {
+        margin-top: 2px;
+      }
     }
 
     &__viewcnt i {
-      margin-right: 4px;
+      margin-right: 2px;
+      margin-bottom: 2px;
     }
 
     &__writer {
@@ -560,12 +567,14 @@
     }
 
     &__content {
-      padding-top: 24px;
-      padding-bottom: 108px;
+      padding: 24px;
       color: #1B1B1B;
       font-size: 16px;
       line-height: 25px;
       letter-spacing: -.02em;
+      height: 289px;
+      overflow-y: scroll;
+      box-sizing: border-box;
     }
 
     &__footer {
