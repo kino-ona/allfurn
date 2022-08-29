@@ -1548,7 +1548,6 @@
     }
 
     .button-popup button {
-      padding: 3px 11px;
       width: 80px;
       height: 32px;
       color: #FB4760;
@@ -1557,6 +1556,8 @@
       border: 1px solid #FB4760;
       border-radius: 5px;
       box-sizing: border-box;
+      font-size: 16px;
+      line-height: 30px;
     }
 
     .button-popup button + button {
