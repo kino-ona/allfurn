@@ -675,6 +675,10 @@
           width: 280px;
           height: 48px;
           line-height: 48px;
+
+          &.button--blank {
+            line-height: 46px;
+          }
         }
       }
     }
