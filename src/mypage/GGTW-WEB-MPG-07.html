@@ -63,25 +63,18 @@
                   <div class="category-type__item">
                     <a href="#" class="category-type__item-1" onclick="openModal('.modal-category')">
                       카테고리
-                      <i class="ico__arrow--down14"></i>
-                    </a>
-                    <a href="#" class="category-type__item-2"  onclick="openModal('.modal-category-2')">
-                      소재지
+                      <!-- <span class="category__count"></span> -->
                       <i class="ico__arrow--down14"></i>
                     </a>
                   </div>
                 </div>
-                <div class="category-data">
+                <div class="category-data category-data--modify">
                   <div class="category-data__wrap">
                   </div>
-
-                  <div class="category-filter__util">
-                    <div class="category-filter__data"></div>
-                    <a href="#" class="category-filter__refresh">
-                      초기화
-                      <i class="ico__refresh"></i>
-                    </a>
-                  </div>
+                  <a href="#" class="category-filter__refresh">
+                    초기화
+                    <i class="ico__refresh"></i>
+                  </a>
                 </div>
                 <div class="list">
                   <div class="list__meta-wrap">
@@ -653,7 +646,7 @@
 
     </div>
 
-    <div id="my-modal-category" class="modal modal-category">
+    <div id="my-modal-category" class="modal modal-category modal-category--modify">
       <div class="modal__container">
         <div class="modal__content">
           <div class="modal-box__container" style="width: 480px;">
@@ -719,76 +712,17 @@
                   <span>사무용가구</span>
                 </label>
               </div>
-              <div class="footer" style="height: 100px">
+              <div class="footer footer--modify">
                 <div class="footer__wrap">
                   <button type="button" class="buttons-refresh button button--left button--blank-gray">
                     <i class="ico__refresh"><span class="a11y">초기화</span></i>
                     <p>초기화</p>
                   </button>
-                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">상품 찾아보기</button>
                 </div>
               </div>
               <div class="modal-close">
                 <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category')"><span class="a11y">close</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="my-modal-category-2" class="modal modal-category-2">
-      <div class="modal__container">
-        <div class="modal__content">
-          <div class="modal-box__container" style="width: 480px;">
-            <div class="modal-box__content">
-              <div class="header">
-                <p>소재지 선택</p>
-              </div>
-              <div class="content" style="overflow: auto;">
-                <label for="category__check-2-1" class="category__check">
-                  <input type="checkbox" id="category__check-2-1">
-                  <span>서울</span>
-                </label>
-                <label for="category__check-2-2" class="category__check">
-                  <input type="checkbox" id="category__check-2-2">
-                  <span>경기</span>
-                </label>
-                <label for="category__check-2-3" class="category__check">
-                  <input type="checkbox" id="category__check-2-3">
-                  <span>인천</span>
-                </label>
-                <label for="category__check-2-4" class="category__check">
-                  <input type="checkbox" id="category__check-2-4">
-                  <span>강원</span>
-                </label>
-                <label for="category__check-2-5" class="category__check">
-                  <input type="checkbox" id="category__check-2-5">
-                  <span>충청</span>
-                </label>
-                <label for="category__check-2-6" class="category__check">
-                  <input type="checkbox" id="category__check-2-6">
-                  <span>경상</span>
-                </label>
-                <label for="category__check-2-7" class="category__check">
-                  <input type="checkbox" id="category__check-2-7">
-                  <span>전라</span>
-                </label>
-                <label for="category__check-2-8" class="category__check">
-                  <input type="checkbox" id="category__check-2-8">
-                  <span>제주</span>
-                </label>
-              </div>
-              <div class="footer" style="height: 100px">
-                <div class="footer__wrap">
-                  <button type="button" class="buttons-refresh button button--left button--blank-gray">
-                    <i class="ico__refresh"><span class="a11y">초기화</span></i>
-                    <p>초기화</p>
-                  </button>
-                  <button type="button" onclick="closeModal('#my-modal-category-2')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
-                </div>
-              </div>
-              <div class="modal-close">
-                <button type="button" class="modal__close-button" onclick="closeModal('#my-modal-category-2')"><span class="a11y">close</span></button>
               </div>
             </div>
           </div>
@@ -829,7 +763,7 @@
       </ul>
       <ul>
         <li class="textfield">
-          <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray">
+          <input type="text" placeholder="폴더명을 입력해주세요." class="textfield__input textfield__input--gray" maxlength="10">
           <span class="count"></span>
         </li>
         <li><button type="button" onclick="openModal('#mpg_delete-folder')" class="button button-delete">삭제</button></li>

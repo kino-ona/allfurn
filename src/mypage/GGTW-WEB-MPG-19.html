@@ -12,7 +12,7 @@
     "headertype":""
     })
 
-    <div id="container" class="container" style="margin-bottom:-32px">
+    <div id="container" class="container">
       <div class="my">
         <div class="inner">
           <div class="my__container">
@@ -314,7 +314,7 @@
                                 <i class="ico__refresh"><span class="a11y">초기화</span></i>
                                 <p>초기화</p>
                               </button>
-                              <button type="button" class="button button--solid">선택 완료</button>
+                              <button type="button" class="button button--solid">상품 찾아보기</button>
                             </div>
                           </div>
                         </div>
@@ -570,16 +570,15 @@
                                 </div>
                                 <ul class="edit-delete-wrap">
                                   <li>
-                                    <button type="button" onclick="openModal('#default-modal-status')">
-                                      상태 변경
-                                    </button>
-                                  </li>
-                                  <li>
                                     <button type="button" onclick="location.href='/home/GGTW-WEB-PRA-01.html#'">
                                       수정
                                     </button>
                                   </li>
-                                  <li><button type="button">삭제</button></li>
+                                  <li>
+                                    <button type="button" onclick="openModal('#alert-modal03')">
+                                      삭제
+                                    </button>
+                                  </li>
                                 </ul>
                               </li>
                               <li class="card__list-item">
@@ -613,11 +612,6 @@
                                   </div>
                                 </div>
                                 <ul class="edit-delete-wrap">
-                                  <li>
-                                    <button type="button">
-                                      상태 변경
-                                    </button>
-                                  </li>
                                   <li>
                                     <button type="button">
                                       수정
@@ -657,11 +651,6 @@
                                   </div>
                                 </div>
                                 <ul class="edit-delete-wrap">
-                                  <li>
-                                    <button type="button">
-                                      상태 변경
-                                    </button>
-                                  </li>
                                   <li>
                                     <button type="button">
                                       수정
@@ -674,6 +663,41 @@
 
                             <h3>전체</h3>
                             <ul class="card-wrap">
+                              <li class="card__list-item">
+                                <div class="list__btn">
+                                  <div class="list__img">
+                                    <img src="../assets/images/temp/item03.png" alt="item03">
+                                  </div>
+                                  <div class="list__desc">
+                                    <div class="desc__head">
+                                      <div class="badge badge--type03">숨김</div>
+                                    </div>
+                                    <div class="desc__body">
+                                      <div>
+                                        <ul class="breadcrumbs-wrap">
+                                          <li>소파/거실</li>
+                                          <li>일반 소파</li>
+                                        </ul>
+                                        <p>포그니 7인 소파</p>
+                                      </div>
+                                    </div>
+                                    <div class="desc__footer">
+                                      <ul>
+                                        <li>관심<span>999</span></li>
+                                        <li>문의<span>999</span></li>
+                                        <li>진입<span>1천</span></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul class="edit-delete-wrap">
+                                  <li><button type="button" onclick="openModal('#default-modal-status')">상태 변경</button>
+                                  </li>
+                                  <li><button type="button"
+                                      onclick="location.href='/home/GGTW-WEB-PRA-01.html#'">수정</button></li>
+                                  <li><button type="button" onclick="openModal('#alert-modal03')">삭제</button></li>
+                                </ul>
+                              </li>
                               <li class="card__list-item">
                                 <div class="list__btn">
                                   <div class="list__img">
@@ -1038,6 +1062,30 @@
                               </ul>
                             </div> -->
 
+                            <div class="pagenation pagination--center">
+                              <button type="button" class="prev">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+                              </button>
+                              <div class="numbering">
+                                <a href="#" class="numbering--active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                              </div>
+                              <button type="button" class="next">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+                              </button>
+                            </div>
+
                             <!-- 상품 상태 변경 팝업 -->
                             <div id="default-modal-status" class="default-modal default-modal--radio-box">
                               <div class="default-modal__container">
@@ -1143,8 +1191,16 @@
                                   </div>
                                 </div>
                                 <ul class="edit-delete-wrap">
-                                  <li><button type="button">수정</button></li>
-                                  <li><button type="button">삭제</button></li>
+                                  <li>
+                                    <button type="button"onclick="location.href='/home/GGTW-WEB-PRA-01.html#'">
+                                      수정
+                                    </button>
+                                  </li>
+                                  <li>
+                                    <button type="button" onclick="openModal('#alert-modal03')">
+                                      삭제
+                                    </button>
+                                  </li>
                                 </ul>
                               </li>
                               <li class="card__list-item">
@@ -1184,6 +1240,54 @@
                                 </ul>
                               </li>
                             </ul>
+
+                            <div class="pagenation pagination--center">
+                              <button type="button" class="prev">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+                              </button>
+                              <div class="numbering">
+                                <a href="#" class="numbering--active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                              </div>
+                              <button type="button" class="next">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!-- 삭제 팝업 -->
+                      <div id="alert-modal03" class="alert-modal">
+                        <div class="alert-modal__container">
+                          <div class="alert-modal__top">
+                            <p>
+                              삭제하시겠습니까?
+                            </p>
+                          </div>
+                          <div class="alert-modal__bottom">
+                            <div class="button-group">
+                              <button type="button" class="button button--solid-gray"
+                                onclick="closeModal('#alert-modal03')">
+                                취소
+                              </button>
+                              <button type="button" class="button button--solid">
+                                확인
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1204,9 +1308,12 @@
   <script>
     $("#tabs-1").on("click", function () {
       $(".category-btn-group .category-btn--01").css("display", "flex");
+      $(".category-btn-group .category-btn__count").css("display", "block");
     });
     $("#tabs-2").on("click", function () {
       $(".category-btn-group .category-btn--01").css("display", "none");
+      $(".category-btn-group .category-btn__count").css("display", "none");
+      category - btn__count
     });
   </script>
 </body>

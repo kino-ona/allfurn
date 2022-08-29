@@ -56,8 +56,8 @@
                       <label class="list__text01 required" for="form-list01">업체 연락처</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list01" type="text" required
-                        placeholder="업체 연락처를 입력해주세요.">
+                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list01"
+                        type="text" required placeholder="업체 연락처를 입력해주세요.">
                       <div class="notice-wrap mt10">
                         <p>· 해당 번호로 전화 문의가 연결됩니다.</p>
                       </div>
@@ -128,8 +128,8 @@
                       <label class="list__text01" for="form-list07">담당자 연락처</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list07" type="text"
-                        placeholder="담당자 연락처를 입력해주세요.">
+                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list07"
+                        type="text" placeholder="담당자 연락처를 입력해주세요.">
                     </div>
                   </li>
                   <li class="form__list-item">
@@ -137,8 +137,8 @@
                       <label class="list__text01" for="form-list08">팩스</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list08" type="text"
-                        placeholder="팩스 번호를 입력해주세요.">
+                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list08"
+                        type="text" placeholder="팩스 번호를 입력해주세요.">
                     </div>
                   </li>
                   <li class="form__list-item">
@@ -183,8 +183,51 @@
                 </ul>
 
                 <div class="form__button-group">
-                  <button type="button" class="button button--blank-gray">취소</button>
-                  <button type="button" class="button button--solid">저장</button>
+                  <button type="button" class="button button--blank-gray" onclick="openModal('#alert-modal01')">
+                    취소
+                  </button>
+                  <button type="button" class="button button--solid" onclick="openModal('#alert-modal02')">
+                    저장
+                  </button>
+                </div>
+
+
+                <!-- 취소 팝업 -->
+                <div id="alert-modal01" class="alert-modal">
+                  <div class="alert-modal__container">
+                    <div class="alert-modal__top">
+                      <p>
+                        작성 중인 내용이 있습니다.<br>
+                        진행을 취소하시겠습니까?
+                      </p>
+                    </div>
+                    <div class="alert-modal__bottom">
+                      <div class="button-group">
+                        <button type="button" class="button button--solid-gray" onclick="closeModal('#alert-modal01')">
+                          취소
+                        </button>
+                        <button type="button" class="button button--solid">
+                          확인
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 등록 팝업 -->
+                <div id="alert-modal02" class="alert-modal">
+                  <div class="alert-modal__container">
+                    <div class="alert-modal__top">
+                      <p>
+                        게시글이 등록되었습니다.
+                      </p>
+                    </div>
+                    <div class="alert-modal__bottom">
+                      <button type="button" class="button button--solid" onclick="closeModal('#alert-modal02')">
+                        확인
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

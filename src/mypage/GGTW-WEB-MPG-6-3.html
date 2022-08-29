@@ -12,7 +12,7 @@
         "headertype":""
         })
     
-        <div id="container" class="container my-page my-detail" style="min-height: 100vh">
+        <div id="container" class="container my-page my-detail" style="min-height: 100%">
           <div class="inner">
             <div class="contents">
               <div class="blank"></div>
@@ -124,12 +124,32 @@
               <div class="my-detail__footer">
                 <div class="util util--modify">
                   <div class="active">
-                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--blank-gray cancle">취소</button>
-                    <button type="button" class="button button--solid complete">완료</button>
+                    <button type="button" onclick="openModal('#modal-alt-03')" class="button button--blank-gray cancle">취소</button>
+                    <button type="button" onclick="openModal('#modal-cancle')" class="button button--solid complete">완료</button>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
+            <div id="modal-alt-03" class="modal">
+              <div class="modal__container" style="width: 350px;">
+                <div class="modal__content">
+                  <div class="modal-box__container">
+                    <div class="modal-box__content">
+                      <div class="modal__desc">
+                        <p class="modal__text">
+                         작성 중인 내용이 있습니다.<br>
+                         진행을 취소하시겠습니까?
+                        </p>
+                      </div>
+                      <div class="modal__util">
+                        <button type="button" onclick="closeModal('#modal-alt-03');" class="modal__button modal__button--gray"><span>취소</span></button>
+                        <button type="button" onclick="closeModal('#modal-alt-03');" class="modal__button"><span>확인</span></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
             <div id="modal-cancle" class="modal">
               <div class="modal__container" style="width: 350px;">
                 <div class="modal__content">

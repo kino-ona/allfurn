@@ -68,21 +68,18 @@
                     <div class="category-type__item">
                       <a href="#" class="category-type__item-1" onclick="openModal('.modal-category')">
                         카테고리
-                        <span class="category__count"></span>
+                        <!-- <span class="category__count"></span> -->
                         <i class="ico__arrow--down14"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="category-data">
+                  <div class="category-data category-data--modify">
                     <div class="category-data__wrap">
                     </div>
-                    <div class="category-filter__util">
-                      <div class="category-filter__data"></div>
-                      <a href="#" class="category-filter__refresh">
-                        초기화
-                        <i class="ico__refresh"></i>
-                      </a>
-                    </div>
+                    <a href="#" class="category-filter__refresh">
+                      초기화
+                      <i class="ico__refresh"></i>
+                    </a>
                   </div>
                 </div>
                 <div class="list" style="margin-bottom: -40px">
@@ -631,7 +628,7 @@
 
     </div>
 
-    <div id="my-modal-category" class="modal modal-category">
+    <div id="my-modal-category" class="modal modal-category modal-category--modify">
       <div class="modal__container">
         <div class="modal__content">
           <div class="modal-box__container" style="width: 480px;">
@@ -697,13 +694,13 @@
                   <span>사무용가구</span>
                 </label>
               </div>
-              <div class="footer" style="height: 100px">
+              <div class="footer footer--modify">
                 <div class="footer__wrap">
                   <button type="button" class="buttons-refresh button button--left button--blank-gray">
                     <i class="ico__refresh"><span class="a11y">초기화</span></i>
                     <p>초기화</p>
                   </button>
-                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">업체 찾아보기</button>
+                  <button type="button" onclick="closeModal('#my-modal-category')" class="buttons-search button button--right button--solid">상품 찾아보기</button>
                 </div>
               </div>
               <div class="modal-close">
