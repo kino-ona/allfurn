@@ -1405,11 +1405,8 @@
       padding: 27px 20px 27px 24px;
 
       .button-plus {
-        margin-top: 0;
-        margin-bottom: 0;
+        padding-top: 2px;
         margin-left: 13px;
-        padding-left: 0;
-        padding-right: 0;
       }
     }
 
@@ -1420,8 +1417,6 @@
   
         .button-delete {
           right: 8px;
-          margin: 0;
-          padding: 0;
           top: 12px;
         }
       }
