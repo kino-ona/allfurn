@@ -134,24 +134,57 @@
                       <ul class="body__radio-wrap">
                         <li>
                           <label>
-                            <input type="radio" name="radio-group02" class="checkbox__checked" checked>
+                            <input type="radio" name="radio-group02" class="checkbox__checked checkbox__checked01" checked>
                             <span>국내</span>
                           </label>
                         </li>
                         <li>
                           <label>
-                            <input type="radio" name="radio-group02" class="checkbox__checked">
+                            <input type="radio" name="radio-group02" class="checkbox__checked checkbox__checked02">
                             <span>해외</span>
                           </label>
                         </li>
                       </ul>
-                      <div class="input__guid">
-                        <input type="text" placeholder="사업자 주소를 입력해주세요." class="input-guid__input" id="form-list08">
-                        <button type="button" class="input-guid__button"
-                          onclick="openModal('#default-modal-address')">주소 검색</button>
+
+                      <!-- 국내 -->
+                      <div class="location--type01">
+                        <div class="input__guid">
+                          <input type="text" placeholder="사업자 주소를 입력해주세요." class="input-guid__input" id="form-list08">
+                          <button type="button" class="input-guid__button"
+                            onclick="openModal('#default-modal-address')">주소 검색</button>
+                        </div>
+                        <input type="text" placeholder="상세 주소를 입력해주세요."
+                          class="input textfield__input textfield__input--gray mt10" disabled>
                       </div>
-                      <input type="text" placeholder="상세 주소를 입력해주세요."
-                        class="input textfield__input textfield__input--gray mt10" disabled>
+
+                      <!-- 해외 -->
+                      <div class="location--type02" style="display: none;">
+                        <div class="dropdown dropdown--type01">
+                          <p class="dropdown__title">지역</p>
+                          <div class="dropdown__wrap">
+                            <a href="#" class="dropdown__item">
+                              <p>아시아</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>아프리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>북아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>남아메리카</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>유럽</p>
+                            </a>
+                            <a href="#" class="dropdown__item">
+                              <p>오세아니아</p>
+                            </a>
+                          </div>
+                        </div>
+                        <input class="input input--necessary input-guid__input mt10" type="text"
+                          placeholder="상세 주소를 입력해주세요." disabled>
+                      </div>
                     </div>
                   </li>
                   <li class="form__list-item">
@@ -218,7 +251,19 @@
     "webroot":".."
     })
   </div>
-  <script></script>
+  <script>
+    $(".body__radio-wrap .checkbox__checked").on("click", function (evnet) {
+      if ($('.checkbox__checked01').is(":checked") === true ) {
+        $('.location--type01').css("display", "block");
+        $('.location--type02').css("display", "none");
+        $
+      }
+      if ($('.checkbox__checked02').is(":checked") === true) {
+        $('.location--type02').css("display", "block");
+        $('.location--type01').css("display", "none");
+      }
+    });
+  </script>
 </body>
 
 </html>
