@@ -76,8 +76,8 @@
                       <label class="list__text01 required" for="form-list03">사업자 등록 번호</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="text" required
-                        placeholder="사업자 등록 번호를 입력해주세요.">
+                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="number"
+                        required placeholder="사업자 등록 번호를 입력해주세요.">
                     </div>
                   </li>
                   <li class="form__list-item">
@@ -146,8 +146,7 @@
                         </li>
                       </ul>
                       <div class="input__guid">
-                        <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126"
-                          class="input-guid__input" id="form-list08">
+                        <input type="text" placeholder="사업자 주소를 입력해주세요." class="input-guid__input" id="form-list08">
                         <button type="button" class="input-guid__button"
                           onclick="openModal('#default-modal-address')">주소 검색</button>
                       </div>
@@ -216,7 +215,7 @@
       </div>
     </div>
     @@include('../inc/footer.inc',{
-      "webroot":".."
+    "webroot":".."
     })
   </div>
   <script></script>
