@@ -1398,6 +1398,36 @@
   }
 }
 
+.default-modal.default-modal--my-folder {
+  &.default-modal--my-folder--modify {
+
+    .default-modal__header {
+      padding: 27px 20px 27px 24px;
+
+      .button-plus {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 13px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .default-modal__content {
+      ul {
+        padding-left: 8px;
+        padding-right: 8px;
+  
+        .button-delete {
+          right: 8px;
+          margin: 0;
+          padding: 0;
+          top: 12px;
+        }
+      }
+    }
+  }
+}
 
 .my-page {
   .badge__new {
