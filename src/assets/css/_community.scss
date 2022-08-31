@@ -325,6 +325,9 @@
     li a {
       display: block;
       padding: 9px 24px;
+      font-size: 16px;
+      height: 44px;
+      box-sizing: border-box;
     }
 
     &__item--active a {
@@ -895,6 +898,10 @@
   &.textfield__search--modify {
     font-size: 15px;
     padding: 0 43px 0 46px;
+
+    &::placeholder {
+      color: #828282;
+    }
   }
 }
 
