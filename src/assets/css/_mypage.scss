@@ -1877,6 +1877,7 @@
 
       &.button--blank-gray {
         line-height: 46px;
+        border-color: #E0E0E0;
       }
     }
   }
@@ -2080,6 +2081,7 @@
 
         &.cancle--modify {
           font-size: 16px;
+          font-weight: 400;
         }
       }
 
@@ -2273,6 +2275,7 @@
       &.cancle--modify {
         font-size: 16px;
         line-height: 42px;
+        font-weight: 400;
       }
     }
 
@@ -2509,7 +2512,7 @@
       width: 1px;
       height: 12px;
       background-color: #E0E0E0;
-      top: 7px;
+      top: 6px;
       right: -13px;
     }
 
@@ -3094,6 +3097,7 @@
           .input-guid__input {
             width: 370px;
             padding: 0 16px;
+            border-color: #DBDBDB;
 
             &:disabled {
               color: #828282;
@@ -3155,6 +3159,7 @@
           display: flex;
           align-items: center;
           margin-top: 10px;
+          margin-left: 16px;
 
           .attchment__text {
             font-weight: 500;
