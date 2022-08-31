@@ -586,10 +586,20 @@
       display: inline-block;
       position: relative;
       width: calc(50% - 2px);
-      height: 50px;
-      padding-top: 15px;
+      height: 48px;
+      padding-top: 12px;
       text-align: center;
       box-sizing: border-box;
+
+      .ico__like-line,
+      .ico__share24 {
+        margin-right: 4px;
+      }
+
+      span {
+        line-height: 24px;
+      }
+
     }
 
     .detail__action + .detail__action::before {

@@ -765,6 +765,17 @@
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: #FB4760;
+
+  .category-filter__util {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .category-filter__refresh {
+      position: initial;
+      margin-top: -10px;
+    }
+  }
 }
 
 .category-menu {
