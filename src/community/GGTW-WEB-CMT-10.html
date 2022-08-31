@@ -134,7 +134,7 @@
                         </div>
                         <a href="#" class="ico__more"></a>
                         <div class="community-reply__box">
-                          <a href="#">신고하기</a>
+                          <a href="#" onclick="openModal('#modal-declaration')">신고하기</a>
                         </div>
                       </div>
                       <div class="community-comment__item community-comment__reply">
@@ -188,6 +188,50 @@
                     </div>
                   </div> 
                 </div>     
+              </div>
+
+              <!-- 신고 레이어 팝업 -->
+              <div id="modal-declaration" class="modal modal-declaration--modify">
+                <div class="modal__container">
+                  <div class="modal__content">
+                    <div class="modal-box__container" style="width: 480px">
+                      <div class="modal-box__content">
+                        <div class="header">
+                          <p>게시글 신고</p>
+                        </div>
+                        <div class="content">
+                          <p>해당 게시글을 신고하시겠습니까?</p>
+                          <textarea placeholder="신고 사유를 입력해주세요." rows=20 cols=30></textarea>
+                        </div>
+                        <div class="footer">
+                          <button type="button">완료</p>
+                        </div>
+                        <div class="modal-close">
+                          <button type="button" class="modal__close-button" onclick="closeModal('#modal-declaration')"><span class="a11y">close</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 신고 완료 팝업 -->
+              <div id="modal-declaration--done" class="modal">
+                <div class="modal__container" style="width: 350px;">
+                  <div class="modal__content">
+                    <div class="modal-box__container">
+                      <div class="modal-box__content">
+                        <div class="modal__desc">
+                          <p class="modal__text">
+                            신고가 완료되었습니다.
+                          </p>
+                        </div>
+                        <div class="modal__util">
+                          <button type="button" onclick="closeModal('#modal-declaration--done');" class="modal__button"><span>확인</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- 삭제 팝업 -->
