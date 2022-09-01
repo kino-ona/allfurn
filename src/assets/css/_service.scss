@@ -61,6 +61,7 @@
   }
 
   &__desc {
+    min-width: 300px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -419,6 +420,11 @@
       }
     }
   }
+  .ui-accordion-header-active {
+    p {
+      font-weight: 500;
+    }
+  }
   
   .accordion__panel {
     box-sizing: border-box;
@@ -490,6 +496,10 @@
     &:last-of-type {
       border-left: 1px solid #E0E0E0;
       border-right: 1px solid #E0E0E0;
+    }
+    .tab__item {
+      padding-bottom: 14px;
+      font-size: 16px;
     }
   }
 }
