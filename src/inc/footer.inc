@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <a href="#" title="추가하기" class="add-button">
+  <a href="/home/GGTW-WEB-PRA-01.html" title="상품등록" class="add-button">
     <i class="btn__floating"></i>
   </a>
   <!-- <a href="#" title="문의하기" class="add-button">
