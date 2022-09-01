@@ -311,6 +311,7 @@
     var swiper = new Swiper('#eventkvSwipe', {
       autoplay: {
         delay: 3000,
+        disableOnInteraction: false,
       },
       loop: true,
       slidesPerView: 1,
@@ -326,6 +327,11 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+    });
+    $('#eventkvSwipe').hover(function(){
+      swiper.autoplay.stop();
+    }, function(){
+      swiper.autoplay.start();
     });
 
     // category > checked reset

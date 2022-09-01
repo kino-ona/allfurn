@@ -14,7 +14,7 @@
 
     <div id="container" class="container">
       <div class="inner__full">
-        <div id="eventkvSwipe" class="eventkeyvisual swiper-container">
+        <div id="mainkvSwipe" class="eventkeyvisual swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#">
@@ -325,7 +325,33 @@
     <script>
       openModal('#main-event');
 
-      var swiper = new Swiper('#eventkvSwipe', {
+      var mainswipe = new Swiper('#mainkvSwipe', {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        paginationClickable: true,
+        keyboard: true,
+        speed: 400,
+        pagination: {
+          el: '#mainkvSwipe .swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      $('#mainkvSwipe .swiper-button-wrap').hover(function(){
+        mainswipe.autoplay.stop();
+      }, function(){
+        mainswipe.autoplay.start();
+      });
+
+      var eventswiper = new Swiper('#eventkvSwipe', {
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
@@ -345,8 +371,13 @@
           prevEl: '.swiper-button-prev',
         },
       });
+      $('#eventkvSwipe .swiper-slide').hover(function(){
+        eventswiper.autoplay.stop();
+      }, function(){
+        eventswiper.autoplay.start();
+      });
 
-      var swiper = new Swiper('#modalkvSwipe', {
+      var modalswiper = new Swiper('#modalkvSwipe', {
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
@@ -366,6 +397,12 @@
           prevEl: '.swiper-button-prev',
         },
       });
+      $('#modalkvSwipe .swiper-slide').hover(function(){
+        modalswiper.autoplay.stop();
+      }, function(){
+        modalswiper.autoplay.start();
+      });
+
 
       if($('.product_swiper').length > 0) {
         $('.product_swiper').each(function(i){
