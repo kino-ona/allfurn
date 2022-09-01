@@ -1257,7 +1257,7 @@
       position: absolute;
       bottom: 1px;
       left: 1px;
-      right: 16px;
+      right: 1px;
       padding-top: 4px;
       padding-right: 20px;
       padding-bottom: 11px;
@@ -1282,6 +1282,7 @@
 }
 
 #msg_report {
+  z-index: 9999;
 
   .content__inner {
     height: 475px;
