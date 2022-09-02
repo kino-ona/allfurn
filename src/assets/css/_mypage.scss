@@ -772,6 +772,7 @@
 
       &.nodata--modify {
         margin-top: 174px;
+        margin-bottom: 100px;
       }
     }
   }
@@ -2081,7 +2082,7 @@
 
         &.cancle--modify {
           font-size: 16px;
-          font-weight: 400;
+          font-weight: 500;
         }
       }
 
@@ -2369,7 +2370,7 @@
 
     &__footer p:nth-child(2) {
       width: calc(100% - 130px);
-
+      font-weight: 400;
     }
 
     &__footer span {

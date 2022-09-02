@@ -49,10 +49,11 @@
                   <div class="input-guid">
                     <input class="input input-guid__input"
                     id="accreditation"
-                    type="number"
+                    type="text"
                     disabled=""
                     placeholder=""
                     value="12345"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                     >
                     <button class="button input-guid__button" disabled="" type="button">인증하기</button>
                     <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>

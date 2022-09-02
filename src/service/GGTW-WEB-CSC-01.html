@@ -28,7 +28,7 @@
               <div class="service__desc">운영시간<strong>평일 09:00 - 18:00</strong></div>
             </div>
             <div class="service__top-wrap">
-              <a href="./GGTW-WEB-CSC-08.html" class="button button--etc top-button">올펀 이용 가이드</a>
+              <a href="#" onclick="openModal('#guide-modal');return false;" class="button button--etc top-button">올펀 이용 가이드</a>
               <a href="./GGTW-WEB-CSC-04.html" class="button button--etc top-button">1:1 문의</a>
             </div>
           </div>
@@ -39,6 +39,22 @@
             </div>
           </div>
         </div>
+
+        <div id="guide-modal" class="default-modal">
+          <div class="default-modal__container">
+            <div class="default-modal__header">
+              <h2>이용 가이드</h2>
+              <button type="button" class="ico__close28" onclick="closeModal('#guide-modal')">
+                <span class="a11y">닫기</span>
+              </button>
+            </div>
+            <div class="default-modal__content">
+              <!-- 내용 -->
+            </div>
+            <div class="default-modal__footer"></div>
+          </div>
+        </div>
+
         <div class="content">
           <div class="tab" id="register-type">
             <ul class="tab__list" role="tablist">
@@ -336,6 +352,26 @@
                 </div>
               </div>
             </div>
+            <div class="pagenation">
+              <button type="button" class="prev">
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 1L1 6L6 11" stroke="#DBDBDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </button>
+              <div class="numbering">
+                <a href="#" class="numbering--active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+              </div>
+              <button type="button" class="next">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12L10 7L5 2" stroke="#828282" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </button>
+            </div>
+            
           </div>
         </div>
       </div>
