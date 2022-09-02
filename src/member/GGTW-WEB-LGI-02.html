@@ -55,10 +55,11 @@
                           <div class="textfield">
                             <input class="input input--necessary textfield__input textfield__input--gray"
                             id="businesscode0"
-                            type="number"
+                            type="text"
                             required
                             maxlength="10"
                             placeholder="사업자 등록 번호를 입력해주세요."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                           </div>
                         </div>
@@ -136,10 +137,11 @@
                           <div class="input-guid">
                             <input class="input input--necessary input-guid__input"
                             id="contact0"
-                            type="number"
+                            type="text"
                             required
                             maxlength="11"
                             placeholder="-없이 숫자만 입력해주세요."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
                             <div class="form__notice-box">
@@ -156,10 +158,11 @@
                           <div class="input-guid">
                             <input class="input input-guid__input"
                             id="accreditation1"
-                            type="number"
+                            type="text"
                             disabled=""
                             placeholder=""
                             value="12345"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증하기</button>
                             <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
@@ -257,10 +260,11 @@
                           <div class="input-guid">
                             <input class="input input-guid__input"
                             id="accreditation2"
-                            type="number"
+                            type="text"
                             disabled=""
                             placeholder=""
                             value="12345"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증하기</button>
                             <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
@@ -392,10 +396,11 @@
                           <div class="textfield">
                             <input class="input input--necessary textfield__input textfield__input--gray"
                             id="businesscode1"
-                            type="number"
+                            type="text"
                             required
                             maxlength="10"
                             placeholder="사업자 등록 번호를 입력해주세요."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                           </div>
                         </div>
@@ -455,10 +460,11 @@
                           <div class="input-guid">
                             <input class="input input--necessary input-guid__input"
                             id="contact1"
-                            type="number"
+                            type="text"
                             required
                             maxlength="11"
                             placeholder="-없이 숫자만 입력해주세요."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
                             <div class="form__notice-box">
@@ -707,10 +713,11 @@
                           <div class="input-guid">
                             <input class="input input--necessary input-guid__input"
                             id="contact2"
-                            type="number"
+                            type="text"
                             required
                             maxlength="11"
                             placeholder="-없이 숫자만 입력해주세요."
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증번호 전송</button>
                             <div class="form__notice-box">

@@ -56,7 +56,7 @@
                       <label class="list__text01 required" for="form-list01">업체 연락처</label>
                     </div>
                     <div class="list__desc">
-                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list01"
+                      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="input textfield__input textfield__input--gray" id="form-list01"
                         required placeholder="업체 연락처를 입력해주세요.">
                       <div class="notice-wrap mt10">
                         <p>· 해당 번호로 전화 문의가 연결됩니다.</p>
@@ -128,7 +128,7 @@
                       <label class="list__text01" for="form-list07">담당자 연락처</label>
                     </div>
                     <div class="list__desc">
-                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list07"
+                      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="input textfield__input textfield__input--gray" id="form-list07"
                         placeholder="담당자 연락처를 입력해주세요.">
                     </div>
                   </li>
@@ -137,7 +137,7 @@
                       <label class="list__text01" for="form-list08">팩스</label>
                     </div>
                     <div class="list__desc">
-                      <input type="number" class="input textfield__input textfield__input--gray" id="form-list08"
+                      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="input textfield__input textfield__input--gray" id="form-list08"
                         placeholder="팩스 번호를 입력해주세요.">
                     </div>
                   </li>

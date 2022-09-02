@@ -156,8 +156,8 @@
                           </div>
                           <div>
                             <div class="input__guid input__guid--time">
-                              <input type="number" placeholder="인증번호를 입력해주세요." class="input-guid__input"
-                                id="input-auth01">
+                              <input type="text" placeholder="인증번호를 입력해주세요." class="input-guid__input"
+                                id="input-auth01" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                               <div class="time-wrap">
                                 <p>04:59</p>
                               </div>
@@ -191,7 +191,7 @@
                           </div>
                           <div class="item__body">
                             <div class="input__guid input__guid--time">
-                              <input type="number" placeholder="인증번호를 입력해주세요." class="input-guid__input"
+                              <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="인증번호를 입력해주세요." class="input-guid__input"
                                 id="input-auth02" disabled>
                               <div class="time-wrap">
                                 <p>04:59</p>

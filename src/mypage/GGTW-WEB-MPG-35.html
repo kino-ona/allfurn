@@ -76,8 +76,7 @@
                       <label class="list__text01 required" for="form-list03">사업자 등록 번호</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="number"
-                        required placeholder="사업자 등록 번호를 입력해주세요.">
+                      <input class="input textfield__input textfield__input--gray" id="form-list03" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="사업자 등록 번호를 입력해주세요.">
                     </div>
                   </li>
                   <li class="form__list-item">

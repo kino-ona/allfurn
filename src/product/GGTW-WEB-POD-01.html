@@ -53,7 +53,7 @@
                   <dl>
                     <dt>연락처</dt>
                     <dd class="textfield">
-                      <input type="number" class="textfield__input textfield__input--gray">
+                      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  class="textfield__input textfield__input--gray">
                     </dd>
                   </dl>
                   <dl style="align-items: flex-start">
@@ -268,7 +268,7 @@
               <dl>
                 <dt>연락처</dt>
                 <dd class="textfield">
-                  <input type="number" value="01012345678" class="textfield__input textfield__input--gray">
+                  <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="01012345678" class="textfield__input textfield__input--gray">
                 </dd>
               </dl>
               <dl style="align-items: flex-start">

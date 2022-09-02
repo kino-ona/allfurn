@@ -47,8 +47,7 @@
                       <label class="list__text01 required" for="form-list02">휴대폰 번호</label>
                     </div>
                     <div class="list__desc">
-                      <input class="input textfield__input textfield__input--gray" id="form-list02" type="number" required
-                        placeholder="-없이 숫자만 입력해주세요." required>
+                      <input class="input textfield__input textfield__input--gray" id="form-list02" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="-없이 숫자만 입력해주세요.">
                     </div>
                   </li>
                   <li class="form__list-item">
