@@ -92,6 +92,12 @@
     margin-bottom: 24px;
   }
 
+  .sub-category__item {
+    color: #BDBDBD;
+  }
+  .sub-category__item--active {
+    color: #FB4760;
+  }
   .sub-category__item + .sub-category__item {
     margin-left: 24px;
   }
