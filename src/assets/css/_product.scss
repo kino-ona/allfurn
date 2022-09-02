@@ -910,7 +910,7 @@
         justify-content: space-between;
         align-items: center;
         height: 60px;
-        border-bottom: 1px solid #DBDBDB;
+        border-bottom: 1px solid #F2F2F2;
         padding-right: 16px;
 
         .category__check.basket__check {
@@ -925,7 +925,7 @@
         align-items: flex-start;
         justify-content: right;
         margin-top: 16px;
-        border-bottom: 1px solid #DBDBDB;
+        border-bottom: 1px solid #F2F2F2;
 
         .desc__img {
           width: 90px;
@@ -1008,6 +1008,7 @@
 
           &.button--blank-gray {
             border-color: #E0E0E0;
+            font-weight: 400;
           }
         }
       }
