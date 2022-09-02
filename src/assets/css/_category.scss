@@ -1212,6 +1212,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &.modal__buttons--half {
+          .modal__buttons--refresh {
+            .ico__refresh {
+              margin-top: -2px;
+            }
+          }
+        }
       }
 
       &.footer--modify {
