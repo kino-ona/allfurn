@@ -174,16 +174,17 @@
                           </div>
                           <div class="addressfield">
                             <div class="radio radio-tab">
-                              <label class="radio__item" for="businessaddress0-1">
-                                <input type="radio" id="businessaddress0-1" name="filter-01" checked>
+                              <label class="radio__item">
+                                <input type="radio" class="chkbox__checked chkbox__checked01" name="filter-01" checked>
                                 <span>국내</span>
                               </label>
-                              <label class="radio__item" for="businessaddress0-2">
-                                <input type="radio" id="businessaddress0-2" name="filter-01">
+                              <label class="radio__item">
+                                <input type="radio" class="chkbox__checked chkbox__checked02" name="filter-01">
                                 <span>해외</span>
                               </label>
                             </div>
-                            <div class="radio-tab-content" style="display: block;">
+                            <!-- 국내 -->
+                            <div class="location--type01 radio-tab-content">
                               <div class="input-guid">
                                 <input class="input input--necessary input-guid__input"
                                 id="businessaddress0-3"
@@ -202,7 +203,7 @@
                             </div>
 
                             <!-- 해외 -->
-                            <div class="radio-tab-content" style="display: none;">
+                            <div class="location--type02 radio-tab-content" style="display: none;">
                               <div class="dropdown dropdown--type01">
                                 <p class="dropdown__title">지역</p>
                                 <div class="dropdown__wrap">
@@ -480,12 +481,12 @@
                           </div>
                           <div class="addressfield">
                             <div class="radio radio-tab">
-                              <label class="radio__item" for="businessaddress1-1">
-                                <input type="radio" id="businessaddress1-1" name="filter-02" checked>
+                              <label class="radio__item">
+                                <input type="radio" name="filter-02" checked>
                                 <span>국내</span>
                               </label>
-                              <label class="radio__item" for="businessaddress1-2">
-                                <input type="radio" id="businessaddress1-2" name="filter-02">
+                              <label class="radio__item">
+                                <input type="radio" name="filter-02">
                                 <span>해외</span>
                               </label>
                             </div>
@@ -961,6 +962,18 @@
 <script>
   $(document).ready(function () {
     actvTabList('register-type', 99)
+  });
+
+   $(".radio-tab .chkbox__checked").on("click", function () {
+    if ($('.chkbox__checked01').is(":checked") === true ) {
+      $('.location--type01').css("display", "block");
+      $('.location--type02').css("display", "none");
+      $
+    }
+    if ($('.chkbox__checked02').is(":checked") === true) {
+      $('.location--type02').css("display", "block");
+      $('.location--type01').css("display", "none");
+    }
   });
 </script>
 
