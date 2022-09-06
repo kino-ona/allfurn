@@ -48,3 +48,6 @@ assets/js/ : ui
 - 화면 진행상황 체크 
 https://appknot.notion.site/532ee45eaad146c68cde9464860c3ab1?v=488c0c94e91d41c7897e269766d01236
 
+
+- 
+allfunpub.appknot.com/path.html
