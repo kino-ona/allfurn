@@ -47,6 +47,25 @@
   </a> -->
 </footer>
 
+<div id="modal-page-notfund" class="modal">
+  <div class="modal__container" style="width: 350px;">
+    <div class="modal__content">
+      <div class="modal-box__container">
+        <div class="modal-box__content">
+          <div class="modal__desc">
+            <p class="modal__text">
+              존재하지 않는 화면입니다.
+            </p>
+          </div>
+          <div class="modal__util">
+            <button type="button" onclick="closeModal('#modal-page-notfund');" class="modal__button"><span>확인</span></button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 <script src="@@webroot/assets/js/plugin/swiper-bundle.min.js" type="text/javascript"></script>
 <script src="@@webroot/assets/js/headernav.js" type="text/javascript"></script>
 <script src="@@webroot/assets/js/ui.js" type="text/javascript"></script>

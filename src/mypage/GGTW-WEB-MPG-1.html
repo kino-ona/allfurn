@@ -260,7 +260,7 @@
                             <td>97</td>
                             <td>22042726</td>
                             <td>2022.04.27</td>
-                            <td>거래 취소</td>
+                            <td>신규 주문</td>
                             <td class="link">
                               <a href="#">
                                 <span>
@@ -275,7 +275,7 @@
                             </td>
                             <td>
                               <div class="button-popup">
-                                -
+                                <button type="button" onclick="openModal('#modal-deal-error')">거래 확정</button>
                               </div>
                             </td>
                           </tr>
@@ -771,6 +771,25 @@
                       <div class="modal__util">
                         <button type="button" onclick="closeModal('#modal-logout');" class="modal__button modal__button--gray"><span>취소</span></button>
                         <button type="button" onclick="closeModal('#modal-logout');" class="modal__button"><span>확인</span></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modal-deal-error" class="modal">
+              <div class="modal__container" style="width: 350px;">
+                <div class="modal__content">
+                  <div class="modal-box__container">
+                    <div class="modal-box__content">
+                      <div class="modal__desc">
+                        <p class="modal__text">
+                          해당 주문이 취소 처리되어<br>
+                          거래 확정이 불가합니다.
+                        </p>
+                      </div>
+                      <div class="modal__util">
+                        <button type="button" onclick="closeModal('#modal-deal-error');" class="modal__button"><span>확인</span></button>
                       </div>
                       </div>
                     </div>
