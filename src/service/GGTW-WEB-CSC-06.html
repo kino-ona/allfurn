@@ -85,6 +85,11 @@
                   <button type="button" onclick="openModal('#modal-ALT-03');" class="button button--etc">취소</button>
                   <button type="button" onclick="openModal('#modal-cswrite--complete');" class="button button--solid">문의하기</button>
                 </div>
+
+                <div class="button-wrap" style="align-items: center">
+                  <p style="margin-right: 20px;">필수항목 미체크 팝업 참고 버튼</p>
+                  <button type="button" onclick="openModal('#LGI-05-modal3');" class="button button--solid">문의하기</button>
+                </div>
               </div>
             </div>
           </div>
@@ -110,6 +115,8 @@
             </div>
         </div>
       </div>
+
+      <!-- 등록 완료 팝업 -->
       <div id="modal-cswrite--complete" class="modal">
         <div class="modal__container" style="width: 350px;">
           <div class="modal__content">
@@ -122,6 +129,28 @@
                 </div>
                 <div class="modal__util">
                   <button type="button" onclick="closeModal('#modal-cswrite--complete');" class="modal__button"><span>확인</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 필수항목 체크 팝업 -->
+      <div id="LGI-05-modal3" class="modal">
+        <div class="modal__container" style="width: 350px;">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    필수 항목이 입력되지 않았습니다.
+                    <br>다시 확인해주세요.
+                  </p>
+                </div>
+                <div class="modal__util">
+                  <button type="button" onclick="closeModal('#LGI-05-modal3');" class="modal__button"><span>확인</span></button>
                 </div>
               </div>
             </div>

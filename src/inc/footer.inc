@@ -20,6 +20,7 @@
         <div class="foo__customer">
           <p>고객센터</p>
           <a href="#">자주 묻는 질문</a>
+          <a href="#">공지사항</a>
           <a href="#">1:1 문의</a>
           <a href="#">이용 가이드</a>
         </div>

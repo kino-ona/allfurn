@@ -3340,18 +3340,31 @@
     border-bottom: 1px solid #E0E0E0;
 
     .body__textarea {
-      height: 200px;
       border: 1px solid #DBDBDB;
+      background: #F7F7F7;
       display: flex;
-      justify-content: center;
-      align-items: center;
-
+      // justify-content: center;
+      flex-direction: column;
+      gap: 6px;
+      text-align: left;
+      padding: 24px;
       p {
+        display: flex;
+        align-items: center;
         font-weight: 400;
         font-size: 14px;
         line-height: 22.4px;
         letter-spacing: -0.02em;
         color: #828282;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 8px;
+          border-radius: 50%;
+          background: #828282;
+        }
       }
     }
 

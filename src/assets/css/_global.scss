@@ -539,7 +539,7 @@ input::-ms-clear {
 
 // layout - footer
 .footer {
-	height: 247px;
+	// height: 247px;
 	margin-top: 40px;
 	background-color: #F7F7F7;
 
@@ -551,6 +551,7 @@ input::-ms-clear {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 40px;
+		padding-bottom: 34px;
 
 		.foo__logo {
 			@include mixins.sprite(sprite.$foo-logo);
@@ -602,6 +603,7 @@ input::-ms-clear {
 		}
 
 		.foo__language {
+			margin-top: 20px;
 			:hover {
 				cursor: pointer;
 			}

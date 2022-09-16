@@ -99,6 +99,15 @@
                     onclick="openModal('#LGI-05-modal1')">
                     완료
                   </a>
+
+                  <br><br>
+                  <p>필수항목 체크 팝업 참고버튼</p>
+                  <a href="#"
+                    class="button form__submit-button"
+                    disabled=""
+                    onclick="openModal('#LGI-05-modal3')">
+                    완료
+                  </a>
                 </div>
               </div>
             </div>
@@ -141,6 +150,26 @@
                 </div>
                 <div class="modal__buttons">
                   <button type="button" onclick="closeModal('#LGI-05-modal2')" class="modal__button"><span>확인</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 필수항목 체크 팝업 -->
+      <div id="LGI-05-modal3" class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <div class="modal-box__container">
+              <div class="modal-box__content">
+                <div class="modal__desc">
+                  <p class="modal__text">
+                    필수 항목이 입력되지 않았습니다.
+                    <br>다시 확인해주세요.
+                  </p>
+                </div>
+                <div class="modal__buttons">
+                  <a href="#" onclick="closeModal('#LGI-05-modal3');return false;" class="modal__button"><span>확인</span></a>
                 </div>
               </div>
             </div>
