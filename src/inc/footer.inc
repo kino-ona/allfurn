@@ -6,14 +6,13 @@
           <p class="foo__logo"><span class="a11y">All FURN</span></p>
           <div class="foo__info">
             <p>
-              사업자등록번호 : 128-19-60759<span class="bar"></span>대표 :
-              박복숙
+              사업자등록번호 : 182-81-02804<span class="bar"></span>대표 : 송도현
             </p>
             <p>
               Tel : 031-925-2888<span class="bar"></span>E-mail :
               <a href="mailto:gaguoutlet11@naver.com">gaguoutlet11@naver.com</a>
             </p>
-            <p>주소 : 경기도 고양시 일산서구 송산로 23 (구산동 1477-3)</p>
+            <p>주소 : 경기도 고양시 일산동구 산두로213번길 18(정발산동)</p>
           </div>
         </div>
 
