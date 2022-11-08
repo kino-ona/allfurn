@@ -1608,6 +1608,9 @@
     .wrap .intro {
         &[class*='intro0'] {
             height: 600px;
+            .image {
+                max-width: 350px;
+            }
         }
         .inner {
             padding: 0 95px;
@@ -1659,7 +1662,7 @@
                     content: '';
                     position: absolute;
                     left: -12px;
-                    top: 8px;
+                    top: 12px;
                     display: inline-block;
                     width: 4px;
                     height: 4px;
@@ -1679,6 +1682,7 @@
                     font-weight: 600;
                     line-height: inherit;
                     letter-spacing: inherit;
+                    color: #4F4F4F;
                 }
                 &+.desc {
                     margin-top: 12px;
@@ -1716,6 +1720,7 @@
     //mo (원페이지)
     .mo-wrap .header {
         height: 117px;
+        background-color: #F7F7F7;
         .inner {
             display: flex;
             align-items: center;
@@ -1786,15 +1791,19 @@
             max-width: 100%;
             padding: 13px 80px;
             box-sizing: border-box;
-            line-height: 26px;
+            line-height: 25.6px;
             letter-spacing: -0.02em;
             text-align: center;
+            i {
+                padding-bottom: 3.5px;
+            }
         }
         &__top {
-            padding-bottom: 28px;
             text-align: center;
+            background-color: #F7F7F7;
             .intro__content {
-                padding-bottom: 0;
+                padding-bottom: 28px;
+                background-color: #fff;
             }
             h2 {
                 margin-bottom: 20px;
