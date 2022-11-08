@@ -1635,6 +1635,9 @@
 
 .mo-wrap {
 	min-width: 100% !important;
+    img {
+        width: 100%;
+    }
     .headertype__mo {
         height: auto;
         .head__fixed {
@@ -1688,7 +1691,6 @@
                 height: auto;
                 padding: 16px;
                 img {
-                    width: 100%;
                     max-width: 100%;
                     display: block;
                 }
