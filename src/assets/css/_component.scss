@@ -1636,7 +1636,7 @@
 .mo-wrap {
 	min-width: 100% !important;
     .headertype__mo {
-        height: 92px;
+        height: auto;
         .head__fixed {
             height: inherit !important;
             &.static {
@@ -1686,7 +1686,7 @@
             //-- start -->
             .view {
                 height: auto;
-                padding: 0 16px;
+                padding: 16px;
                 img {
                     width: 100%;
                     max-width: 100%;
