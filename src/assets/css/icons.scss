@@ -522,3 +522,8 @@ i {
 .btn__floating--chat {
   @include mixins.sprite(sprite.$btn-floating-chat);
 }
+
+.ico__camera {
+    padding-bottom: 2px;
+    @include mixins.sprite(sprite.$ico-camera);
+}
