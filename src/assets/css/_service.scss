@@ -751,21 +751,23 @@
             align-items: center;
             .row {
                 width: 100%;
-                padding: 0 4.608%;
+                max-width: 303px;
+                padding: 0;
+                margin: 0 auto;
                 box-sizing: border-box;
                 display: flex;
-                justify-content: space-between;
                 &+.row {
                     margin-top: 13px;
                 }
-                strong {
+                p {
                     flex-shrink: 0;
+                    flex-grow: 0;
+                    width: 88px;
                 }
                 .text {
-                    width: 100%;
-                    max-width: 74.344%;
+                    max-width: 100%;
                     padding-left: 0;
-                    margin: 0;
+                    margin: 0 0 0 10px;
                 }
             }
             .image {
