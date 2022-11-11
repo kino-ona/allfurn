@@ -127,3 +127,16 @@ $('.ico__more').on('click', function (event) {
 		$(this).next().css('display', 'block');
 	}
 });
+
+if ($('#allfurn-guide')) {
+    let dataname;
+    let title;
+    $('.dropdown__item').on('click', function () {
+        dataname = $(this).attr('data-name');
+        title = $(this).text().trim(" ").split("\n")[0];
+        $('#allfurn-guide section').scrollTop(0);
+        $('section').find('h2 p').text(title);
+        $('section').find('.guidance').attr('aria-hidden', 'true');
+        $('section').find(`.guidance[data-name="${dataname}"]`).attr('aria-hidden', 'false');
+    })
+}
