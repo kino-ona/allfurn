@@ -1647,17 +1647,13 @@
         padding-top: 90px;
         position: relative;
         section {
-            overflow-y: scroll;
-        }
-        .textfield {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            padding: 20px 0 25px;
-            margin: 0 auto;
-            background-color: #ffffff;
+            max-height: 100%;
+            min-height: 100%;
+            > div {
+                max-width: 375px;
+                height: 100%;
+                margin: 0 auto;
+            }
         }
         .guidance {
             padding-bottom: 0;
@@ -1677,13 +1673,6 @@
                 }
             }
         }
-        section {
-            > div {
-                max-width: 375px;
-                height: 100%;
-                margin: 0 auto;
-            }
-        }
     }
 }
 
@@ -1696,18 +1685,25 @@
             display: none;
         }
         & + .container__mo {
-            padding-top: 44.5px;
             min-height: calc(100vh - 44.5px) !important;
-        }
-    }
-    .container {
-        .inner {
-            padding: 0 16px;
+            max-height: 100vh;
+            padding-top: 40px;
             box-sizing: border-box;
         }
     }
+    .inner {
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+    }
     .textfield {
-        margin: 20px auto 0;
+        position: absolute;
+        top: 0;
+        left: 16px;
+        right: 16px;
+        z-index: 1;
+        padding: 20px 0 25px;
+        background-color: #ffffff;
     }
     .dropdown {
         .dropdown__title {
@@ -1718,8 +1714,8 @@
         }
     }
     section {
-        height: 100%;
-        padding-top: 20px;
+        overflow-x: hidden;
+        overflow-y: scroll;
         h2 {
             margin-bottom: 24px;
             display: flex;
@@ -1752,6 +1748,23 @@
             line-height: inherit;
             letter-spacing: inherit;
             color: #FB4760;
+        }
+    }
+    .mo-wrap {
+        .inner {
+            min-height: 100%;
+        }
+        .textfield {
+            top: -110px;
+        }
+        section {
+            height: 100%;
+            max-height: calc(100vh - 150px);
+            margin-top: 110px;
+            > div {
+                height: 100%;
+                margin: 0 auto 0;
+            }
         }
     }
     .guidance {
