@@ -42,9 +42,12 @@
   <a href="/home/GGTW-WEB-PRA-01.html" title="상품등록" class="add-button">
     <i class="btn__floating"></i>
   </a>
-  <!-- <a href="#" title="문의하기" class="add-button">
+  <a href="#" title="문의하기" class="add-button">
     <i class="btn__floating--chat"></i>
-  </a> -->
+  </a>
+  <a href="#" title="작성하기" class="add-button">
+    <i class="btn__floating--pencil"></i>
+  </a>
 </footer>
 
 <div id="modal-page-notfund" class="modal">
@@ -65,7 +68,6 @@
       </div>
     </div>
 </div>
-
 
 <div id="guide-modal" class="default-modal">
     <div class="default-modal__container">

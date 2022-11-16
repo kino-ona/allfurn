@@ -1064,3 +1064,10 @@ input::-ms-clear {
 		}
 	}
 }
+
+.add-button[title="문의하기"] {
+    display: none;
+}
+.add-button[title="작성하기"] {
+    display: none;
+}

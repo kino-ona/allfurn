@@ -523,6 +523,14 @@ i {
   @include mixins.sprite(sprite.$btn-floating-chat);
 }
 
+.btn__floating--pencil {
+  @include mixins.sprite(sprite.$btn-floating-pencil);
+}
+
+.ico__arrow-mo-footer-down {
+  @include mixins.sprite(sprite.$ico-arrow-mo-footer-down);
+}
+
 .ico__camera {
     padding-bottom: 2px;
     @include mixins.sprite(sprite.$ico-camera);
