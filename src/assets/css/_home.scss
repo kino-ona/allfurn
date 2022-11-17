@@ -1569,6 +1569,9 @@
 }
 
 .allfurn-introduction {
+    * {
+        word-break: keep-all;
+    }
     // 비로그인 홈
     .intro {
         width: 100%;

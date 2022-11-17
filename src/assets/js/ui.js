@@ -140,3 +140,11 @@ if ($('#allfurn-guide')) {
         $('section').find(`.guidance[data-name="${dataname}"]`).attr('aria-hidden', 'false');
     })
 }
+
+
+//mobile
+if($('.footer__mo').length > 0) {
+    $('.foo__customer p').on('click', ()=>{
+        $('.foo__customer').toggleClass('on');
+    })
+}
