@@ -15,7 +15,7 @@
         <div id="container" class="container community">
           <div class="inner">
             <div class="contents">
-              <div class="swiper-container">
+              <div id="kvswiper" class="swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="#">
@@ -649,6 +649,32 @@
         })
       </div>
       <script src="/assets/js/community.js" type="text/javascript"></script>
+      <script>
+        var swiper = new Swiper('#kvswiper', {
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 0,
+          paginationClickable: false,
+          keyboard: false,
+          pagination: {
+            el: '#kvswiper .swiper-pagination',
+            type: 'fraction',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        $('#kvswiper').hover(function(){
+          swiper.autoplay.stop();
+        }, function(){
+          swiper.autoplay.start();
+        });
+      </script>
       <script>
           $(function () {
             $('.add-button[title="상품등록"]').css({'display':'none'});
