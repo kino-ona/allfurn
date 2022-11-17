@@ -42,10 +42,10 @@
   <a href="/home/GGTW-WEB-PRA-01.html" title="상품등록" class="add-button">
     <i class="btn__floating"></i>
   </a>
-  <a href="#" title="문의하기" class="add-button">
+  <a href="/message/GGTW-WEB-MSG-03-1.html" title="문의하기" class="add-button">
     <i class="btn__floating--chat"></i>
   </a>
-  <a href="#" title="작성하기" class="add-button">
+  <a href="/community/GGTW-WEB-CMT-11.html" title="작성하기" class="add-button">
     <i class="btn__floating--pencil"></i>
   </a>
 </footer>
