@@ -20,8 +20,12 @@
   }
 
   &__desc {
+	padding-right: 25px;
+	box-sizing: border-box;
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 
     .my__text-wrap {
       max-width: 560px;
@@ -129,6 +133,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+	cursor: pointer;
     
     .my__thumnail {
       width: 210px;
