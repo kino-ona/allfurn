@@ -626,6 +626,14 @@ input::-ms-clear {
 				}
 			}
 		}
+
+		.foo__language.non-active {
+			pointer-events: none;
+
+			p {
+				color: #BDBDBD;
+			}
+		}
 	}
 
 	.foo__util {

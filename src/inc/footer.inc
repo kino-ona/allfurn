@@ -15,16 +15,16 @@
             <p>주소 : 경기도 고양시 일산동구 산두로213번길 18(정발산동)</p>
           </div>
         </div>
-
-        <div class="foo__customer">
-          <p>고객센터</p>
-          <a href="#">자주 묻는 질문</a>
-          <a href="#">공지사항</a>
-          <a href="#">1:1 문의</a>
-          <a href="#" onclick="openModal('#guide-modal');return false;">이용 가이드</a>
-        </div>
-
-        <div class="foo__language">
+        @@if (!context.hide) {
+            <div class="foo__customer">
+            <p>고객센터</p>
+            <a href="#">자주 묻는 질문</a>
+            <a href="#">공지사항</a>
+            <a href="#">1:1 문의</a>
+            <a href="#" onclick="openModal('#guide-modal');return false;">이용 가이드</a>
+            </div>
+        }
+        <div class="foo__language non-active">
           <div class="foo__language__wrap">
             <p>한국어</p>
             <i class="ico__arrow--down20"><span class="a11y">아래 화살표</span></i>
@@ -39,9 +39,11 @@
     </div>
   </div>
 
-  <a href="/home/GGTW-WEB-PRA-01.html" title="상품등록" class="add-button">
-    <i class="btn__floating"></i>
-  </a>
+ @@if (!context.noneAddButton) {
+    <a href="/home/GGTW-WEB-PRA-01.html" title="상품등록" class="add-button">
+        <i class="btn__floating"></i>
+    </a>
+  }
   <a href="/message/GGTW-WEB-MSG-03-1.html" title="문의하기" class="add-button">
     <i class="btn__floating--chat"></i>
   </a>
