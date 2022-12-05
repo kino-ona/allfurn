@@ -1718,12 +1718,14 @@
         padding-bottom: 16px;
         border-bottom: 1px solid #E0E0E0;
       }
+      .body__auth-wrap {
+        margin-bottom: 16px;
+      }
     }
 
     .form__list-item {
       display: flex;
       margin-bottom: 16px;
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -1792,7 +1794,7 @@
         height: 140px;
         border: 1px dashed #DBDBDB;
         border-radius: 5px;
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
 
@@ -1816,6 +1818,11 @@
             color: #BDBDBD;
             margin-top: 3.5px;
           }
+        }
+        .ico__sdelete {
+          position: absolute;
+          right: 10px;
+          top: 10px;
         }
       }
 
@@ -2179,6 +2186,7 @@
         }
 
         .desc__gallery {
+          display: inline-flex;
           width: 200px;
           height: 200px;
 

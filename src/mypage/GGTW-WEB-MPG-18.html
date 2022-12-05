@@ -79,43 +79,45 @@
                       </div>
                     </div>
                   </li>
-                  <ul class="body__auth-wrap">
-                    <li class="auth__item">
-                      <div class="item__head item__head-radio">
-                        <label class="head__text" for="input-list07">사업자 주소</label>
-                      </div>
-                      <div class="item__body">
-                        <ul class="body__radio-wrap">
-                          <li>
-                            <label>
-                              <input type="radio" name="radio-group" class="checkbox__checked" checked>
-                              <span>국내</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="radio" name="radio-group" class="checkbox__checked">
-                              <span>해외</span>
-                            </label>
-                          </li>
-                        </ul>
-                        <div>
-                          <button type="button"  class="button button--blank-gray delete-button">삭제</button>
+                  <li>
+                    <ul class="body__auth-wrap">
+                      <li class="auth__item">
+                        <div class="item__head item__head-radio">
+                          <label class="head__text" for="input-list07">사업자 주소</label>
                         </div>
-                        <div class="input__guid">
-                          <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126, 1층 입구"
-                            class="input-guid__input" id="input-list07">
-                          <button type="button" class="input-guid__button" onclick="openModal('#default-modal-address')">주소 검색</button>
+                        <div class="item__body">
+                          <ul class="body__radio-wrap">
+                            <li>
+                              <label>
+                                <input type="radio" name="radio-group" class="checkbox__checked" checked>
+                                <span>국내</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="radio" name="radio-group" class="checkbox__checked">
+                                <span>해외</span>
+                              </label>
+                            </li>
+                          </ul>
+                          <div>
+                            <button type="button"  class="button button--blank-gray delete-button">삭제</button>
+                          </div>
+                          <div class="input__guid">
+                            <input type="text" placeholder="사업자 주소를 입력해주세요." value="서울시 성동구 아차산로 126, 1층 입구"
+                              class="input-guid__input" id="input-list07">
+                            <button type="button" class="input-guid__button" onclick="openModal('#default-modal-address')">주소 검색</button>
+                          </div>
+                          <input type="text" placeholder="상세 주소를 입력해주세요." value="613호 앱노트"
+                            class="input textfield__input textfield__input--gray" style="margin-top: 10px;">
+                          <div class="body__button-group">
+                            <button type="button" class="button button--blank-gray">취소</button>
+                            <button type="button" class="button button--blank" disabled>완료</button>
+                          </div>
                         </div>
-                        <input type="text" placeholder="상세 주소를 입력해주세요." value="613호 앱노트"
-                          class="input textfield__input textfield__input--gray" style="margin-top: 10px;">
-                        <div class="body__button-group">
-                          <button type="button" class="button button--blank-gray">취소</button>
-                          <button type="button" class="button button--blank" disabled>완료</button>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </li>
                   <li class="form__list-item">
                     <div class="list__title">
                       <label class="list__text01" for="form-list03">로고 이미지</label>
@@ -126,6 +128,12 @@
                         <div class="desc__input-placeholder">
                           <i class="ico__gallery--gray"><span class="a11y">갤러리</span></i>
                           <p>이미지 추가</p>
+                        </div>
+                      </div>
+                      <div class="desc__gallery" style="background-image: url('../assets/images/temp/default.png');">
+                        <div class="desc__input-placeholder">
+                          <i class="ico__gallery--gray"><span class="a11y">갤러리</span></i>
+                          <a class="ico__sdelete" role="button"><span class="a11y">삭제</span></a>
                         </div>
                       </div>
                       <div class="notice-wrap mt10">

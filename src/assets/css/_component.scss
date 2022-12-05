@@ -1327,6 +1327,10 @@
   }
 }
 
+.ico__sdelete {
+  cursor: pointer;
+}
+
 .dropdown.dropdown--active {
   height: 47.5px;
 
@@ -1467,6 +1471,7 @@
     max-width: 100%;
   
     &--type-1 .file-input {
+      display: inline-flex;
       width: 200px;
       height: 280px;
     }
@@ -1759,7 +1764,7 @@
         }
         section {
             height: 100%;
-            max-height: calc(100vh - 150px);
+            max-height: calc(100vh - 110px);
             margin-top: 110px;
             > div {
                 height: 100%;
@@ -2162,22 +2167,22 @@
                 bottom: 0;
             }
         }
-        &::after {
-            content: '';
-            z-index: 99;
-            display: block;
-            width: 134px;
-            height: 5px;
-            position: fixed;
-            bottom: 8px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: {
-                image: url('../images/temp/mo_Home_Indicator.png');
-                size: 134px 8px;
-                position: center top;
-                repeat: no-repeat;
-            }
-        }
+        // &::after {
+        //     content: '';
+        //     z-index: 99;
+        //     display: block;
+        //     width: 134px;
+        //     height: 5px;
+        //     position: fixed;
+        //     bottom: 8px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     background: {
+        //         image: url('../images/temp/mo_Home_Indicator.png');
+        //         size: 134px 8px;
+        //         position: center top;
+        //         repeat: no-repeat;
+        //     }
+        // }
     }
 }
