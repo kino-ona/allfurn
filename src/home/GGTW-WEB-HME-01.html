@@ -45,7 +45,12 @@
           <h2 class="content__title content__title--top">지금 주목받는 새 상품</h2>
           <ul class="content__container">
             <li class="card">
-              <div id="productSwipe01" class="product_swiper swiper-container">
+              <!-- 
+                20221227
+                퍼블상 class=product_swiper 마크업 하나만 swipe id 넣고 나머진 삭제 
+                랜덤으로 지정된 product_swiper 에만 swipe id 부여
+              //-->
+              <div id="productSwipe00" class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html">
@@ -69,7 +74,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe02" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="하모니 장식장 바로가기">
@@ -84,7 +89,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe03" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="CLI320 템버 참죽 거실장 베이지 바로가기">
@@ -99,7 +104,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe04" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="멜론 리클라이너 4인+컵홀더 바로가기">
@@ -114,7 +119,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe05" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="JR 메쉬체어 P-600 바로가기">
@@ -129,7 +134,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe06" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="네오 1200 책상세트 NESET01 바로가기">
@@ -144,7 +149,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe07" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="920 전동리클라이너 이태리가죽 1인 소파 바로가기">
@@ -159,7 +164,7 @@
               </div>
             </li>
             <li class="card">
-              <div id="productSwipe08" class="product_swiper swiper-container">
+              <div class="product_swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="/product/GGTW-WEB-PDV-01.html" title="비너스 세라믹 식탁(4인/6인) 바로가기">
@@ -403,26 +408,22 @@
         modalswiper.autoplay.start();
       });
 
-
+      // 20221227
       if($('.product_swiper').length > 0) {
-        $('.product_swiper').each(function(i){
-          var prdSwiper = $(this);
-
-          var productSwiper = new Swiper('#productSwipe0' + (i + 1), {
-            effect: "flip",
-            grabCursor: true,
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            paginationClickable: true,
-            keyboard: true,
-            speed: 800,
-            autoplay: {
-              delay: 9000,
-              disableOnInteraction: false,
-            },
-          });
-       });
+        var productSwiper = new Swiper('#productSwipe00', {
+          effect: "flip",
+          grabCursor: true,
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 0,
+          paginationClickable: true,
+          keyboard: true,
+          speed: 800,
+          autoplay: {
+            delay: 9000,
+            disableOnInteraction: false,
+          },
+        });
       }
     </script>
 </body>
