@@ -20,6 +20,7 @@
   }
 
   &__container {
+    width: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1593,7 +1594,7 @@
   margin-top: 10px;
   padding-left: 20px;
   color: #3D87F4;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: -.02px;
   margin-left: 16px;
@@ -1605,6 +1606,18 @@
     transform: translateY(-50%);
     display: block;
   }
+}
+
+label.error {
+	margin-top: 10px;
+	display: block;
+	color: #fb4760;
+}
+.notification_text {
+    &--error {
+        margin-left: -36px;
+        color: #fb4760 !important;
+    }
 }
 
 /* ---- form -e----  */

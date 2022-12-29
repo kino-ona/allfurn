@@ -468,6 +468,11 @@
     &.registration__title-sub--order {
       margin-top: 64px;
 
+      .button {
+        width: 160px;
+        white-space: nowrap;
+      }
+
       .default-modal {
         .default-modal__container {
           width: 642px;
@@ -1033,9 +1038,10 @@
 
         .desc__guide-wrap {
           .button--blank-gray {
-            width: 157px;
+            width: 170px;
             height: 40px;
             line-height: 38px;
+            white-space: nowrap;
           }
 
           .guide__smart-editor {

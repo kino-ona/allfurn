@@ -171,12 +171,29 @@
                             id="accreditation1"
                             type="text"
                             disabled=""
-                            placeholder=""
-                            value="12345"
+                            placeholder="인증번호를 입력해주세요."
+                            value=""
                             oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                            <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
+                            <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div><span class="notification_text">인증되었습니다.</span></div>
+                          </div>
+                        </div>
+                        <div class="form__list">
+                          <div class="form__label">
+                            <label class="label" for="accreditation1">인증번호</label>
+                          </div>
+                          <div class="input-guid">
+                            <input class="input input-guid__input"
+                            id="accreditation1"
+                            type="text"
+                            disabled=""
+                            placeholder="인증번호를 입력해주세요."
+                            value=""
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            >
+                            <button class="button input-guid__button" disabled="" type="button">인증번호 재전송</button>
+                            <div class="form__notification"><span class="notification_text notification_text--error">인증번호가 일치하지 않습니다. 다시 확인해주세요.</span></div>
                           </div>
                         </div>
                         <div class="form__list">
@@ -274,12 +291,29 @@
                             id="accreditation2"
                             type="text"
                             disabled=""
-                            placeholder=""
-                            value="12345"
+                            placeholder="인증번호를 입력해주세요."
+                            value=""
                             oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                             >
                             <button class="button input-guid__button" disabled="" type="button">인증하기</button>
-                            <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div>인증되었습니다.</div>
+                            <div class="form__notification"><div class="ico__form-check"><span class="a11y">확인 아이콘</span></div><span class="notification_text">인증되었습니다.</span></div>
+                          </div>
+                        </div>
+                        <div class="form__list">
+                          <div class="form__label">
+                            <label class="label" for="accreditation2">인증번호</label>
+                          </div>
+                          <div class="input-guid">
+                            <input class="input input-guid__input"
+                            id="accreditation2"
+                            type="text"
+                            disabled=""
+                            placeholder="인증번호를 입력해주세요."
+                            value=""
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            >
+                            <button class="button input-guid__button" disabled="" type="button">인증번호 재전송</button>
+                            <div class="form__notification"><span class="notification_text notification_text--error">인증번호가 일치하지 않습니다. 다시 확인해주세요.</span></div>
                           </div>
                         </div>
                         <div class="form__list">
@@ -294,6 +328,7 @@
                             minlength="8"
                             placeholder="비밀번호를 입력해주세요."
                             >
+                            <label for="userpw0" class="error">비밀번호는 영문, 숫자 8자리 이상 입력하셔야 합니다.</label>
                             <div class="form__notice-box">
                               <ul>
                                 <li>영문 및 숫자 혼합하여 8자리 이상 입력해주세요.</li>
@@ -313,6 +348,7 @@
                             minlength="8"
                             placeholder="비밀번호를 다시 입력해주세요."
                             >
+                            <label for="userpwcheck0" class="error">비밀번호가 일치하지 않습니다.</label>
                           </div>
                         </div>
                         <div class="form__check-box">
